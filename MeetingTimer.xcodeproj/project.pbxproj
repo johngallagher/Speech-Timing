@@ -17,6 +17,10 @@
 		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
 		28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */; };
 		28D3F202112F7DC200FD0661 /* MeetingTimer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28D3F201112F7DC200FD0661 /* MeetingTimer.xcdatamodeld */; };
+		524EA1BA149E530500FC1658 /* JGTimerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52591F34149E453E00DEA711 /* JGTimerController.m */; };
+		5251B956149E537200AFC0B6 /* AbstractSingletonObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 52591F2A149E452600DEA711 /* AbstractSingletonObject.m */; };
+		52591F35149E453E00DEA711 /* JGTimerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52591F34149E453E00DEA711 /* JGTimerController.m */; };
+		52591F43149E469C00DEA711 /* JGTimerControllerTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */; };
 		52CA8B5B149D089B0030ADC1 /* JGRunningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CA8B59149D089B0030ADC1 /* JGRunningViewController.m */; };
 		52CA8B5C149D089B0030ADC1 /* JGRunningViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52CA8B5A149D089B0030ADC1 /* JGRunningViewController.xib */; };
 /* End PBXBuildFile section */
@@ -36,6 +40,14 @@
 		28C286DF0D94DF7D0034E888 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		28C286E00D94DF7D0034E888 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		52591F29149E452600DEA711 /* AbstractSingletonObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstractSingletonObject.h; sourceTree = "<group>"; };
+		52591F2A149E452600DEA711 /* AbstractSingletonObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbstractSingletonObject.m; sourceTree = "<group>"; };
+		52591F33149E453E00DEA711 /* JGTimerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGTimerController.h; sourceTree = "<group>"; };
+		52591F34149E453E00DEA711 /* JGTimerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGTimerController.m; sourceTree = "<group>"; };
+		52591F3B149E466B00DEA711 /* MeetingTimerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeetingTimerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52591F3C149E466B00DEA711 /* MeetingTimerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MeetingTimerTests-Info.plist"; sourceTree = "<group>"; };
+		52591F40149E469000DEA711 /* JGTimerControllerTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGTimerControllerTestCase.h; sourceTree = "<group>"; };
+		52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGTimerControllerTestCase.m; sourceTree = "<group>"; };
 		52CA8B58149D089B0030ADC1 /* JGRunningViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGRunningViewController.h; sourceTree = "<group>"; };
 		52CA8B59149D089B0030ADC1 /* JGRunningViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGRunningViewController.m; sourceTree = "<group>"; };
 		52CA8B5A149D089B0030ADC1 /* JGRunningViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = JGRunningViewController.xib; path = Classes/JGRunningViewController.xib; sourceTree = "<group>"; };
@@ -54,6 +66,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		52591F38149E466B00DEA711 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -66,6 +85,10 @@
 				52CA8B59149D089B0030ADC1 /* JGRunningViewController.m */,
 				1D3623240D0F684500981E51 /* MeetingTimerAppDelegate.h */,
 				1D3623250D0F684500981E51 /* MeetingTimerAppDelegate.m */,
+				52591F33149E453E00DEA711 /* JGTimerController.h */,
+				52591F34149E453E00DEA711 /* JGTimerController.m */,
+				52591F40149E469000DEA711 /* JGTimerControllerTestCase.h */,
+				52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -74,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				1D6058910D05DD3D006BFB54 /* MeetingTimer.app */,
+				52591F3B149E466B00DEA711 /* MeetingTimerTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,11 +105,13 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				52591F28149E452600DEA711 /* Singleton */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				52591F3C149E466B00DEA711 /* MeetingTimerTests-Info.plist */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -122,6 +148,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		52591F28149E452600DEA711 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				52591F29149E452600DEA711 /* AbstractSingletonObject.h */,
+				52591F2A149E452600DEA711 /* AbstractSingletonObject.m */,
+			);
+			name = Singleton;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,6 +176,24 @@
 			productName = MeetingTimer;
 			productReference = 1D6058910D05DD3D006BFB54 /* MeetingTimer.app */;
 			productType = "com.apple.product-type.application";
+		};
+		52591F3A149E466B00DEA711 /* LogicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52591F3F149E466B00DEA711 /* Build configuration list for PBXNativeTarget "LogicTests" */;
+			buildPhases = (
+				52591F36149E466B00DEA711 /* Resources */,
+				52591F37149E466B00DEA711 /* Sources */,
+				52591F38149E466B00DEA711 /* Frameworks */,
+				52591F39149E466B00DEA711 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LogicTests;
+			productName = MeetingTimerTests;
+			productReference = 52591F3B149E466B00DEA711 /* MeetingTimerTests.octest */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -163,6 +216,7 @@
 			projectRoot = "";
 			targets = (
 				1D6058900D05DD3D006BFB54 /* MeetingTimer */,
+				52591F3A149E466B00DEA711 /* LogicTests */,
 			);
 		};
 /* End PBXProject section */
@@ -178,7 +232,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		52591F36149E466B00DEA711 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		52591F39149E466B00DEA711 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1D60588E0D05DD3D006BFB54 /* Sources */ = {
@@ -190,6 +267,17 @@
 				28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */,
 				28D3F202112F7DC200FD0661 /* MeetingTimer.xcdatamodeld in Sources */,
 				52CA8B5B149D089B0030ADC1 /* JGRunningViewController.m in Sources */,
+				52591F35149E453E00DEA711 /* JGTimerController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52591F37149E466B00DEA711 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52591F43149E469C00DEA711 /* JGTimerControllerTestCase.m in Sources */,
+				524EA1BA149E530500FC1658 /* JGTimerController.m in Sources */,
+				5251B956149E537200AFC0B6 /* AbstractSingletonObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +308,68 @@
 				INFOPLIST_FILE = "MeetingTimer-Info.plist";
 				PRODUCT_NAME = MeetingTimer;
 				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52591F3D149E466B00DEA711 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(CONFIGURATION_BUILD_DIR)/MeetingTimer.app/MeetingTimer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = "MeetingTimerTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = MeetingTimerTests;
+				SDKROOT = iphoneos;
+				TEST_HOST_PRODUCT_NAME = MeetingTimer;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		52591F3E149E466B00DEA711 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				INFOPLIST_FILE = "MeetingTimerTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = MeetingTimerTests;
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
 			};
 			name = Release;
 		};
@@ -258,6 +408,15 @@
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
 				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52591F3F149E466B00DEA711 /* Build configuration list for PBXNativeTarget "LogicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52591F3D149E466B00DEA711 /* Debug */,
+				52591F3E149E466B00DEA711 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
