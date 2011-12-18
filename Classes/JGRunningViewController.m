@@ -11,6 +11,14 @@
 
 @implementation JGRunningViewController
 
+-(void)viewDidAppear:(BOOL)animated {
+
+}
+
+-(void)viewDidDisappear:(BOOL)animated {
+    
+}
+
 -(IBAction)stopTimer:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
 }
