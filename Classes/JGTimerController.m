@@ -1,8 +1,20 @@
 #import "JGTimerController.h"
+#import "JGTimerControllerDelegate.h"
 
 @implementation JGTimerController
 
 @synthesize duration;
+
++(JGTimerController *)timerWithDurationValue:(NSUInteger)durationValue delegate:(id <JGTimerControllerDelegate>)delegate_ {
+    return [[JGTimerController alloc] initWithDurationValue:durationValue delegate:delegate_];
+}
+
+-(JGTimerController *)initWithDurationValue:(NSUInteger)durationValue delegate:(id <JGTimerControllerDelegate>)delegate_ {
+    self = [super init];
+    [self setDurationValue:durationValue];
+    _delegate = delegate_;
+    return self;
+}
 
 -(NSUInteger)durationValue {
 	NSNumber *result = [self duration];

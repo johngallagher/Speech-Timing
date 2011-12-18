@@ -250,6 +250,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -288,6 +290,8 @@
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>52591F28149E452600DEA711</string>
 								<string>080E96DDFE201D6D7F000001</string>
+								<string>5251B9F8149E5D4300AFC0B6</string>
+								<string>5251B9AB149E59BD00AFC0B6</string>
 								<string>29B97315FDCFA39411CA2CEA</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
 								<string>19C28FACFE9D520D11CA2CBB</string>
@@ -296,7 +300,26 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>14</integer>
+									<integer>6</integer>
+									<integer>5</integer>
+									<integer>4</integer>
+									<integer>0</integer>
+								</array>
+								<array>
+									<integer>7</integer>
+									<integer>5</integer>
+									<integer>4</integer>
+									<integer>0</integer>
+								</array>
+								<array>
+									<integer>8</integer>
+									<integer>5</integer>
+									<integer>4</integer>
+									<integer>0</integer>
+								</array>
+								<array>
+									<integer>9</integer>
+									<integer>5</integer>
 									<integer>4</integer>
 									<integer>0</integer>
 								</array>
@@ -330,14 +353,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>52CA8ADA149CF1A40030ADC1</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>JGTimerController.m</string>
+								<string>RootViewController.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -345,30 +366,32 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>52CA8ADB149CF1A40030ADC1</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>JGTimerController.m</string>
+										<string>RootViewController.h</string>
 										<key>_historyCapacity</key>
 										<integer>20</integer>
 										<key>bookmark</key>
-										<string>5251B9A2149E597400AFC0B6</string>
+										<string>5251B9FB149E5D4C00AFC0B6</string>
 										<key>history</key>
 										<array>
 											<string>52CA8B66149D0A870030ADC1</string>
 											<string>52CA8B67149D0A870030ADC1</string>
-											<string>52CA8BB4149D0E0D0030ADC1</string>
-											<string>52CA8BB5149D0E0D0030ADC1</string>
-											<string>52591FA1149E4E3700DEA711</string>
-											<string>5251B963149E54D100AFC0B6</string>
 											<string>5251B964149E54D100AFC0B6</string>
 											<string>5251B966149E54D100AFC0B6</string>
 											<string>5251B968149E54D100AFC0B6</string>
-											<string>5251B969149E54D100AFC0B6</string>
 											<string>5251B96A149E54D100AFC0B6</string>
-											<string>5251B96B149E54D100AFC0B6</string>
 											<string>5251B96D149E54D100AFC0B6</string>
-											<string>5251B99D149E597400AFC0B6</string>
 											<string>5251B99E149E597400AFC0B6</string>
-											<string>5251B9A0149E597400AFC0B6</string>
-											<string>5251B9A1149E597400AFC0B6</string>
+											<string>5251B9CB149E5C5100AFC0B6</string>
+											<string>5251B9CD149E5C5100AFC0B6</string>
+											<string>5251B9CE149E5C5100AFC0B6</string>
+											<string>5251B9CF149E5C5100AFC0B6</string>
+											<string>5251B9D0149E5C5100AFC0B6</string>
+											<string>5251B9D1149E5C5100AFC0B6</string>
+											<string>5251B9D2149E5C5100AFC0B6</string>
+											<string>5251B9D3149E5C5100AFC0B6</string>
+											<string>5251B9F9149E5D4C00AFC0B6</string>
+											<string>5251B9FA149E5D4C00AFC0B6</string>
+											<string>5251B9CC149E5C5100AFC0B6</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -666,7 +689,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>345921908.934681</real>
+	<real>345922892.87657702</real>
 	<key>ToolbarConfigUserDefaultsMinorVersion</key>
 	<string>2</string>
 	<key>ToolbarDisplayMode</key>
