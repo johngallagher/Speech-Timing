@@ -30,6 +30,7 @@
 }
 
 -(void)stopTimer:(NSTimer *)timer_ {
+    [_delegate timerDidStop];
     [timer_ invalidate];
     [timer invalidate];
     timer = nil;
@@ -45,5 +46,6 @@
         [self stopTimer:timer_];
 }
 
+     
 @end
 

@@ -1,5 +1,5 @@
 //
-//  JGTimerControllerTestCase.h
+//  JGTimeFormatterTestCase.h
 //  MeetingTimer
 //
 //  Created by John Gallagher on 18/12/2011.
@@ -14,11 +14,10 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 #import <UIKit/UIKit.h>
-#import <OCMock/OCMock.h>
 //#import "application_headers" as required
 
-
-@interface JGTimerControllerTestCase : SenTestCase {
+@interface JGTimeFormatterTestCase : SenTestCase {
 
 }
+
 @end
