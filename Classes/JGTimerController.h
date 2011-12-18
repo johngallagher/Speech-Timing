@@ -5,7 +5,7 @@
 @interface JGTimerController : NSObject {
     NSNumber    *duration;
     NSTimer     *timer;
-    id <JGTimerControllerDelegate> _delegate;
+    id <NSObject, JGTimerControllerDelegate> _delegate;
 }
 
 @property (nonatomic, retain) NSNumber *duration;

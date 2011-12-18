@@ -305,12 +305,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>47</integer>
-									<integer>42</integer>
+									<integer>23</integer>
+									<integer>18</integer>
+									<integer>5</integer>
+									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 394}, {218, 660}}</string>
+							<string>{{0, 0}, {218, 660}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -355,14 +357,11 @@
 										<key>_historyCapacity</key>
 										<integer>20</integer>
 										<key>bookmark</key>
-										<string>5251BB86149EA50700AFC0B6</string>
+										<string>5251BBB3149EB3E000AFC0B6</string>
 										<key>history</key>
 										<array>
-											<string>5251B96D149E54D100AFC0B6</string>
-											<string>5251B99E149E597400AFC0B6</string>
 											<string>5251B9CE149E5C5100AFC0B6</string>
 											<string>5251B9D3149E5C5100AFC0B6</string>
-											<string>5251B9F9149E5D4C00AFC0B6</string>
 											<string>5251BB60149EA3C000AFC0B6</string>
 											<string>5251BB61149EA3C000AFC0B6</string>
 											<string>5251BB63149EA3C000AFC0B6</string>
@@ -372,12 +371,15 @@
 											<string>5251BB67149EA3C000AFC0B6</string>
 											<string>5251BB68149EA3C000AFC0B6</string>
 											<string>5251BB69149EA3C000AFC0B6</string>
-											<string>5251BB6A149EA3C000AFC0B6</string>
 											<string>5251BB6B149EA3C000AFC0B6</string>
-											<string>5251BB6D149EA3C000AFC0B6</string>
 											<string>5251BB83149EA50700AFC0B6</string>
-											<string>5251BB84149EA50700AFC0B6</string>
-											<string>5251BB85149EA50700AFC0B6</string>
+											<string>5251BBA9149EB3CC00AFC0B6</string>
+											<string>5251BBAA149EB3CC00AFC0B6</string>
+											<string>5251BBAB149EB3CC00AFC0B6</string>
+											<string>5251BBAC149EB3CC00AFC0B6</string>
+											<string>5251BBAD149EB3CC00AFC0B6</string>
+											<string>5251BBAE149EB3CC00AFC0B6</string>
+											<string>5251BBAF149EB3CC00AFC0B6</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -675,7 +677,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>345941255.03232598</real>
+	<real>345945056.770643</real>
 	<key>ToolbarConfigUserDefaultsMinorVersion</key>
 	<string>2</string>
 	<key>ToolbarDisplayMode</key>

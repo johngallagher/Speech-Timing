@@ -30,7 +30,9 @@
 }
 
 -(void)stopTimer:(NSTimer *)timer_ {
-    [_delegate timerDidStop];
+    if ([_delegate conformsToProtocol:@protocol(JGTimerControllerDelegate)])
+        [_delegate timerDidStop];
+
     [timer_ invalidate];
     [timer invalidate];
     timer = nil;

@@ -9,10 +9,8 @@
 #import <UIKit/UIKit.h>
 
 
-@protocol JGTimerControllerDelegate
+@protocol JGTimerControllerDelegate <NSObject>
 
 -(void)timerDidStop;
-
--(void)timerDidStart;
 
 @end

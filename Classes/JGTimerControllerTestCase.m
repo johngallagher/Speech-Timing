@@ -47,4 +47,33 @@
     [mockDelegate verify];
 }
 
+-(void)testIfDelegateDoesntRespondToProtocolShouldNotCrash {
+    BOOL _no = NO;
+    id mockDelegate = [OCMockObject mockForClass:[NSObject class]];
+    [[[mockDelegate expect] andReturnValue:OCMOCK_VALUE(_no)] conformsToProtocol:@protocol(JGTimerControllerDelegate)];
+     
+    JGTimerController *timer = [JGTimerController timerWithDurationValue:1 delegate:mockDelegate];
+    [timer startTimer];
+    
+    [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:2]];
+    
+    [mockDelegate verify];
+    [mockDelegate release];
+    mockDelegate = nil;
+}
+
+-(void)testIfDelegateDoesRespondToProtocolTimerDidStopShouldBeCalled {
+    BOOL _yes = YES;
+    id mockDelegate = [OCMockObject mockForProtocol:@protocol(JGTimerControllerDelegate)];
+    [[[mockDelegate expect] andReturnValue:OCMOCK_VALUE(_yes)] conformsToProtocol:@protocol(JGTimerControllerDelegate)];
+    [[mockDelegate expect] timerDidStop];
+    
+    JGTimerController *timer = [JGTimerController timerWithDurationValue:1 delegate:mockDelegate];
+    [timer startTimer];
+
+    [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:2]];
+    
+    [mockDelegate verify];
+}
+
 @end
