@@ -20,5 +20,15 @@
     STAssertEquals  ([[JGTimerController sharedInstance] durationValue], (NSUInteger)14, nil);
 }
 
+-(void)testTimerShouldStopAtZero {
+    [[JGTimerController sharedInstance] setDurationValue:1];
+    STAssertEquals  ([[JGTimerController sharedInstance] durationValue], (NSUInteger)1, nil);
+    
+    [[JGTimerController sharedInstance] startTimer];
+    
+    [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:2]];
+    STAssertEquals  ([[JGTimerController sharedInstance] durationValue], (NSUInteger)0, nil);
+    STAssertFalse   ([[JGTimerController sharedInstance] timerIsRunning], nil);
+}
 
 @end

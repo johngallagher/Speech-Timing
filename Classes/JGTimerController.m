@@ -14,11 +14,23 @@
 }
 
 -(void)startTimer {
-    [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timerDidCountDownByASecond:) userInfo:nil repeats:YES];
+    timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timerDidCountDownByASecond:) userInfo:nil repeats:YES];
 }
 
--(void)timerDidCountDownByASecond:(NSTimer *)timer {
+-(void)stopTimer:(NSTimer *)timer_ {
+    [timer_ invalidate];
+    [timer invalidate];
+    timer = nil;
+}
+
+-(BOOL)timerIsRunning {
+    return (timer != nil);
+}
+
+-(void)timerDidCountDownByASecond:(NSTimer *)timer_ {
     [self setDurationValue:[self durationValue] - 1];
+    if ([self durationValue] == 0)
+        [self stopTimer:timer_];
 }
 
 @end

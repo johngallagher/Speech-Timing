@@ -1,7 +1,8 @@
 #import "AbstractSingletonObject.h"
 
 @interface JGTimerController : AbstractSingletonObject {
-    NSNumber *duration;
+    NSNumber    *duration;
+    NSTimer     *timer;
 }
 
 @property (nonatomic, retain) NSNumber *duration;
@@ -12,8 +13,9 @@
 
 -(void)startTimer;
 
+-(void)stopTimer:(NSTimer *)timer_;
 
-
+-(BOOL)timerIsRunning;
 
 @end
 

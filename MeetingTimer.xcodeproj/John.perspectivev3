@@ -296,8 +296,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>3</integer>
-									<integer>1</integer>
+									<integer>14</integer>
+									<integer>4</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -330,12 +330,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>52CA8ADA149CF1A40030ADC1</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>JGTimerController.h</string>
+								<string>JGTimerController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -343,11 +345,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>52CA8ADB149CF1A40030ADC1</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>JGTimerController.h</string>
+										<string>JGTimerController.m</string>
 										<key>_historyCapacity</key>
 										<integer>20</integer>
 										<key>bookmark</key>
-										<string>5251B971149E54D100AFC0B6</string>
+										<string>5251B9A2149E597400AFC0B6</string>
 										<key>history</key>
 										<array>
 											<string>52CA8B66149D0A870030ADC1</string>
@@ -362,10 +364,11 @@
 											<string>5251B969149E54D100AFC0B6</string>
 											<string>5251B96A149E54D100AFC0B6</string>
 											<string>5251B96B149E54D100AFC0B6</string>
-											<string>5251B96C149E54D100AFC0B6</string>
 											<string>5251B96D149E54D100AFC0B6</string>
-											<string>5251B96F149E54D100AFC0B6</string>
-											<string>5251B970149E54D100AFC0B6</string>
+											<string>5251B99D149E597400AFC0B6</string>
+											<string>5251B99E149E597400AFC0B6</string>
+											<string>5251B9A0149E597400AFC0B6</string>
+											<string>5251B9A1149E597400AFC0B6</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -639,14 +642,14 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>52591F0C149E437D00DEA711</string>
+				<string>5251B9A3149E597400AFC0B6</string>
 				<string>1CCC7628064C1048000F2A68</string>
 				<string>1CCC7629064C1048000F2A68</string>
-				<string>52591F0D149E437D00DEA711</string>
-				<string>52591F0E149E437D00DEA711</string>
-				<string>52591F0F149E437D00DEA711</string>
-				<string>52591F10149E437D00DEA711</string>
-				<string>52CA8ADA149CF1A40030ADC1</string>
+				<string>5251B9A4149E597400AFC0B6</string>
+				<string>5251B9A5149E597400AFC0B6</string>
+				<string>5251B9A6149E597400AFC0B6</string>
+				<string>5251B9A7149E597400AFC0B6</string>
+				<string>5251B9A8149E597400AFC0B6</string>
 			</array>
 			<key>ToolbarConfigUserDefaultsMinorVersion</key>
 			<string>2</string>
@@ -663,7 +666,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>345920721.256082</real>
+	<real>345921908.934681</real>
 	<key>ToolbarConfigUserDefaultsMinorVersion</key>
 	<string>2</string>
 	<key>ToolbarDisplayMode</key>

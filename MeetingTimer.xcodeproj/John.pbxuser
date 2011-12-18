@@ -119,6 +119,11 @@
 			5251B96F149E54D100AFC0B6 /* PBXTextBookmark */ = 5251B96F149E54D100AFC0B6 /* PBXTextBookmark */;
 			5251B970149E54D100AFC0B6 /* PBXTextBookmark */ = 5251B970149E54D100AFC0B6 /* PBXTextBookmark */;
 			5251B971149E54D100AFC0B6 /* PBXTextBookmark */ = 5251B971149E54D100AFC0B6 /* PBXTextBookmark */;
+			5251B99D149E597400AFC0B6 /* PBXTextBookmark */ = 5251B99D149E597400AFC0B6 /* PBXTextBookmark */;
+			5251B99E149E597400AFC0B6 /* PBXTextBookmark */ = 5251B99E149E597400AFC0B6 /* PBXTextBookmark */;
+			5251B9A0149E597400AFC0B6 /* PBXTextBookmark */ = 5251B9A0149E597400AFC0B6 /* PBXTextBookmark */;
+			5251B9A1149E597400AFC0B6 /* PBXTextBookmark */ = 5251B9A1149E597400AFC0B6 /* PBXTextBookmark */;
+			5251B9A2149E597400AFC0B6 /* PBXTextBookmark */ = 5251B9A2149E597400AFC0B6 /* PBXTextBookmark */;
 			52591FA0149E4E3700DEA711 = 52591FA0149E4E3700DEA711 /* PBXTextBookmark */;
 			52591FA1149E4E3700DEA711 = 52591FA1149E4E3700DEA711 /* PBXTextBookmark */;
 			52591FCE149E52AA00DEA711 = 52591FCE149E52AA00DEA711 /* PBXTextBookmark */;
@@ -166,7 +171,7 @@
 		fRef = 52591F33149E453E00DEA711 /* JGTimerController.h */;
 		name = "JGTimerController.h: 12";
 		rLen = 0;
-		rLoc = 275;
+		rLoc = 360;
 		rType = 0;
 		vrLen = 245;
 		vrLoc = 0;
@@ -206,7 +211,7 @@
 		fRef = 52591F33149E453E00DEA711 /* JGTimerController.h */;
 		name = "JGTimerController.h: 7";
 		rLen = 0;
-		rLoc = 149;
+		rLoc = 176;
 		rType = 0;
 		vrLen = 254;
 		vrLoc = 0;
@@ -334,7 +339,7 @@
 		fRef = 52591F33149E453E00DEA711 /* JGTimerController.h */;
 		name = "JGTimerController.h: 5";
 		rLen = 0;
-		rLoc = 118;
+		rLoc = 145;
 		rType = 0;
 		vrLen = 254;
 		vrLoc = 0;
@@ -344,10 +349,66 @@
 		fRef = 52591F33149E453E00DEA711 /* JGTimerController.h */;
 		name = "JGTimerController.h: 16";
 		rLen = 0;
-		rLoc = 267;
+		rLoc = 354;
 		rType = 0;
 		vrLen = 275;
 		vrLoc = 0;
+	};
+	5251B99D149E597400AFC0B6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */;
+		name = "JGTimerControllerTestCase.m: 31";
+		rLen = 14;
+		rLoc = 1214;
+		rType = 0;
+		vrLen = 1085;
+		vrLoc = 160;
+	};
+	5251B99E149E597400AFC0B6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5251B99F149E597400AFC0B6 /* RunPlatformUnitTests.include */;
+		name = "RunPlatformUnitTests.include: 451";
+		rLen = 135;
+		rLoc = 16022;
+		rType = 0;
+		vrLen = 1073;
+		vrLoc = 15507;
+	};
+	5251B99F149E597400AFC0B6 /* RunPlatformUnitTests.include */ = {
+		isa = PBXFileReference;
+		name = RunPlatformUnitTests.include;
+		path = /Developer/Tools/RunPlatformUnitTests.include;
+		sourceTree = "<absolute>";
+	};
+	5251B9A0149E597400AFC0B6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52591F33149E453E00DEA711 /* JGTimerController.h */;
+		name = "JGTimerController.h: 16";
+		rLen = 0;
+		rLoc = 327;
+		rType = 0;
+		vrLen = 360;
+		vrLoc = 0;
+	};
+	5251B9A1149E597400AFC0B6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
+		name = "JGTimerController.m: 33";
+		rLen = 0;
+		rLoc = 796;
+		rType = 0;
+		vrLen = 647;
+		vrLoc = 155;
+	};
+	5251B9A2149E597400AFC0B6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
+		name = "JGTimerController.m: 33";
+		rLen = 6;
+		rLoc = 790;
+		rType = 0;
+		vrLen = 684;
+		vrLoc = 118;
 	};
 	52591F29149E452600DEA711 /* AbstractSingletonObject.h */ = {
 		uiCtxt = {
@@ -366,15 +427,15 @@
 	52591F33149E453E00DEA711 /* JGTimerController.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {991, 396}}";
-			sepNavSelRange = "{267, 0}";
-			sepNavVisRange = "{0, 275}";
+			sepNavSelRange = "{327, 0}";
+			sepNavVisRange = "{0, 360}";
 		};
 	};
 	52591F34149E453E00DEA711 /* JGTimerController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {991, 396}}";
-			sepNavSelRange = "{299, 20}";
-			sepNavVisRange = "{0, 571}";
+			sepNavIntBoundsRect = "{{0, 0}, {992, 570}}";
+			sepNavSelRange = "{790, 6}";
+			sepNavVisRange = "{118, 684}";
 		};
 	};
 	52591F3A149E466B00DEA711 /* LogicTests */ = {
@@ -389,9 +450,9 @@
 	};
 	52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {991, 396}}";
-			sepNavSelRange = "{491, 17}";
-			sepNavVisRange = "{0, 729}";
+			sepNavIntBoundsRect = "{{0, 0}, {991, 525}}";
+			sepNavSelRange = "{1214, 14}";
+			sepNavVisRange = "{160, 1085}";
 		};
 	};
 	52591FA0149E4E3700DEA711 /* PBXTextBookmark */ = {
