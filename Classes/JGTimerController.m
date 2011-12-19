@@ -6,6 +6,9 @@
 @synthesize duration;
 
 +(JGTimerController *)timerWithDurationValue:(NSUInteger)durationValue delegate:(id <JGTimerControllerDelegate>)delegate_ {
+    if (durationValue == 0)
+        return nil;
+    
     return [[JGTimerController alloc] initWithDurationValue:durationValue delegate:delegate_];
 }
 

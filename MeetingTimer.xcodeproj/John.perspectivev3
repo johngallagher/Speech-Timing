@@ -345,7 +345,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>52CA8ADA149CF1A40030ADC1</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>JGTimerControllerTestCase.m</string>
+								<string>JGTimerController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -353,11 +353,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>52CA8ADB149CF1A40030ADC1</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>JGTimerControllerTestCase.m</string>
+										<string>JGTimerController.m</string>
 										<key>_historyCapacity</key>
 										<integer>20</integer>
 										<key>bookmark</key>
-										<string>5251BBB3149EB3E000AFC0B6</string>
+										<string>5251BBED149EB7D100AFC0B6</string>
 										<key>history</key>
 										<array>
 											<string>5251B9CE149E5C5100AFC0B6</string>
@@ -376,10 +376,10 @@
 											<string>5251BBA9149EB3CC00AFC0B6</string>
 											<string>5251BBAA149EB3CC00AFC0B6</string>
 											<string>5251BBAB149EB3CC00AFC0B6</string>
-											<string>5251BBAC149EB3CC00AFC0B6</string>
 											<string>5251BBAD149EB3CC00AFC0B6</string>
 											<string>5251BBAE149EB3CC00AFC0B6</string>
-											<string>5251BBAF149EB3CC00AFC0B6</string>
+											<string>5251BBEB149EB7D100AFC0B6</string>
+											<string>5251BBEC149EB7D100AFC0B6</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -677,7 +677,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>345945056.770643</real>
+	<real>345946065.356215</real>
 	<key>ToolbarConfigUserDefaultsMinorVersion</key>
 	<string>2</string>
 	<key>ToolbarDisplayMode</key>
