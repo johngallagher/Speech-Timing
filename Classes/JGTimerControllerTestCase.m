@@ -13,9 +13,6 @@
 
 @implementation JGTimerControllerTestCase
 
--(void)testTimerShouldBeNilForZeroDuration {
-    STAssertNil  ([JGTimerController timerWithDurationValue:0 delegate:nil], nil);
-}
 
 -(void)testTimerShouldBeOneSecondDownAfterOneSecond {
     JGTimerController *timer = [JGTimerController timerWithDurationValue:15 delegate:nil];
@@ -62,7 +59,7 @@
     [mockDelegate verify];
 }
 
--(void)testIfDelegateRespondsToProtocolShouldCallTimerDidStopOnStop {
+-(void)testGivenDelegateRespondsToProtocolShouldCallTimerDidStopOnStop {
     id mockDelegate = [OCMockObject niceMockForProtocol:@protocol(JGTimerControllerDelegate)];
     [[mockDelegate expect] timerDidStop];
     
@@ -72,6 +69,17 @@
     [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:2]];
     
     [mockDelegate verify];
+}
+
+-(void)testGivenZeroDurationShouldImmediatelyCallTimerDidStop {
+    id mockDelegate = [OCMockObject niceMockForProtocol:@protocol(JGTimerControllerDelegate)];
+    [[mockDelegate expect] timerDidStop];
+    
+    JGTimerController *timer = [JGTimerController timerWithDurationValue:0 delegate:mockDelegate];
+    [timer startTimer];
+    
+    [mockDelegate verify];
+    STAssertNil ([timer valueForKey:@"timer"], nil); // Ensure the timer wasn't started
 }
 
 
