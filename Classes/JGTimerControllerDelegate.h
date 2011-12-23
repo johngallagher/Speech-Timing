@@ -11,6 +11,8 @@
 
 @protocol JGTimerControllerDelegate <NSObject>
 
--(void)timerDidStop;
+-(void)showGreenCard;
+
+-(void)showRedCard;
 
 @end

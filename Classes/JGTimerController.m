@@ -17,7 +17,6 @@
     return self;
 }
 
-
 -(NSUInteger)durationValue {
 	NSNumber *result = [self duration];
 	return result ? [result intValue] : 0;
@@ -44,7 +43,7 @@
 
 -(void)stopTimer:(NSTimer *)timer_ {
     if ([_delegate conformsToProtocol:@protocol(JGTimerControllerDelegate)])
-        [_delegate timerDidStop];
+        [_delegate showRedCard];
 
     [timer_ invalidate];
     [timer invalidate];
