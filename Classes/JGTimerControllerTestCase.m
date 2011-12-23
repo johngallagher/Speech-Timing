@@ -13,6 +13,13 @@
 
 @implementation JGTimerControllerTestCase
 
+-(void)setUp {
+    [super setUp];
+}
+
+-(void)tearDown {
+    [super tearDown];
+}
 
 -(void)testTimerShouldBeOneSecondDownAfterOneSecond {
     JGTimerController *timer = [JGTimerController timerWithDurationValue:15 delegate:nil];
@@ -36,7 +43,6 @@
 }
 
 -(void)testGivenThreeSecondDurationAtOneSecondDelegateShouldBeToldToShowGreenCard {
-    // ** Setup **
     id mockDelegate = [OCMockObject mockForProtocol:@protocol(JGTimerControllerDelegate)];
     [[mockDelegate expect] showGreenCard];
     
@@ -64,18 +70,18 @@
 
 // We have no expectations - we know we've checked for confirmity with protocol if this doesn't crash.
 -(void)testIfDelegateDoesntRespondToProtocolShouldNotCrash {
-    id mockDelegate = [OCMockObject niceMockForClass:[NSObject class]];
-     
+    id mockDelegate = [[NSObject alloc] init];
     JGTimerController *timer = [JGTimerController timerWithDurationValue:1 delegate:mockDelegate];
     [timer startTimer];
     
     [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:2]];
     
-    [mockDelegate verify];
+    [timer release];
+    
 }
 
 -(void)testGivenDelegateRespondsToProtocolShouldCallshowRedCardOnStop {
-    id mockDelegate = [OCMockObject niceMockForProtocol:@protocol(JGTimerControllerDelegate)];
+    id mockDelegate = [OCMockObject mockForProtocol:@protocol(JGTimerControllerDelegate)];
     [[mockDelegate expect] showRedCard];
     
     JGTimerController *timer = [JGTimerController timerWithDurationValue:1 delegate:mockDelegate];
@@ -87,7 +93,7 @@
 }
 
 -(void)testGivenZeroDurationShouldImmediatelyCallshowRedCard {
-    id mockDelegate = [OCMockObject niceMockForProtocol:@protocol(JGTimerControllerDelegate)];
+    id mockDelegate = [OCMockObject mockForProtocol:@protocol(JGTimerControllerDelegate)];
     [[mockDelegate expect] showRedCard];
     
     JGTimerController *timer = [JGTimerController timerWithDurationValue:0 delegate:mockDelegate];

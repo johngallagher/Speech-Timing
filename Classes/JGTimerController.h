@@ -6,6 +6,10 @@
     NSNumber    *duration;
     NSTimer     *timer;
     id <NSObject, JGTimerControllerDelegate> _delegate;
+    
+    NSUInteger  greenCardTime;
+//    NSUInteger  yellowCardTime;
+//    NSUInteger  redCardTime;
 }
 
 @property (nonatomic, retain) NSNumber *duration;

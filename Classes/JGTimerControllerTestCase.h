@@ -19,6 +19,5 @@
 
 
 @interface JGTimerControllerTestCase : SenTestCase {
-
 }
 @end

@@ -14,6 +14,7 @@
     timer = nil;
     [self setDurationValue:durationValue];
     _delegate = delegate_;
+    greenCardTime = 2;
     return self;
 }
 
@@ -56,8 +57,16 @@
 
 -(void)timerDidCountDownByASecond:(NSTimer *)timer_ {
     [self setDurationValue:[self durationValue] - 1];
+    if (greenCardTime == [self durationValue] && [_delegate conformsToProtocol:@protocol(JGTimerControllerDelegate)])
+        [_delegate showGreenCard];
+    
     [self stopTimerAtZeroDuration:timer_];
 }
+
+//-(void)dealloc {
+//    [super dealloc];
+////    [_delegate release];
+//}
 
 @end
 
