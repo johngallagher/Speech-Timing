@@ -8,7 +8,7 @@
     id <NSObject, JGTimerControllerDelegate> _delegate;
     
     NSUInteger  greenCardTime;
-//    NSUInteger  yellowCardTime;
+    NSUInteger  yellowCardTime;
 //    NSUInteger  redCardTime;
 }
 
@@ -24,7 +24,7 @@
 
 -(void)startTimer;
 
--(void)stopTimer:(NSTimer *)timer_;
+-(void)stopTimer;
 
 -(BOOL)timerIsRunning;
 

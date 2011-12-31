@@ -13,14 +13,6 @@
 
 @implementation JGTimerControllerTestCase
 
--(void)setUp {
-    [super setUp];
-}
-
--(void)tearDown {
-    [super tearDown];
-}
-
 -(void)testTimerShouldBeOneSecondDownAfterOneSecond {
     JGTimerController *timer = [JGTimerController timerWithDurationValue:15 delegate:nil];
     STAssertEquals  ([timer durationValue], (NSUInteger)15, nil);
@@ -50,11 +42,23 @@
     [timer startTimer];
     
     [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:1.1]];
+    [timer stopTimer];
     
     [mockDelegate verify];
 }
 
-
+-(void)testGivenThreeSecondDurationAtTwoSecondDelegateShouldBeToldToShowYellowCard {
+    id mockDelegate = [OCMockObject mockForProtocol:@protocol(JGTimerControllerDelegate)];
+    [[mockDelegate expect] showGreenCard];
+    [[mockDelegate expect] showYellowCard];
+    
+    JGTimerController *timer = [JGTimerController timerWithDurationValue:3 delegate:mockDelegate];
+    [timer startTimer];
+    
+    [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:2.1]];
+    
+    [mockDelegate verify];
+}
 
 -(void)testWhenTimerStopsShouldCallDelegate {
     id mockDelegate = [OCMockObject mockForProtocol:@protocol(JGTimerControllerDelegate)];
@@ -70,24 +74,21 @@
 
 // We have no expectations - we know we've checked for confirmity with protocol if this doesn't crash.
 -(void)testIfDelegateDoesntRespondToProtocolShouldNotCrash {
-    id mockDelegate = [[NSObject alloc] init];
+    id mockDelegate = [NSString string];
     JGTimerController *timer = [JGTimerController timerWithDurationValue:1 delegate:mockDelegate];
     [timer startTimer];
     
     [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:2]];
-    
-    [timer release];
-    
 }
 
--(void)testGivenDelegateRespondsToProtocolShouldCallshowRedCardOnStop {
+-(void)testGivenDelegateRespondsToProtocolShouldCallShowRedCardOnStop {
     id mockDelegate = [OCMockObject mockForProtocol:@protocol(JGTimerControllerDelegate)];
     [[mockDelegate expect] showRedCard];
     
     JGTimerController *timer = [JGTimerController timerWithDurationValue:1 delegate:mockDelegate];
     [timer startTimer];
     
-    [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:2]];
+    [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:1.1]];
     
     [mockDelegate verify];
 }

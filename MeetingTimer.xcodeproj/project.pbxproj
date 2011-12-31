@@ -17,7 +17,6 @@
 		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
 		28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */; };
 		28D3F202112F7DC200FD0661 /* MeetingTimer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28D3F201112F7DC200FD0661 /* MeetingTimer.xcdatamodeld */; };
-		5251B956149E537200AFC0B6 /* AbstractSingletonObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 52591F2A149E452600DEA711 /* AbstractSingletonObject.m */; };
 		5251B9C8149E5C4100AFC0B6 /* JGTimerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52591F34149E453E00DEA711 /* JGTimerController.m */; };
 		5251BA01149E5F2E00AFC0B6 /* JGTimeFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5251B9FF149E5F2200AFC0B6 /* JGTimeFormatter.m */; };
 		5251BA02149E5F3000AFC0B6 /* JGTimeFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5251B9FF149E5F2200AFC0B6 /* JGTimeFormatter.m */; };
@@ -47,6 +46,16 @@
 		52CA8B5B149D089B0030ADC1 /* JGRunningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CA8B59149D089B0030ADC1 /* JGRunningViewController.m */; };
 		52CA8B5C149D089B0030ADC1 /* JGRunningViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52CA8B5A149D089B0030ADC1 /* JGRunningViewController.xib */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5228AEB314AE3F1A00C5F9A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D6058900D05DD3D006BFB54;
+			remoteInfo = MeetingTimer;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		5251BAF4149EA31100AFC0B6 /* CopyFiles */ = {
@@ -120,8 +129,6 @@
 		5251BB43149EA3A700AFC0B6 /* OCPartialMockRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCPartialMockRecorder.m; sourceTree = "<group>"; };
 		5251BB44149EA3A700AFC0B6 /* OCProtocolMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCProtocolMockObject.h; sourceTree = "<group>"; };
 		5251BB45149EA3A700AFC0B6 /* OCProtocolMockObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCProtocolMockObject.m; sourceTree = "<group>"; };
-		52591F29149E452600DEA711 /* AbstractSingletonObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstractSingletonObject.h; sourceTree = "<group>"; };
-		52591F2A149E452600DEA711 /* AbstractSingletonObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbstractSingletonObject.m; sourceTree = "<group>"; };
 		52591F33149E453E00DEA711 /* JGTimerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGTimerController.h; sourceTree = "<group>"; };
 		52591F34149E453E00DEA711 /* JGTimerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGTimerController.m; sourceTree = "<group>"; };
 		52591F3B149E466B00DEA711 /* MeetingTimerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeetingTimerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -181,7 +188,6 @@
 			isa = PBXGroup;
 			children = (
 				5251BB1D149EA3A600AFC0B6 /* OCMock */,
-				52591F28149E452600DEA711 /* Singleton */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -305,15 +311,6 @@
 			path = OCMock;
 			sourceTree = "<group>";
 		};
-		52591F28149E452600DEA711 /* Singleton */ = {
-			isa = PBXGroup;
-			children = (
-				52591F29149E452600DEA711 /* AbstractSingletonObject.h */,
-				52591F2A149E452600DEA711 /* AbstractSingletonObject.m */,
-			);
-			name = Singleton;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -347,6 +344,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				5228AEB414AE3F1A00C5F9A9 /* PBXTargetDependency */,
 			);
 			name = MeetingTimerTests;
 			productName = MeetingTimerTests;
@@ -412,7 +410,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -436,7 +434,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				52591F43149E469C00DEA711 /* JGTimerControllerTestCase.m in Sources */,
-				5251B956149E537200AFC0B6 /* AbstractSingletonObject.m in Sources */,
 				5251B9C8149E5C4100AFC0B6 /* JGTimerController.m in Sources */,
 				5251BA02149E5F3000AFC0B6 /* JGTimeFormatter.m in Sources */,
 				5251BA06149E5F5D00AFC0B6 /* JGTimeFormatterTestCase.m in Sources */,
@@ -463,6 +460,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5228AEB414AE3F1A00C5F9A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D6058900D05DD3D006BFB54 /* MeetingTimer */;
+			targetProxy = 5228AEB314AE3F1A00C5F9A9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
@@ -513,11 +518,9 @@
 				INFOPLIST_FILE = "MeetingTimerTests-Info.plist";
 				OTHER_LDFLAGS = (
 					"-framework",
-					Foundation,
-					"-framework",
 					SenTestingKit,
 					"-framework",
-					UIKit,
+					Foundation,
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = MeetingTimerTests;

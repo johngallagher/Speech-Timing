@@ -13,6 +13,8 @@
 
 -(void)showGreenCard;
 
+-(void)showYellowCard;
+
 -(void)showRedCard;
 
 @end
