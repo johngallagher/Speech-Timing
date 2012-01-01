@@ -5,9 +5,19 @@
 @implementation JGTimerDurationCalculator
 
 -(void)initTimesFromDuration:(NSUInteger)duration_ {
-    greenCardTime = 0;
-    yellowCardTime = 0;
-    redCardTime = 0;
+    if (duration_ < 3) {
+        greenCardTime   = 0;
+        yellowCardTime  = 0;
+        redCardTime     = 0;
+    } else if (duration_ >= 3 && duration_ < 240 ) {
+        greenCardTime   = 0.5   * duration_;
+        yellowCardTime  = 0.75  * duration_;
+        redCardTime     = 1     * duration_;
+    }
+    }
+
++(JGTimerDurationCalculator *)calculatorWithDurationInMinutes:(NSUInteger)durationValue {
+    return [self calculatorWithDuration:(durationValue * 60)];
 }
 
 +(JGTimerDurationCalculator *)calculatorWithDuration:(NSUInteger)durationValue {
@@ -21,15 +31,15 @@
     return self;
 }
 
--(NSUInteger)greenCardTime {
+-(NSTimeInterval)greenCardTime {
     return greenCardTime;
 }
 
--(NSUInteger)yellowCardTime {
+-(NSTimeInterval)yellowCardTime {
     return yellowCardTime;
 }
 
--(NSUInteger)redCardTime {
+-(NSTimeInterval)redCardTime {
     return redCardTime;
 }
 

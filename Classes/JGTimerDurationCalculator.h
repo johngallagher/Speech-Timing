@@ -2,16 +2,17 @@
 
 
 @interface JGTimerDurationCalculator : NSObject {
-    NSUInteger greenCardTime;
-    NSUInteger yellowCardTime;
-    NSUInteger redCardTime;
+    NSTimeInterval greenCardTime;
+    NSTimeInterval yellowCardTime;
+    NSTimeInterval redCardTime;
 }
 
 +(JGTimerDurationCalculator *)calculatorWithDuration:(NSUInteger)durationValue;
++(JGTimerDurationCalculator *)calculatorWithDurationInMinutes:(NSUInteger)durationValue;
 -(JGTimerDurationCalculator *)initWithDuration:(NSUInteger)durationValue;
 
--(NSUInteger)greenCardTime;
--(NSUInteger)yellowCardTime;
--(NSUInteger)redCardTime;
+-(NSTimeInterval)greenCardTime;
+-(NSTimeInterval)yellowCardTime;
+-(NSTimeInterval)redCardTime;
 
 @end
