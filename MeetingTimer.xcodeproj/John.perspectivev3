@@ -219,8 +219,8 @@
 	<array/>
 	<key>PerspectiveWidths</key>
 	<array>
-		<integer>1279</integer>
-		<integer>1279</integer>
+		<integer>1280</integer>
+		<integer>1280</integer>
 	</array>
 	<key>Perspectives</key>
 	<array>
@@ -295,19 +295,18 @@
 								<string>29B97323FDCFA39411CA2CEA</string>
 								<string>19C28FACFE9D520D11CA2CBB</string>
 								<string>1C37FBAC04509CD000000102</string>
-								<string>52E966E514AE973700218EBD</string>
-								<string>52E9670214AE974800218EBD</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>46</integer>
-									<integer>41</integer>
-									<integer>39</integer>
+									<integer>24</integer>
+									<integer>15</integer>
+									<integer>2</integer>
+									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 237}, {245, 715}}</string>
+							<string>{{0, 114}, {245, 715}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -335,12 +334,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>52CA8ADA149CF1A40030ADC1</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>JGTimerController.m</string>
+								<string>JGTimerDurationCalculatorTestCase.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -348,16 +349,13 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>52CA8ADB149CF1A40030ADC1</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>JGTimerController.m</string>
+										<string>JGTimerDurationCalculatorTestCase.m</string>
 										<key>_historyCapacity</key>
 										<integer>20</integer>
 										<key>bookmark</key>
-										<string>52E9675D14AF4D8100218EBD</string>
+										<string>52EB418714B122F400308C95</string>
 										<key>history</key>
 										<array>
-											<string>5251B9D3149E5C5100AFC0B6</string>
-											<string>5251BB60149EA3C000AFC0B6</string>
-											<string>5251BB61149EA3C000AFC0B6</string>
 											<string>5251BB63149EA3C000AFC0B6</string>
 											<string>5251BB64149EA3C000AFC0B6</string>
 											<string>5251BB65149EA3C000AFC0B6</string>
@@ -370,10 +368,14 @@
 											<string>5251BC04149EBAD800AFC0B6</string>
 											<string>52E0FDB514A5035900D6D44C</string>
 											<string>5228AEC114AE7A3800C5F9A9</string>
-											<string>5228AEC314AE7A3800C5F9A9</string>
-											<string>52E9674D14AF4A9200218EBD</string>
-											<string>52E9675B14AF4D8100218EBD</string>
-											<string>52E9675C14AF4D8100218EBD</string>
+											<string>52EB413F14B0B2DE00308C95</string>
+											<string>52EB416614B1053300308C95</string>
+											<string>52EB418114B122F400308C95</string>
+											<string>52EB418214B122F400308C95</string>
+											<string>52EB418314B122F400308C95</string>
+											<string>52EB418414B122F400308C95</string>
+											<string>52EB418514B122F400308C95</string>
+											<string>52EB418614B122F400308C95</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -387,18 +389,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1013, 439}}</string>
+								<string>{{0, 0}, {1013, 422}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 4 1280 774 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>439pt</string>
+							<string>422pt</string>
 						</dict>
 						<dict>
 							<key>Proportion</key>
-							<string>289pt</string>
+							<string>306pt</string>
 							<key>Tabs</key>
 							<array>
 								<dict>
@@ -412,7 +414,7 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {1012, 79}}</string>
+										<string>{{10, 27}, {1013, 279}}</string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -466,7 +468,7 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {1013, 262}}</string>
+										<string>{{10, 27}, {1013, 279}}</string>
 										<key>RubberWindowFrame</key>
 										<string>0 4 1280 774 0 0 1280 778 </string>
 									</dict>
@@ -496,11 +498,11 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>52E9670414AE974800218EBD</string>
+				<string>52EB411514B0A8AB00308C95</string>
 				<string>1CA23ED40692098700951B8B</string>
-				<string>52E9670514AE974800218EBD</string>
+				<string>52EB411614B0A8AB00308C95</string>
 				<string>52CA8ADA149CF1A40030ADC1</string>
-				<string>52E9670614AE974800218EBD</string>
+				<string>52EB411714B0A8AB00308C95</string>
 				<string>1CA23EDF0692099D00951B8B</string>
 				<string>1CA23EE00692099D00951B8B</string>
 				<string>1CA23EE10692099D00951B8B</string>
@@ -647,14 +649,14 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>5228AE4B14AE356000C5F9A9</string>
+				<string>52EB418814B122F400308C95</string>
 				<string>1CCC7628064C1048000F2A68</string>
 				<string>1CCC7629064C1048000F2A68</string>
-				<string>5228AE4C14AE356000C5F9A9</string>
-				<string>5228AE4D14AE356000C5F9A9</string>
-				<string>5228AE4E14AE356000C5F9A9</string>
-				<string>5228AE4F14AE356000C5F9A9</string>
-				<string>5228AE5014AE356000C5F9A9</string>
+				<string>52EB418914B122F400308C95</string>
+				<string>52EB418A14B122F400308C95</string>
+				<string>52EB418B14B122F400308C95</string>
+				<string>52EB418C14B122F400308C95</string>
+				<string>52EB418D14B122F400308C95</string>
 			</array>
 			<key>ToolbarConfigUserDefaultsMinorVersion</key>
 			<string>2</string>
@@ -671,7 +673,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>347032961.43191099</real>
+	<real>347153140.88870001</real>
 	<key>ToolbarConfigUserDefaultsMinorVersion</key>
 	<string>2</string>
 	<key>ToolbarDisplayMode</key>

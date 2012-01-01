@@ -13,28 +13,8 @@
 
 @implementation JGTimerControllerTestCase
 
--(void)testTimerShouldBeOneSecondDownAfterOneSecond {
-    JGTimerController *timer = [JGTimerController timerWithDurationValue:15 delegate:nil];
-    STAssertEquals  ([timer durationValue], (NSUInteger)15, nil);
-    
-    [timer startTimer];
-    
-    [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:1]];
-    STAssertEquals  ([timer durationValue], (NSUInteger)14, nil);
-}
 
--(void)testTimerShouldStopAtZero {
-    JGTimerController *timer = [JGTimerController timerWithDurationValue:1 delegate:nil];
-    STAssertEquals  ([timer durationValue], (NSUInteger)1, nil);
-    
-    [timer startTimer];
-    
-    [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:2]];
-    STAssertEquals  ([timer durationValue], (NSUInteger)0, nil);
-    STAssertFalse   ([timer timerIsRunning], nil);
-}
-
--(void)testGivenThreeSecondDurationAtOneSecondDelegateShouldBeToldToShowGreenCard {
+-(void)testGivenThreeSecondDurationAfterOneSecondShouldHaveCalledGreenCard {
     id mockDelegate = [OCMockObject mockForProtocol:@protocol(JGTimerControllerDelegate)];
     [[mockDelegate expect] showGreenCard];
     
@@ -43,11 +23,10 @@
     
     [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:1.1]];
     [timer stopTimer];
-    
     [mockDelegate verify];
 }
 
--(void)testGivenThreeSecondDurationAtTwoSecondDelegateShouldBeToldToShowYellowCard {
+-(void)testGivenThreeSecondDurationAfterTwoSecondShouldHaveCalledGreenThenYellowCard {
     id mockDelegate = [OCMockObject mockForProtocol:@protocol(JGTimerControllerDelegate)];
     [[mockDelegate expect] showGreenCard];
     [[mockDelegate expect] showYellowCard];
@@ -56,40 +35,34 @@
     [timer startTimer];
     
     [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:2.1]];
-    
+    [timer stopTimer];
     [mockDelegate verify];
 }
 
--(void)testWhenTimerStopsShouldCallDelegate {
+-(void)testGivenThreeSecondDurationAfterThreeSecondShouldHaveCalledGreenThenYellowThenRedCard {
     id mockDelegate = [OCMockObject mockForProtocol:@protocol(JGTimerControllerDelegate)];
+    [[mockDelegate expect] showGreenCard];
+    [[mockDelegate expect] showYellowCard];
     [[mockDelegate expect] showRedCard];
     
-    JGTimerController *timer = [JGTimerController timerWithDurationValue:1 delegate:mockDelegate];
+    JGTimerController *timer = [JGTimerController timerWithDurationValue:3 delegate:mockDelegate];
     [timer startTimer];
     
-    [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:2]];
-
+    [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:3.1]];
+    [timer stopTimer];
+    
     [mockDelegate verify];
 }
 
 // We have no expectations - we know we've checked for confirmity with protocol if this doesn't crash.
 -(void)testIfDelegateDoesntRespondToProtocolShouldNotCrash {
-    id mockDelegate = [NSString string];
-    JGTimerController *timer = [JGTimerController timerWithDurationValue:1 delegate:mockDelegate];
-    [timer startTimer];
-    
-    [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:2]];
-}
-
--(void)testGivenDelegateRespondsToProtocolShouldCallShowRedCardOnStop {
-    id mockDelegate = [OCMockObject mockForProtocol:@protocol(JGTimerControllerDelegate)];
-    [[mockDelegate expect] showRedCard];
+    id mockDelegate = [OCMockObject mockForClass:[NSString class]];
+    [[mockDelegate expect] conformsToProtocol:[OCMArg any]];
     
     JGTimerController *timer = [JGTimerController timerWithDurationValue:1 delegate:mockDelegate];
     [timer startTimer];
     
     [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:1.1]];
-    
     [mockDelegate verify];
 }
 
@@ -101,7 +74,6 @@
     [timer startTimer];
     
     [mockDelegate verify];
-    STAssertNil ([timer valueForKey:@"timer"], nil); // Ensure the timer wasn't started
 }
 
 

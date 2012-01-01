@@ -3,7 +3,13 @@
 
 @implementation JGTimerController
 
-@synthesize duration;
+-(void)initDelegate:(id <JGTimerControllerDelegate>)delegate_ {
+    if (![delegate_ conformsToProtocol:@protocol(JGTimerControllerDelegate)]) {
+        _delegate = nil;
+        return;
+    } 
+    _delegate = delegate_;
+}
 
 +(JGTimerController *)timerWithDurationValue:(NSUInteger)durationValue delegate:(id <JGTimerControllerDelegate>)delegate_ {
     JGTimerController *instance = [[[JGTimerController alloc] initWithDurationValue:durationValue delegate:delegate_] autorelease];
@@ -12,65 +18,56 @@
 
 -(JGTimerController *)initWithDurationValue:(NSUInteger)durationValue delegate:(id <JGTimerControllerDelegate>)delegate_ {
     self = [super init];
-    timer = nil;
-    [self setDurationValue:durationValue];
-    _delegate = delegate_;
-    greenCardTime = 2;
-    yellowCardTime = 1;
+    
+    [self initDelegate:delegate_];
+    
+    greenCardTime = 1;
+    yellowCardTime = 2;
+    redCardTime = durationValue;
+    
+    timerRunning = NO;
+
     return self;
 }
 
--(NSUInteger)durationValue {
-	NSNumber *result = [self duration];
-	return result ? [result intValue] : 0;
-}
-
--(void)setDurationValue:(NSUInteger)value_ {
-	[self setDuration:[NSNumber numberWithInt:value_]];
-}
-
--(BOOL)stopTimerAtZeroDuration:(NSTimer *)timer_ {
-    if ([self durationValue] == 0) {
-        [self stopTimer];
-        return YES;
-    }
-    return NO;
-}
-
 -(void)startTimer {
-    if ([self stopTimerAtZeroDuration:nil])
-        return;
+    timerRunning = YES;
     
-    timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timerDidCountDownByASecond:) userInfo:nil repeats:YES];
+    if (redCardTime == 0) {
+        [self showRedCard:nil];
+        return;
+    }
+    
+    [NSTimer scheduledTimerWithTimeInterval:greenCardTime     target:self selector:@selector(showGreenCard:)  userInfo:nil repeats:NO];
+    [NSTimer scheduledTimerWithTimeInterval:yellowCardTime    target:self selector:@selector(showYellowCard:) userInfo:nil repeats:NO];
+    [NSTimer scheduledTimerWithTimeInterval:redCardTime       target:self selector:@selector(showRedCard:)    userInfo:nil repeats:NO];
+}
+
+-(void)showCard:(NSString *)cardName andInvalidateTimer:(NSTimer *)timer_ {
+    [timer_ invalidate];
+    if (timerRunning)
+        [_delegate performSelector:NSSelectorFromString([NSString stringWithFormat:@"show%@Card", cardName])];
+}
+
+-(void)showGreenCard:(NSTimer *)timer_ {
+    [self showCard:@"Green" andInvalidateTimer:timer_];
+}
+
+-(void)showYellowCard:(NSTimer *)timer_ {
+    [self showCard:@"Yellow" andInvalidateTimer:timer_];
+}
+
+-(void)showRedCard:(NSTimer *)timer_ {
+    [self showCard:@"Red" andInvalidateTimer:timer_];
+    [self stopTimer];
 }
 
 -(void)stopTimer {
-    if ([self durationValue] == 0 && [_delegate conformsToProtocol:@protocol(JGTimerControllerDelegate)])
-        [_delegate showRedCard];
-
-    [timer invalidate];
-    timer = nil;
-}
-
--(BOOL)timerIsRunning {
-    return (timer != nil);
-}
-
--(void)timerDidCountDownByASecond:(NSTimer *)timer_ {
-    [self setDurationValue:[self durationValue] - 1];
-    if (greenCardTime == [self durationValue] && [_delegate conformsToProtocol:@protocol(JGTimerControllerDelegate)])
-        [_delegate showGreenCard];
-    
-    if (yellowCardTime == [self durationValue] && [_delegate conformsToProtocol:@protocol(JGTimerControllerDelegate)])
-        [_delegate showYellowCard];
-    
-    [self stopTimerAtZeroDuration:timer_];
+    timerRunning = NO;
 }
 
 -(void)dealloc {
-    [duration release];
     [super dealloc];
 }
 
 @end
-

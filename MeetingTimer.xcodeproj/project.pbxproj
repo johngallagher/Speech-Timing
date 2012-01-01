@@ -45,6 +45,9 @@
 		52591F43149E469C00DEA711 /* JGTimerControllerTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */; };
 		52CA8B5B149D089B0030ADC1 /* JGRunningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CA8B59149D089B0030ADC1 /* JGRunningViewController.m */; };
 		52CA8B5C149D089B0030ADC1 /* JGRunningViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52CA8B5A149D089B0030ADC1 /* JGRunningViewController.xib */; };
+		52EB416C14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EB416B14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.m */; };
+		52EB417314B1218D00308C95 /* JGTimerDurationCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EB417214B1218D00308C95 /* JGTimerDurationCalculator.m */; };
+		52EB417C14B122DB00308C95 /* JGTimerDurationCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EB417214B1218D00308C95 /* JGTimerDurationCalculator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,6 +141,10 @@
 		52CA8B58149D089B0030ADC1 /* JGRunningViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGRunningViewController.h; sourceTree = "<group>"; };
 		52CA8B59149D089B0030ADC1 /* JGRunningViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGRunningViewController.m; sourceTree = "<group>"; };
 		52CA8B5A149D089B0030ADC1 /* JGRunningViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = JGRunningViewController.xib; path = Classes/JGRunningViewController.xib; sourceTree = "<group>"; };
+		52EB416A14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGTimerDurationCalculatorTestCase.h; sourceTree = "<group>"; };
+		52EB416B14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGTimerDurationCalculatorTestCase.m; sourceTree = "<group>"; };
+		52EB417114B1218D00308C95 /* JGTimerDurationCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGTimerDurationCalculator.h; sourceTree = "<group>"; };
+		52EB417214B1218D00308C95 /* JGTimerDurationCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGTimerDurationCalculator.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* MeetingTimer-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MeetingTimer-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -238,6 +245,10 @@
 				52591F34149E453E00DEA711 /* JGTimerController.m */,
 				52591F40149E469000DEA711 /* JGTimerControllerTestCase.h */,
 				52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */,
+				52EB416A14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.h */,
+				52EB416B14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.m */,
+				52EB417114B1218D00308C95 /* JGTimerDurationCalculator.h */,
+				52EB417214B1218D00308C95 /* JGTimerDurationCalculator.m */,
 			);
 			name = TimerController;
 			sourceTree = "<group>";
@@ -426,6 +437,7 @@
 				52CA8B5B149D089B0030ADC1 /* JGRunningViewController.m in Sources */,
 				52591F35149E453E00DEA711 /* JGTimerController.m in Sources */,
 				5251BA01149E5F2E00AFC0B6 /* JGTimeFormatter.m in Sources */,
+				52EB417314B1218D00308C95 /* JGTimerDurationCalculator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +468,8 @@
 				5251BB57149EA3A700AFC0B6 /* OCPartialMockObject.m in Sources */,
 				5251BB58149EA3A700AFC0B6 /* OCPartialMockRecorder.m in Sources */,
 				5251BB59149EA3A700AFC0B6 /* OCProtocolMockObject.m in Sources */,
+				52EB416C14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.m in Sources */,
+				52EB417C14B122DB00308C95 /* JGTimerDurationCalculator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

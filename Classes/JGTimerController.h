@@ -3,30 +3,32 @@
 @protocol JGTimerControllerDelegate;
 
 @interface JGTimerController : NSObject {
-    NSNumber    *duration;
-    NSTimer     *timer;
+    NSTimer     *greenCardTimer;
+    NSTimer     *yellowCardTimer;
+    NSTimer     *redCardTimer;
+    
     id <NSObject, JGTimerControllerDelegate> _delegate;
     
     NSUInteger  greenCardTime;
     NSUInteger  yellowCardTime;
-//    NSUInteger  redCardTime;
+    NSUInteger  redCardTime;
+    
+    BOOL timerRunning;
 }
-
-@property (nonatomic, retain) NSNumber *duration;
 
 +(JGTimerController *)timerWithDurationValue:(NSUInteger)durationValue delegate:(id <JGTimerControllerDelegate>)delegate_;
 
 -(JGTimerController *)initWithDurationValue:(NSUInteger)durationValue delegate:(id <JGTimerControllerDelegate>)delegate_;
 
--(NSUInteger)durationValue;
-
--(void)setDurationValue:(NSUInteger)value_;
-
 -(void)startTimer;
 
 -(void)stopTimer;
 
--(BOOL)timerIsRunning;
+-(void)showGreenCard:(NSTimer *)timer_;
+
+-(void)showYellowCard:(NSTimer *)timer_;
+
+-(void)showRedCard:(NSTimer *)timer_;
 
 @end
 
