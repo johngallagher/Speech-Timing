@@ -4,6 +4,27 @@
 
 @implementation JGTimerDurationCalculator
 
+-(void)calculateGreenAndYellowCardTimesFromDuration:(NSUInteger)duration_ {
+    BOOL durationImpliesQuarterIncrements    = (duration_ >= 3    && duration_ < 240);
+    BOOL durationImpliesOneMinuteIncrements  = (duration_ >= 240  && duration_ < 600);
+    BOOL durationImpliesTwoMinuteIncrements  = (duration_ >= 600  && duration_ < 1800);
+    BOOL durationImpliesFiveMinuteIncrements = (duration_ >= 1800);
+    
+    if (durationImpliesQuarterIncrements) {
+        greenCardTime   = 0.5   * duration_;
+        yellowCardTime  = 0.75  * duration_;
+    } else if (durationImpliesOneMinuteIncrements) {
+        greenCardTime   = duration_ - 120;
+        yellowCardTime  = duration_ - 60;
+    } else if (durationImpliesTwoMinuteIncrements) {
+        greenCardTime   = duration_ - 240;
+        yellowCardTime  = duration_ - 120;
+    } else if (durationImpliesFiveMinuteIncrements) {
+        greenCardTime   = duration_ - 600;
+        yellowCardTime  = duration_ - 300;
+    }
+}
+
 -(void)initTimesFromDuration:(NSUInteger)duration_ {
     if (duration_ < 3) {
         greenCardTime   = 0;
@@ -12,21 +33,11 @@
         return;
     }
     
-    if (duration_ >= 3 && duration_ < 240) {
-        greenCardTime   = 0.5   * duration_;
-        yellowCardTime  = 0.75  * duration_;
-    } else if (duration_ >= 240 && duration_ < 600) {
-        greenCardTime   = duration_ - 120;
-        yellowCardTime  = duration_ - 60;
-    } else if (duration_ >= 600 && duration_ < 1800) {
-        greenCardTime   = duration_ - 240;
-        yellowCardTime  = duration_ - 120;
-    } else if (duration_ >= 1800) {
-        greenCardTime   = duration_ - 600;
-        yellowCardTime  = duration_ - 300;
-    }
+    [self calculateGreenAndYellowCardTimesFromDuration:duration_];
+    
     redCardTime     = duration_;
 }
+
 
 +(JGTimerDurationCalculator *)calculatorWithDurationInMinutes:(NSUInteger)durationValue {
     return [self calculatorWithDuration:(durationValue * 60)];
