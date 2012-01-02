@@ -261,6 +261,20 @@
 			52EB41B614B12D3A00308C95 /* PBXTextBookmark */ = 52EB41B614B12D3A00308C95 /* PBXTextBookmark */;
 			52EB41B714B12D3A00308C95 /* PBXTextBookmark */ = 52EB41B714B12D3A00308C95 /* PBXTextBookmark */;
 			52EB41BC14B12E6100308C95 /* PBXTextBookmark */ = 52EB41BC14B12E6100308C95 /* PBXTextBookmark */;
+			52EB41DC14B1346300308C95 /* PBXTextBookmark */ = 52EB41DC14B1346300308C95 /* PBXTextBookmark */;
+			52EB41DD14B1346300308C95 /* PBXTextBookmark */ = 52EB41DD14B1346300308C95 /* PBXTextBookmark */;
+			52EB41DE14B1346300308C95 /* PBXTextBookmark */ = 52EB41DE14B1346300308C95 /* PBXTextBookmark */;
+			52EB41DF14B1346300308C95 /* PBXTextBookmark */ = 52EB41DF14B1346300308C95 /* PBXTextBookmark */;
+			52EB41E014B1346300308C95 /* PBXTextBookmark */ = 52EB41E014B1346300308C95 /* PBXTextBookmark */;
+			52EB41E114B1346300308C95 /* PBXTextBookmark */ = 52EB41E114B1346300308C95 /* PBXTextBookmark */;
+			52EB41E214B1346300308C95 /* PBXTextBookmark */ = 52EB41E214B1346300308C95 /* PBXTextBookmark */;
+			52EB41E514B1355F00308C95 /* PBXTextBookmark */ = 52EB41E514B1355F00308C95 /* PBXTextBookmark */;
+			52EB41E614B1355F00308C95 /* PBXTextBookmark */ = 52EB41E614B1355F00308C95 /* PBXTextBookmark */;
+			52EB41E714B1355F00308C95 /* PBXTextBookmark */ = 52EB41E714B1355F00308C95 /* PBXTextBookmark */;
+			52EB41EA14B135A500308C95 /* PBXTextBookmark */ = 52EB41EA14B135A500308C95 /* PBXTextBookmark */;
+			52EB41ED14B135FE00308C95 /* PBXTextBookmark */ = 52EB41ED14B135FE00308C95 /* PBXTextBookmark */;
+			52EB41EE14B135FE00308C95 /* PBXTextBookmark */ = 52EB41EE14B135FE00308C95 /* PBXTextBookmark */;
+			52EB41EF14B135FE00308C95 /* PBXTextBookmark */ = 52EB41EF14B135FE00308C95 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 52CA8AE0149CF1A40030ADC1 /* Source Control */;
 		userBuildSettings = {
@@ -271,7 +285,7 @@
 		fRef = 52591F33149E453E00DEA711 /* JGTimerController.h */;
 		name = "JGTimerController.h: 27";
 		rLen = 0;
-		rLoc = 685;
+		rLoc = 697;
 		rType = 0;
 		vrLen = 767;
 		vrLoc = 0;
@@ -311,7 +325,7 @@
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		name = "JGTimerController.m: 34";
 		rLen = 0;
-		rLoc = 1490;
+		rLoc = 1290;
 		rType = 0;
 		vrLen = 999;
 		vrLoc = 530;
@@ -321,7 +335,7 @@
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		name = "JGTimerController.m: 58";
 		rLen = 0;
-		rLoc = 2638;
+		rLoc = 2438;
 		rType = 0;
 		vrLen = 344;
 		vrLoc = 794;
@@ -529,15 +543,15 @@
 	52591F33149E453E00DEA711 /* JGTimerController.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {964, 480}}";
-			sepNavSelRange = "{399, 0}";
-			sepNavVisRange = "{0, 668}";
+			sepNavSelRange = "{354, 14}";
+			sepNavVisRange = "{0, 680}";
 		};
 	};
 	52591F34149E453E00DEA711 /* JGTimerController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {964, 1140}}";
-			sepNavSelRange = "{493, 22}";
-			sepNavVisRange = "{142, 1061}";
+			sepNavIntBoundsRect = "{{0, 0}, {964, 1170}}";
+			sepNavSelRange = "{421, 0}";
+			sepNavVisRange = "{1287, 886}";
 		};
 	};
 	52591F3A149E466B00DEA711 /* MeetingTimerTests */ = {
@@ -552,9 +566,9 @@
 	};
 	52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {964, 1200}}";
-			sepNavSelRange = "{1144, 22}";
-			sepNavVisRange = "{682, 995}";
+			sepNavIntBoundsRect = "{{0, 0}, {964, 1380}}";
+			sepNavSelRange = "{1600, 22}";
+			sepNavVisRange = "{856, 966}";
 		};
 	};
 	527E20ED14B0A81F00C6F077 /* PBXTextBookmark */ = {
@@ -562,7 +576,7 @@
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		name = "JGTimerController.m: 67";
 		rLen = 0;
-		rLoc = 1626;
+		rLoc = 1426;
 		rType = 0;
 		vrLen = 513;
 		vrLoc = 952;
@@ -572,7 +586,7 @@
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		name = "JGTimerController.m: 67";
 		rLen = 0;
-		rLoc = 1626;
+		rLoc = 1426;
 		rType = 0;
 		vrLen = 513;
 		vrLoc = 952;
@@ -582,7 +596,7 @@
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		name = "JGTimerController.m: 67";
 		rLen = 0;
-		rLoc = 1626;
+		rLoc = 1426;
 		rType = 0;
 		vrLen = 513;
 		vrLoc = 952;
@@ -675,7 +689,7 @@
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		name = "JGTimerController.m: 58";
 		rLen = 0;
-		rLoc = 2638;
+		rLoc = 2438;
 		rType = 0;
 		vrLen = 685;
 		vrLoc = 794;
@@ -685,7 +699,7 @@
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		name = "JGTimerController.m: 43";
 		rLen = 0;
-		rLoc = 1626;
+		rLoc = 1426;
 		rType = 0;
 		vrLen = 443;
 		vrLoc = 839;
@@ -695,7 +709,7 @@
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		name = "JGTimerController.m: 43";
 		rLen = 0;
-		rLoc = 1626;
+		rLoc = 1426;
 		rType = 0;
 		vrLen = 671;
 		vrLoc = 794;
@@ -705,7 +719,7 @@
 		fRef = 52591F33149E453E00DEA711 /* JGTimerController.h */;
 		name = "JGTimerController.h: 19";
 		rLen = 0;
-		rLoc = 586;
+		rLoc = 598;
 		rType = 0;
 		vrLen = 442;
 		vrLoc = 325;
@@ -725,7 +739,7 @@
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		name = "JGTimerController.m: 64";
 		rLen = 0;
-		rLoc = 2639;
+		rLoc = 2439;
 		rType = 0;
 		vrLen = 495;
 		vrLoc = 1540;
@@ -735,7 +749,7 @@
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		name = "JGTimerController.m: 51";
 		rLen = 0;
-		rLoc = 2636;
+		rLoc = 2436;
 		rType = 0;
 		vrLen = 699;
 		vrLoc = 1138;
@@ -745,7 +759,7 @@
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		name = "JGTimerController.m: 61";
 		rLen = 0;
-		rLoc = 2639;
+		rLoc = 2439;
 		rType = 0;
 		vrLen = 624;
 		vrLoc = 1281;
@@ -765,7 +779,7 @@
 		fRef = 52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */;
 		name = "JGTimerControllerTestCase.m: 92";
 		rLen = 0;
-		rLoc = 2234;
+		rLoc = 2694;
 		rType = 0;
 		vrLen = 930;
 		vrLoc = 2578;
@@ -775,7 +789,7 @@
 		fRef = 52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */;
 		name = "JGTimerControllerTestCase.m: 92";
 		rLen = 0;
-		rLoc = 2234;
+		rLoc = 2694;
 		rType = 0;
 		vrLen = 930;
 		vrLoc = 2578;
@@ -794,7 +808,7 @@
 		isa = PBXTextBookmark;
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		rLen = 1;
-		rLoc = 74;
+		rLoc = 70;
 		rType = 1;
 	};
 	52E9673A14AF498700218EBD /* PBXTextBookmark */ = {
@@ -802,7 +816,7 @@
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		name = "JGTimerController.m: 51";
 		rLen = 0;
-		rLoc = 2594;
+		rLoc = 2394;
 		rType = 0;
 		vrLen = 782;
 		vrLoc = 983;
@@ -812,7 +826,7 @@
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		name = "JGTimerController.m: 51";
 		rLen = 0;
-		rLoc = 2594;
+		rLoc = 2394;
 		rType = 0;
 		vrLen = 640;
 		vrLoc = 1282;
@@ -832,7 +846,7 @@
 		fRef = 52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */;
 		name = "JGTimerControllerTestCase.m: 65";
 		rLen = 0;
-		rLoc = 765;
+		rLoc = 1206;
 		rType = 0;
 		vrLen = 1083;
 		vrLoc = 1466;
@@ -842,7 +856,7 @@
 		fRef = 52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */;
 		name = "JGTimerControllerTestCase.m: 55";
 		rLen = 10;
-		rLoc = 664;
+		rLoc = 1105;
 		rType = 0;
 		vrLen = 1083;
 		vrLoc = 1391;
@@ -851,8 +865,8 @@
 		isa = PBXTextBookmark;
 		fRef = 52591F33149E453E00DEA711 /* JGTimerController.h */;
 		name = "JGTimerController.h: 11";
-		rLen = 32;
-		rLoc = 310;
+		rLen = 36;
+		rLoc = 314;
 		rType = 0;
 		vrLen = 692;
 		vrLoc = 73;
@@ -862,7 +876,7 @@
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		name = "JGTimerController.m: 39";
 		rLen = 136;
-		rLoc = 1490;
+		rLoc = 1290;
 		rType = 0;
 		vrLen = 641;
 		vrLoc = 1281;
@@ -872,7 +886,7 @@
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		name = "JGTimerController.m: 18";
 		rLen = 0;
-		rLoc = 1394;
+		rLoc = 1194;
 		rType = 0;
 		vrLen = 892;
 		vrLoc = 0;
@@ -881,8 +895,8 @@
 		isa = PBXTextBookmark;
 		fRef = 52591F33149E453E00DEA711 /* JGTimerController.h */;
 		name = "JGTimerController.h: 11";
-		rLen = 32;
-		rLoc = 310;
+		rLen = 36;
+		rLoc = 314;
 		rType = 0;
 		vrLen = 693;
 		vrLoc = 72;
@@ -892,7 +906,7 @@
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		name = "JGTimerController.m: 39";
 		rLen = 136;
-		rLoc = 1490;
+		rLoc = 1290;
 		rType = 0;
 		vrLen = 640;
 		vrLoc = 1282;
@@ -902,7 +916,7 @@
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		name = "JGTimerController.m: 19";
 		rLen = 0;
-		rLoc = 1469;
+		rLoc = 1269;
 		rType = 0;
 		vrLen = 863;
 		vrLoc = 0;
@@ -912,7 +926,7 @@
 		fRef = 52591F33149E453E00DEA711 /* JGTimerController.h */;
 		name = "JGTimerController.h: 19";
 		rLen = 0;
-		rLoc = 586;
+		rLoc = 598;
 		rType = 0;
 		vrLen = 650;
 		vrLoc = 115;
@@ -922,7 +936,7 @@
 		fRef = 52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */;
 		name = "JGTimerControllerTestCase.m: 54";
 		rLen = 22;
-		rLoc = 604;
+		rLoc = 1045;
 		rType = 0;
 		vrLen = 1083;
 		vrLoc = 1391;
@@ -931,7 +945,7 @@
 		isa = PBXTextBookmark;
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		rLen = 1;
-		rLoc = 26;
+		rLoc = 22;
 		rType = 1;
 	};
 	52E9675014AF4A9200218EBD /* PBXTextBookmark */ = {
@@ -939,7 +953,7 @@
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		name = "JGTimerController.m: 52";
 		rLen = 0;
-		rLoc = 2594;
+		rLoc = 2394;
 		rType = 0;
 		vrLen = 786;
 		vrLoc = 1007;
@@ -949,7 +963,7 @@
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		name = "JGTimerController.m: 52";
 		rLen = 0;
-		rLoc = 2594;
+		rLoc = 2394;
 		rType = 0;
 		vrLen = 794;
 		vrLoc = 1303;
@@ -959,7 +973,7 @@
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		name = "JGTimerController.m: 8";
 		rLen = 124;
-		rLoc = 926;
+		rLoc = 726;
 		rType = 0;
 		vrLen = 863;
 		vrLoc = 0;
@@ -999,7 +1013,7 @@
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		name = "JGTimerController.m: 8";
 		rLen = 124;
-		rLoc = 926;
+		rLoc = 726;
 		rType = 0;
 		vrLen = 863;
 		vrLoc = 0;
@@ -1009,7 +1023,7 @@
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		name = "JGTimerController.m: 19";
 		rLen = 0;
-		rLoc = 1394;
+		rLoc = 1194;
 		rType = 0;
 		vrLen = 863;
 		vrLoc = 0;
@@ -1028,8 +1042,8 @@
 		isa = PBXTextBookmark;
 		fRef = 52591F33149E453E00DEA711 /* JGTimerController.h */;
 		name = "JGTimerController.h: 12";
-		rLen = 57;
-		rLoc = 342;
+		rLen = 61;
+		rLoc = 350;
 		rType = 0;
 		vrLen = 690;
 		vrLoc = 73;
@@ -1039,7 +1053,7 @@
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		name = "JGTimerController.m: 19";
 		rLen = 0;
-		rLoc = 1469;
+		rLoc = 1269;
 		rType = 0;
 		vrLen = 691;
 		vrLoc = 383;
@@ -1049,7 +1063,7 @@
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		name = "JGTimerController.m: 20";
 		rLen = 0;
-		rLoc = 1469;
+		rLoc = 1269;
 		rType = 0;
 		vrLen = 716;
 		vrLoc = 383;
@@ -1069,7 +1083,7 @@
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		name = "JGTimerController.m: 44";
 		rLen = 0;
-		rLoc = 1626;
+		rLoc = 1426;
 		rType = 0;
 		vrLen = 645;
 		vrLoc = 958;
@@ -1079,7 +1093,7 @@
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		name = "JGTimerController.m: 45";
 		rLen = 0;
-		rLoc = 1626;
+		rLoc = 1426;
 		rType = 0;
 		vrLen = 720;
 		vrLoc = 958;
@@ -1089,7 +1103,7 @@
 		fRef = 52591F33149E453E00DEA711 /* JGTimerController.h */;
 		name = "JGTimerController.h: 21";
 		rLen = 0;
-		rLoc = 401;
+		rLoc = 413;
 		rType = 0;
 		vrLen = 791;
 		vrLoc = 73;
@@ -1099,7 +1113,7 @@
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		name = "JGTimerController.m: 8";
 		rLen = 124;
-		rLoc = 926;
+		rLoc = 726;
 		rType = 0;
 		vrLen = 875;
 		vrLoc = 0;
@@ -1139,7 +1153,7 @@
 		fRef = 52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */;
 		name = "JGTimerControllerTestCase.m: 49";
 		rLen = 22;
-		rLoc = 604;
+		rLoc = 1045;
 		rType = 0;
 		vrLen = 1304;
 		vrLoc = 738;
@@ -1159,7 +1173,7 @@
 		fRef = 52591F33149E453E00DEA711 /* JGTimerController.h */;
 		name = "JGTimerController.h: 18";
 		rLen = 0;
-		rLoc = 399;
+		rLoc = 411;
 		rType = 0;
 		vrLen = 761;
 		vrLoc = 0;
@@ -1169,7 +1183,7 @@
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		name = "JGTimerController.m: 70";
 		rLen = 0;
-		rLoc = 2636;
+		rLoc = 2436;
 		rType = 0;
 		vrLen = 1016;
 		vrLoc = 1532;
@@ -1179,7 +1193,7 @@
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		name = "JGTimerController.m: 52";
 		rLen = 0;
-		rLoc = 1626;
+		rLoc = 1426;
 		rType = 0;
 		vrLen = 1271;
 		vrLoc = 958;
@@ -1189,7 +1203,7 @@
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		name = "JGTimerController.m: 43";
 		rLen = 0;
-		rLoc = 1490;
+		rLoc = 1290;
 		rType = 0;
 		vrLen = 512;
 		vrLoc = 952;
@@ -1199,7 +1213,7 @@
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		name = "JGTimerController.m: 40";
 		rLen = 0;
-		rLoc = 1490;
+		rLoc = 1290;
 		rType = 0;
 		vrLen = 907;
 		vrLoc = 0;
@@ -1209,7 +1223,7 @@
 		fRef = 52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */;
 		name = "JGTimerControllerTestCase.m: 52";
 		rLen = 0;
-		rLoc = 1956;
+		rLoc = 2416;
 		rType = 0;
 		vrLen = 1085;
 		vrLoc = 1364;
@@ -1218,7 +1232,7 @@
 		isa = PBXTextBookmark;
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		rLen = 1;
-		rLoc = 41;
+		rLoc = 37;
 		rType = 1;
 	};
 	52EB411E14B0AA8E00308C95 /* PBXTextBookmark */ = {
@@ -1226,7 +1240,7 @@
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		name = "JGTimerController.m: 66";
 		rLen = 0;
-		rLoc = 2034;
+		rLoc = 1834;
 		rType = 0;
 		vrLen = 591;
 		vrLoc = 2069;
@@ -1236,7 +1250,7 @@
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		name = "JGTimerController.m: 66";
 		rLen = 0;
-		rLoc = 2034;
+		rLoc = 1834;
 		rType = 0;
 		vrLen = 591;
 		vrLoc = 2069;
@@ -1246,7 +1260,7 @@
 		fRef = 52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */;
 		name = "JGTimerControllerTestCase.m: 54";
 		rLen = 0;
-		rLoc = 1956;
+		rLoc = 2416;
 		rType = 0;
 		vrLen = 963;
 		vrLoc = 1420;
@@ -1256,7 +1270,7 @@
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		name = "JGTimerController.m: 57";
 		rLen = 20;
-		rLoc = 1490;
+		rLoc = 1290;
 		rType = 0;
 		vrLen = 924;
 		vrLoc = 1385;
@@ -1266,7 +1280,7 @@
 		fRef = 52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */;
 		name = "JGTimerControllerTestCase.m: 52";
 		rLen = 0;
-		rLoc = 1956;
+		rLoc = 2416;
 		rType = 0;
 		vrLen = 963;
 		vrLoc = 1420;
@@ -1276,7 +1290,7 @@
 		fRef = 52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */;
 		name = "JGTimerControllerTestCase.m: 49";
 		rLen = 0;
-		rLoc = 1956;
+		rLoc = 2416;
 		rType = 0;
 		vrLen = 1025;
 		vrLoc = 1420;
@@ -1286,7 +1300,7 @@
 		fRef = 52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */;
 		name = "JGTimerControllerTestCase.m: 37";
 		rLen = 0;
-		rLoc = 549;
+		rLoc = 990;
 		rType = 0;
 		vrLen = 1077;
 		vrLoc = 921;
@@ -1306,7 +1320,7 @@
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		name = "JGTimerController.m: 48";
 		rLen = 0;
-		rLoc = 1490;
+		rLoc = 1290;
 		rType = 0;
 		vrLen = 864;
 		vrLoc = 1034;
@@ -1316,7 +1330,7 @@
 		fRef = 52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */;
 		name = "JGTimerControllerTestCase.m: 43";
 		rLen = 0;
-		rLoc = 793;
+		rLoc = 1235;
 		rType = 0;
 		vrLen = 1093;
 		vrLoc = 921;
@@ -1326,7 +1340,7 @@
 		fRef = 52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */;
 		name = "JGTimerControllerTestCase.m: 33";
 		rLen = 0;
-		rLoc = 337;
+		rLoc = 775;
 		rType = 0;
 		vrLen = 1070;
 		vrLoc = 921;
@@ -1336,7 +1350,7 @@
 		fRef = 52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */;
 		name = "JGTimerControllerTestCase.m: 75";
 		rLen = 0;
-		rLoc = 1956;
+		rLoc = 2416;
 		rType = 0;
 		vrLen = 1028;
 		vrLoc = 2447;
@@ -1346,7 +1360,7 @@
 		fRef = 52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */;
 		name = "JGTimerControllerTestCase.m: 84";
 		rLen = 0;
-		rLoc = 2234;
+		rLoc = 2694;
 		rType = 0;
 		vrLen = 1037;
 		vrLoc = 2447;
@@ -1356,7 +1370,7 @@
 		fRef = 52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */;
 		name = "JGTimerControllerTestCase.m: 62";
 		rLen = 0;
-		rLoc = 2234;
+		rLoc = 2694;
 		rType = 0;
 		vrLen = 923;
 		vrLoc = 2048;
@@ -1373,7 +1387,7 @@
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		name = "JGTimerController.m: 23";
 		rLen = 0;
-		rLoc = 1358;
+		rLoc = 1158;
 		rType = 0;
 		vrLen = 666;
 		vrLoc = 629;
@@ -1383,7 +1397,7 @@
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		name = "JGTimerController.m: 80";
 		rLen = 0;
-		rLoc = 2569;
+		rLoc = 2369;
 		rType = 0;
 		vrLen = 1101;
 		vrLoc = 1710;
@@ -1403,7 +1417,7 @@
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		name = "JGTimerController.m: 73";
 		rLen = 0;
-		rLoc = 2569;
+		rLoc = 2369;
 		rType = 0;
 		vrLen = 404;
 		vrLoc = 1894;
@@ -1413,7 +1427,7 @@
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		name = "JGTimerController.m: 61";
 		rLen = 0;
-		rLoc = 2371;
+		rLoc = 2171;
 		rType = 0;
 		vrLen = 489;
 		vrLoc = 1767;
@@ -1423,7 +1437,7 @@
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		name = "JGTimerController.m: 69";
 		rLen = 0;
-		rLoc = 2475;
+		rLoc = 2275;
 		rType = 0;
 		vrLen = 489;
 		vrLoc = 1767;
@@ -1433,7 +1447,7 @@
 		fRef = 52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */;
 		name = "JGTimerControllerTestCase.m: 62";
 		rLen = 0;
-		rLoc = 2234;
+		rLoc = 2694;
 		rType = 0;
 		vrLen = 923;
 		vrLoc = 2048;
@@ -1443,7 +1457,7 @@
 		fRef = 52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */;
 		name = "JGTimerControllerTestCase.m: 19";
 		rLen = 0;
-		rLoc = 546;
+		rLoc = 987;
 		rType = 0;
 		vrLen = 724;
 		vrLoc = 100;
@@ -1453,7 +1467,7 @@
 		fRef = 52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */;
 		name = "JGTimerControllerTestCase.m: 62";
 		rLen = 17;
-		rLoc = 2287;
+		rLoc = 2747;
 		rType = 0;
 		vrLen = 932;
 		vrLoc = 1929;
@@ -1463,7 +1477,7 @@
 		fRef = 52591F33149E453E00DEA711 /* JGTimerController.h */;
 		name = "JGTimerController.h: 18";
 		rLen = 0;
-		rLoc = 399;
+		rLoc = 411;
 		rType = 0;
 		vrLen = 692;
 		vrLoc = 0;
@@ -1473,7 +1487,7 @@
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		name = "JGTimerController.m: 30";
 		rLen = 0;
-		rLoc = 1469;
+		rLoc = 1269;
 		rType = 0;
 		vrLen = 591;
 		vrLoc = 450;
@@ -1483,7 +1497,7 @@
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		name = "JGTimerController.m: 30";
 		rLen = 0;
-		rLoc = 1469;
+		rLoc = 1269;
 		rType = 0;
 		vrLen = 614;
 		vrLoc = 450;
@@ -1493,7 +1507,7 @@
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		name = "JGTimerController.m: 30";
 		rLen = 0;
-		rLoc = 1469;
+		rLoc = 1269;
 		rType = 0;
 		vrLen = 671;
 		vrLoc = 450;
@@ -1503,7 +1517,7 @@
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		name = "JGTimerController.m: 30";
 		rLen = 0;
-		rLoc = 1469;
+		rLoc = 1269;
 		rType = 0;
 		vrLen = 694;
 		vrLoc = 450;
@@ -1513,7 +1527,7 @@
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		name = "JGTimerController.m: 30";
 		rLen = 0;
-		rLoc = 1469;
+		rLoc = 1269;
 		rType = 0;
 		vrLen = 570;
 		vrLoc = 603;
@@ -1523,7 +1537,7 @@
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		name = "JGTimerController.m: 30";
 		rLen = 0;
-		rLoc = 1469;
+		rLoc = 1269;
 		rType = 0;
 		vrLen = 552;
 		vrLoc = 603;
@@ -1533,7 +1547,7 @@
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		name = "JGTimerController.m: 62";
 		rLen = 0;
-		rLoc = 2569;
+		rLoc = 2369;
 		rType = 0;
 		vrLen = 735;
 		vrLoc = 289;
@@ -1543,7 +1557,7 @@
 		fRef = 52591F33149E453E00DEA711 /* JGTimerController.h */;
 		name = "JGTimerController.h: 17";
 		rLen = 0;
-		rLoc = 399;
+		rLoc = 411;
 		rType = 0;
 		vrLen = 668;
 		vrLoc = 0;
@@ -1553,7 +1567,7 @@
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		name = "JGTimerController.m: 62";
 		rLen = 0;
-		rLoc = 2569;
+		rLoc = 2369;
 		rType = 0;
 		vrLen = 411;
 		vrLoc = 1802;
@@ -1563,7 +1577,7 @@
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		name = "JGTimerController.m: 30";
 		rLen = 0;
-		rLoc = 1474;
+		rLoc = 1274;
 		rType = 0;
 		vrLen = 738;
 		vrLoc = 729;
@@ -1573,7 +1587,7 @@
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		name = "JGTimerController.m: 30";
 		rLen = 0;
-		rLoc = 1474;
+		rLoc = 1274;
 		rType = 0;
 		vrLen = 738;
 		vrLoc = 729;
@@ -1589,7 +1603,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {964, 1365}}";
 			sepNavSelRange = "{4169, 22}";
-			sepNavVisRange = "{529, 1244}";
+			sepNavVisRange = "{3391, 1064}";
 		};
 	};
 	52EB417114B1218D00308C95 /* JGTimerDurationCalculator.h */ = {
@@ -1601,9 +1615,9 @@
 	};
 	52EB417214B1218D00308C95 /* JGTimerDurationCalculator.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {964, 1065}}";
-			sepNavSelRange = "{1619, 0}";
-			sepNavVisRange = "{1827, 381}";
+			sepNavIntBoundsRect = "{{0, 0}, {964, 855}}";
+			sepNavSelRange = "{1908, 0}";
+			sepNavVisRange = "{39, 999}";
 		};
 	};
 	52EB418114B122F400308C95 /* PBXTextBookmark */ = {
@@ -1611,7 +1625,7 @@
 		fRef = 52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */;
 		name = "JGTimerControllerTestCase.m: 62";
 		rLen = 17;
-		rLoc = 2287;
+		rLoc = 2747;
 		rType = 0;
 		vrLen = 1017;
 		vrLoc = 294;
@@ -1641,7 +1655,7 @@
 		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
 		name = "JGTimerController.m: 14";
 		rLen = 584;
-		rLoc = 926;
+		rLoc = 726;
 		rType = 0;
 		vrLen = 652;
 		vrLoc = 325;
@@ -1711,7 +1725,7 @@
 		fRef = 52EB417214B1218D00308C95 /* JGTimerDurationCalculator.m */;
 		name = "JGTimerDurationCalculator.m: 17";
 		rLen = 0;
-		rLoc = 1621;
+		rLoc = 1321;
 		rType = 0;
 		vrLen = 775;
 		vrLoc = 83;
@@ -1721,7 +1735,7 @@
 		fRef = 52EB417214B1218D00308C95 /* JGTimerDurationCalculator.m */;
 		name = "JGTimerDurationCalculator.m: 15";
 		rLen = 0;
-		rLoc = 1432;
+		rLoc = 1319;
 		rType = 0;
 		vrLen = 759;
 		vrLoc = 83;
@@ -1741,7 +1755,7 @@
 		fRef = 52EB417214B1218D00308C95 /* JGTimerDurationCalculator.m */;
 		name = "JGTimerDurationCalculator.m: 42";
 		rLen = 0;
-		rLoc = 2161;
+		rLoc = 1861;
 		rType = 0;
 		vrLen = 811;
 		vrLoc = 0;
@@ -1770,7 +1784,7 @@
 		fRef = 52EB417214B1218D00308C95 /* JGTimerDurationCalculator.m */;
 		name = "JGTimerDurationCalculator.m: 21";
 		rLen = 0;
-		rLoc = 1432;
+		rLoc = 1319;
 		rType = 0;
 		vrLen = 702;
 		vrLoc = 40;
@@ -1809,7 +1823,7 @@
 		isa = PBXTextBookmark;
 		fRef = 52EB417214B1218D00308C95 /* JGTimerDurationCalculator.m */;
 		rLen = 1;
-		rLoc = 46;
+		rLoc = 39;
 		rType = 1;
 	};
 	52EB41AE14B12C5A00308C95 /* PBXTextBookmark */ = {
@@ -1817,7 +1831,7 @@
 		fRef = 52EB417214B1218D00308C95 /* JGTimerDurationCalculator.m */;
 		name = "JGTimerDurationCalculator.m: 21";
 		rLen = 0;
-		rLoc = 1432;
+		rLoc = 1319;
 		rType = 0;
 		vrLen = 898;
 		vrLoc = 220;
@@ -1836,7 +1850,7 @@
 		isa = PBXTextBookmark;
 		fRef = 52EB417214B1218D00308C95 /* JGTimerDurationCalculator.m */;
 		rLen = 0;
-		rLoc = 45;
+		rLoc = 38;
 		rType = 1;
 	};
 	52EB41B714B12D3A00308C95 /* PBXTextBookmark */ = {
@@ -1844,7 +1858,7 @@
 		fRef = 52EB417214B1218D00308C95 /* JGTimerDurationCalculator.m */;
 		name = "JGTimerDurationCalculator.m: 21";
 		rLen = 0;
-		rLoc = 1432;
+		rLoc = 1319;
 		rType = 0;
 		vrLen = 951;
 		vrLoc = 265;
@@ -1854,9 +1868,149 @@
 		fRef = 52EB417214B1218D00308C95 /* JGTimerDurationCalculator.m */;
 		name = "JGTimerDurationCalculator.m: 22";
 		rLen = 0;
-		rLoc = 1004;
+		rLoc = 100;
 		rType = 0;
 		vrLen = 1050;
 		vrLoc = 83;
+	};
+	52EB41DC14B1346300308C95 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52EB417114B1218D00308C95 /* JGTimerDurationCalculator.h */;
+		name = "JGTimerDurationCalculator.h: 11";
+		rLen = 0;
+		rLoc = 270;
+		rType = 0;
+		vrLen = 446;
+		vrLoc = 0;
+	};
+	52EB41DD14B1346300308C95 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52EB417214B1218D00308C95 /* JGTimerDurationCalculator.m */;
+		name = "JGTimerDurationCalculator.m: 30";
+		rLen = 0;
+		rLoc = 100;
+		rType = 0;
+		vrLen = 795;
+		vrLoc = 1156;
+	};
+	52EB41DE14B1346300308C95 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52EB416B14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.m */;
+		name = "JGTimerDurationCalculatorTestCase.m: 83";
+		rLen = 22;
+		rLoc = 4169;
+		rType = 0;
+		vrLen = 1064;
+		vrLoc = 3391;
+	};
+	52EB41DF14B1346300308C95 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */;
+		name = "JGTimerControllerTestCase.m: 34";
+		rLen = 22;
+		rLoc = 1600;
+		rType = 0;
+		vrLen = 771;
+		vrLoc = 52;
+	};
+	52EB41E014B1346300308C95 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52591F33149E453E00DEA711 /* JGTimerController.h */;
+		name = "JGTimerController.h: 14";
+		rLen = 0;
+		rLoc = 368;
+		rType = 0;
+		vrLen = 680;
+		vrLoc = 0;
+	};
+	52EB41E114B1346300308C95 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
+		name = "JGTimerController.m: 19";
+		rLen = 0;
+		rLoc = 696;
+		rType = 0;
+		vrLen = 1027;
+		vrLoc = 327;
+	};
+	52EB41E214B1346300308C95 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
+		name = "JGTimerController.m: 50";
+		rLen = 13;
+		rLoc = 1470;
+		rType = 0;
+		vrLen = 845;
+		vrLoc = 1470;
+	};
+	52EB41E514B1355F00308C95 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52591F33149E453E00DEA711 /* JGTimerController.h */;
+		name = "JGTimerController.h: 14";
+		rLen = 14;
+		rLoc = 354;
+		rType = 0;
+		vrLen = 680;
+		vrLoc = 0;
+	};
+	52EB41E614B1355F00308C95 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
+		name = "JGTimerController.m: 45";
+		rLen = 0;
+		rLoc = 1366;
+		rType = 0;
+		vrLen = 845;
+		vrLoc = 1470;
+	};
+	52EB41E714B1355F00308C95 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */;
+		name = "JGTimerControllerTestCase.m: 23";
+		rLen = 0;
+		rLoc = 719;
+		rType = 0;
+		vrLen = 799;
+		vrLoc = 100;
+	};
+	52EB41EA14B135A500308C95 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */;
+		name = "JGTimerControllerTestCase.m: 18";
+		rLen = 0;
+		rLoc = 500;
+		rType = 0;
+		vrLen = 847;
+		vrLoc = 100;
+	};
+	52EB41ED14B135FE00308C95 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */;
+		name = "JGTimerControllerTestCase.m: 44";
+		rLen = 22;
+		rLoc = 1600;
+		rType = 0;
+		vrLen = 966;
+		vrLoc = 856;
+	};
+	52EB41EE14B135FE00308C95 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
+		name = "JGTimerController.m: 16";
+		rLen = 0;
+		rLoc = 421;
+		rType = 0;
+		vrLen = 886;
+		vrLoc = 1287;
+	};
+	52EB41EF14B135FE00308C95 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52EB417214B1218D00308C95 /* JGTimerDurationCalculator.m */;
+		name = "JGTimerDurationCalculator.m: 64";
+		rLen = 0;
+		rLoc = 1908;
+		rType = 0;
+		vrLen = 999;
+		vrLoc = 39;
 	};
 }

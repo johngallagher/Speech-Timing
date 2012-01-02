@@ -13,20 +13,30 @@
 
 @implementation JGTimerControllerTestCase
 
+-(void)testGivenThreeSecondDurationAtHalfDurationShouldNotCallAnyCard {
+    id mockDelegate = [OCMockObject mockForProtocol:@protocol(JGTimerControllerDelegate)];
+    
+    JGTimerController *timer = [JGTimerController timerWithDurationValue:3 delegate:mockDelegate];
+    [timer startTimer];
+    
+    [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:1.49]];
+    [timer stopTimer];
+    [mockDelegate verify];
+}
 
--(void)testGivenThreeSecondDurationAfterOneSecondShouldHaveCalledGreenCard {
+-(void)testGivenThreeSecondDurationAfterHalfDurationShouldHaveCalledGreenCard {
     id mockDelegate = [OCMockObject mockForProtocol:@protocol(JGTimerControllerDelegate)];
     [[mockDelegate expect] showGreenCard];
     
     JGTimerController *timer = [JGTimerController timerWithDurationValue:3 delegate:mockDelegate];
     [timer startTimer];
     
-    [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:1.1]];
+    [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:1.51]];
     [timer stopTimer];
     [mockDelegate verify];
 }
 
--(void)testGivenThreeSecondDurationAfterTwoSecondShouldHaveCalledGreenThenYellowCard {
+-(void)testGivenThreeSecondDurationAfterThreeQuartersOfDurationShouldHaveCalledGreenThenYellowCard {
     id mockDelegate = [OCMockObject mockForProtocol:@protocol(JGTimerControllerDelegate)];
     [[mockDelegate expect] showGreenCard];
     [[mockDelegate expect] showYellowCard];
@@ -34,7 +44,7 @@
     JGTimerController *timer = [JGTimerController timerWithDurationValue:3 delegate:mockDelegate];
     [timer startTimer];
     
-    [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:2]];
+    [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:2.251]];
     [timer stopTimer];
     [mockDelegate verify];
 }

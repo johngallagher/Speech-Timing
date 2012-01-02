@@ -17,10 +17,6 @@
     greenCardTime       = [calculator greenCardTime];
     yellowCardTime      = [calculator yellowCardTime];
     redCardTime         = [calculator redCardTime];
-    NSLog(@"Duration time is %d", duration_);
-    NSLog(@"Green Card time is %f", greenCardTime);
-    NSLog(@"Yellow Card time is %f", yellowCardTime);
-    NSLog(@"Red Card time is %f", redCardTime);
     [calculator release];
 }
 

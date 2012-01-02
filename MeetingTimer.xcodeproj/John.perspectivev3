@@ -351,7 +351,7 @@
 										<key>_historyCapacity</key>
 										<integer>20</integer>
 										<key>bookmark</key>
-										<string>52EB41BC14B12E6100308C95</string>
+										<string>52EB41EF14B135FE00308C95</string>
 										<key>history</key>
 										<array>
 											<string>5251BB63149EA3C000AFC0B6</string>
@@ -367,13 +367,13 @@
 											<string>52E0FDB514A5035900D6D44C</string>
 											<string>5228AEC114AE7A3800C5F9A9</string>
 											<string>52EB413F14B0B2DE00308C95</string>
-											<string>52EB416614B1053300308C95</string>
-											<string>52EB418114B122F400308C95</string>
 											<string>52EB418214B122F400308C95</string>
-											<string>52EB418414B122F400308C95</string>
-											<string>52EB419914B1283800308C95</string>
-											<string>52EB41B514B12D3A00308C95</string>
-											<string>52EB41B614B12D3A00308C95</string>
+											<string>52EB41DC14B1346300308C95</string>
+											<string>52EB41DE14B1346300308C95</string>
+											<string>52EB41E514B1355F00308C95</string>
+											<string>52EB41ED14B135FE00308C95</string>
+											<string>52EB41EE14B135FE00308C95</string>
+											<string>52EB41DD14B1346300308C95</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -428,7 +428,7 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {1331, 384}}</string>
+										<string>{{10, 27}, {1013, 279}}</string>
 									</dict>
 									<key>Module</key>
 									<string>PBXProjectFindModule</string>
@@ -671,7 +671,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>347156065.93470699</real>
+	<real>347158014.57713699</real>
 	<key>ToolbarConfigUserDefaultsMinorVersion</key>
 	<string>2</string>
 	<key>ToolbarDisplayMode</key>
@@ -1499,18 +1499,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {500, 315}}</string>
+								<string>{{0, 0}, {1280, 346}}</string>
 								<key>RubberWindowFrame</key>
-								<string>21 399 500 356 0 0 1280 778 </string>
+								<string>0 391 1280 387 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCRefactoringModule</string>
 							<key>Proportion</key>
-							<string>315pt</string>
+							<string>346pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>315pt</string>
+					<string>346pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -1528,7 +1528,7 @@
 				<string>52E0FD3B14A4D3EB00D6D44C</string>
 			</array>
 			<key>WindowString</key>
-			<string>21 399 500 356 0 0 1280 778 </string>
+			<string>0 391 1280 387 0 0 1280 778 </string>
 			<key>WindowToolGUID</key>
 			<string>52E0FD3C14A4D3EB00D6D44C</string>
 			<key>WindowToolIsVisible</key>

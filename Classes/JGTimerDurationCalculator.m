@@ -4,9 +4,7 @@
 
 @implementation JGTimerDurationCalculator
 
--(void)calculateGreenAndYellowCardTimesFromDuration:(NSUInteger)duration_ {
-    NSLog(@"**Duration is %d", duration_);
-    
+-(void)calculateCardTimesFromDuration:(NSUInteger)duration_ {
     BOOL durationImpliesQuarterIncrements    = (duration_ >= 3    && duration_ < 240);
     BOOL durationImpliesOneMinuteIncrements  = (duration_ >= 240  && duration_ < 600);
     BOOL durationImpliesTwoMinuteIncrements  = (duration_ >= 600  && duration_ < 1800);
@@ -25,10 +23,10 @@
         greenCardTime   = duration_ - 600;
         yellowCardTime  = duration_ - 300;
     }
+    redCardTime     = duration_;
 }
 
 -(void)initTimesFromDuration:(NSUInteger)duration_ {
-    NSLog(@"Duration is less than 3 %d", (BOOL)(duration_ < 3));
     if (duration_ < 3) {
         greenCardTime   = 0;
         yellowCardTime  = 0;
@@ -36,12 +34,7 @@
         return;
     }
     
-    [self calculateGreenAndYellowCardTimesFromDuration:duration_];
-    
-    redCardTime     = duration_;
-    NSLog(@"Green Card time is %f", greenCardTime);
-    NSLog(@"Yellow Card time is %f", yellowCardTime);
-    NSLog(@"Red Card time is %f", redCardTime);
+    [self calculateCardTimesFromDuration:duration_];
 }
 
 +(JGTimerDurationCalculator *)calculatorWithDuration:(NSUInteger)durationValue {

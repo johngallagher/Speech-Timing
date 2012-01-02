@@ -9,9 +9,9 @@
     
     id <NSObject, JGTimerControllerDelegate> _delegate;
     
-    NSUInteger  greenCardTime;
-    NSUInteger  yellowCardTime;
-    NSUInteger  redCardTime;
+    NSTimeInterval  greenCardTime;
+    NSTimeInterval  yellowCardTime;
+    NSTimeInterval  redCardTime;
     
     BOOL timerRunning;
 }
