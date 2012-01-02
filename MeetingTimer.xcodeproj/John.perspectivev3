@@ -306,7 +306,7 @@
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 173}, {245, 715}}</string>
+							<string>{{0, 128}, {245, 715}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -334,12 +334,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>52CA8ADA149CF1A40030ADC1</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>JGTimerDurationCalculatorTestCase.m</string>
+								<string>JGTimerDurationCalculator.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -347,11 +349,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>52CA8ADB149CF1A40030ADC1</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>JGTimerDurationCalculatorTestCase.m</string>
+										<string>JGTimerDurationCalculator.m</string>
 										<key>_historyCapacity</key>
 										<integer>20</integer>
 										<key>bookmark</key>
-										<string>52EB419C14B1283800308C95</string>
+										<string>52EB41B714B12D3A00308C95</string>
 										<key>history</key>
 										<array>
 											<string>5251BB63149EA3C000AFC0B6</string>
@@ -372,8 +374,8 @@
 											<string>52EB418214B122F400308C95</string>
 											<string>52EB418414B122F400308C95</string>
 											<string>52EB419914B1283800308C95</string>
-											<string>52EB419A14B1283800308C95</string>
-											<string>52EB419B14B1283800308C95</string>
+											<string>52EB41B514B12D3A00308C95</string>
+											<string>52EB41B614B12D3A00308C95</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -671,7 +673,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>347154488.99645197</real>
+	<real>347155770.11180198</real>
 	<key>ToolbarConfigUserDefaultsMinorVersion</key>
 	<string>2</string>
 	<key>ToolbarDisplayMode</key>
