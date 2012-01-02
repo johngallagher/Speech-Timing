@@ -34,7 +34,7 @@
     JGTimerController *timer = [JGTimerController timerWithDurationValue:3 delegate:mockDelegate];
     [timer startTimer];
     
-    [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:2.1]];
+    [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:2]];
     [timer stopTimer];
     [mockDelegate verify];
 }

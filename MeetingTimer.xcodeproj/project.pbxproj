@@ -245,10 +245,10 @@
 				52591F34149E453E00DEA711 /* JGTimerController.m */,
 				52591F40149E469000DEA711 /* JGTimerControllerTestCase.h */,
 				52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */,
-				52EB416A14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.h */,
-				52EB416B14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.m */,
 				52EB417114B1218D00308C95 /* JGTimerDurationCalculator.h */,
 				52EB417214B1218D00308C95 /* JGTimerDurationCalculator.m */,
+				52EB416A14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.h */,
+				52EB416B14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.m */,
 			);
 			name = TimerController;
 			sourceTree = "<group>";

@@ -8,7 +8,6 @@
 }
 
 +(JGTimerDurationCalculator *)calculatorWithDuration:(NSUInteger)durationValue;
-+(JGTimerDurationCalculator *)calculatorWithDurationInMinutes:(NSUInteger)durationValue;
 -(JGTimerDurationCalculator *)initWithDuration:(NSUInteger)durationValue;
 
 -(NSTimeInterval)greenCardTime;

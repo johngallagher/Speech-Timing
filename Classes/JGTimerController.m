@@ -1,5 +1,6 @@
 #import "JGTimerController.h"
 #import "JGTimerControllerDelegate.h"
+#import "JGTimerDurationCalculator.h"
 
 @implementation JGTimerController
 
@@ -11,6 +12,18 @@
     _delegate = delegate_;
 }
 
+-(void)initCardTimesFromDuration:(NSUInteger)duration_ {
+    JGTimerDurationCalculator *calculator = [[JGTimerDurationCalculator calculatorWithDuration:duration_] retain];
+    greenCardTime       = [calculator greenCardTime];
+    yellowCardTime      = [calculator yellowCardTime];
+    redCardTime         = [calculator redCardTime];
+    NSLog(@"Duration time is %d", duration_);
+    NSLog(@"Green Card time is %f", greenCardTime);
+    NSLog(@"Yellow Card time is %f", yellowCardTime);
+    NSLog(@"Red Card time is %f", redCardTime);
+    [calculator release];
+}
+
 +(JGTimerController *)timerWithDurationValue:(NSUInteger)durationValue delegate:(id <JGTimerControllerDelegate>)delegate_ {
     JGTimerController *instance = [[[JGTimerController alloc] initWithDurationValue:durationValue delegate:delegate_] autorelease];
     return instance;
@@ -20,11 +33,7 @@
     self = [super init];
     
     [self initDelegate:delegate_];
-    
-    greenCardTime = 1;
-    yellowCardTime = 2;
-    redCardTime = durationValue;
-    
+    [self initCardTimesFromDuration:durationValue];
     timerRunning = NO;
 
     return self;
