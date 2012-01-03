@@ -3,9 +3,7 @@
 @protocol JGTimerControllerDelegate;
 
 @interface JGTimerController : NSObject {
-    NSTimer     *greenCardTimer;
-    NSTimer     *yellowCardTimer;
-    NSTimer     *redCardTimer;
+    NSTimeInterval  timeRemaining;
     
     id <NSObject, JGTimerControllerDelegate> _delegate;
     

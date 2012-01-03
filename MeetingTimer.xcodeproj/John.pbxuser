@@ -29,17 +29,16 @@
 	};
 	28C286DF0D94DF7D0034E888 /* JGTimerConfigurationViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {803, 746}}";
-			sepNavSelRange = "{395, 15}";
-			sepNavVisRange = "{0, 594}";
+			sepNavIntBoundsRect = "{{0, 0}, {1364, 603}}";
+			sepNavSelRange = "{784, 0}";
+			sepNavVisRange = "{0, 784}";
 		};
 	};
 	28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */ = {
 		uiCtxt = {
-			sepNavFolds = "{\n    c =     (\n                {\n            l = \"(id <JGTimerControllerDelegate>)delegate_\";\n            r = \"{1057, 45}\";\n            s = 1;\n        }\n    );\n    r = \"{0, 4680}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {2210, 2100}}";
-			sepNavSelRange = "{961, 98}";
-			sepNavVisRange = "{0, 1406}";
+			sepNavIntBoundsRect = "{{0, 0}, {2504, 1995}}";
+			sepNavSelRange = "{3213, 0}";
+			sepNavVisRange = "{2263, 1213}";
 			sepNavWindowFrame = "{{15, 4}, {640, 774}}";
 		};
 	};
@@ -50,10 +49,8 @@
 		activeTarget = 52591F3A149E466B00DEA711 /* MeetingTimerTests */;
 		addToTargets = (
 			52591F3A149E466B00DEA711 /* MeetingTimerTests */,
-			1D6058900D05DD3D006BFB54 /* MeetingTimer */,
 		);
 		breakpoints = (
-			52CA8BAB149D0D380030ADC1 /* JGRunningViewController.m:24 */,
 			52BBBD8D14B24DE500CFE655 /* JGPickerViewDelegate.m:26 */,
 			52BBBE8D14B2F4AA00CFE655 /* JGDurationPickerView.m:15 */,
 		);
@@ -512,6 +509,94 @@
 			52BBBFC114B322E000CFE655 /* PBXTextBookmark */ = 52BBBFC114B322E000CFE655 /* PBXTextBookmark */;
 			52BBBFC214B322E000CFE655 /* PBXTextBookmark */ = 52BBBFC214B322E000CFE655 /* PBXTextBookmark */;
 			52BBBFC314B322E000CFE655 /* PBXTextBookmark */ = 52BBBFC314B322E000CFE655 /* PBXTextBookmark */;
+			52BBBFEC14B3283900CFE655 /* PBXTextBookmark */ = 52BBBFEC14B3283900CFE655 /* PBXTextBookmark */;
+			52BBBFED14B3283900CFE655 /* PBXTextBookmark */ = 52BBBFED14B3283900CFE655 /* PBXTextBookmark */;
+			52BBBFEE14B3283900CFE655 /* PBXTextBookmark */ = 52BBBFEE14B3283900CFE655 /* PBXTextBookmark */;
+			52BBBFEF14B3283900CFE655 /* PBXTextBookmark */ = 52BBBFEF14B3283900CFE655 /* PBXTextBookmark */;
+			52BBBFF014B3283900CFE655 /* PBXTextBookmark */ = 52BBBFF014B3283900CFE655 /* PBXTextBookmark */;
+			52BBBFF114B3283900CFE655 /* PBXTextBookmark */ = 52BBBFF114B3283900CFE655 /* PBXTextBookmark */;
+			52BBBFF214B3283900CFE655 /* PBXTextBookmark */ = 52BBBFF214B3283900CFE655 /* PBXTextBookmark */;
+			52BBBFF314B3283900CFE655 /* PBXTextBookmark */ = 52BBBFF314B3283900CFE655 /* PBXTextBookmark */;
+			52BBBFF414B3283900CFE655 /* PBXTextBookmark */ = 52BBBFF414B3283900CFE655 /* PBXTextBookmark */;
+			52BBBFF514B3283900CFE655 /* PBXTextBookmark */ = 52BBBFF514B3283900CFE655 /* PBXTextBookmark */;
+			52BBBFF614B3283900CFE655 /* PBXTextBookmark */ = 52BBBFF614B3283900CFE655 /* PBXTextBookmark */;
+			52BBBFF714B3283900CFE655 /* PBXTextBookmark */ = 52BBBFF714B3283900CFE655 /* PBXTextBookmark */;
+			52BBBFF814B3283900CFE655 /* PBXTextBookmark */ = 52BBBFF814B3283900CFE655 /* PBXTextBookmark */;
+			52BBBFFB14B3287500CFE655 /* PBXTextBookmark */ = 52BBBFFB14B3287500CFE655 /* PBXTextBookmark */;
+			52BBBFFC14B3287600CFE655 /* PBXTextBookmark */ = 52BBBFFC14B3287600CFE655 /* PBXTextBookmark */;
+			52BBBFFD14B3287600CFE655 /* PBXTextBookmark */ = 52BBBFFD14B3287600CFE655 /* PBXTextBookmark */;
+			52BBC00014B328B500CFE655 /* PBXTextBookmark */ = 52BBC00014B328B500CFE655 /* PBXTextBookmark */;
+			52BBC00114B328B500CFE655 /* PBXTextBookmark */ = 52BBC00114B328B500CFE655 /* PBXTextBookmark */;
+			52BBC00214B328B500CFE655 /* PBXTextBookmark */ = 52BBC00214B328B500CFE655 /* PBXTextBookmark */;
+			52BBC00314B328B600CFE655 /* PBXTextBookmark */ = 52BBC00314B328B600CFE655 /* PBXTextBookmark */;
+			52BBC00414B328B600CFE655 /* PBXTextBookmark */ = 52BBC00414B328B600CFE655 /* PBXTextBookmark */;
+			52BBC00514B328B600CFE655 /* PBXTextBookmark */ = 52BBC00514B328B600CFE655 /* PBXTextBookmark */;
+			52BBC00814B3291700CFE655 /* PBXTextBookmark */ = 52BBC00814B3291700CFE655 /* PBXTextBookmark */;
+			52BBC00914B3291700CFE655 /* PBXTextBookmark */ = 52BBC00914B3291700CFE655 /* PBXTextBookmark */;
+			52BBC00A14B3291700CFE655 /* PBXTextBookmark */ = 52BBC00A14B3291700CFE655 /* PBXTextBookmark */;
+			52BBC00B14B3291800CFE655 /* PBXTextBookmark */ = 52BBC00B14B3291800CFE655 /* PBXTextBookmark */;
+			52BBC00C14B3291800CFE655 /* PBXTextBookmark */ = 52BBC00C14B3291800CFE655 /* PBXTextBookmark */;
+			52BBC00D14B3291800CFE655 /* PBXTextBookmark */ = 52BBC00D14B3291800CFE655 /* PBXTextBookmark */;
+			52BBC00E14B3295400CFE655 /* PBXTextBookmark */ = 52BBC00E14B3295400CFE655 /* PBXTextBookmark */;
+			52BBC01114B3296900CFE655 /* PBXTextBookmark */ = 52BBC01114B3296900CFE655 /* PBXTextBookmark */;
+			52BBC01214B3296900CFE655 /* PBXTextBookmark */ = 52BBC01214B3296900CFE655 /* PBXTextBookmark */;
+			52BBC01314B3296900CFE655 /* PBXTextBookmark */ = 52BBC01314B3296900CFE655 /* PBXTextBookmark */;
+			52BBC01714B3299E00CFE655 /* PBXTextBookmark */ = 52BBC01714B3299E00CFE655 /* PBXTextBookmark */;
+			52BBC01814B3299E00CFE655 /* PBXTextBookmark */ = 52BBC01814B3299E00CFE655 /* PBXTextBookmark */;
+			52BBC01914B3299E00CFE655 /* PBXTextBookmark */ = 52BBC01914B3299E00CFE655 /* PBXTextBookmark */;
+			52BBC01A14B3299F00CFE655 /* PBXTextBookmark */ = 52BBC01A14B3299F00CFE655 /* PBXTextBookmark */;
+			52BBC01B14B329A000CFE655 /* PBXTextBookmark */ = 52BBC01B14B329A000CFE655 /* PBXTextBookmark */;
+			52BBC01E14B329FE00CFE655 /* PBXTextBookmark */ = 52BBC01E14B329FE00CFE655 /* PBXTextBookmark */;
+			52BBC02014B32A4400CFE655 /* PBXTextBookmark */ = 52BBC02014B32A4400CFE655 /* PBXTextBookmark */;
+			52BBC02114B32A4B00CFE655 /* PBXTextBookmark */ = 52BBC02114B32A4B00CFE655 /* PBXTextBookmark */;
+			52BBC02214B32A5200CFE655 /* PBXTextBookmark */ = 52BBC02214B32A5200CFE655 /* PBXTextBookmark */;
+			52BBC02514B32A9700CFE655 /* PBXTextBookmark */ = 52BBC02514B32A9700CFE655 /* PBXTextBookmark */;
+			52BBC02614B32A9700CFE655 /* PBXTextBookmark */ = 52BBC02614B32A9700CFE655 /* PBXTextBookmark */;
+			52BBC02714B32A9700CFE655 /* PBXTextBookmark */ = 52BBC02714B32A9700CFE655 /* PBXTextBookmark */;
+			52BBC02814B32A9700CFE655 /* PBXTextBookmark */ = 52BBC02814B32A9700CFE655 /* PBXTextBookmark */;
+			52BBC02914B32A9700CFE655 /* PBXTextBookmark */ = 52BBC02914B32A9700CFE655 /* PBXTextBookmark */;
+			52BBC02C14B32AFB00CFE655 /* PBXTextBookmark */ = 52BBC02C14B32AFB00CFE655 /* PBXTextBookmark */;
+			52BBC02D14B32AFB00CFE655 /* PBXTextBookmark */ = 52BBC02D14B32AFB00CFE655 /* PBXTextBookmark */;
+			52BBC02E14B32AFB00CFE655 /* PBXTextBookmark */ = 52BBC02E14B32AFB00CFE655 /* PBXTextBookmark */;
+			52BBC02F14B32AFC00CFE655 /* PBXTextBookmark */ = 52BBC02F14B32AFC00CFE655 /* PBXTextBookmark */;
+			52BBC03014B32AFC00CFE655 /* PBXTextBookmark */ = 52BBC03014B32AFC00CFE655 /* PBXTextBookmark */;
+			52BBC03314B3398F00CFE655 /* PBXTextBookmark */ = 52BBC03314B3398F00CFE655 /* PBXTextBookmark */;
+			52BBC03414B3399000CFE655 /* PBXTextBookmark */ = 52BBC03414B3399000CFE655 /* PBXTextBookmark */;
+			52BBC03514B3399000CFE655 /* PBXTextBookmark */ = 52BBC03514B3399000CFE655 /* PBXTextBookmark */;
+			52BBC03614B33BF800CFE655 /* PBXTextBookmark */ = 52BBC03614B33BF800CFE655 /* PBXTextBookmark */;
+			52BBC03914B33C7A00CFE655 /* PBXTextBookmark */ = 52BBC03914B33C7A00CFE655 /* PBXTextBookmark */;
+			52BBC03A14B33C7A00CFE655 /* PBXTextBookmark */ = 52BBC03A14B33C7A00CFE655 /* PBXTextBookmark */;
+			52BBC03B14B33C9E00CFE655 /* PBXTextBookmark */ = 52BBC03B14B33C9E00CFE655 /* PBXTextBookmark */;
+			52BBC03C14B3490D00CFE655 /* PBXTextBookmark */ = 52BBC03C14B3490D00CFE655 /* PBXTextBookmark */;
+			52BBC03F14B3491700CFE655 /* PBXTextBookmark */ = 52BBC03F14B3491700CFE655 /* PBXTextBookmark */;
+			52BBC04014B3491700CFE655 /* PBXTextBookmark */ = 52BBC04014B3491700CFE655 /* PBXTextBookmark */;
+			52BBC04114B3493800CFE655 /* PBXTextBookmark */ = 52BBC04114B3493800CFE655 /* PBXTextBookmark */;
+			52BBC07C14B34F0600CFE655 /* PBXTextBookmark */ = 52BBC07C14B34F0600CFE655 /* PBXTextBookmark */;
+			52BBC07D14B34F0600CFE655 /* PBXTextBookmark */ = 52BBC07D14B34F0600CFE655 /* PBXTextBookmark */;
+			52BBC07E14B34F0600CFE655 /* PBXTextBookmark */ = 52BBC07E14B34F0600CFE655 /* PBXTextBookmark */;
+			52BBC07F14B34F0600CFE655 /* PBXTextBookmark */ = 52BBC07F14B34F0600CFE655 /* PBXTextBookmark */;
+			52BBC08014B34F0600CFE655 /* PBXTextBookmark */ = 52BBC08014B34F0600CFE655 /* PBXTextBookmark */;
+			52BBC08114B34F0600CFE655 /* PBXTextBookmark */ = 52BBC08114B34F0600CFE655 /* PBXTextBookmark */;
+			52BBC08214B34F0600CFE655 /* PBXTextBookmark */ = 52BBC08214B34F0600CFE655 /* PBXTextBookmark */;
+			52BBC08314B34F0600CFE655 /* PBXTextBookmark */ = 52BBC08314B34F0600CFE655 /* PBXTextBookmark */;
+			52BBC08414B34F0600CFE655 /* PBXTextBookmark */ = 52BBC08414B34F0600CFE655 /* PBXTextBookmark */;
+			52BBC0BF14B3562B00CFE655 /* PBXTextBookmark */ = 52BBC0BF14B3562B00CFE655 /* PBXTextBookmark */;
+			52BBC0C014B3562B00CFE655 /* PBXTextBookmark */ = 52BBC0C014B3562B00CFE655 /* PBXTextBookmark */;
+			52BBC0C114B3562B00CFE655 /* PBXTextBookmark */ = 52BBC0C114B3562B00CFE655 /* PBXTextBookmark */;
+			52BBC0C214B3562B00CFE655 /* PBXTextBookmark */ = 52BBC0C214B3562B00CFE655 /* PBXTextBookmark */;
+			52BBC0C314B3562B00CFE655 /* PBXTextBookmark */ = 52BBC0C314B3562B00CFE655 /* PBXTextBookmark */;
+			52BBC0C414B3562B00CFE655 /* PBXTextBookmark */ = 52BBC0C414B3562B00CFE655 /* PBXTextBookmark */;
+			52BBC0C514B3562B00CFE655 /* PBXTextBookmark */ = 52BBC0C514B3562B00CFE655 /* PBXTextBookmark */;
+			52BBC0C614B3562B00CFE655 /* PBXTextBookmark */ = 52BBC0C614B3562B00CFE655 /* PBXTextBookmark */;
+			52BBC0C714B3562B00CFE655 /* PBXTextBookmark */ = 52BBC0C714B3562B00CFE655 /* PBXTextBookmark */;
+			52BBC0C814B3562B00CFE655 /* PBXTextBookmark */ = 52BBC0C814B3562B00CFE655 /* PBXTextBookmark */;
+			52BBC0C914B3562B00CFE655 /* PBXTextBookmark */ = 52BBC0C914B3562B00CFE655 /* PBXTextBookmark */;
+			52BBC0CA14B3562B00CFE655 /* PBXTextBookmark */ = 52BBC0CA14B3562B00CFE655 /* PBXTextBookmark */;
+			52BBC0CB14B3562B00CFE655 /* PBXTextBookmark */ = 52BBC0CB14B3562B00CFE655 /* PBXTextBookmark */;
+			52BBC0CC14B3562B00CFE655 /* PBXTextBookmark */ = 52BBC0CC14B3562B00CFE655 /* PBXTextBookmark */;
+			52BBC0CD14B3562B00CFE655 /* PBXTextBookmark */ = 52BBC0CD14B3562B00CFE655 /* PBXTextBookmark */;
+			52BBC0CE14B3562B00CFE655 /* PBXTextBookmark */ = 52BBC0CE14B3562B00CFE655 /* PBXTextBookmark */;
+			52BBC0D114B3566800CFE655 /* PBXTextBookmark */ = 52BBC0D114B3566800CFE655 /* PBXTextBookmark */;
 			52E0FDB514A5035900D6D44C = 52E0FDB514A5035900D6D44C /* PBXTextBookmark */;
 			52EB413F14B0B2DE00308C95 = 52EB413F14B0B2DE00308C95 /* PBXTextBookmark */;
 			52EB418214B122F400308C95 = 52EB418214B122F400308C95 /* PBXTextBookmark */;
@@ -553,8 +638,8 @@
 	};
 	5251B9A9149E59B400AFC0B6 /* JGTimerControllerDelegate.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1364, 580}}";
-			sepNavSelRange = "{187, 47}";
+			sepNavIntBoundsRect = "{{0, 0}, {1364, 603}}";
+			sepNavSelRange = "{303, 0}";
 			sepNavVisRange = "{0, 308}";
 		};
 	};
@@ -626,9 +711,9 @@
 	};
 	5251BB28149EA3A600AFC0B6 /* OCMArg.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {964, 990}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1312, 960}}";
 			sepNavSelRange = "{357, 23}";
-			sepNavVisRange = "{0, 564}";
+			sepNavVisRange = "{0, 909}";
 		};
 	};
 	5251BB63149EA3C000AFC0B6 /* PBXTextBookmark */ = {
@@ -685,8 +770,8 @@
 		isa = PBXTextBookmark;
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 16";
-		rLen = 362;
-		rLoc = 741;
+		rLen = 0;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 663;
 		vrLoc = 0;
@@ -733,16 +818,16 @@
 	};
 	52591F33149E453E00DEA711 /* JGTimerController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {964, 480}}";
-			sepNavSelRange = "{354, 14}";
-			sepNavVisRange = "{0, 680}";
+			sepNavIntBoundsRect = "{{0, 0}, {1364, 603}}";
+			sepNavSelRange = "{349, 0}";
+			sepNavVisRange = "{0, 765}";
 		};
 	};
 	52591F34149E453E00DEA711 /* JGTimerController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {964, 1170}}";
-			sepNavSelRange = "{421, 0}";
-			sepNavVisRange = "{1287, 886}";
+			sepNavIntBoundsRect = "{{0, 0}, {1312, 1035}}";
+			sepNavSelRange = "{726, 124}";
+			sepNavVisRange = "{726, 1554}";
 		};
 	};
 	52591F3A149E466B00DEA711 /* MeetingTimerTests */ = {
@@ -750,16 +835,16 @@
 	};
 	52591F40149E469000DEA711 /* JGTimerControllerTestCase.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1174, 360}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1364, 603}}";
 			sepNavSelRange = "{791, 0}";
 			sepNavVisRange = "{0, 798}";
 		};
 	};
 	52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {964, 1380}}";
-			sepNavSelRange = "{1600, 22}";
-			sepNavVisRange = "{856, 966}";
+			sepNavIntBoundsRect = "{{0, 0}, {1364, 1350}}";
+			sepNavSelRange = "{229, 26}";
+			sepNavVisRange = "{0, 1501}";
 		};
 	};
 	52BBBD5714B1C5B200CFE655 /* PBXTextBookmark */ = {
@@ -1110,7 +1195,7 @@
 		ignoreCount = 0;
 		lineNumber = 26;
 		location = MeetingTimer;
-		modificationTime = 347272369.214697;
+		modificationTime = 347286121.301618;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -1652,8 +1737,8 @@
 		isa = PBXTextBookmark;
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 16";
-		rLen = 362;
-		rLoc = 741;
+		rLen = 0;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 712;
 		vrLoc = 0;
@@ -1662,7 +1747,7 @@
 		isa = PBXTextBookmark;
 		fRef = 28C286DF0D94DF7D0034E888 /* JGTimerConfigurationViewController.h */;
 		rLen = 0;
-		rLoc = 9223372036854775959;
+		rLoc = 9223372036854776149;
 		rType = 0;
 	};
 	52BBBDF214B258A900CFE655 /* PBXTextBookmark */ = {
@@ -1670,7 +1755,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* JGTimerConfigurationViewController.h */;
 		name = "RootViewController.h: 13";
 		rLen = 0;
-		rLoc = 412;
+		rLoc = 478;
 		rType = 0;
 		vrLen = 481;
 		vrLoc = 0;
@@ -1690,7 +1775,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* JGTimerConfigurationViewController.h */;
 		name = "RootViewController.h: 13";
 		rLen = 0;
-		rLoc = 412;
+		rLoc = 478;
 		rType = 0;
 		vrLen = 481;
 		vrLoc = 0;
@@ -1700,7 +1785,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* JGTimerConfigurationViewController.h */;
 		name = "RootViewController.h: 13";
 		rLen = 0;
-		rLoc = 412;
+		rLoc = 478;
 		rType = 0;
 		vrLen = 475;
 		vrLoc = 0;
@@ -1710,7 +1795,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* JGTimerConfigurationViewController.h */;
 		name = "RootViewController.h: 16";
 		rLen = 0;
-		rLoc = 473;
+		rLoc = 539;
 		rType = 0;
 		vrLen = 481;
 		vrLoc = 0;
@@ -1740,7 +1825,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 103";
 		rLen = 0;
-		rLoc = 4674;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 890;
 		vrLoc = 2846;
@@ -1750,7 +1835,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* JGTimerConfigurationViewController.h */;
 		name = "RootViewController.h: 16";
 		rLen = 0;
-		rLoc = 473;
+		rLoc = 539;
 		rType = 0;
 		vrLen = 481;
 		vrLoc = 0;
@@ -1760,7 +1845,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* JGTimerConfigurationViewController.h */;
 		name = "RootViewController.h: 12";
 		rLen = 0;
-		rLoc = 319;
+		rLoc = 345;
 		rType = 0;
 		vrLen = 525;
 		vrLoc = 3;
@@ -1770,7 +1855,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* JGTimerConfigurationViewController.h */;
 		name = "RootViewController.h: 12";
 		rLen = 0;
-		rLoc = 319;
+		rLoc = 345;
 		rType = 0;
 		vrLen = 525;
 		vrLoc = 3;
@@ -1780,7 +1865,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* JGTimerConfigurationViewController.h */;
 		name = "RootViewController.h: 12";
 		rLen = 0;
-		rLoc = 319;
+		rLoc = 345;
 		rType = 0;
 		vrLen = 525;
 		vrLoc = 3;
@@ -1790,7 +1875,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* JGTimerConfigurationViewController.h */;
 		name = "RootViewController.h: 12";
 		rLen = 0;
-		rLoc = 319;
+		rLoc = 345;
 		rType = 0;
 		vrLen = 528;
 		vrLoc = 0;
@@ -1826,7 +1911,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* JGTimerConfigurationViewController.h */;
 		name = "RootViewController.h: 12";
 		rLen = 0;
-		rLoc = 319;
+		rLoc = 345;
 		rType = 0;
 		vrLen = 481;
 		vrLoc = 0;
@@ -1856,7 +1941,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 102";
 		rLen = 0;
-		rLoc = 4674;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 429;
 		vrLoc = 2424;
@@ -1866,7 +1951,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 87";
 		rLen = 0;
-		rLoc = 4435;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 841;
 		vrLoc = 221;
@@ -1876,7 +1961,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 87";
 		rLen = 0;
-		rLoc = 4435;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 841;
 		vrLoc = 221;
@@ -1886,7 +1971,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 87";
 		rLen = 0;
-		rLoc = 4435;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 816;
 		vrLoc = 221;
@@ -1896,7 +1981,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 87";
 		rLen = 0;
-		rLoc = 4435;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 911;
 		vrLoc = 154;
@@ -1906,7 +1991,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* JGTimerConfigurationViewController.h */;
 		name = "RootViewController.h: 12";
 		rLen = 0;
-		rLoc = 319;
+		rLoc = 345;
 		rType = 0;
 		vrLen = 481;
 		vrLoc = 0;
@@ -1916,7 +2001,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* JGTimerConfigurationViewController.h */;
 		name = "RootViewController.h: 13";
 		rLen = 0;
-		rLoc = 412;
+		rLoc = 478;
 		rType = 0;
 		vrLen = 442;
 		vrLoc = 0;
@@ -1926,7 +2011,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 87";
 		rLen = 0;
-		rLoc = 4435;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 841;
 		vrLoc = 221;
@@ -1936,7 +2021,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* JGTimerConfigurationViewController.h */;
 		name = "RootViewController.h: 13";
 		rLen = 0;
-		rLoc = 412;
+		rLoc = 478;
 		rType = 0;
 		vrLen = 442;
 		vrLoc = 0;
@@ -1986,7 +2071,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* JGTimerConfigurationViewController.h */;
 		name = "RootViewController.h: 13";
 		rLen = 0;
-		rLoc = 412;
+		rLoc = 478;
 		rType = 0;
 		vrLen = 442;
 		vrLoc = 0;
@@ -2016,7 +2101,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* JGTimerConfigurationViewController.h */;
 		name = "RootViewController.h: 13";
 		rLen = 0;
-		rLoc = 412;
+		rLoc = 478;
 		rType = 0;
 		vrLen = 442;
 		vrLoc = 0;
@@ -2026,7 +2111,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 87";
 		rLen = 0;
-		rLoc = 4435;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 841;
 		vrLoc = 221;
@@ -2036,7 +2121,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 87";
 		rLen = 0;
-		rLoc = 4435;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 841;
 		vrLoc = 221;
@@ -2046,7 +2131,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 87";
 		rLen = 0;
-		rLoc = 4435;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 816;
 		vrLoc = 221;
@@ -2066,7 +2151,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 87";
 		rLen = 0;
-		rLoc = 4435;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 911;
 		vrLoc = 154;
@@ -2076,7 +2161,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 87";
 		rLen = 0;
-		rLoc = 4435;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 505;
 		vrLoc = 2342;
@@ -2086,7 +2171,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* JGTimerConfigurationViewController.h */;
 		name = "RootViewController.h: 13";
 		rLen = 0;
-		rLoc = 412;
+		rLoc = 478;
 		rType = 0;
 		vrLen = 442;
 		vrLoc = 0;
@@ -2096,7 +2181,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 25";
 		rLen = 0;
-		rLoc = 1450;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 748;
 		vrLoc = 315;
@@ -2106,7 +2191,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* JGTimerConfigurationViewController.h */;
 		name = "RootViewController.h: 13";
 		rLen = 0;
-		rLoc = 412;
+		rLoc = 478;
 		rType = 0;
 		vrLen = 442;
 		vrLoc = 0;
@@ -2116,7 +2201,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* JGTimerConfigurationViewController.h */;
 		name = "RootViewController.h: 12";
 		rLen = 0;
-		rLoc = 321;
+		rLoc = 347;
 		rType = 0;
 		vrLen = 489;
 		vrLoc = 0;
@@ -2126,7 +2211,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* JGTimerConfigurationViewController.h */;
 		name = "RootViewController.h: 12";
 		rLen = 0;
-		rLoc = 321;
+		rLoc = 347;
 		rType = 0;
 		vrLen = 484;
 		vrLoc = 0;
@@ -2136,7 +2221,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 115";
 		rLen = 0;
-		rLoc = 4435;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 905;
 		vrLoc = 154;
@@ -2146,7 +2231,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* JGTimerConfigurationViewController.h */;
 		name = "RootViewController.h: 12";
 		rLen = 0;
-		rLoc = 321;
+		rLoc = 347;
 		rType = 0;
 		vrLen = 489;
 		vrLoc = 0;
@@ -2156,7 +2241,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* JGTimerConfigurationViewController.h */;
 		name = "RootViewController.h: 12";
 		rLen = 0;
-		rLoc = 321;
+		rLoc = 347;
 		rType = 0;
 		vrLen = 489;
 		vrLoc = 0;
@@ -2166,7 +2251,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* JGTimerConfigurationViewController.h */;
 		name = "RootViewController.h: 12";
 		rLen = 0;
-		rLoc = 321;
+		rLoc = 347;
 		rType = 0;
 		vrLen = 484;
 		vrLoc = 0;
@@ -2176,12 +2261,18 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* JGTimerConfigurationViewController.h */;
 		name = "RootViewController.h: 12";
 		rLen = 0;
-		rLoc = 321;
+		rLoc = 347;
 		rType = 0;
 		vrLen = 489;
 		vrLoc = 0;
 	};
 	52BBBE3714B2EC5700CFE655 /* JGDurationPickerView.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = JGDurationPickerView.h;
+		path = "/Users/John/Drop Box/Dropbox/Projects/Programming Projects/Current Projects/MeetingTimer/MeetingTimer/Classes/JGDurationPickerView.h";
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1364, 580}}";
 			sepNavSelRange = "{75, 0}";
@@ -2189,6 +2280,12 @@
 		};
 	};
 	52BBBE3814B2EC5700CFE655 /* JGDurationPickerView.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = JGDurationPickerView.m;
+		path = "/Users/John/Drop Box/Dropbox/Projects/Programming Projects/Current Projects/MeetingTimer/MeetingTimer/Classes/JGDurationPickerView.m";
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1364, 580}}";
 			sepNavSelRange = "{72, 755}";
@@ -2201,7 +2298,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* JGTimerConfigurationViewController.h */;
 		name = "RootViewController.h: 12";
 		rLen = 0;
-		rLoc = 321;
+		rLoc = 347;
 		rType = 0;
 		vrLen = 489;
 		vrLoc = 0;
@@ -2240,8 +2337,8 @@
 		isa = PBXTextBookmark;
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 53";
-		rLen = 402;
-		rLoc = 2496;
+		rLen = 0;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 771;
 		vrLoc = 1447;
@@ -2291,7 +2388,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* JGTimerConfigurationViewController.h */;
 		name = "RootViewController.h: 12";
 		rLen = 0;
-		rLoc = 321;
+		rLoc = 347;
 		rType = 0;
 		vrLen = 489;
 		vrLoc = 0;
@@ -2350,8 +2447,8 @@
 		isa = PBXTextBookmark;
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 53";
-		rLen = 402;
-		rLoc = 2496;
+		rLen = 0;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 771;
 		vrLoc = 1447;
@@ -2360,8 +2457,8 @@
 		isa = PBXTextBookmark;
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 53";
-		rLen = 402;
-		rLoc = 2496;
+		rLen = 0;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 771;
 		vrLoc = 1447;
@@ -2370,8 +2467,8 @@
 		isa = PBXTextBookmark;
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 53";
-		rLen = 402;
-		rLoc = 2496;
+		rLen = 0;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 769;
 		vrLoc = 1447;
@@ -2381,7 +2478,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* JGTimerConfigurationViewController.h */;
 		name = "RootViewController.h: 12";
 		rLen = 0;
-		rLoc = 321;
+		rLoc = 347;
 		rType = 0;
 		vrLen = 489;
 		vrLoc = 0;
@@ -2390,8 +2487,8 @@
 		isa = PBXTextBookmark;
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 53";
-		rLen = 402;
-		rLoc = 2496;
+		rLen = 0;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 865;
 		vrLoc = 1355;
@@ -2400,8 +2497,8 @@
 		isa = PBXTextBookmark;
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 53";
-		rLen = 402;
-		rLoc = 2496;
+		rLen = 0;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 771;
 		vrLoc = 1447;
@@ -2459,8 +2556,8 @@
 		isa = PBXTextBookmark;
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 53";
-		rLen = 402;
-		rLoc = 2496;
+		rLen = 0;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 865;
 		vrLoc = 1355;
@@ -2755,11 +2852,11 @@
 		delayBeforeContinue = 0;
 		fileReference = 52BBBE3814B2EC5700CFE655 /* JGDurationPickerView.m */;
 		functionName = "-didMoveToWindow";
-		hitCount = 1;
+		hitCount = 0;
 		ignoreCount = 0;
 		lineNumber = 15;
 		location = MeetingTimer;
-		modificationTime = 347272370.942056;
+		modificationTime = 347286121.302302;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
@@ -2848,7 +2945,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 35";
 		rLen = 0;
-		rLoc = 2452;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 819;
 		vrLoc = 616;
@@ -2868,7 +2965,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 35";
 		rLen = 0;
-		rLoc = 2452;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 739;
 		vrLoc = 696;
@@ -2878,7 +2975,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 35";
 		rLen = 0;
-		rLoc = 2452;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 699;
 		vrLoc = 696;
@@ -2888,7 +2985,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 35";
 		rLen = 0;
-		rLoc = 2452;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 886;
 		vrLoc = 619;
@@ -2898,7 +2995,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 35";
 		rLen = 0;
-		rLoc = 2452;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 739;
 		vrLoc = 696;
@@ -2908,7 +3005,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 35";
 		rLen = 0;
-		rLoc = 2452;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 699;
 		vrLoc = 696;
@@ -2938,7 +3035,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 35";
 		rLen = 0;
-		rLoc = 1752;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 921;
 		vrLoc = 619;
@@ -2948,7 +3045,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 52";
 		rLen = 0;
-		rLoc = 2453;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1104;
 		vrLoc = 696;
@@ -2958,7 +3055,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 52";
 		rLen = 0;
-		rLoc = 2453;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1068;
 		vrLoc = 696;
@@ -2968,7 +3065,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 52";
 		rLen = 0;
-		rLoc = 2453;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1005;
 		vrLoc = 696;
@@ -2978,7 +3075,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2020;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1178;
 		vrLoc = 619;
@@ -2988,7 +3085,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2020;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1068;
 		vrLoc = 696;
@@ -2998,7 +3095,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2020;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1005;
 		vrLoc = 696;
@@ -3008,7 +3105,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 43";
 		rLen = 0;
-		rLoc = 2339;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1178;
 		vrLoc = 619;
@@ -3018,7 +3115,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 43";
 		rLen = 0;
-		rLoc = 2339;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1068;
 		vrLoc = 696;
@@ -3028,7 +3125,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 43";
 		rLen = 0;
-		rLoc = 2339;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1005;
 		vrLoc = 696;
@@ -3053,8 +3150,8 @@
 		isa = PBXTextBookmark;
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 43";
-		rLen = 2;
-		rLoc = 2337;
+		rLen = 0;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1178;
 		vrLoc = 619;
@@ -3064,7 +3161,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 43";
 		rLen = 0;
-		rLoc = 2340;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1199;
 		vrLoc = 619;
@@ -3074,7 +3171,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 43";
 		rLen = 0;
-		rLoc = 2340;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1089;
 		vrLoc = 696;
@@ -3084,7 +3181,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 43";
 		rLen = 0;
-		rLoc = 2340;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1026;
 		vrLoc = 696;
@@ -3094,7 +3191,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2013;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1178;
 		vrLoc = 619;
@@ -3104,7 +3201,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2013;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1068;
 		vrLoc = 696;
@@ -3114,7 +3211,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2013;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1005;
 		vrLoc = 696;
@@ -3124,7 +3221,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2003;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1179;
 		vrLoc = 619;
@@ -3134,7 +3231,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2003;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1069;
 		vrLoc = 696;
@@ -3144,7 +3241,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2003;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1006;
 		vrLoc = 696;
@@ -3154,7 +3251,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2003;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1178;
 		vrLoc = 619;
@@ -3164,7 +3261,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2003;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1068;
 		vrLoc = 696;
@@ -3174,7 +3271,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2003;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1005;
 		vrLoc = 696;
@@ -3184,7 +3281,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2013;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1178;
 		vrLoc = 619;
@@ -3194,7 +3291,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2013;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1068;
 		vrLoc = 696;
@@ -3204,7 +3301,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2013;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1005;
 		vrLoc = 696;
@@ -3214,7 +3311,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2003;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1181;
 		vrLoc = 619;
@@ -3224,7 +3321,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2003;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1071;
 		vrLoc = 696;
@@ -3234,7 +3331,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2003;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1008;
 		vrLoc = 696;
@@ -3244,7 +3341,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 44";
 		rLen = 0;
-		rLoc = 2343;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1237;
 		vrLoc = 619;
@@ -3254,7 +3351,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 44";
 		rLen = 0;
-		rLoc = 2343;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1054;
 		vrLoc = 1216;
@@ -3264,7 +3361,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 44";
 		rLen = 0;
-		rLoc = 2343;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1031;
 		vrLoc = 1216;
@@ -3274,7 +3371,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2013;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1374;
 		vrLoc = 834;
@@ -3284,7 +3381,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2013;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1209;
 		vrLoc = 998;
@@ -3294,7 +3391,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2013;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1205;
 		vrLoc = 998;
@@ -3304,7 +3401,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2013;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1277;
 		vrLoc = 999;
@@ -3314,7 +3411,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2013;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1211;
 		vrLoc = 999;
@@ -3324,7 +3421,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2013;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1206;
 		vrLoc = 999;
@@ -3334,7 +3431,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2018;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1274;
 		vrLoc = 977;
@@ -3344,7 +3441,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2018;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1209;
 		vrLoc = 999;
@@ -3354,7 +3451,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2018;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1204;
 		vrLoc = 999;
@@ -3364,7 +3461,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2013;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1274;
 		vrLoc = 977;
@@ -3374,7 +3471,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2013;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1209;
 		vrLoc = 999;
@@ -3384,7 +3481,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2013;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1204;
 		vrLoc = 999;
@@ -3394,7 +3491,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 32";
 		rLen = 0;
-		rLoc = 1747;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1237;
 		vrLoc = 350;
@@ -3404,7 +3501,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 32";
 		rLen = 0;
-		rLoc = 1747;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 969;
 		vrLoc = 618;
@@ -3414,7 +3511,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 32";
 		rLen = 0;
-		rLoc = 1747;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 914;
 		vrLoc = 618;
@@ -3424,7 +3521,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2013;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1199;
 		vrLoc = 697;
@@ -3434,7 +3531,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2013;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1101;
 		vrLoc = 697;
@@ -3444,7 +3541,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2013;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 938;
 		vrLoc = 697;
@@ -3454,7 +3551,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2003;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1235;
 		vrLoc = 634;
@@ -3464,7 +3561,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2003;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1104;
 		vrLoc = 697;
@@ -3474,7 +3571,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2003;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 941;
 		vrLoc = 697;
@@ -3484,7 +3581,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2003;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1233;
 		vrLoc = 634;
@@ -3494,7 +3591,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2003;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1102;
 		vrLoc = 697;
@@ -3504,7 +3601,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2003;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 939;
 		vrLoc = 697;
@@ -3514,7 +3611,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2003;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1232;
 		vrLoc = 634;
@@ -3524,7 +3621,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2003;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1101;
 		vrLoc = 697;
@@ -3534,7 +3631,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2003;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 938;
 		vrLoc = 697;
@@ -3544,7 +3641,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 40";
 		rLen = 0;
-		rLoc = 2023;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 851;
 		vrLoc = 28;
@@ -3554,7 +3651,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 40";
 		rLen = 0;
-		rLoc = 2023;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 729;
 		vrLoc = 150;
@@ -3564,7 +3661,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 40";
 		rLen = 0;
-		rLoc = 2023;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 684;
 		vrLoc = 150;
@@ -3574,7 +3671,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2016;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1395;
 		vrLoc = 977;
@@ -3584,7 +3681,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2016;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1200;
 		vrLoc = 977;
@@ -3594,7 +3691,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2016;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1083;
 		vrLoc = 977;
@@ -3603,8 +3700,8 @@
 		isa = PBXTextBookmark;
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
-		rLen = 3;
-		rLoc = 2013;
+		rLen = 0;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1298;
 		vrLoc = 879;
@@ -3613,8 +3710,8 @@
 		isa = PBXTextBookmark;
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
-		rLen = 3;
-		rLoc = 2013;
+		rLen = 0;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1200;
 		vrLoc = 977;
@@ -3623,8 +3720,8 @@
 		isa = PBXTextBookmark;
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
-		rLen = 3;
-		rLoc = 2013;
+		rLen = 0;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1083;
 		vrLoc = 977;
@@ -3634,7 +3731,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2016;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1447;
 		vrLoc = 879;
@@ -3644,7 +3741,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2016;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1199;
 		vrLoc = 977;
@@ -3654,7 +3751,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2016;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1082;
 		vrLoc = 977;
@@ -3664,7 +3761,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2016;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1447;
 		vrLoc = 879;
@@ -3674,7 +3771,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2016;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1199;
 		vrLoc = 977;
@@ -3684,7 +3781,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2016;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1082;
 		vrLoc = 977;
@@ -3694,7 +3791,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 49";
 		rLen = 0;
-		rLoc = 2354;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1344;
 		vrLoc = 977;
@@ -3704,7 +3801,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 49";
 		rLen = 0;
-		rLoc = 2354;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1194;
 		vrLoc = 977;
@@ -3714,7 +3811,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 49";
 		rLen = 0;
-		rLoc = 2354;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1077;
 		vrLoc = 977;
@@ -3724,7 +3821,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2016;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1447;
 		vrLoc = 879;
@@ -3734,7 +3831,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2016;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1199;
 		vrLoc = 977;
@@ -3744,7 +3841,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2016;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1082;
 		vrLoc = 977;
@@ -3754,7 +3851,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2016;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1447;
 		vrLoc = 879;
@@ -3764,7 +3861,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2016;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1199;
 		vrLoc = 977;
@@ -3774,7 +3871,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2016;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1082;
 		vrLoc = 977;
@@ -3784,7 +3881,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2016;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1447;
 		vrLoc = 879;
@@ -3794,7 +3891,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2016;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1199;
 		vrLoc = 977;
@@ -3804,7 +3901,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2016;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1082;
 		vrLoc = 977;
@@ -3814,7 +3911,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 42";
 		rLen = 0;
-		rLoc = 2219;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1521;
 		vrLoc = 833;
@@ -3824,7 +3921,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 42";
 		rLen = 0;
-		rLoc = 2219;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1227;
 		vrLoc = 977;
@@ -3834,7 +3931,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 42";
 		rLen = 0;
-		rLoc = 2219;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1110;
 		vrLoc = 977;
@@ -3844,7 +3941,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2016;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1521;
 		vrLoc = 833;
@@ -3854,7 +3951,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2016;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1227;
 		vrLoc = 977;
@@ -3864,7 +3961,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2016;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1110;
 		vrLoc = 977;
@@ -3874,7 +3971,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2015;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1521;
 		vrLoc = 833;
@@ -3884,7 +3981,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2015;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1227;
 		vrLoc = 977;
@@ -3894,7 +3991,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2015;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1110;
 		vrLoc = 977;
@@ -3904,7 +4001,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2015;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1522;
 		vrLoc = 833;
@@ -3914,7 +4011,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2015;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1228;
 		vrLoc = 977;
@@ -3924,7 +4021,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 39";
 		rLen = 0;
-		rLoc = 2015;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1111;
 		vrLoc = 977;
@@ -3934,7 +4031,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 49";
 		rLen = 0;
-		rLoc = 2354;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1406;
 		vrLoc = 977;
@@ -3944,7 +4041,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 49";
 		rLen = 0;
-		rLoc = 2354;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1256;
 		vrLoc = 977;
@@ -3954,7 +4051,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 49";
 		rLen = 0;
-		rLoc = 2354;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1139;
 		vrLoc = 977;
@@ -3964,7 +4061,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 49";
 		rLen = 0;
-		rLoc = 2354;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1504;
 		vrLoc = 879;
@@ -3974,7 +4071,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 49";
 		rLen = 0;
-		rLoc = 2354;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1256;
 		vrLoc = 977;
@@ -3984,7 +4081,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 49";
 		rLen = 0;
-		rLoc = 2354;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1139;
 		vrLoc = 977;
@@ -3994,7 +4091,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 49";
 		rLen = 0;
-		rLoc = 2354;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1504;
 		vrLoc = 879;
@@ -4004,7 +4101,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 49";
 		rLen = 0;
-		rLoc = 2354;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1256;
 		vrLoc = 977;
@@ -4014,7 +4111,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 49";
 		rLen = 0;
-		rLoc = 2354;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1139;
 		vrLoc = 977;
@@ -4024,7 +4121,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 49";
 		rLen = 0;
-		rLoc = 2354;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1504;
 		vrLoc = 879;
@@ -4034,7 +4131,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 49";
 		rLen = 0;
-		rLoc = 2354;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1256;
 		vrLoc = 977;
@@ -4044,7 +4141,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 49";
 		rLen = 0;
-		rLoc = 2354;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1139;
 		vrLoc = 977;
@@ -4054,7 +4151,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 49";
 		rLen = 0;
-		rLoc = 2354;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1504;
 		vrLoc = 879;
@@ -4064,7 +4161,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 49";
 		rLen = 0;
-		rLoc = 2354;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1256;
 		vrLoc = 977;
@@ -4074,7 +4171,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 49";
 		rLen = 0;
-		rLoc = 2354;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1139;
 		vrLoc = 977;
@@ -4084,7 +4181,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 49";
 		rLen = 0;
-		rLoc = 2354;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1504;
 		vrLoc = 879;
@@ -4094,7 +4191,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 49";
 		rLen = 0;
-		rLoc = 2354;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1256;
 		vrLoc = 977;
@@ -4104,7 +4201,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 49";
 		rLen = 0;
-		rLoc = 2354;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1139;
 		vrLoc = 977;
@@ -4114,7 +4211,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 49";
 		rLen = 0;
-		rLoc = 2354;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1504;
 		vrLoc = 879;
@@ -4124,7 +4221,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 49";
 		rLen = 0;
-		rLoc = 2354;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1256;
 		vrLoc = 977;
@@ -4134,7 +4231,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 49";
 		rLen = 0;
-		rLoc = 2354;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1139;
 		vrLoc = 977;
@@ -4144,7 +4241,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 49";
 		rLen = 0;
-		rLoc = 2354;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1640;
 		vrLoc = 879;
@@ -4154,7 +4251,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 49";
 		rLen = 0;
-		rLoc = 2354;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1813;
 		vrLoc = 817;
@@ -4164,7 +4261,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 49";
 		rLen = 0;
-		rLoc = 2354;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1743;
 		vrLoc = 817;
@@ -4174,7 +4271,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 49";
 		rLen = 0;
-		rLoc = 2354;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1640;
 		vrLoc = 879;
@@ -4184,7 +4281,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 49";
 		rLen = 0;
-		rLoc = 2354;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1813;
 		vrLoc = 817;
@@ -4194,7 +4291,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 49";
 		rLen = 0;
-		rLoc = 2354;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1743;
 		vrLoc = 817;
@@ -4204,7 +4301,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 49";
 		rLen = 0;
-		rLoc = 2354;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1640;
 		vrLoc = 879;
@@ -4214,7 +4311,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 49";
 		rLen = 0;
-		rLoc = 2354;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1813;
 		vrLoc = 817;
@@ -4224,7 +4321,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 49";
 		rLen = 0;
-		rLoc = 2354;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1743;
 		vrLoc = 817;
@@ -4234,7 +4331,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 49";
 		rLen = 0;
-		rLoc = 2354;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1640;
 		vrLoc = 879;
@@ -4244,7 +4341,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 49";
 		rLen = 0;
-		rLoc = 2354;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1813;
 		vrLoc = 817;
@@ -4254,7 +4351,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 49";
 		rLen = 0;
-		rLoc = 2354;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1743;
 		vrLoc = 817;
@@ -4264,7 +4361,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 49";
 		rLen = 0;
-		rLoc = 2354;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1640;
 		vrLoc = 879;
@@ -4274,7 +4371,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 49";
 		rLen = 0;
-		rLoc = 2354;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1813;
 		vrLoc = 817;
@@ -4284,7 +4381,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 49";
 		rLen = 0;
-		rLoc = 2354;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1743;
 		vrLoc = 817;
@@ -4294,7 +4391,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 49";
 		rLen = 0;
-		rLoc = 2354;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1660;
 		vrLoc = 834;
@@ -4304,7 +4401,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 49";
 		rLen = 0;
-		rLoc = 2354;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1813;
 		vrLoc = 817;
@@ -4314,7 +4411,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "RootViewController.m: 41";
 		rLen = 0;
-		rLoc = 2108;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1813;
 		vrLoc = 817;
@@ -4384,7 +4481,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "JGTimerConfigurationViewController.m: 137";
 		rLen = 0;
-		rLoc = 4680;
+		rLoc = 4829;
 		rType = 0;
 		vrLen = 1640;
 		vrLoc = 911;
@@ -4471,7 +4568,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "JGTimerConfigurationViewController.m: 137";
 		rLen = 0;
-		rLoc = 4680;
+		rLoc = 4829;
 		rType = 0;
 		vrLen = 1640;
 		vrLoc = 911;
@@ -4481,7 +4578,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "JGTimerConfigurationViewController.m: 137";
 		rLen = 0;
-		rLoc = 4680;
+		rLoc = 4829;
 		rType = 0;
 		vrLen = 1542;
 		vrLoc = 1009;
@@ -4502,7 +4599,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "JGTimerConfigurationViewController.m: 137";
 		rLen = 0;
-		rLoc = 4680;
+		rLoc = 4829;
 		rType = 0;
 		vrLen = 1799;
 		vrLoc = 863;
@@ -4512,7 +4609,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "JGTimerConfigurationViewController.m: 137";
 		rLen = 0;
-		rLoc = 4680;
+		rLoc = 4829;
 		rType = 0;
 		vrLen = 1794;
 		vrLoc = 863;
@@ -4522,7 +4619,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "JGTimerConfigurationViewController.m: 137";
 		rLen = 0;
-		rLoc = 4680;
+		rLoc = 4829;
 		rType = 0;
 		vrLen = 1542;
 		vrLoc = 1009;
@@ -4532,7 +4629,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "JGTimerConfigurationViewController.m: 137";
 		rLen = 0;
-		rLoc = 4680;
+		rLoc = 4829;
 		rType = 0;
 		vrLen = 1799;
 		vrLoc = 863;
@@ -4542,7 +4639,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "JGTimerConfigurationViewController.m: 137";
 		rLen = 0;
-		rLoc = 4680;
+		rLoc = 4829;
 		rType = 0;
 		vrLen = 1799;
 		vrLoc = 863;
@@ -4552,7 +4649,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "JGTimerConfigurationViewController.m: 74";
 		rLen = 0;
-		rLoc = 3062;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1051;
 		vrLoc = 2051;
@@ -4562,7 +4659,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "JGTimerConfigurationViewController.m: 74";
 		rLen = 0;
-		rLoc = 3062;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1051;
 		vrLoc = 2051;
@@ -4619,7 +4716,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "JGTimerConfigurationViewController.m: 130";
 		rLen = 0;
-		rLoc = 4680;
+		rLoc = 4829;
 		rType = 0;
 		vrLen = 1485;
 		vrLoc = 1009;
@@ -4689,7 +4786,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* JGTimerConfigurationViewController.h */;
 		name = "JGTimerConfigurationViewController.h: 14";
 		rLen = 15;
-		rLoc = 395;
+		rLoc = 421;
 		rType = 0;
 		vrLen = 594;
 		vrLoc = 0;
@@ -4699,7 +4796,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "JGTimerConfigurationViewController.m: 20";
 		rLen = 0;
-		rLoc = 715;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1930;
 		vrLoc = 0;
@@ -4709,24 +4806,920 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "JGTimerConfigurationViewController.m: 29";
 		rLen = 0;
-		rLoc = 955;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 1884;
 		vrLoc = 0;
 	};
-	52BBBFC514B3232700CFE655 /* JGStringToNumberConverterTestCase.h */ = {
+	52BBBFEC14B3283900CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52CA8B58149D089B0030ADC1 /* JGRunningViewController.h */;
+		name = "JGRunningViewController.h: 10";
+		rLen = 0;
+		rLoc = 220;
+		rType = 0;
+		vrLen = 411;
+		vrLoc = 0;
+	};
+	52BBBFED14B3283900CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52CA8B59149D089B0030ADC1 /* JGRunningViewController.m */;
+		name = "JGRunningViewController.m: 10";
+		rLen = 0;
+		rLoc = 232;
+		rType = 0;
+		vrLen = 983;
+		vrLoc = 0;
+	};
+	52BBBFEE14B3283900CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5251B9A9149E59B400AFC0B6 /* JGTimerControllerDelegate.h */;
+		name = "JGTimerControllerDelegate.h: 12";
+		rLen = 47;
+		rLoc = 187;
+		rType = 0;
+		vrLen = 308;
+		vrLoc = 0;
+	};
+	52BBBFEF14B3283900CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52591F33149E453E00DEA711 /* JGTimerController.h */;
+		name = "JGTimerController.h: 14";
+		rLen = 14;
+		rLoc = 291;
+		rType = 0;
+		vrLen = 828;
+		vrLoc = 0;
+	};
+	52BBBFF014B3283900CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52EB417214B1218D00308C95 /* JGTimerDurationCalculator.m */;
+		name = "JGTimerDurationCalculator.m: 38";
+		rLen = 0;
+		rLoc = 1319;
+		rType = 0;
+		vrLen = 1211;
+		vrLoc = 570;
+	};
+	52BBBFF114B3283900CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52EB417114B1218D00308C95 /* JGTimerDurationCalculator.h */;
+		name = "JGTimerDurationCalculator.h: 11";
+		rLen = 0;
+		rLoc = 270;
+		rType = 0;
+		vrLen = 446;
+		vrLoc = 0;
+	};
+	52BBBFF214B3283900CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */;
+		name = "JGTimerControllerTestCase.m: 44";
+		rLen = 22;
+		rLoc = 1600;
+		rType = 0;
+		vrLen = 1639;
+		vrLoc = 775;
+	};
+	52BBBFF314B3283900CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52591F40149E469000DEA711 /* JGTimerControllerTestCase.h */;
+		name = "JGTimerControllerTestCase.h: 22";
+		rLen = 0;
+		rLoc = 791;
+		rType = 0;
+		vrLen = 798;
+		vrLoc = 0;
+	};
+	52BBBFF414B3283900CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
+		name = "JGTimerController.m: 23";
+		rLen = 124;
+		rLoc = 726;
+		rType = 0;
+		vrLen = 1293;
+		vrLoc = 106;
+	};
+	52BBBFF514B3283900CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286DF0D94DF7D0034E888 /* JGTimerConfigurationViewController.h */;
+		name = "JGTimerConfigurationViewController.h: 12";
+		rLen = 0;
+		rLoc = 234;
+		rType = 0;
+		vrLen = 660;
+		vrLoc = 0;
+	};
+	52BBBFF614B3283900CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 32";
+		rLen = 0;
+		rLoc = 332;
+		rType = 0;
+		vrLen = 1514;
+		vrLoc = 0;
+	};
+	52BBBFF714B3283900CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 23";
+		rLen = 0;
+		rLoc = 332;
+		rType = 0;
+		vrLen = 1558;
+		vrLoc = 48;
+	};
+	52BBBFF814B3283900CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 23";
+		rLen = 0;
+		rLoc = 332;
+		rType = 0;
+		vrLen = 1557;
+		vrLoc = 48;
+	};
+	52BBBFFB14B3287500CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 72";
+		rLen = 0;
+		rLoc = 332;
+		rType = 0;
+		vrLen = 1641;
+		vrLoc = 2074;
+	};
+	52BBBFFC14B3287600CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 72";
+		rLen = 0;
+		rLoc = 332;
+		rType = 0;
+		vrLen = 1262;
+		vrLoc = 2074;
+	};
+	52BBBFFD14B3287600CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 72";
+		rLen = 0;
+		rLoc = 332;
+		rType = 0;
+		vrLen = 1256;
+		vrLoc = 2074;
+	};
+	52BBC00014B328B500CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 77";
+		rLen = 0;
+		rLoc = 332;
+		rType = 0;
+		vrLen = 1931;
+		vrLoc = 154;
+	};
+	52BBC00114B328B500CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286DF0D94DF7D0034E888 /* JGTimerConfigurationViewController.h */;
+		name = "JGTimerConfigurationViewController.h: 15";
+		rLen = 15;
+		rLoc = 421;
+		rType = 0;
+		vrLen = 660;
+		vrLoc = 0;
+	};
+	52BBC00214B328B500CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286DF0D94DF7D0034E888 /* JGTimerConfigurationViewController.h */;
+		name = "JGTimerConfigurationViewController.h: 15";
+		rLen = 15;
+		rLoc = 421;
+		rType = 0;
+		vrLen = 660;
+		vrLoc = 0;
+	};
+	52BBC00314B328B600CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 72";
+		rLen = 0;
+		rLoc = 332;
+		rType = 0;
+		vrLen = 1262;
+		vrLoc = 2074;
+	};
+	52BBC00414B328B600CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286DF0D94DF7D0034E888 /* JGTimerConfigurationViewController.h */;
+		name = "JGTimerConfigurationViewController.h: 15";
+		rLen = 15;
+		rLoc = 421;
+		rType = 0;
+		vrLen = 660;
+		vrLoc = 0;
+	};
+	52BBC00514B328B600CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286DF0D94DF7D0034E888 /* JGTimerConfigurationViewController.h */;
+		name = "JGTimerConfigurationViewController.h: 15";
+		rLen = 15;
+		rLoc = 421;
+		rType = 0;
+		vrLen = 660;
+		vrLoc = 0;
+	};
+	52BBC00814B3291700CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286DF0D94DF7D0034E888 /* JGTimerConfigurationViewController.h */;
+		name = "JGTimerConfigurationViewController.h: 30";
+		rLen = 0;
+		rLoc = 784;
+		rType = 0;
+		vrLen = 717;
+		vrLoc = 0;
+	};
+	52BBC00914B3291700CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 71";
+		rLen = 0;
+		rLoc = 332;
+		rType = 0;
+		vrLen = 1920;
+		vrLoc = 1092;
+	};
+	52BBC00A14B3291700CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 60";
+		rLen = 0;
+		rLoc = 332;
+		rType = 0;
+		vrLen = 1934;
+		vrLoc = 48;
+	};
+	52BBC00B14B3291800CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286DF0D94DF7D0034E888 /* JGTimerConfigurationViewController.h */;
+		name = "JGTimerConfigurationViewController.h: 30";
+		rLen = 0;
+		rLoc = 784;
+		rType = 0;
+		vrLen = 717;
+		vrLoc = 0;
+	};
+	52BBC00C14B3291800CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 60";
+		rLen = 0;
+		rLoc = 332;
+		rType = 0;
+		vrLen = 1662;
+		vrLoc = 320;
+	};
+	52BBC00D14B3291800CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 60";
+		rLen = 0;
+		rLoc = 332;
+		rType = 0;
+		vrLen = 1599;
+		vrLoc = 320;
+	};
+	52BBC00E14B3295400CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 24";
+		rLen = 0;
+		rLoc = 332;
+		rType = 0;
+		vrLen = 1724;
+		vrLoc = 0;
+	};
+	52BBC01114B3296900CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 24";
+		rLen = 0;
+		rLoc = 332;
+		rType = 0;
+		vrLen = 1523;
+		vrLoc = 201;
+	};
+	52BBC01214B3296900CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 24";
+		rLen = 0;
+		rLoc = 332;
+		rType = 0;
+		vrLen = 1523;
+		vrLoc = 201;
+	};
+	52BBC01314B3296900CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 24";
+		rLen = 0;
+		rLoc = 332;
+		rType = 0;
+		vrLen = 1493;
+		vrLoc = 201;
+	};
+	52BBC01714B3299E00CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
+		name = "JGTimerController.m: 39";
+		rLen = 0;
+		rLoc = 1314;
+		rType = 0;
+		vrLen = 1837;
+		vrLoc = 0;
+	};
+	52BBC01814B3299E00CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 24";
+		rLen = 0;
+		rLoc = 332;
+		rType = 0;
+		vrLen = 1699;
+		vrLoc = 0;
+	};
+	52BBC01914B3299E00CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 28";
+		rLen = 0;
+		rLoc = 332;
+		rType = 0;
+		vrLen = 1731;
+		vrLoc = 0;
+	};
+	52BBC01A14B3299F00CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 28";
+		rLen = 0;
+		rLoc = 332;
+		rType = 0;
+		vrLen = 1530;
+		vrLoc = 201;
+	};
+	52BBC01B14B329A000CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 28";
+		rLen = 0;
+		rLoc = 332;
+		rType = 0;
+		vrLen = 1500;
+		vrLoc = 201;
+	};
+	52BBC01E14B329FE00CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 28";
+		rLen = 0;
+		rLoc = 332;
+		rType = 0;
+		vrLen = 1500;
+		vrLoc = 201;
+	};
+	52BBC02014B32A4400CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 28";
+		rLen = 0;
+		rLoc = 332;
+		rType = 0;
+		vrLen = 1495;
+		vrLoc = 201;
+	};
+	52BBC02114B32A4B00CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 28";
+		rLen = 0;
+		rLoc = 332;
+		rType = 0;
+		vrLen = 1495;
+		vrLoc = 201;
+	};
+	52BBC02214B32A5200CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 28";
+		rLen = 0;
+		rLoc = 332;
+		rType = 0;
+		vrLen = 1495;
+		vrLoc = 201;
+	};
+	52BBC02514B32A9700CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52CA8B59149D089B0030ADC1 /* JGRunningViewController.m */;
+		name = "JGRunningViewController.m: 24";
+		rLen = 0;
+		rLoc = 463;
+		rType = 0;
+		vrLen = 1310;
+		vrLoc = 0;
+	};
+	52BBC02614B32A9700CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		rLen = 0;
+		rLoc = 14;
+		rType = 1;
+	};
+	52BBC02714B32A9700CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 89";
+		rLen = 0;
+		rLoc = 332;
+		rType = 0;
+		vrLen = 2041;
+		vrLoc = 2237;
+	};
+	52BBC02814B32A9700CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 89";
+		rLen = 0;
+		rLoc = 332;
+		rType = 0;
+		vrLen = 1409;
+		vrLoc = 2237;
+	};
+	52BBC02914B32A9700CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 89";
+		rLen = 0;
+		rLoc = 332;
+		rType = 0;
+		vrLen = 1235;
+		vrLoc = 2237;
+	};
+	52BBC02C14B32AFB00CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286DF0D94DF7D0034E888 /* JGTimerConfigurationViewController.h */;
+		name = "JGTimerConfigurationViewController.h: 32";
+		rLen = 0;
+		rLoc = 784;
+		rType = 0;
+		vrLen = 784;
+		vrLoc = 0;
+	};
+	52BBC02D14B32AFB00CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 28";
+		rLen = 0;
+		rLoc = 1091;
+		rType = 0;
+		vrLen = 1920;
+		vrLoc = 150;
+	};
+	52BBC02E14B32AFB00CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 92";
+		rLen = 0;
+		rLoc = 3253;
+		rType = 0;
+		vrLen = 1596;
+		vrLoc = 2263;
+	};
+	52BBC02F14B32AFC00CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 92";
+		rLen = 0;
+		rLoc = 3253;
+		rType = 0;
+		vrLen = 1293;
+		vrLoc = 2263;
+	};
+	52BBC03014B32AFC00CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 92";
+		rLen = 0;
+		rLoc = 3253;
+		rType = 0;
+		vrLen = 1252;
+		vrLoc = 2263;
+	};
+	52BBC03314B3398F00CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 91";
+		rLen = 0;
+		rLoc = 3248;
+		rType = 0;
+		vrLen = 1624;
+		vrLoc = 2230;
+	};
+	52BBC03414B3399000CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 91";
+		rLen = 0;
+		rLoc = 3248;
+		rType = 0;
+		vrLen = 1293;
+		vrLoc = 2263;
+	};
+	52BBC03514B3399000CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 91";
+		rLen = 0;
+		rLoc = 3248;
+		rType = 0;
+		vrLen = 1252;
+		vrLoc = 2263;
+	};
+	52BBC03614B33BF800CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 123";
+		rLen = 0;
+		rLoc = 4323;
+		rType = 0;
+		vrLen = 1602;
+		vrLoc = 3181;
+	};
+	52BBC03914B33C7A00CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 89";
+		rLen = 35;
+		rLoc = 3214;
+		rType = 0;
+		vrLen = 1240;
+		vrLoc = 2265;
+	};
+	52BBC03A14B33C7A00CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 89";
+		rLen = 35;
+		rLoc = 3214;
+		rType = 0;
+		vrLen = 1237;
+		vrLoc = 2265;
+	};
+	52BBC03B14B33C9E00CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 88";
+		rLen = 35;
+		rLoc = 3214;
+		rType = 0;
+		vrLen = 1386;
+		vrLoc = 2046;
+	};
+	52BBC03C14B3490D00CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 87";
+		rLen = 0;
+		rLoc = 3213;
+		rType = 0;
+		vrLen = 1771;
+		vrLoc = 1696;
+	};
+	52BBC03F14B3491700CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 87";
+		rLen = 0;
+		rLoc = 3213;
+		rType = 0;
+		vrLen = 1440;
+		vrLoc = 2331;
+	};
+	52BBC04014B3491700CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 87";
+		rLen = 0;
+		rLoc = 3213;
+		rType = 0;
+		vrLen = 1436;
+		vrLoc = 2331;
+	};
+	52BBC04114B3493800CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 87";
+		rLen = 0;
+		rLoc = 3213;
+		rType = 0;
+		vrLen = 1948;
+		vrLoc = 2265;
+	};
+	52BBC07C14B34F0600CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5251BB28149EA3A600AFC0B6 /* OCMArg.m */;
+		name = "OCMArg.m: 10";
+		rLen = 23;
+		rLoc = 357;
+		rType = 0;
+		vrLen = 837;
+		vrLoc = 503;
+	};
+	52BBC07D14B34F0600CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286DF0D94DF7D0034E888 /* JGTimerConfigurationViewController.h */;
+		name = "JGTimerConfigurationViewController.h: 32";
+		rLen = 0;
+		rLoc = 784;
+		rType = 0;
+		vrLen = 784;
+		vrLoc = 0;
+	};
+	52BBC07E14B34F0600CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 87";
+		rLen = 0;
+		rLoc = 3213;
+		rType = 0;
+		vrLen = 1312;
+		vrLoc = 2155;
+	};
+	52BBC07F14B34F0600CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52591F33149E453E00DEA711 /* JGTimerController.h */;
+		name = "JGTimerController.h: 33";
+		rLen = 0;
+		rLoc = 759;
+		rType = 0;
+		vrLen = 849;
+		vrLoc = 0;
+	};
+	52BBC08014B34F0600CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5251B9A9149E59B400AFC0B6 /* JGTimerControllerDelegate.h */;
+		name = "JGTimerControllerDelegate.h: 20";
+		rLen = 0;
+		rLoc = 303;
+		rType = 0;
+		vrLen = 364;
+		vrLoc = 0;
+	};
+	52BBC08114B34F0600CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52CA8B59149D089B0030ADC1 /* JGRunningViewController.m */;
+		name = "JGRunningViewController.m: 60";
+		rLen = 0;
+		rLoc = 1562;
+		rType = 0;
+		vrLen = 942;
+		vrLoc = 1013;
+	};
+	52BBC08214B34F0600CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */;
+		name = "JGTimerControllerTestCase.m: 44";
+		rLen = 22;
+		rLoc = 1600;
+		rType = 0;
+		vrLen = 1759;
+		vrLoc = 505;
+	};
+	52BBC08314B34F0600CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
+		rLen = 1;
+		rLoc = 22;
+		rType = 1;
+	};
+	52BBC08414B34F0600CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
+		name = "JGTimerController.m: 50";
+		rLen = 0;
+		rLoc = 1838;
+		rType = 0;
+		vrLen = 1367;
+		vrLoc = 1331;
+	};
+	52BBC08714B34FC900CFE655 /* JGCountdownTimer.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1364, 580}}";
-			sepNavSelRange = "{64, 0}";
-			sepNavVisRange = "{0, 136}";
+			sepNavIntBoundsRect = "{{0, 0}, {1312, 603}}";
+			sepNavSelRange = "{459, 0}";
+			sepNavVisRange = "{0, 470}";
 		};
 	};
-	52BBBFC614B3232700CFE655 /* JGStringToNumberConverterTestCase.m */ = {
+	52BBC08814B34FC900CFE655 /* JGCountdownTimer.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1364, 580}}";
-			sepNavSelRange = "{139, 103}";
-			sepNavVisRange = "{0, 250}";
+			sepNavIntBoundsRect = "{{0, 0}, {1312, 840}}";
+			sepNavSelRange = "{1090, 0}";
+			sepNavVisRange = "{0, 1282}";
+			sepNavWindowFrame = "{{61, 207}, {640, 774}}";
 		};
+	};
+	52BBC08A14B3505E00CFE655 /* JGCountdownTimerDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1364, 603}}";
+			sepNavSelRange = "{231, 0}";
+			sepNavVisRange = "{0, 295}";
+		};
+	};
+	52BBC08B14B3509200CFE655 /* JGCountdownTimerTestCase.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1364, 603}}";
+			sepNavSelRange = "{121, 0}";
+			sepNavVisRange = "{0, 127}";
+		};
+	};
+	52BBC08C14B3509200CFE655 /* JGCountdownTimerTestCase.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1312, 1020}}";
+			sepNavSelRange = "{2470, 0}";
+			sepNavVisRange = "{1044, 1470}";
+		};
+	};
+	52BBC0BF14B3562B00CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 87";
+		rLen = 0;
+		rLoc = 3213;
+		rType = 0;
+		vrLen = 1213;
+		vrLoc = 2263;
+	};
+	52BBC0C014B3562B00CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286DF0D94DF7D0034E888 /* JGTimerConfigurationViewController.h */;
+		name = "JGTimerConfigurationViewController.h: 32";
+		rLen = 0;
+		rLoc = 784;
+		rType = 0;
+		vrLen = 784;
+		vrLoc = 0;
+	};
+	52BBC0C114B3562B00CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5251B9A9149E59B400AFC0B6 /* JGTimerControllerDelegate.h */;
+		name = "JGTimerControllerDelegate.h: 20";
+		rLen = 0;
+		rLoc = 303;
+		rType = 0;
+		vrLen = 308;
+		vrLoc = 0;
+	};
+	52BBC0C214B3562B00CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52EB416A14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.h */;
+		name = "JGTimerDurationCalculatorTestCase.h: 5";
+		rLen = 0;
+		rLoc = 101;
+		rType = 0;
+		vrLen = 173;
+		vrLoc = 0;
+	};
+	52BBC0C314B3562B00CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52EB416B14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.m */;
+		name = "JGTimerDurationCalculatorTestCase.m: 83";
+		rLen = 22;
+		rLoc = 4169;
+		rType = 0;
+		vrLen = 2043;
+		vrLoc = 2412;
+	};
+	52BBC0C414B3562B00CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52591F40149E469000DEA711 /* JGTimerControllerTestCase.h */;
+		name = "JGTimerControllerTestCase.h: 22";
+		rLen = 0;
+		rLoc = 791;
+		rType = 0;
+		vrLen = 798;
+		vrLoc = 0;
+	};
+	52BBC0C514B3562B00CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */;
+		name = "JGTimerControllerTestCase.m: 11";
+		rLen = 26;
+		rLoc = 229;
+		rType = 0;
+		vrLen = 1501;
+		vrLoc = 0;
+	};
+	52BBC0C614B3562B00CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52BBC08B14B3509200CFE655 /* JGCountdownTimerTestCase.h */;
+		name = "JGCountdownTimerTestCase.h: 8";
+		rLen = 0;
+		rLoc = 121;
+		rType = 0;
+		vrLen = 127;
+		vrLoc = 0;
+	};
+	52BBC0C714B3562B00CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52591F33149E453E00DEA711 /* JGTimerController.h */;
+		name = "JGTimerController.h: 15";
+		rLen = 0;
+		rLoc = 349;
+		rType = 0;
+		vrLen = 765;
+		vrLoc = 0;
+	};
+	52BBC0C814B3562B00CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52BBC08A14B3505E00CFE655 /* JGCountdownTimerDelegate.h */;
+		name = "JGCountdownTimerDelegate.h: 12";
+		rLen = 0;
+		rLoc = 231;
+		rType = 0;
+		vrLen = 295;
+		vrLoc = 0;
+	};
+	52BBC0C914B3562B00CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5251BB28149EA3A600AFC0B6 /* OCMArg.m */;
+		name = "OCMArg.m: 10";
+		rLen = 23;
+		rLoc = 357;
+		rType = 0;
+		vrLen = 909;
+		vrLoc = 0;
+	};
+	52BBC0CA14B3562B00CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
+		name = "JGTimerController.m: 23";
+		rLen = 124;
+		rLoc = 726;
+		rType = 0;
+		vrLen = 1554;
+		vrLoc = 726;
+	};
+	52BBC0CB14B3562B00CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52BBC08714B34FC900CFE655 /* JGCountdownTimer.h */;
+		name = "JGCountdownTimer.h: 18";
+		rLen = 0;
+		rLoc = 459;
+		rType = 0;
+		vrLen = 470;
+		vrLoc = 0;
+	};
+	52BBC0CC14B3562B00CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52BBC08814B34FC900CFE655 /* JGCountdownTimer.m */;
+		name = "JGCountdownTimer.m: 40";
+		rLen = 0;
+		rLoc = 1090;
+		rType = 0;
+		vrLen = 1282;
+		vrLoc = 0;
+	};
+	52BBC0CD14B3562B00CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52BBC08C14B3509200CFE655 /* JGCountdownTimerTestCase.m */;
+		name = "JGCountdownTimerTestCase.m: 13";
+		rLen = 10;
+		rLoc = 554;
+		rType = 0;
+		vrLen = 665;
+		vrLoc = 0;
+	};
+	52BBC0CE14B3562B00CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52BBC08C14B3509200CFE655 /* JGCountdownTimerTestCase.m */;
+		name = "JGCountdownTimerTestCase.m: 14";
+		rLen = 10;
+		rLoc = 554;
+		rType = 0;
+		vrLen = 1624;
+		vrLoc = 0;
+	};
+	52BBC0D114B3566800CFE655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52BBC08C14B3509200CFE655 /* JGCountdownTimerTestCase.m */;
+		name = "JGCountdownTimerTestCase.m: 62";
+		rLen = 0;
+		rLoc = 2470;
+		rType = 0;
+		vrLen = 1470;
+		vrLoc = 1044;
 	};
 	52CA8ACD149CF1A00030ADC1 /* MeetingTimer */ = {
 		isa = PBXExecutable;
@@ -4783,28 +5776,11 @@
 	};
 	52CA8B59149D089B0030ADC1 /* JGRunningViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1364, 1260}}";
-			sepNavSelRange = "{232, 0}";
-			sepNavVisRange = "{0, 983}";
+			sepNavIntBoundsRect = "{{0, 0}, {1364, 1245}}";
+			sepNavSelRange = "{1562, 0}";
+			sepNavVisRange = "{1013, 942}";
+			sepNavWindowFrame = "{{38, 228}, {640, 774}}";
 		};
-	};
-	52CA8BAB149D0D380030ADC1 /* JGRunningViewController.m:24 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 52CA8B59149D089B0030ADC1 /* JGRunningViewController.m */;
-		functionName = "-stopTimer:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 24;
-		location = MeetingTimer;
-		modificationTime = 347272369.214167;
-		originalNumberOfMultipleMatches = 1;
-		state = 1;
 	};
 	52E0FDB514A5035900D6D44C /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -4828,30 +5804,30 @@
 	};
 	52EB416A14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {964, 342}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1364, 603}}";
 			sepNavSelRange = "{101, 0}";
 			sepNavVisRange = "{0, 173}";
 		};
 	};
 	52EB416B14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {964, 1365}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1364, 1365}}";
 			sepNavSelRange = "{4169, 22}";
-			sepNavVisRange = "{3391, 1064}";
+			sepNavVisRange = "{2412, 2043}";
 		};
 	};
 	52EB417114B1218D00308C95 /* JGTimerDurationCalculator.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {964, 342}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1364, 580}}";
 			sepNavSelRange = "{270, 0}";
 			sepNavVisRange = "{0, 446}";
 		};
 	};
 	52EB417214B1218D00308C95 /* JGTimerDurationCalculator.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {873, 870}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1364, 930}}";
 			sepNavSelRange = "{1319, 0}";
-			sepNavVisRange = "{849, 867}";
+			sepNavVisRange = "{570, 1211}";
 		};
 	};
 	52EB418214B122F400308C95 /* PBXTextBookmark */ = {
@@ -4889,7 +5865,7 @@
 		fRef = 52591F33149E453E00DEA711 /* JGTimerController.h */;
 		name = "JGTimerController.h: 14";
 		rLen = 14;
-		rLoc = 354;
+		rLoc = 291;
 		rType = 0;
 		vrLen = 680;
 		vrLoc = 0;

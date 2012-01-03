@@ -40,10 +40,9 @@
 		5251BB59149EA3A700AFC0B6 /* OCProtocolMockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5251BB45149EA3A700AFC0B6 /* OCProtocolMockObject.m */; };
 		52591F35149E453E00DEA711 /* JGTimerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52591F34149E453E00DEA711 /* JGTimerController.m */; };
 		52591F43149E469C00DEA711 /* JGTimerControllerTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */; };
-		52BBBE3914B2EC5700CFE655 /* JGDurationPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BBBE3814B2EC5700CFE655 /* JGDurationPickerView.m */; };
-		52BBBFC714B3232700CFE655 /* JGStringToNumberConverterTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BBBFC614B3232700CFE655 /* JGStringToNumberConverterTestCase.m */; };
-		52BBBFD414B3241900CFE655 /* JGStringConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BBBFD314B3241900CFE655 /* JGStringConverter.m */; };
-		52BBBFD514B3241900CFE655 /* JGStringConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BBBFD314B3241900CFE655 /* JGStringConverter.m */; };
+		52BBC08914B34FC900CFE655 /* JGCountdownTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BBC08814B34FC900CFE655 /* JGCountdownTimer.m */; };
+		52BBC08D14B3509200CFE655 /* JGCountdownTimerTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BBC08C14B3509200CFE655 /* JGCountdownTimerTestCase.m */; };
+		52BBC09614B3513900CFE655 /* JGCountdownTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BBC08814B34FC900CFE655 /* JGCountdownTimer.m */; };
 		52CA8B5B149D089B0030ADC1 /* JGRunningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CA8B59149D089B0030ADC1 /* JGRunningViewController.m */; };
 		52CA8B5C149D089B0030ADC1 /* JGRunningViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52CA8B5A149D089B0030ADC1 /* JGRunningViewController.xib */; };
 		52EB416C14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EB416B14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.m */; };
@@ -135,12 +134,11 @@
 		52591F3C149E466B00DEA711 /* MeetingTimerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MeetingTimerTests-Info.plist"; sourceTree = "<group>"; };
 		52591F40149E469000DEA711 /* JGTimerControllerTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGTimerControllerTestCase.h; sourceTree = "<group>"; };
 		52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGTimerControllerTestCase.m; sourceTree = "<group>"; };
-		52BBBE3714B2EC5700CFE655 /* JGDurationPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGDurationPickerView.h; sourceTree = "<group>"; };
-		52BBBE3814B2EC5700CFE655 /* JGDurationPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGDurationPickerView.m; sourceTree = "<group>"; };
-		52BBBFC514B3232700CFE655 /* JGStringToNumberConverterTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGStringToNumberConverterTestCase.h; sourceTree = "<group>"; };
-		52BBBFC614B3232700CFE655 /* JGStringToNumberConverterTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGStringToNumberConverterTestCase.m; sourceTree = "<group>"; };
-		52BBBFD214B3241900CFE655 /* JGStringConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGStringConverter.h; sourceTree = "<group>"; };
-		52BBBFD314B3241900CFE655 /* JGStringConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGStringConverter.m; sourceTree = "<group>"; };
+		52BBC08714B34FC900CFE655 /* JGCountdownTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGCountdownTimer.h; sourceTree = "<group>"; };
+		52BBC08814B34FC900CFE655 /* JGCountdownTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGCountdownTimer.m; sourceTree = "<group>"; };
+		52BBC08A14B3505E00CFE655 /* JGCountdownTimerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGCountdownTimerDelegate.h; sourceTree = "<group>"; };
+		52BBC08B14B3509200CFE655 /* JGCountdownTimerTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGCountdownTimerTestCase.h; sourceTree = "<group>"; };
+		52BBC08C14B3509200CFE655 /* JGCountdownTimerTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGCountdownTimerTestCase.m; sourceTree = "<group>"; };
 		52CA8B58149D089B0030ADC1 /* JGRunningViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGRunningViewController.h; sourceTree = "<group>"; };
 		52CA8B59149D089B0030ADC1 /* JGRunningViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGRunningViewController.m; sourceTree = "<group>"; };
 		52CA8B5A149D089B0030ADC1 /* JGRunningViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = JGRunningViewController.xib; path = Classes/JGRunningViewController.xib; sourceTree = "<group>"; };
@@ -176,8 +174,6 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				52BBBFC414B3230400CFE655 /* StringConverter */,
-				52BBBE3614B2EC4B00CFE655 /* DurationPickerView */,
 				52BBBE3514B2EC3200CFE655 /* AppDelegate */,
 				5251B9F8149E5D4300AFC0B6 /* ViewControllers */,
 				5251B9AB149E59BD00AFC0B6 /* TimerController */,
@@ -252,6 +248,11 @@
 				52EB417214B1218D00308C95 /* JGTimerDurationCalculator.m */,
 				52EB416A14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.h */,
 				52EB416B14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.m */,
+				52BBC08814B34FC900CFE655 /* JGCountdownTimer.m */,
+				52BBC08714B34FC900CFE655 /* JGCountdownTimer.h */,
+				52BBC08A14B3505E00CFE655 /* JGCountdownTimerDelegate.h */,
+				52BBC08B14B3509200CFE655 /* JGCountdownTimerTestCase.h */,
+				52BBC08C14B3509200CFE655 /* JGCountdownTimerTestCase.m */,
 			);
 			name = TimerController;
 			sourceTree = "<group>";
@@ -321,26 +322,6 @@
 				1D3623250D0F684500981E51 /* MeetingTimerAppDelegate.m */,
 			);
 			name = AppDelegate;
-			sourceTree = "<group>";
-		};
-		52BBBE3614B2EC4B00CFE655 /* DurationPickerView */ = {
-			isa = PBXGroup;
-			children = (
-				52BBBE3714B2EC5700CFE655 /* JGDurationPickerView.h */,
-				52BBBE3814B2EC5700CFE655 /* JGDurationPickerView.m */,
-			);
-			name = DurationPickerView;
-			sourceTree = "<group>";
-		};
-		52BBBFC414B3230400CFE655 /* StringConverter */ = {
-			isa = PBXGroup;
-			children = (
-				52BBBFC514B3232700CFE655 /* JGStringToNumberConverterTestCase.h */,
-				52BBBFC614B3232700CFE655 /* JGStringToNumberConverterTestCase.m */,
-				52BBBFD214B3241900CFE655 /* JGStringConverter.h */,
-				52BBBFD314B3241900CFE655 /* JGStringConverter.m */,
-			);
-			name = StringConverter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -458,8 +439,7 @@
 				52CA8B5B149D089B0030ADC1 /* JGRunningViewController.m in Sources */,
 				52591F35149E453E00DEA711 /* JGTimerController.m in Sources */,
 				52EB417314B1218D00308C95 /* JGTimerDurationCalculator.m in Sources */,
-				52BBBE3914B2EC5700CFE655 /* JGDurationPickerView.m in Sources */,
-				52BBBFD514B3241900CFE655 /* JGStringConverter.m in Sources */,
+				52BBC08914B34FC900CFE655 /* JGCountdownTimer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,8 +470,8 @@
 				5251BB59149EA3A700AFC0B6 /* OCProtocolMockObject.m in Sources */,
 				52EB416C14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.m in Sources */,
 				52EB417C14B122DB00308C95 /* JGTimerDurationCalculator.m in Sources */,
-				52BBBFC714B3232700CFE655 /* JGStringToNumberConverterTestCase.m in Sources */,
-				52BBBFD414B3241900CFE655 /* JGStringConverter.m in Sources */,
+				52BBC08D14B3509200CFE655 /* JGCountdownTimerTestCase.m in Sources */,
+				52BBC09614B3513900CFE655 /* JGCountdownTimer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

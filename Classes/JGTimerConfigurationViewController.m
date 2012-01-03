@@ -8,29 +8,27 @@
 
 #import "JGTimerConfigurationViewController.h"
 #import "JGRunningViewController.h"
+#import "JGTimerController.h"
 
 @implementation JGTimerConfigurationViewController
 
+@synthesize timerController;
+@synthesize pickerDurations;
 @synthesize managedObjectContext=managedObjectContext_;
-
--(id)init {
-    self = [super init];
-    if (self) {
-        pickerDurations = [NSArray arrayWithObjects:@"1            ", @"2            ", @"3            ", @"4            ", @"5            ", @"6            ", @"7            ", @"8            ", @"9            ", @"10            ", @"15            ", @"20            ", @"25            ", @"30            ", nil];
-    }
-    return self;
-}
 
 -(IBAction)startTimer:(id)sender {
     NSInteger selectedRow = [timerDurationPickerView selectedRowInComponent:0];
     if (selectedRow < 0)
         return;
     
-//    [[pickerDurations objectAtIndex:selectedRow] ];
-    
-//    JGTimerController *timerController = [[JGTimerController timerWithDurationValue: delegate:<#(id <JGTimerControllerDelegate>)delegate_#>
+    NSUInteger durationOfTimer = [[pickerDurations objectAtIndex:selectedRow] intValue];
+                                          
     JGRunningViewController *runningViewController = [[JGRunningViewController alloc] initWithNibName:@"JGRunningViewController" bundle:nil];
-    [self.navigationController pushViewController:runningViewController animated:YES];
+    [[self navigationController] pushViewController:runningViewController animated:YES];
+    
+    [self setTimerController:[JGTimerController timerWithDurationValue:(durationOfTimer * 60) delegate:runningViewController]];
+    [[self timerController] startTimer];
+    
     [runningViewController release];
 }
 
@@ -59,7 +57,7 @@
         [pickerLabel setFont:[UIFont boldSystemFontOfSize:20]];
     }
     
-    [pickerLabel setText:[pickerDurations objectAtIndex:row]];
+    [pickerLabel setText:[[self pickerDurations] objectAtIndex:row]];
     
     return pickerLabel;    
 }
@@ -67,8 +65,11 @@
 #pragma mark -
 #pragma mark View lifecycle
 
-- (void)viewDidLoad {
+-(void)viewDidLoad {
     [super viewDidLoad];
+
+    [self setPickerDurations:[NSArray arrayWithObjects:@"1            ", @"2            ", @"3            ", @"4            ", @"5            ", @"6            ", @"7            ", @"8            ", @"9            ", @"10            ", @"15            ", @"20            ", @"25            ", @"30            ", nil]];
+    timerController = nil;
 
     // Set up the edit and add buttons.
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
@@ -78,18 +79,16 @@
     [addButton release];
 }
 
-
-// Implement viewWillAppear: to do additional setup before the view is presented.
-- (void)viewWillAppear:(BOOL)animated {
+-(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
 }
 
-
-/*
-- (void)viewDidAppear:(BOOL)animated {
+-(void)viewDidAppear:(BOOL)animated {
+    [[self timerController] stopTimer];
+    [self setTimerController:nil];
+    
     [super viewDidAppear:animated];
 }
-*/
 /*
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
@@ -140,4 +139,6 @@
 }
 
 @end
+
+
 

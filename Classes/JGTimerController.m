@@ -31,7 +31,7 @@
     [self initDelegate:delegate_];
     [self initCardTimesFromDuration:durationValue];
     timerRunning = NO;
-
+    
     return self;
 }
 
@@ -64,7 +64,6 @@
 
 -(void)showRedCard:(NSTimer *)timer_ {
     [self showCard:@"Red" andInvalidateTimer:timer_];
-    [self stopTimer];
 }
 
 -(void)stopTimer {
