@@ -9,9 +9,11 @@
 #import "JGTimerConfigurationViewController.h"
 #import "JGRunningViewController.h"
 #import "JGTimerController.h"
+#import "JGCountdownTimer.h"
 
 @implementation JGTimerConfigurationViewController
 
+@synthesize countdownTimer;
 @synthesize timerController;
 @synthesize pickerDurations;
 @synthesize managedObjectContext=managedObjectContext_;
@@ -28,6 +30,9 @@
     
     [self setTimerController:[JGTimerController timerWithDurationValue:(durationOfTimer * 60) delegate:runningViewController]];
     [[self timerController] startTimer];
+    
+    [self setCountdownTimer:[JGCountdownTimer timerWithDurationValue:(durationOfTimer * 60) delegate:runningViewController]];
+    [[self countdownTimer] startTimer];
     
     [runningViewController release];
 }
@@ -87,6 +92,9 @@
     [[self timerController] stopTimer];
     [self setTimerController:nil];
     
+    [[self countdownTimer] stopTimer];
+    [self setCountdownTimer:nil];
+    
     [super viewDidAppear:animated];
 }
 /*
@@ -139,6 +147,7 @@
 }
 
 @end
+
 
 
 

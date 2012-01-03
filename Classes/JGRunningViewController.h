@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "JGTimerControllerDelegate.h"
+#import "JGCountdownTimerDelegate.h"
 
-@interface JGRunningViewController : UIViewController <JGTimerControllerDelegate> {
-//    IBOutlet UINavigationController *navigationController;
+@interface JGRunningViewController : UIViewController <JGTimerControllerDelegate, JGCountdownTimerDelegate> {
+    IBOutlet UILabel *timeLabel;
 }
 
 -(IBAction)stopTimer:(id)sender;

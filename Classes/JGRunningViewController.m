@@ -8,6 +8,7 @@
 
 #import "JGRunningViewController.h"
 #import "JGTimerControllerDelegate.h"
+#import "JGTimeFormatter.h"
 
 @implementation JGRunningViewController
 
@@ -62,7 +63,6 @@
     // e.g. self.myOutlet = nil;
 }
 
-
 - (void)dealloc {
     [super dealloc];
 }
@@ -77,6 +77,11 @@
 
 -(void)showGreenCard {
     [[self view] setBackgroundColor:[UIColor greenColor]];
+}
+
+-(void)timeRemainingDidChangeTo:(NSTimeInterval)time_ {
+    NSString *timeText = [[JGTimeFormatter defaultFormatterBehavior] stringForObjectValue:[NSNumber numberWithInt:time_]];
+    [timeLabel setText:timeText];
 }
 
 @end

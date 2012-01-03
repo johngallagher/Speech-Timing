@@ -9,15 +9,19 @@
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 @class JGTimerController;
+@class JGCountdownTimer;
 
 @interface JGTimerConfigurationViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate> {
-    IBOutlet    UIPickerView *timerDurationPickerView;
-    NSArray     *pickerDurations;
-    JGTimerController *timerController;
+    IBOutlet    UIPickerView    *timerDurationPickerView;
+    NSArray                     *pickerDurations;
+    JGTimerController           *timerController;
+    JGCountdownTimer            *countdownTimer;
+    
 @private
     NSManagedObjectContext *managedObjectContext_;
 }
 
+@property (nonatomic, retain) JGCountdownTimer *countdownTimer;
 @property (nonatomic, retain) JGTimerController *timerController;
 @property (nonatomic, retain) NSArray *pickerDurations;
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
@@ -27,5 +31,6 @@
 
 
 @end
+
 
 

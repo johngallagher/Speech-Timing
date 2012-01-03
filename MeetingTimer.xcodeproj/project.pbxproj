@@ -43,6 +43,13 @@
 		52BBC08914B34FC900CFE655 /* JGCountdownTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BBC08814B34FC900CFE655 /* JGCountdownTimer.m */; };
 		52BBC08D14B3509200CFE655 /* JGCountdownTimerTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BBC08C14B3509200CFE655 /* JGCountdownTimerTestCase.m */; };
 		52BBC09614B3513900CFE655 /* JGCountdownTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BBC08814B34FC900CFE655 /* JGCountdownTimer.m */; };
+		52BBC0D414B357DF00CFE655 /* JGTimeFormatterTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BBC0D314B357DF00CFE655 /* JGTimeFormatterTestCase.m */; };
+		52BBC0DF14B358EF00CFE655 /* JGTimeFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BBC0DE14B358EF00CFE655 /* JGTimeFormatter.m */; };
+		52BBC0E014B358EF00CFE655 /* JGTimeFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BBC0DE14B358EF00CFE655 /* JGTimeFormatter.m */; };
+		52BBC17414B37CBE00CFE655 /* GreenButton-highlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 52BBC17014B37CBE00CFE655 /* GreenButton-highlight.png */; };
+		52BBC17514B37CBE00CFE655 /* GreenButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 52BBC17114B37CBE00CFE655 /* GreenButton.png */; };
+		52BBC17614B37CBE00CFE655 /* RedButton-highlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 52BBC17214B37CBE00CFE655 /* RedButton-highlight.png */; };
+		52BBC17714B37CBE00CFE655 /* RedButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 52BBC17314B37CBE00CFE655 /* RedButton.png */; };
 		52CA8B5B149D089B0030ADC1 /* JGRunningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CA8B59149D089B0030ADC1 /* JGRunningViewController.m */; };
 		52CA8B5C149D089B0030ADC1 /* JGRunningViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52CA8B5A149D089B0030ADC1 /* JGRunningViewController.xib */; };
 		52EB416C14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EB416B14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.m */; };
@@ -139,6 +146,14 @@
 		52BBC08A14B3505E00CFE655 /* JGCountdownTimerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGCountdownTimerDelegate.h; sourceTree = "<group>"; };
 		52BBC08B14B3509200CFE655 /* JGCountdownTimerTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGCountdownTimerTestCase.h; sourceTree = "<group>"; };
 		52BBC08C14B3509200CFE655 /* JGCountdownTimerTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGCountdownTimerTestCase.m; sourceTree = "<group>"; };
+		52BBC0D214B357DF00CFE655 /* JGTimeFormatterTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGTimeFormatterTestCase.h; sourceTree = "<group>"; };
+		52BBC0D314B357DF00CFE655 /* JGTimeFormatterTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGTimeFormatterTestCase.m; sourceTree = "<group>"; };
+		52BBC0DD14B358EF00CFE655 /* JGTimeFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGTimeFormatter.h; sourceTree = "<group>"; };
+		52BBC0DE14B358EF00CFE655 /* JGTimeFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGTimeFormatter.m; sourceTree = "<group>"; };
+		52BBC17014B37CBE00CFE655 /* GreenButton-highlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GreenButton-highlight.png"; sourceTree = "<group>"; };
+		52BBC17114B37CBE00CFE655 /* GreenButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GreenButton.png; sourceTree = "<group>"; };
+		52BBC17214B37CBE00CFE655 /* RedButton-highlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RedButton-highlight.png"; sourceTree = "<group>"; };
+		52BBC17314B37CBE00CFE655 /* RedButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RedButton.png; sourceTree = "<group>"; };
 		52CA8B58149D089B0030ADC1 /* JGRunningViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGRunningViewController.h; sourceTree = "<group>"; };
 		52CA8B59149D089B0030ADC1 /* JGRunningViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGRunningViewController.m; sourceTree = "<group>"; };
 		52CA8B5A149D089B0030ADC1 /* JGRunningViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = JGRunningViewController.xib; path = Classes/JGRunningViewController.xib; sourceTree = "<group>"; };
@@ -177,6 +192,10 @@
 				52BBBE3514B2EC3200CFE655 /* AppDelegate */,
 				5251B9F8149E5D4300AFC0B6 /* ViewControllers */,
 				5251B9AB149E59BD00AFC0B6 /* TimerController */,
+				52BBC0D214B357DF00CFE655 /* JGTimeFormatterTestCase.h */,
+				52BBC0D314B357DF00CFE655 /* JGTimeFormatterTestCase.m */,
+				52BBC0DD14B358EF00CFE655 /* JGTimeFormatter.h */,
+				52BBC0DE14B358EF00CFE655 /* JGTimeFormatter.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -216,6 +235,10 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				52BBC17014B37CBE00CFE655 /* GreenButton-highlight.png */,
+				52BBC17114B37CBE00CFE655 /* GreenButton.png */,
+				52BBC17214B37CBE00CFE655 /* RedButton-highlight.png */,
+				52BBC17314B37CBE00CFE655 /* RedButton.png */,
 				2899E55F0DE3E45000AC0155 /* JGTimerConfigurationViewController.xib */,
 				52CA8B5A149D089B0030ADC1 /* JGRunningViewController.xib */,
 				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
@@ -398,6 +421,10 @@
 				28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */,
 				2899E5600DE3E45000AC0155 /* JGTimerConfigurationViewController.xib in Resources */,
 				52CA8B5C149D089B0030ADC1 /* JGRunningViewController.xib in Resources */,
+				52BBC17414B37CBE00CFE655 /* GreenButton-highlight.png in Resources */,
+				52BBC17514B37CBE00CFE655 /* GreenButton.png in Resources */,
+				52BBC17614B37CBE00CFE655 /* RedButton-highlight.png in Resources */,
+				52BBC17714B37CBE00CFE655 /* RedButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +467,7 @@
 				52591F35149E453E00DEA711 /* JGTimerController.m in Sources */,
 				52EB417314B1218D00308C95 /* JGTimerDurationCalculator.m in Sources */,
 				52BBC08914B34FC900CFE655 /* JGCountdownTimer.m in Sources */,
+				52BBC0E014B358EF00CFE655 /* JGTimeFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +500,8 @@
 				52EB417C14B122DB00308C95 /* JGTimerDurationCalculator.m in Sources */,
 				52BBC08D14B3509200CFE655 /* JGCountdownTimerTestCase.m in Sources */,
 				52BBC09614B3513900CFE655 /* JGCountdownTimer.m in Sources */,
+				52BBC0D414B357DF00CFE655 /* JGTimeFormatterTestCase.m in Sources */,
+				52BBC0DF14B358EF00CFE655 /* JGTimeFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
