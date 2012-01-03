@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 
-@interface RootViewController : UIViewController {
+@interface JGTimerConfigurationViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate> {
+    IBOutlet    UIPickerView *timerDurationPickerView;
+    NSArray     *pickerDurations;
 @private
     NSManagedObjectContext *managedObjectContext_;
 }

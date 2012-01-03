@@ -13,14 +13,11 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		28860BE50F44EE6400985440 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28860BE40F44EE6400985440 /* CoreData.framework */; };
 		2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */; };
-		2899E5600DE3E45000AC0155 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E55F0DE3E45000AC0155 /* RootViewController.xib */; };
+		2899E5600DE3E45000AC0155 /* JGTimerConfigurationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E55F0DE3E45000AC0155 /* JGTimerConfigurationViewController.xib */; };
 		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
-		28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */; };
+		28C286E10D94DF7D0034E888 /* JGTimerConfigurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */; };
 		28D3F202112F7DC200FD0661 /* MeetingTimer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28D3F201112F7DC200FD0661 /* MeetingTimer.xcdatamodeld */; };
 		5251B9C8149E5C4100AFC0B6 /* JGTimerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52591F34149E453E00DEA711 /* JGTimerController.m */; };
-		5251BA01149E5F2E00AFC0B6 /* JGTimeFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5251B9FF149E5F2200AFC0B6 /* JGTimeFormatter.m */; };
-		5251BA02149E5F3000AFC0B6 /* JGTimeFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5251B9FF149E5F2200AFC0B6 /* JGTimeFormatter.m */; };
-		5251BA06149E5F5D00AFC0B6 /* JGTimeFormatterTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5251BA05149E5F5D00AFC0B6 /* JGTimeFormatterTestCase.m */; };
 		5251BB46149EA3A700AFC0B6 /* License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5251BB1E149EA3A600AFC0B6 /* License.txt */; };
 		5251BB47149EA3A700AFC0B6 /* NSInvocation+OCMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5251BB20149EA3A600AFC0B6 /* NSInvocation+OCMAdditions.m */; };
 		5251BB48149EA3A700AFC0B6 /* NSMethodSignature+OCMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5251BB22149EA3A600AFC0B6 /* NSMethodSignature+OCMAdditions.m */; };
@@ -43,6 +40,10 @@
 		5251BB59149EA3A700AFC0B6 /* OCProtocolMockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5251BB45149EA3A700AFC0B6 /* OCProtocolMockObject.m */; };
 		52591F35149E453E00DEA711 /* JGTimerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52591F34149E453E00DEA711 /* JGTimerController.m */; };
 		52591F43149E469C00DEA711 /* JGTimerControllerTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */; };
+		52BBBE3914B2EC5700CFE655 /* JGDurationPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BBBE3814B2EC5700CFE655 /* JGDurationPickerView.m */; };
+		52BBBFC714B3232700CFE655 /* JGStringToNumberConverterTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BBBFC614B3232700CFE655 /* JGStringToNumberConverterTestCase.m */; };
+		52BBBFD414B3241900CFE655 /* JGStringConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BBBFD314B3241900CFE655 /* JGStringConverter.m */; };
+		52BBBFD514B3241900CFE655 /* JGStringConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BBBFD314B3241900CFE655 /* JGStringConverter.m */; };
 		52CA8B5B149D089B0030ADC1 /* JGRunningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CA8B59149D089B0030ADC1 /* JGRunningViewController.m */; };
 		52CA8B5C149D089B0030ADC1 /* JGRunningViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52CA8B5A149D089B0030ADC1 /* JGRunningViewController.xib */; };
 		52EB416C14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EB416B14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.m */; };
@@ -81,17 +82,13 @@
 		28860B760F44E54D00985440 /* MeetingTimer.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = MeetingTimer.xcdatamodel; sourceTree = "<group>"; };
 		28860BE40F44EE6400985440 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2899E55F0DE3E45000AC0155 /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		2899E55F0DE3E45000AC0155 /* JGTimerConfigurationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JGTimerConfigurationViewController.xib; sourceTree = "<group>"; };
 		28A0AAE50D9B0CCF005BE974 /* MeetingTimer_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeetingTimer_Prefix.pch; sourceTree = "<group>"; };
 		28AD735F0D9D9599002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
-		28C286DF0D94DF7D0034E888 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		28C286E00D94DF7D0034E888 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		28C286DF0D94DF7D0034E888 /* JGTimerConfigurationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGTimerConfigurationViewController.h; sourceTree = "<group>"; };
+		28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGTimerConfigurationViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5251B9A9149E59B400AFC0B6 /* JGTimerControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGTimerControllerDelegate.h; sourceTree = "<group>"; };
-		5251B9FE149E5F2200AFC0B6 /* JGTimeFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGTimeFormatter.h; sourceTree = "<group>"; };
-		5251B9FF149E5F2200AFC0B6 /* JGTimeFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGTimeFormatter.m; sourceTree = "<group>"; };
-		5251BA04149E5F5D00AFC0B6 /* JGTimeFormatterTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGTimeFormatterTestCase.h; sourceTree = "<group>"; };
-		5251BA05149E5F5D00AFC0B6 /* JGTimeFormatterTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGTimeFormatterTestCase.m; sourceTree = "<group>"; };
 		5251BB1E149EA3A600AFC0B6 /* License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
 		5251BB1F149EA3A600AFC0B6 /* NSInvocation+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSInvocation+OCMAdditions.h"; sourceTree = "<group>"; };
 		5251BB20149EA3A600AFC0B6 /* NSInvocation+OCMAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSInvocation+OCMAdditions.m"; sourceTree = "<group>"; };
@@ -138,6 +135,12 @@
 		52591F3C149E466B00DEA711 /* MeetingTimerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MeetingTimerTests-Info.plist"; sourceTree = "<group>"; };
 		52591F40149E469000DEA711 /* JGTimerControllerTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGTimerControllerTestCase.h; sourceTree = "<group>"; };
 		52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGTimerControllerTestCase.m; sourceTree = "<group>"; };
+		52BBBE3714B2EC5700CFE655 /* JGDurationPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGDurationPickerView.h; sourceTree = "<group>"; };
+		52BBBE3814B2EC5700CFE655 /* JGDurationPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGDurationPickerView.m; sourceTree = "<group>"; };
+		52BBBFC514B3232700CFE655 /* JGStringToNumberConverterTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGStringToNumberConverterTestCase.h; sourceTree = "<group>"; };
+		52BBBFC614B3232700CFE655 /* JGStringToNumberConverterTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGStringToNumberConverterTestCase.m; sourceTree = "<group>"; };
+		52BBBFD214B3241900CFE655 /* JGStringConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGStringConverter.h; sourceTree = "<group>"; };
+		52BBBFD314B3241900CFE655 /* JGStringConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGStringConverter.m; sourceTree = "<group>"; };
 		52CA8B58149D089B0030ADC1 /* JGRunningViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGRunningViewController.h; sourceTree = "<group>"; };
 		52CA8B59149D089B0030ADC1 /* JGRunningViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGRunningViewController.m; sourceTree = "<group>"; };
 		52CA8B5A149D089B0030ADC1 /* JGRunningViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = JGRunningViewController.xib; path = Classes/JGRunningViewController.xib; sourceTree = "<group>"; };
@@ -173,9 +176,9 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				5251BA03149E5F3600AFC0B6 /* TimeFormatter */,
-				1D3623240D0F684500981E51 /* MeetingTimerAppDelegate.h */,
-				1D3623250D0F684500981E51 /* MeetingTimerAppDelegate.m */,
+				52BBBFC414B3230400CFE655 /* StringConverter */,
+				52BBBE3614B2EC4B00CFE655 /* DurationPickerView */,
+				52BBBE3514B2EC3200CFE655 /* AppDelegate */,
 				5251B9F8149E5D4300AFC0B6 /* ViewControllers */,
 				5251B9AB149E59BD00AFC0B6 /* TimerController */,
 			);
@@ -217,11 +220,11 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2899E55F0DE3E45000AC0155 /* JGTimerConfigurationViewController.xib */,
 				52CA8B5A149D089B0030ADC1 /* JGRunningViewController.xib */,
-				28D3F201112F7DC200FD0661 /* MeetingTimer.xcdatamodeld */,
-				2899E55F0DE3E45000AC0155 /* RootViewController.xib */,
 				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* MeetingTimer-Info.plist */,
+				28D3F201112F7DC200FD0661 /* MeetingTimer.xcdatamodeld */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -256,23 +259,12 @@
 		5251B9F8149E5D4300AFC0B6 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				28C286DF0D94DF7D0034E888 /* RootViewController.h */,
-				28C286E00D94DF7D0034E888 /* RootViewController.m */,
+				28C286DF0D94DF7D0034E888 /* JGTimerConfigurationViewController.h */,
+				28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */,
 				52CA8B58149D089B0030ADC1 /* JGRunningViewController.h */,
 				52CA8B59149D089B0030ADC1 /* JGRunningViewController.m */,
 			);
 			name = ViewControllers;
-			sourceTree = "<group>";
-		};
-		5251BA03149E5F3600AFC0B6 /* TimeFormatter */ = {
-			isa = PBXGroup;
-			children = (
-				5251BA04149E5F5D00AFC0B6 /* JGTimeFormatterTestCase.h */,
-				5251BA05149E5F5D00AFC0B6 /* JGTimeFormatterTestCase.m */,
-				5251B9FE149E5F2200AFC0B6 /* JGTimeFormatter.h */,
-				5251B9FF149E5F2200AFC0B6 /* JGTimeFormatter.m */,
-			);
-			name = TimeFormatter;
 			sourceTree = "<group>";
 		};
 		5251BB1D149EA3A600AFC0B6 /* OCMock */ = {
@@ -320,6 +312,35 @@
 				5251BB45149EA3A700AFC0B6 /* OCProtocolMockObject.m */,
 			);
 			path = OCMock;
+			sourceTree = "<group>";
+		};
+		52BBBE3514B2EC3200CFE655 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				1D3623240D0F684500981E51 /* MeetingTimerAppDelegate.h */,
+				1D3623250D0F684500981E51 /* MeetingTimerAppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		52BBBE3614B2EC4B00CFE655 /* DurationPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				52BBBE3714B2EC5700CFE655 /* JGDurationPickerView.h */,
+				52BBBE3814B2EC5700CFE655 /* JGDurationPickerView.m */,
+			);
+			name = DurationPickerView;
+			sourceTree = "<group>";
+		};
+		52BBBFC414B3230400CFE655 /* StringConverter */ = {
+			isa = PBXGroup;
+			children = (
+				52BBBFC514B3232700CFE655 /* JGStringToNumberConverterTestCase.h */,
+				52BBBFC614B3232700CFE655 /* JGStringToNumberConverterTestCase.m */,
+				52BBBFD214B3241900CFE655 /* JGStringConverter.h */,
+				52BBBFD314B3241900CFE655 /* JGStringConverter.m */,
+			);
+			name = StringConverter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -394,7 +415,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */,
-				2899E5600DE3E45000AC0155 /* RootViewController.xib in Resources */,
+				2899E5600DE3E45000AC0155 /* JGTimerConfigurationViewController.xib in Resources */,
 				52CA8B5C149D089B0030ADC1 /* JGRunningViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,12 +453,13 @@
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* MeetingTimerAppDelegate.m in Sources */,
-				28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */,
+				28C286E10D94DF7D0034E888 /* JGTimerConfigurationViewController.m in Sources */,
 				28D3F202112F7DC200FD0661 /* MeetingTimer.xcdatamodeld in Sources */,
 				52CA8B5B149D089B0030ADC1 /* JGRunningViewController.m in Sources */,
 				52591F35149E453E00DEA711 /* JGTimerController.m in Sources */,
-				5251BA01149E5F2E00AFC0B6 /* JGTimeFormatter.m in Sources */,
 				52EB417314B1218D00308C95 /* JGTimerDurationCalculator.m in Sources */,
+				52BBBE3914B2EC5700CFE655 /* JGDurationPickerView.m in Sources */,
+				52BBBFD514B3241900CFE655 /* JGStringConverter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,8 +469,6 @@
 			files = (
 				52591F43149E469C00DEA711 /* JGTimerControllerTestCase.m in Sources */,
 				5251B9C8149E5C4100AFC0B6 /* JGTimerController.m in Sources */,
-				5251BA02149E5F3000AFC0B6 /* JGTimeFormatter.m in Sources */,
-				5251BA06149E5F5D00AFC0B6 /* JGTimeFormatterTestCase.m in Sources */,
 				5251BB47149EA3A700AFC0B6 /* NSInvocation+OCMAdditions.m in Sources */,
 				5251BB48149EA3A700AFC0B6 /* NSMethodSignature+OCMAdditions.m in Sources */,
 				5251BB49149EA3A700AFC0B6 /* NSNotificationCenter+OCMAdditions.m in Sources */,
@@ -470,6 +490,8 @@
 				5251BB59149EA3A700AFC0B6 /* OCProtocolMockObject.m in Sources */,
 				52EB416C14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.m in Sources */,
 				52EB417C14B122DB00308C95 /* JGTimerDurationCalculator.m in Sources */,
+				52BBBFC714B3232700CFE655 /* JGStringToNumberConverterTestCase.m in Sources */,
+				52BBBFD414B3241900CFE655 /* JGStringConverter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,7 +7,7 @@
 //
 
 #import "JGRunningViewController.h"
-
+#import "JGTimerControllerDelegate.h"
 
 @implementation JGRunningViewController
 
@@ -67,5 +67,16 @@
     [super dealloc];
 }
 
+-(void)showRedCard {
+    [[self view] setBackgroundColor:[UIColor redColor]];
+}
+
+-(void)showYellowCard {
+    [[self view] setBackgroundColor:[UIColor yellowColor]];
+}
+
+-(void)showGreenCard {
+    [[self view] setBackgroundColor:[UIColor greenColor]];
+}
 
 @end

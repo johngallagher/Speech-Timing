@@ -6,19 +6,63 @@
 //  Copyright 2011 Synaptic Mishap. All rights reserved.
 //
 
-#import "RootViewController.h"
+#import "JGTimerConfigurationViewController.h"
 #import "JGRunningViewController.h"
 
-@implementation RootViewController
+@implementation JGTimerConfigurationViewController
 
 @synthesize managedObjectContext=managedObjectContext_;
 
+-(id)init {
+    self = [super init];
+    if (self) {
+        pickerDurations = [NSArray arrayWithObjects:@"1            ", @"2            ", @"3            ", @"4            ", @"5            ", @"6            ", @"7            ", @"8            ", @"9            ", @"10            ", @"15            ", @"20            ", @"25            ", @"30            ", nil];
+    }
+    return self;
+}
+
 -(IBAction)startTimer:(id)sender {
+    NSInteger selectedRow = [timerDurationPickerView selectedRowInComponent:0];
+    if (selectedRow < 0)
+        return;
+    
+//    [[pickerDurations objectAtIndex:selectedRow] ];
+    
+//    JGTimerController *timerController = [[JGTimerController timerWithDurationValue: delegate:<#(id <JGTimerControllerDelegate>)delegate_#>
     JGRunningViewController *runningViewController = [[JGRunningViewController alloc] initWithNibName:@"JGRunningViewController" bundle:nil];
     [self.navigationController pushViewController:runningViewController animated:YES];
     [runningViewController release];
 }
 
+#pragma mark -
+#pragma mark Duration Picker Data Source and Delegate methods
+
+// returns the number of 'columns' to display.
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
+    return 1;
+}
+
+// returns the # of rows in each component..
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
+        return 14;
+}
+
+-(UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view {
+    UILabel *pickerLabel = (UILabel *)view;
+    
+    if (pickerLabel == nil) {
+        CGRect frame = CGRectMake(0.0, 0.0, 100, 45);
+        pickerLabel = [[[UILabel alloc] initWithFrame:frame] autorelease];
+        [pickerLabel setTextAlignment:UITextAlignmentRight];
+        [pickerLabel setBackgroundColor:[UIColor clearColor]];
+        [pickerLabel setTextColor:[UIColor blackColor]];
+        [pickerLabel setFont:[UIFont boldSystemFontOfSize:20]];
+    }
+    
+    [pickerLabel setText:[pickerDurations objectAtIndex:row]];
+    
+    return pickerLabel;    
+}
 
 #pragma mark -
 #pragma mark View lifecycle
@@ -85,18 +129,15 @@
     // Relinquish ownership any cached data, images, etc that aren't in use.
 }
 
-
 - (void)viewDidUnload {
     // Relinquish ownership of anything that can be recreated in viewDidLoad or on demand.
     // For example: self.myOutlet = nil;
 }
 
-
 - (void)dealloc {
     [managedObjectContext_ release];
     [super dealloc];
 }
-
 
 @end
 

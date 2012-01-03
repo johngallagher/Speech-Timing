@@ -7,13 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JGTimerControllerDelegate.h"
 
-
-@interface JGRunningViewController : UIViewController {
+@interface JGRunningViewController : UIViewController <JGTimerControllerDelegate> {
 //    IBOutlet UINavigationController *navigationController;
 }
 
 -(IBAction)stopTimer:(id)sender;
+
 
 
 @end

@@ -7,7 +7,7 @@
 //
 
 #import "MeetingTimerAppDelegate.h"
-#import "RootViewController.h"
+#import "JGTimerConfigurationViewController.h"
 
 
 @implementation MeetingTimerAppDelegate
@@ -21,7 +21,7 @@
 
 - (void)awakeFromNib {    
     
-    RootViewController *rootViewController = (RootViewController *)[navigationController topViewController];
+    JGTimerConfigurationViewController *rootViewController = (JGTimerConfigurationViewController *)[navigationController topViewController];
     rootViewController.managedObjectContext = self.managedObjectContext;
 }
 
