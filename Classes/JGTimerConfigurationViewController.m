@@ -27,19 +27,17 @@
     NSUInteger durationOfTimer = [[pickerDurations objectAtIndex:selectedRow] intValue] * 60;
                                           
     JGRunningViewController *runningViewController = [[JGRunningViewController alloc] initWithNibName:@"JGRunningViewController" bundle:nil];
+    if ([[runningViewController view] isKindOfClass:[JGDrawingTestView class]]) {
+        [(JGDrawingTestView *)[runningViewController view] setAnimationDuration:durationOfTimer];
+    }
+    [[self navigationController] pushViewController:runningViewController animated:YES];
     
     [self setTimerController:[JGTimerController timerWithDurationValue:durationOfTimer delegate:runningViewController]];
     [[self timerController] startTimer];
     
     [self setCountdownTimer:[JGCountdownTimer timerWithDurationValue:durationOfTimer delegate:runningViewController]];
     [[self countdownTimer] startTimer];
-    
-    if ([[runningViewController view] isKindOfClass:[JGDrawingTestView class]]) {
-        [(JGDrawingTestView *)[runningViewController view] setAnimationDuration:durationOfTimer];
-    }
-    
-    [[self navigationController] pushViewController:runningViewController animated:YES];
-    
+
     [runningViewController release];
 }
 

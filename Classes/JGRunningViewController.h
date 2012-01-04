@@ -16,6 +16,9 @@
 
 -(IBAction)stopTimer:(id)sender;
 
+-(void)setTimeRemainingTo:(NSTimeInterval)time_;
+
+
 
 
 @end
