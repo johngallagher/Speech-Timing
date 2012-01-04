@@ -300,8 +300,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>11</integer>
-									<integer>9</integer>
+									<integer>5</integer>
+									<integer>3</integer>
 									<integer>2</integer>
 									<integer>0</integer>
 								</array>
@@ -350,29 +350,29 @@
 										<key>_historyCapacity</key>
 										<integer>20</integer>
 										<key>bookmark</key>
-										<string>5242CC4014B400E700C876C7</string>
+										<string>5242CC5B14B4039200C876C7</string>
 										<key>history</key>
 										<array>
-											<string>5242CC0614B3FD2D00C876C7</string>
-											<string>5242CC0714B3FD2D00C876C7</string>
-											<string>52BBBEA714B2FDE000CFE655</string>
-											<string>52BBBEB914B2FE9C00CFE655</string>
-											<string>52BBC0C914B3562B00CFE655</string>
-											<string>5242CC1714B3FF2200C876C7</string>
-											<string>5242CC1814B3FF2200C876C7</string>
-											<string>5242CC1914B3FF2200C876C7</string>
-											<string>5242CC1B14B3FF2200C876C7</string>
 											<string>52BBC18A14B3862000CFE655</string>
 											<string>5242CA6E14B3D5E700C876C7</string>
 											<string>5242CBFA14B3FD2D00C876C7</string>
 											<string>5242CBFB14B3FD2D00C876C7</string>
 											<string>5242CC0F14B3FD5F00C876C7</string>
-											<string>5242CC3914B400C800C876C7</string>
 											<string>5242CBFD14B3FD2D00C876C7</string>
 											<string>5242CC0014B3FD2D00C876C7</string>
 											<string>5242CC0114B3FD2D00C876C7</string>
 											<string>5242CBFF14B3FD2D00C876C7</string>
-											<string>5242CC3E14B400E600C876C7</string>
+											<string>5242CC0214B3FD2D00C876C7</string>
+											<string>5242CC0414B3FD2D00C876C7</string>
+											<string>5242CC0514B3FD2D00C876C7</string>
+											<string>5242CC4814B401EA00C876C7</string>
+											<string>5242CC4914B401EA00C876C7</string>
+											<string>5242CC0714B3FD2D00C876C7</string>
+											<string>52BBBEA714B2FDE000CFE655</string>
+											<string>5242CC5214B4035D00C876C7</string>
+											<string>52BBBEB914B2FE9C00CFE655</string>
+											<string>52BBC0C914B3562B00CFE655</string>
+											<string>5242CC5914B4039100C876C7</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -425,7 +425,7 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {1413, 261}}</string>
+										<string>{{10, 27}, {928, 191}}</string>
 									</dict>
 									<key>Module</key>
 									<string>PBXProjectFindModule</string>
@@ -674,7 +674,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>347341031.56701303</real>
+	<real>347341714.253703</real>
 	<key>ToolbarConfigUserDefaultsMinorVersion</key>
 	<string>2</string>
 	<key>ToolbarDisplayMode</key>

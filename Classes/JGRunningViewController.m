@@ -9,11 +9,12 @@
 #import "JGRunningViewController.h"
 #import "JGTimerControllerDelegate.h"
 #import "JGTimeFormatter.h"
+#import "JGDrawingTestView.h"
 
 @implementation JGRunningViewController
 
 -(void)viewDidAppear:(BOOL)animated {
-    [[self view] animateCountdownOverDuration:[self animationDuration]];
+    [(JGDrawingTestView *)[self view] animateCountdown];
 }
 
 -(void)viewDidDisappear:(BOOL)animated {

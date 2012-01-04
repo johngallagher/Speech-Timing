@@ -36,9 +36,9 @@
 	};
 	28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {999, 2430}}";
+			sepNavIntBoundsRect = "{{0, 0}, {999, 2385}}";
 			sepNavSelRange = "{326, 0}";
-			sepNavVisRange = "{0, 962}";
+			sepNavVisRange = "{327, 1296}";
 			sepNavWindowFrame = "{{15, 4}, {640, 774}}";
 		};
 	};
@@ -54,7 +54,7 @@
 			52BBBD8D14B24DE500CFE655 /* JGPickerViewDelegate.m:26 */,
 			52BBBE8D14B2F4AA00CFE655 /* JGDurationPickerView.m:15 */,
 			5242CC1F14B3FF4A00C876C7 /* JGTimerConfigurationViewController.m:37 */,
-			5242CC2414B3FF6300C876C7 /* JGDrawingTestView.m:60 */,
+			5242CC2414B3FF6300C876C7 /* JGDrawingTestView.m:56 */,
 		);
 		codeSenseManager = 52CA8AE1149CF1A40030ADC1 /* Code sense */;
 		executables = (
@@ -231,6 +231,22 @@
 			5242CC3F14B400E600C876C7 /* PBXTextBookmark */ = 5242CC3F14B400E600C876C7 /* PBXTextBookmark */;
 			5242CC4014B400E700C876C7 /* PBXTextBookmark */ = 5242CC4014B400E700C876C7 /* PBXTextBookmark */;
 			5242CC4114B400FD00C876C7 /* PBXTextBookmark */ = 5242CC4114B400FD00C876C7 /* PBXTextBookmark */;
+			5242CC4814B401EA00C876C7 /* PBXTextBookmark */ = 5242CC4814B401EA00C876C7 /* PBXTextBookmark */;
+			5242CC4914B401EA00C876C7 /* PBXTextBookmark */ = 5242CC4914B401EA00C876C7 /* PBXTextBookmark */;
+			5242CC4A14B401EA00C876C7 /* PBXTextBookmark */ = 5242CC4A14B401EA00C876C7 /* PBXTextBookmark */;
+			5242CC4B14B401EA00C876C7 /* PBXTextBookmark */ = 5242CC4B14B401EA00C876C7 /* PBXTextBookmark */;
+			5242CC4C14B401EA00C876C7 /* PBXTextBookmark */ = 5242CC4C14B401EA00C876C7 /* PBXTextBookmark */;
+			5242CC4D14B401EB00C876C7 /* PBXTextBookmark */ = 5242CC4D14B401EB00C876C7 /* PBXTextBookmark */;
+			5242CC4E14B4034A00C876C7 /* PBXTextBookmark */ = 5242CC4E14B4034A00C876C7 /* PBXTextBookmark */;
+			5242CC4F14B4034A00C876C7 /* PBXTextBookmark */ = 5242CC4F14B4034A00C876C7 /* PBXTextBookmark */;
+			5242CC5214B4035D00C876C7 /* PBXTextBookmark */ = 5242CC5214B4035D00C876C7 /* PBXTextBookmark */;
+			5242CC5314B4035D00C876C7 /* PBXTextBookmark */ = 5242CC5314B4035D00C876C7 /* PBXTextBookmark */;
+			5242CC5414B4035D00C876C7 /* PBXTextBookmark */ = 5242CC5414B4035D00C876C7 /* PBXTextBookmark */;
+			5242CC5514B4035D00C876C7 /* PBXTextBookmark */ = 5242CC5514B4035D00C876C7 /* PBXTextBookmark */;
+			5242CC5814B4039100C876C7 /* PBXTextBookmark */ = 5242CC5814B4039100C876C7 /* PBXTextBookmark */;
+			5242CC5914B4039100C876C7 /* PBXTextBookmark */ = 5242CC5914B4039100C876C7 /* PBXTextBookmark */;
+			5242CC5A14B4039100C876C7 /* PBXTextBookmark */ = 5242CC5A14B4039100C876C7 /* PBXTextBookmark */;
+			5242CC5B14B4039200C876C7 /* PBXTextBookmark */ = 5242CC5B14B4039200C876C7 /* PBXTextBookmark */;
 			52BBBEA714B2FDE000CFE655 = 52BBBEA714B2FDE000CFE655 /* PBXTextBookmark */;
 			52BBBEB914B2FE9C00CFE655 = 52BBBEB914B2FE9C00CFE655 /* PBXTextBookmark */;
 			52BBBF9414B31B4500CFE655 = 52BBBF9414B31B4500CFE655 /* PBXTextBookmark */;
@@ -511,16 +527,16 @@
 	};
 	5242CBEB14B3FC8A00C876C7 /* JGDrawingTestView.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {879, 423}}";
-			sepNavSelRange = "{391, 17}";
-			sepNavVisRange = "{0, 479}";
+			sepNavIntBoundsRect = "{{0, 0}, {879, 465}}";
+			sepNavSelRange = "{484, 0}";
+			sepNavVisRange = "{0, 505}";
 		};
 	};
 	5242CBEC14B3FC8A00C876C7 /* JGDrawingTestView.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {879, 1500}}";
-			sepNavSelRange = "{1221, 233}";
-			sepNavVisRange = "{737, 1028}";
+			sepNavIntBoundsRect = "{{0, 0}, {957, 1410}}";
+			sepNavSelRange = "{2412, 0}";
+			sepNavVisRange = "{3, 615}";
 		};
 	};
 	5242CBEE14B3FC8A00C876C7 /* PieChartLayer.m */ = {
@@ -723,7 +739,7 @@
 		fRef = 5242CBEB14B3FC8A00C876C7 /* JGDrawingTestView.h */;
 		name = "JGDrawingTestView.h: 28";
 		rLen = 0;
-		rLoc = 479;
+		rLoc = 506;
 		rType = 0;
 		vrLen = 479;
 		vrLoc = 0;
@@ -753,7 +769,7 @@
 		fRef = 52CA8B59149D089B0030ADC1 /* JGRunningViewController.m */;
 		name = "JGRunningViewController.m: 13";
 		rLen = 40;
-		rLoc = 262;
+		rLoc = 292;
 		rType = 0;
 		vrLen = 658;
 		vrLoc = 1540;
@@ -815,7 +831,7 @@
 		vrLen = 777;
 		vrLoc = 0;
 	};
-	5242CC2414B3FF6300C876C7 /* JGDrawingTestView.m:60 */ = {
+	5242CC2414B3FF6300C876C7 /* JGDrawingTestView.m:56 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -827,7 +843,7 @@
 		functionName = "-awakeFromNib";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 60;
+		lineNumber = 56;
 		location = MeetingTimer;
 		modificationTime = 347340643.226191;
 		originalNumberOfMultipleMatches = 1;
@@ -871,8 +887,8 @@
 		isa = PBXTextBookmark;
 		fRef = 52CA8B59149D089B0030ADC1 /* JGRunningViewController.m */;
 		name = "JGRunningViewController.m: 16";
-		rLen = 28;
-		rLoc = 358;
+		rLen = 16;
+		rLoc = 409;
 		rType = 0;
 		vrLen = 808;
 		vrLoc = 155;
@@ -881,7 +897,7 @@
 		isa = PBXTextBookmark;
 		fRef = 5242CBEC14B3FC8A00C876C7 /* JGDrawingTestView.m */;
 		rLen = 1;
-		rLoc = 84;
+		rLoc = 82;
 		rType = 1;
 	};
 	5242CC3814B400C600C876C7 /* PBXTextBookmark */ = {
@@ -889,7 +905,7 @@
 		fRef = 5242CBEC14B3FC8A00C876C7 /* JGDrawingTestView.m */;
 		name = "JGDrawingTestView.m: 58";
 		rLen = 0;
-		rLoc = 1452;
+		rLoc = 1221;
 		rType = 0;
 		vrLen = 961;
 		vrLoc = 737;
@@ -909,7 +925,7 @@
 		fRef = 5242CBEC14B3FC8A00C876C7 /* JGDrawingTestView.m */;
 		name = "JGDrawingTestView.m: 58";
 		rLen = 0;
-		rLoc = 1452;
+		rLoc = 1221;
 		rType = 0;
 		vrLen = 943;
 		vrLoc = 755;
@@ -919,7 +935,7 @@
 		fRef = 5242CBEC14B3FC8A00C876C7 /* JGDrawingTestView.m */;
 		name = "JGDrawingTestView.m: 58";
 		rLen = 0;
-		rLoc = 1452;
+		rLoc = 1221;
 		rType = 0;
 		vrLen = 914;
 		vrLoc = 755;
@@ -928,7 +944,7 @@
 		isa = PBXTextBookmark;
 		fRef = 5242CBEC14B3FC8A00C876C7 /* JGDrawingTestView.m */;
 		name = "JGDrawingTestView.m: 56";
-		rLen = 233;
+		rLen = 0;
 		rLoc = 1221;
 		rType = 0;
 		vrLen = 1105;
@@ -938,7 +954,7 @@
 		isa = PBXTextBookmark;
 		fRef = 5242CBEC14B3FC8A00C876C7 /* JGDrawingTestView.m */;
 		name = "JGDrawingTestView.m: 56";
-		rLen = 233;
+		rLen = 0;
 		rLoc = 1221;
 		rType = 0;
 		vrLen = 1012;
@@ -948,7 +964,7 @@
 		isa = PBXTextBookmark;
 		fRef = 5242CBEC14B3FC8A00C876C7 /* JGDrawingTestView.m */;
 		name = "JGDrawingTestView.m: 56";
-		rLen = 233;
+		rLen = 0;
 		rLoc = 1221;
 		rType = 0;
 		vrLen = 1010;
@@ -958,11 +974,171 @@
 		isa = PBXTextBookmark;
 		fRef = 5242CBEC14B3FC8A00C876C7 /* JGDrawingTestView.m */;
 		name = "JGDrawingTestView.m: 56";
-		rLen = 233;
+		rLen = 0;
 		rLoc = 1221;
 		rType = 0;
 		vrLen = 584;
 		vrLoc = 153;
+	};
+	5242CC4814B401EA00C876C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5242CBEB14B3FC8A00C876C7 /* JGDrawingTestView.h */;
+		name = "JGDrawingTestView.h: 23";
+		rLen = 0;
+		rLoc = 484;
+		rType = 0;
+		vrLen = 505;
+		vrLoc = 0;
+	};
+	5242CC4914B401EA00C876C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52CA8B59149D089B0030ADC1 /* JGRunningViewController.m */;
+		name = "JGRunningViewController.m: 18";
+		rLen = 0;
+		rLoc = 429;
+		rType = 0;
+		vrLen = 866;
+		vrLoc = 33;
+	};
+	5242CC4A14B401EA00C876C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5242CBEC14B3FC8A00C876C7 /* JGDrawingTestView.m */;
+		name = "JGDrawingTestView.m: 56";
+		rLen = 0;
+		rLoc = 1221;
+		rType = 0;
+		vrLen = 1028;
+		vrLoc = 737;
+	};
+	5242CC4B14B401EA00C876C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 14";
+		rLen = 0;
+		rLoc = 326;
+		rType = 0;
+		vrLen = 962;
+		vrLoc = 0;
+	};
+	5242CC4C14B401EA00C876C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 14";
+		rLen = 0;
+		rLoc = 326;
+		rType = 0;
+		vrLen = 1244;
+		vrLoc = 378;
+	};
+	5242CC4D14B401EB00C876C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 14";
+		rLen = 0;
+		rLoc = 326;
+		rType = 0;
+		vrLen = 1242;
+		vrLoc = 378;
+	};
+	5242CC4E14B4034A00C876C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5242CBEC14B3FC8A00C876C7 /* JGDrawingTestView.m */;
+		name = "JGDrawingTestView.m: 56";
+		rLen = 0;
+		rLoc = 1221;
+		rType = 0;
+		vrLen = 584;
+		vrLoc = 153;
+	};
+	5242CC4F14B4034A00C876C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 14";
+		rLen = 0;
+		rLoc = 326;
+		rType = 0;
+		vrLen = 1296;
+		vrLoc = 327;
+	};
+	5242CC5214B4035D00C876C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 14";
+		rLen = 0;
+		rLoc = 326;
+		rType = 0;
+		vrLen = 1242;
+		vrLoc = 378;
+	};
+	5242CC5314B4035D00C876C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5242CBEC14B3FC8A00C876C7 /* JGDrawingTestView.m */;
+		name = "JGDrawingTestView.m: 56";
+		rLen = 0;
+		rLoc = 1221;
+		rType = 0;
+		vrLen = 907;
+		vrLoc = 737;
+	};
+	5242CC5414B4035D00C876C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5242CBEC14B3FC8A00C876C7 /* JGDrawingTestView.m */;
+		name = "JGDrawingTestView.m: 56";
+		rLen = 0;
+		rLoc = 1221;
+		rType = 0;
+		vrLen = 1067;
+		vrLoc = 1098;
+	};
+	5242CC5514B4035D00C876C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5242CBEC14B3FC8A00C876C7 /* JGDrawingTestView.m */;
+		name = "JGDrawingTestView.m: 56";
+		rLen = 0;
+		rLoc = 1221;
+		rType = 0;
+		vrLen = 975;
+		vrLoc = 1098;
+	};
+	5242CC5814B4039100C876C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 14";
+		rLen = 0;
+		rLoc = 326;
+		rType = 0;
+		vrLen = 1296;
+		vrLoc = 327;
+	};
+	5242CC5914B4039100C876C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5242CBEC14B3FC8A00C876C7 /* JGDrawingTestView.m */;
+		name = "JGDrawingTestView.m: 86";
+		rLen = 0;
+		rLoc = 2412;
+		rType = 0;
+		vrLen = 623;
+		vrLoc = 0;
+	};
+	5242CC5A14B4039100C876C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5242CBEC14B3FC8A00C876C7 /* JGDrawingTestView.m */;
+		name = "JGDrawingTestView.m: 86";
+		rLen = 0;
+		rLoc = 2412;
+		rType = 0;
+		vrLen = 620;
+		vrLoc = 3;
+	};
+	5242CC5B14B4039200C876C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5242CBEC14B3FC8A00C876C7 /* JGDrawingTestView.m */;
+		name = "JGDrawingTestView.m: 86";
+		rLen = 0;
+		rLoc = 2412;
+		rType = 0;
+		vrLen = 615;
+		vrLoc = 3;
 	};
 	5251B9A9149E59B400AFC0B6 /* JGTimerControllerDelegate.h */ = {
 		uiCtxt = {
@@ -1328,7 +1504,7 @@
 		fRef = 52CA8B59149D089B0030ADC1 /* JGRunningViewController.m */;
 		name = "JGRunningViewController.m: 12";
 		rLen = 0;
-		rLoc = 261;
+		rLoc = 291;
 		rType = 0;
 		vrLen = 980;
 		vrLoc = 1218;
@@ -1406,9 +1582,9 @@
 	};
 	52CA8B59149D089B0030ADC1 /* JGRunningViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1139, 1350}}";
-			sepNavSelRange = "{358, 28}";
-			sepNavVisRange = "{155, 808}";
+			sepNavIntBoundsRect = "{{0, 0}, {1139, 1290}}";
+			sepNavSelRange = "{429, 0}";
+			sepNavVisRange = "{33, 866}";
 			sepNavWindowFrame = "{{38, 228}, {640, 774}}";
 		};
 	};

@@ -20,6 +20,9 @@
 @property (nonatomic) NSUInteger animationDuration;
 
 -(void)animateCountdownOverDuration:(NSUInteger)duration_;
+-(void)animateCountdown;
+
+
 
 
 

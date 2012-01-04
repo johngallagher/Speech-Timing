@@ -53,17 +53,11 @@
 	[self.layer addSublayer:pieChartLayer];
 }
 
-//-(void)drawRect:(CGRect)rect {
-//    [super drawRect:rect];
-//    [pieChartLayer setValue:[NSNumber numberWithFloat:-90.0] forKey:@"startAngle"];
-//	[pieChartLayer setValue:[NSNumber numberWithFloat:-90.0] forKey:@"endAngle"];
-//}
-
 -(CABasicAnimation *)_animationForKeyPath:(NSString*)keyPath 
                                 fromValue:(NSNumber*)fromValue 
                                   toValue:(NSNumber*)toValue {
 	
-	CAMediaTimingFunction *timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+	CAMediaTimingFunction *timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
 	
 	CABasicAnimation *anim = [CABasicAnimation animationWithKeyPath:keyPath];
 	anim.fromValue = fromValue;
@@ -82,10 +76,14 @@
 	[pieChartLayer addAnimation:animEndAngle forKey:@"animateEndAngle"];	
 }
 
+-(void)animateCountdown {
+    [self animateCountdownOverDuration:[self animationDuration]];
+}
+
 -(void)animateCountdownOverDuration:(NSUInteger)duration_ {
 	[CATransaction begin];
 	[CATransaction setAnimationDuration:duration_];
-	[CATransaction setAnimationTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut]];
+	[CATransaction setAnimationTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear]];
 	[self _animateToAngle:270];
 	
 	[CATransaction commit];
