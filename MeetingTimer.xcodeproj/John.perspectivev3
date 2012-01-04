@@ -298,13 +298,13 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>33</integer>
+									<integer>38</integer>
 									<integer>31</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {297, 660}}</string>
+							<string>{{0, 344}, {297, 660}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -347,7 +347,7 @@
 										<key>_historyCapacity</key>
 										<integer>20</integer>
 										<key>bookmark</key>
-										<string>5242CA7114B3D5E700C876C7</string>
+										<string>5242CAA814B3D87F00C876C7</string>
 										<key>history</key>
 										<array>
 											<string>52BBC12914B363E700CFE655</string>
@@ -369,7 +369,7 @@
 											<string>52BBC0CB14B3562B00CFE655</string>
 											<string>5242CA6714B3D5D500C876C7</string>
 											<string>5242CA6E14B3D5E700C876C7</string>
-											<string>5242CA6F14B3D5E700C876C7</string>
+											<string>5242CAA414B3D87300C876C7</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -671,7 +671,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>347330023.47569901</real>
+	<real>347330687.60968602</real>
 	<key>ToolbarConfigUserDefaultsMinorVersion</key>
 	<string>2</string>
 	<key>ToolbarDisplayMode</key>
