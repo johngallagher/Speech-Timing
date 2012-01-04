@@ -2,16 +2,16 @@
 {
 	1D3623240D0F684500981E51 /* MeetingTimerAppDelegate.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {964, 495}}";
+			sepNavIntBoundsRect = "{{0, 0}, {912, 495}}";
 			sepNavSelRange = "{213, 0}";
-			sepNavVisRange = "{50, 798}";
+			sepNavVisRange = "{0, 947}";
 		};
 	};
 	1D3623250D0F684500981E51 /* MeetingTimerAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1965, 3360}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1965, 3330}}";
 			sepNavSelRange = "{428, 34}";
-			sepNavVisRange = "{392, 1846}";
+			sepNavVisRange = "{392, 1238}";
 		};
 	};
 	1D6058900D05DD3D006BFB54 /* MeetingTimer */ = {
@@ -36,9 +36,9 @@
 	};
 	28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {2238, 2145}}";
-			sepNavSelRange = "{5136, 0}";
-			sepNavVisRange = "{1195, 2062}";
+			sepNavIntBoundsRect = "{{0, 0}, {999, 2430}}";
+			sepNavSelRange = "{326, 0}";
+			sepNavVisRange = "{0, 962}";
 			sepNavWindowFrame = "{{15, 4}, {640, 774}}";
 		};
 	};
@@ -53,6 +53,8 @@
 		breakpoints = (
 			52BBBD8D14B24DE500CFE655 /* JGPickerViewDelegate.m:26 */,
 			52BBBE8D14B2F4AA00CFE655 /* JGDurationPickerView.m:15 */,
+			5242CC1F14B3FF4A00C876C7 /* JGTimerConfigurationViewController.m:37 */,
+			5242CC2414B3FF6300C876C7 /* JGDrawingTestView.m:60 */,
 		);
 		codeSenseManager = 52CA8AE1149CF1A40030ADC1 /* Code sense */;
 		executables = (
@@ -180,6 +182,55 @@
 			5242CAA414B3D87300C876C7 /* PBXBookmark */ = 5242CAA414B3D87300C876C7 /* PBXBookmark */;
 			5242CAA714B3D87F00C876C7 /* PBXBookmark */ = 5242CAA714B3D87F00C876C7 /* PBXBookmark */;
 			5242CAA814B3D87F00C876C7 /* PBXBookmark */ = 5242CAA814B3D87F00C876C7 /* PBXBookmark */;
+			5242CAAB14B3DA5800C876C7 /* PBXBookmark */ = 5242CAAB14B3DA5800C876C7 /* PBXBookmark */;
+			5242CAAC14B3DA5800C876C7 /* PBXBookmark */ = 5242CAAC14B3DA5800C876C7 /* PBXBookmark */;
+			5242CAAD14B3DA5800C876C7 /* PBXBookmark */ = 5242CAAD14B3DA5800C876C7 /* PBXBookmark */;
+			5242CB8E14B3F63400C876C7 /* PBXBookmark */ = 5242CB8E14B3F63400C876C7 /* PBXBookmark */;
+			5242CBF914B3FD2D00C876C7 /* PBXBookmark */ = 5242CBF914B3FD2D00C876C7 /* PBXBookmark */;
+			5242CBFA14B3FD2D00C876C7 /* PBXTextBookmark */ = 5242CBFA14B3FD2D00C876C7 /* PBXTextBookmark */;
+			5242CBFB14B3FD2D00C876C7 /* PBXTextBookmark */ = 5242CBFB14B3FD2D00C876C7 /* PBXTextBookmark */;
+			5242CBFC14B3FD2D00C876C7 /* PBXTextBookmark */ = 5242CBFC14B3FD2D00C876C7 /* PBXTextBookmark */;
+			5242CBFD14B3FD2D00C876C7 /* PBXTextBookmark */ = 5242CBFD14B3FD2D00C876C7 /* PBXTextBookmark */;
+			5242CBFE14B3FD2D00C876C7 /* PBXTextBookmark */ = 5242CBFE14B3FD2D00C876C7 /* PBXTextBookmark */;
+			5242CBFF14B3FD2D00C876C7 /* PBXTextBookmark */ = 5242CBFF14B3FD2D00C876C7 /* PBXTextBookmark */;
+			5242CC0014B3FD2D00C876C7 /* PBXTextBookmark */ = 5242CC0014B3FD2D00C876C7 /* PBXTextBookmark */;
+			5242CC0114B3FD2D00C876C7 /* PBXTextBookmark */ = 5242CC0114B3FD2D00C876C7 /* PBXTextBookmark */;
+			5242CC0214B3FD2D00C876C7 /* PBXTextBookmark */ = 5242CC0214B3FD2D00C876C7 /* PBXTextBookmark */;
+			5242CC0314B3FD2D00C876C7 /* PBXTextBookmark */ = 5242CC0314B3FD2D00C876C7 /* PBXTextBookmark */;
+			5242CC0414B3FD2D00C876C7 /* PBXTextBookmark */ = 5242CC0414B3FD2D00C876C7 /* PBXTextBookmark */;
+			5242CC0514B3FD2D00C876C7 /* PBXTextBookmark */ = 5242CC0514B3FD2D00C876C7 /* PBXTextBookmark */;
+			5242CC0614B3FD2D00C876C7 /* PBXTextBookmark */ = 5242CC0614B3FD2D00C876C7 /* PBXTextBookmark */;
+			5242CC0714B3FD2D00C876C7 /* PBXTextBookmark */ = 5242CC0714B3FD2D00C876C7 /* PBXTextBookmark */;
+			5242CC0814B3FD2D00C876C7 /* PBXTextBookmark */ = 5242CC0814B3FD2D00C876C7 /* PBXTextBookmark */;
+			5242CC0914B3FD2D00C876C7 /* PBXTextBookmark */ = 5242CC0914B3FD2D00C876C7 /* PBXTextBookmark */;
+			5242CC0A14B3FD2D00C876C7 /* PBXBookmark */ = 5242CC0A14B3FD2D00C876C7 /* PBXBookmark */;
+			5242CC0D14B3FD4400C876C7 /* PBXBookmark */ = 5242CC0D14B3FD4400C876C7 /* PBXBookmark */;
+			5242CC0E14B3FD4500C876C7 /* PBXBookmark */ = 5242CC0E14B3FD4500C876C7 /* PBXBookmark */;
+			5242CC0F14B3FD5F00C876C7 /* PBXBookmark */ = 5242CC0F14B3FD5F00C876C7 /* PBXBookmark */;
+			5242CC1014B3FD5F00C876C7 /* PBXBookmark */ = 5242CC1014B3FD5F00C876C7 /* PBXBookmark */;
+			5242CC1714B3FF2200C876C7 /* PBXBookmark */ = 5242CC1714B3FF2200C876C7 /* PBXBookmark */;
+			5242CC1814B3FF2200C876C7 /* PBXTextBookmark */ = 5242CC1814B3FF2200C876C7 /* PBXTextBookmark */;
+			5242CC1914B3FF2200C876C7 /* PBXTextBookmark */ = 5242CC1914B3FF2200C876C7 /* PBXTextBookmark */;
+			5242CC1A14B3FF2200C876C7 /* PBXTextBookmark */ = 5242CC1A14B3FF2200C876C7 /* PBXTextBookmark */;
+			5242CC1B14B3FF2200C876C7 /* PBXTextBookmark */ = 5242CC1B14B3FF2200C876C7 /* PBXTextBookmark */;
+			5242CC1C14B3FF2200C876C7 /* XCBuildMessageTextBookmark */ = 5242CC1C14B3FF2200C876C7 /* XCBuildMessageTextBookmark */;
+			5242CC1D14B3FF2200C876C7 /* PBXTextBookmark */ = 5242CC1D14B3FF2200C876C7 /* PBXTextBookmark */;
+			5242CC1E14B3FF2200C876C7 /* PBXTextBookmark */ = 5242CC1E14B3FF2200C876C7 /* PBXTextBookmark */;
+			5242CC2114B3FF4B00C876C7 /* PBXTextBookmark */ = 5242CC2114B3FF4B00C876C7 /* PBXTextBookmark */;
+			5242CC2614B3FF6E00C876C7 /* PBXTextBookmark */ = 5242CC2614B3FF6E00C876C7 /* PBXTextBookmark */;
+			5242CC3314B400C600C876C7 /* PBXBookmark */ = 5242CC3314B400C600C876C7 /* PBXBookmark */;
+			5242CC3414B400C600C876C7 /* PBXTextBookmark */ = 5242CC3414B400C600C876C7 /* PBXTextBookmark */;
+			5242CC3514B400C600C876C7 /* PBXTextBookmark */ = 5242CC3514B400C600C876C7 /* PBXTextBookmark */;
+			5242CC3614B400C600C876C7 /* PBXTextBookmark */ = 5242CC3614B400C600C876C7 /* PBXTextBookmark */;
+			5242CC3714B400C600C876C7 /* PBXTextBookmark */ = 5242CC3714B400C600C876C7 /* PBXTextBookmark */;
+			5242CC3814B400C600C876C7 /* PBXTextBookmark */ = 5242CC3814B400C600C876C7 /* PBXTextBookmark */;
+			5242CC3914B400C800C876C7 /* PBXTextBookmark */ = 5242CC3914B400C800C876C7 /* PBXTextBookmark */;
+			5242CC3A14B400C800C876C7 /* PBXTextBookmark */ = 5242CC3A14B400C800C876C7 /* PBXTextBookmark */;
+			5242CC3B14B400C800C876C7 /* PBXTextBookmark */ = 5242CC3B14B400C800C876C7 /* PBXTextBookmark */;
+			5242CC3E14B400E600C876C7 /* PBXTextBookmark */ = 5242CC3E14B400E600C876C7 /* PBXTextBookmark */;
+			5242CC3F14B400E600C876C7 /* PBXTextBookmark */ = 5242CC3F14B400E600C876C7 /* PBXTextBookmark */;
+			5242CC4014B400E700C876C7 /* PBXTextBookmark */ = 5242CC4014B400E700C876C7 /* PBXTextBookmark */;
+			5242CC4114B400FD00C876C7 /* PBXTextBookmark */ = 5242CC4114B400FD00C876C7 /* PBXTextBookmark */;
 			52BBBEA714B2FDE000CFE655 = 52BBBEA714B2FDE000CFE655 /* PBXTextBookmark */;
 			52BBBEB914B2FE9C00CFE655 = 52BBBEB914B2FE9C00CFE655 /* PBXTextBookmark */;
 			52BBBF9414B31B4500CFE655 = 52BBBF9414B31B4500CFE655 /* PBXTextBookmark */;
@@ -442,10 +493,481 @@
 		isa = PBXBookmark;
 		fRef = 52BBC18D14B3876700CFE655 /* TimerGradient2.png */;
 	};
+	5242CAAB14B3DA5800C876C7 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 52BBC18D14B3876700CFE655 /* TimerGradient2.png */;
+	};
+	5242CAAC14B3DA5800C876C7 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 52BBC18D14B3876700CFE655 /* TimerGradient2.png */;
+	};
+	5242CAAD14B3DA5800C876C7 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 52BBC18D14B3876700CFE655 /* TimerGradient2.png */;
+	};
+	5242CB8E14B3F63400C876C7 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 52BBC18D14B3876700CFE655 /* TimerGradient2.png */;
+	};
+	5242CBEB14B3FC8A00C876C7 /* JGDrawingTestView.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {879, 423}}";
+			sepNavSelRange = "{391, 17}";
+			sepNavVisRange = "{0, 479}";
+		};
+	};
+	5242CBEC14B3FC8A00C876C7 /* JGDrawingTestView.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {879, 1500}}";
+			sepNavSelRange = "{1221, 233}";
+			sepNavVisRange = "{737, 1028}";
+		};
+	};
+	5242CBEE14B3FC8A00C876C7 /* PieChartLayer.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {866, 1065}}";
+			sepNavSelRange = "{1093, 0}";
+			sepNavVisRange = "{137, 644}";
+		};
+	};
+	5242CBF914B3FD2D00C876C7 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 52BBC18D14B3876700CFE655 /* TimerGradient2.png */;
+	};
+	5242CBFA14B3FD2D00C876C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52BBC0D214B357DF00CFE655 /* JGTimeFormatterTestCase.h */;
+		name = "JGTimeFormatterTestCase.h: 8";
+		rLen = 0;
+		rLoc = 120;
+		rType = 0;
+		vrLen = 125;
+		vrLoc = 0;
+	};
+	5242CBFB14B3FD2D00C876C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52BBC08C14B3509200CFE655 /* JGCountdownTimerTestCase.m */;
+		name = "JGCountdownTimerTestCase.m: 62";
+		rLen = 0;
+		rLoc = 2470;
+		rType = 0;
+		vrLen = 1059;
+		vrLoc = 1455;
+	};
+	5242CBFC14B3FD2D00C876C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52BBC08B14B3509200CFE655 /* JGCountdownTimerTestCase.h */;
+		name = "JGCountdownTimerTestCase.h: 8";
+		rLen = 0;
+		rLoc = 121;
+		rType = 0;
+		vrLen = 127;
+		vrLoc = 0;
+	};
+	5242CBFD14B3FD2D00C876C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52BBC08A14B3505E00CFE655 /* JGCountdownTimerDelegate.h */;
+		name = "JGCountdownTimerDelegate.h: 14";
+		rLen = 55;
+		rLoc = 233;
+		rType = 0;
+		vrLen = 295;
+		vrLoc = 0;
+	};
+	5242CBFE14B3FD2D00C876C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52BBC08714B34FC900CFE655 /* JGCountdownTimer.h */;
+		name = "JGCountdownTimer.h: 18";
+		rLen = 0;
+		rLoc = 459;
+		rType = 0;
+		vrLen = 470;
+		vrLoc = 0;
+	};
+	5242CBFF14B3FD2D00C876C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52BBC08814B34FC900CFE655 /* JGCountdownTimer.m */;
+		name = "JGCountdownTimer.m: 40";
+		rLen = 0;
+		rLoc = 1090;
+		rType = 0;
+		vrLen = 840;
+		vrLoc = 622;
+	};
+	5242CC0014B3FD2D00C876C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52EB416A14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.h */;
+		name = "JGTimerDurationCalculatorTestCase.h: 5";
+		rLen = 0;
+		rLoc = 101;
+		rType = 0;
+		vrLen = 173;
+		vrLoc = 0;
+	};
+	5242CC0114B3FD2D00C876C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52EB417214B1218D00308C95 /* JGTimerDurationCalculator.m */;
+		name = "JGTimerDurationCalculator.m: 38";
+		rLen = 0;
+		rLoc = 1319;
+		rType = 0;
+		vrLen = 827;
+		vrLoc = 892;
+	};
+	5242CC0214B3FD2D00C876C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52EB417114B1218D00308C95 /* JGTimerDurationCalculator.h */;
+		name = "JGTimerDurationCalculator.h: 11";
+		rLen = 0;
+		rLoc = 270;
+		rType = 0;
+		vrLen = 446;
+		vrLoc = 0;
+	};
+	5242CC0314B3FD2D00C876C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52591F34149E453E00DEA711 /* JGTimerController.m */;
+		name = "JGTimerController.m: 39";
+		rLen = 0;
+		rLoc = 1314;
+		rType = 0;
+		vrLen = 1141;
+		vrLoc = 697;
+	};
+	5242CC0414B3FD2D00C876C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52591F33149E453E00DEA711 /* JGTimerController.h */;
+		name = "JGTimerController.h: 15";
+		rLen = 0;
+		rLoc = 349;
+		rType = 0;
+		vrLen = 758;
+		vrLoc = 0;
+	};
+	5242CC0514B3FD2D00C876C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5251B9A9149E59B400AFC0B6 /* JGTimerControllerDelegate.h */;
+		name = "JGTimerControllerDelegate.h: 12";
+		rLen = 47;
+		rLoc = 187;
+		rType = 0;
+		vrLen = 308;
+		vrLoc = 0;
+	};
+	5242CC0614B3FD2D00C876C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* MeetingTimerAppDelegate.h */;
+		name = "MeetingTimerAppDelegate.h: 11";
+		rLen = 0;
+		rLoc = 213;
+		rType = 0;
+		vrLen = 947;
+		vrLoc = 0;
+	};
+	5242CC0714B3FD2D00C876C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* MeetingTimerAppDelegate.m */;
+		name = "MeetingTimerAppDelegate.m: 24";
+		rLen = 34;
+		rLoc = 428;
+		rType = 0;
+		vrLen = 1238;
+		vrLoc = 392;
+	};
+	5242CC0814B3FD2D00C876C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 154";
+		rLen = 0;
+		rLoc = 5353;
+		rType = 0;
+		vrLen = 1309;
+		vrLoc = 1973;
+	};
+	5242CC0914B3FD2D00C876C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5242CBEC14B3FC8A00C876C7 /* JGDrawingTestView.m */;
+		name = "JGDrawingTestView.m: 17";
+		rLen = 0;
+		rLoc = 425;
+		rType = 0;
+		vrLen = 570;
+		vrLoc = 153;
+	};
+	5242CC0A14B3FD2D00C876C7 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 52BBC18814B3861900CFE655 /* TimerGradient.png */;
+	};
+	5242CC0D14B3FD4400C876C7 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 52BBC18814B3861900CFE655 /* TimerGradient.png */;
+	};
+	5242CC0E14B3FD4500C876C7 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 52BBC18814B3861900CFE655 /* TimerGradient.png */;
+	};
+	5242CC0F14B3FD5F00C876C7 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 52BBC18D14B3876700CFE655 /* TimerGradient2.png */;
+	};
+	5242CC1014B3FD5F00C876C7 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 52BBC18814B3861900CFE655 /* TimerGradient.png */;
+	};
+	5242CC1714B3FF2200C876C7 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 52BBC18814B3861900CFE655 /* TimerGradient.png */;
+	};
+	5242CC1814B3FF2200C876C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5242CBEB14B3FC8A00C876C7 /* JGDrawingTestView.h */;
+		name = "JGDrawingTestView.h: 28";
+		rLen = 0;
+		rLoc = 479;
+		rType = 0;
+		vrLen = 479;
+		vrLoc = 0;
+	};
+	5242CC1914B3FF2200C876C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5242CBEE14B3FC8A00C876C7 /* PieChartLayer.m */;
+		name = "PieChartLayer.m: 48";
+		rLen = 0;
+		rLoc = 1093;
+		rType = 0;
+		vrLen = 921;
+		vrLoc = 613;
+	};
+	5242CC1A14B3FF2200C876C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5242CBEC14B3FC8A00C876C7 /* JGDrawingTestView.m */;
+		name = "JGDrawingTestView.m: 43";
+		rLen = 13;
+		rLoc = 805;
+		rType = 0;
+		vrLen = 506;
+		vrLoc = 508;
+	};
+	5242CC1B14B3FF2200C876C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52CA8B59149D089B0030ADC1 /* JGRunningViewController.m */;
+		name = "JGRunningViewController.m: 13";
+		rLen = 40;
+		rLoc = 262;
+		rType = 0;
+		vrLen = 658;
+		vrLoc = 1540;
+	};
+	5242CC1C14B3FF2200C876C7 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "'JGDrawingTestView' undeclared (first use in this function)";
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 36;
+		rType = 1;
+	};
+	5242CC1D14B3FF2200C876C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 14";
+		rLen = 0;
+		rLoc = 326;
+		rType = 0;
+		vrLen = 962;
+		vrLoc = 0;
+	};
+	5242CC1E14B3FF2200C876C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 14";
+		rLen = 0;
+		rLoc = 326;
+		rType = 0;
+		vrLen = 777;
+		vrLoc = 0;
+	};
+	5242CC1F14B3FF4A00C876C7 /* JGTimerConfigurationViewController.m:37 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		functionName = "-startTimer:";
+		hitCount = 1;
+		ignoreCount = 0;
+		lineNumber = 37;
+		location = MeetingTimer;
+		modificationTime = 347340627.92446;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	5242CC2114B3FF4B00C876C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 14";
+		rLen = 0;
+		rLoc = 326;
+		rType = 0;
+		vrLen = 777;
+		vrLoc = 0;
+	};
+	5242CC2414B3FF6300C876C7 /* JGDrawingTestView.m:60 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 5242CBEC14B3FC8A00C876C7 /* JGDrawingTestView.m */;
+		functionName = "-awakeFromNib";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 60;
+		location = MeetingTimer;
+		modificationTime = 347340643.226191;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	5242CC2614B3FF6E00C876C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 14";
+		rLen = 0;
+		rLoc = 326;
+		rType = 0;
+		vrLen = 777;
+		vrLoc = 0;
+	};
+	5242CC3314B400C600C876C7 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 52BBC18814B3861900CFE655 /* TimerGradient.png */;
+	};
+	5242CC3414B400C600C876C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5242CBEE14B3FC8A00C876C7 /* PieChartLayer.m */;
+		name = "PieChartLayer.m: 48";
+		rLen = 0;
+		rLoc = 1093;
+		rType = 0;
+		vrLen = 644;
+		vrLoc = 137;
+	};
+	5242CC3514B400C600C876C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 14";
+		rLen = 0;
+		rLoc = 326;
+		rType = 0;
+		vrLen = 1300;
+		vrLoc = 521;
+	};
+	5242CC3614B400C600C876C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52CA8B59149D089B0030ADC1 /* JGRunningViewController.m */;
+		name = "JGRunningViewController.m: 16";
+		rLen = 28;
+		rLoc = 358;
+		rType = 0;
+		vrLen = 808;
+		vrLoc = 155;
+	};
+	5242CC3714B400C600C876C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5242CBEC14B3FC8A00C876C7 /* JGDrawingTestView.m */;
+		rLen = 1;
+		rLoc = 84;
+		rType = 1;
+	};
+	5242CC3814B400C600C876C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5242CBEC14B3FC8A00C876C7 /* JGDrawingTestView.m */;
+		name = "JGDrawingTestView.m: 58";
+		rLen = 0;
+		rLoc = 1452;
+		rType = 0;
+		vrLen = 961;
+		vrLoc = 737;
+	};
+	5242CC3914B400C800C876C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 14";
+		rLen = 0;
+		rLoc = 326;
+		rType = 0;
+		vrLen = 962;
+		vrLoc = 0;
+	};
+	5242CC3A14B400C800C876C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5242CBEC14B3FC8A00C876C7 /* JGDrawingTestView.m */;
+		name = "JGDrawingTestView.m: 58";
+		rLen = 0;
+		rLoc = 1452;
+		rType = 0;
+		vrLen = 943;
+		vrLoc = 755;
+	};
+	5242CC3B14B400C800C876C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5242CBEC14B3FC8A00C876C7 /* JGDrawingTestView.m */;
+		name = "JGDrawingTestView.m: 58";
+		rLen = 0;
+		rLoc = 1452;
+		rType = 0;
+		vrLen = 914;
+		vrLoc = 755;
+	};
+	5242CC3E14B400E600C876C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5242CBEC14B3FC8A00C876C7 /* JGDrawingTestView.m */;
+		name = "JGDrawingTestView.m: 56";
+		rLen = 233;
+		rLoc = 1221;
+		rType = 0;
+		vrLen = 1105;
+		vrLoc = 737;
+	};
+	5242CC3F14B400E600C876C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5242CBEC14B3FC8A00C876C7 /* JGDrawingTestView.m */;
+		name = "JGDrawingTestView.m: 56";
+		rLen = 233;
+		rLoc = 1221;
+		rType = 0;
+		vrLen = 1012;
+		vrLoc = 755;
+	};
+	5242CC4014B400E700C876C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5242CBEC14B3FC8A00C876C7 /* JGDrawingTestView.m */;
+		name = "JGDrawingTestView.m: 56";
+		rLen = 233;
+		rLoc = 1221;
+		rType = 0;
+		vrLen = 1010;
+		vrLoc = 755;
+	};
+	5242CC4114B400FD00C876C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5242CBEC14B3FC8A00C876C7 /* JGDrawingTestView.m */;
+		name = "JGDrawingTestView.m: 56";
+		rLen = 233;
+		rLoc = 1221;
+		rType = 0;
+		vrLen = 584;
+		vrLoc = 153;
+	};
 	5251B9A9149E59B400AFC0B6 /* JGTimerControllerDelegate.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1364, 603}}";
-			sepNavSelRange = "{303, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {912, 423}}";
+			sepNavSelRange = "{187, 47}";
 			sepNavVisRange = "{0, 308}";
 		};
 	};
@@ -472,16 +994,16 @@
 	};
 	52591F33149E453E00DEA711 /* JGTimerController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1364, 603}}";
+			sepNavIntBoundsRect = "{{0, 0}, {912, 495}}";
 			sepNavSelRange = "{349, 0}";
-			sepNavVisRange = "{0, 765}";
+			sepNavVisRange = "{0, 758}";
 		};
 	};
 	52591F34149E453E00DEA711 /* JGTimerController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1312, 1035}}";
-			sepNavSelRange = "{726, 124}";
-			sepNavVisRange = "{726, 1554}";
+			sepNavIntBoundsRect = "{{0, 0}, {957, 1050}}";
+			sepNavSelRange = "{1314, 0}";
+			sepNavVisRange = "{697, 1141}";
 		};
 	};
 	52591F3A149E466B00DEA711 /* MeetingTimerTests */ = {
@@ -530,7 +1052,7 @@
 		ignoreCount = 0;
 		lineNumber = 26;
 		location = MeetingTimer;
-		modificationTime = 347286121.301618;
+		modificationTime = 347340623.694806;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -555,10 +1077,9 @@
 		hitCount = 0;
 		ignoreCount = 0;
 		lineNumber = 15;
-		location = MeetingTimer;
-		modificationTime = 347286121.302302;
+		modificationTime = 347340623.695912;
 		originalNumberOfMultipleMatches = 1;
-		state = 1;
+		state = 0;
 	};
 	52BBBEA714B2FDE000CFE655 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -630,38 +1151,38 @@
 	};
 	52BBC08714B34FC900CFE655 /* JGCountdownTimer.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1312, 603}}";
+			sepNavIntBoundsRect = "{{0, 0}, {912, 423}}";
 			sepNavSelRange = "{459, 0}";
 			sepNavVisRange = "{0, 470}";
 		};
 	};
 	52BBC08814B34FC900CFE655 /* JGCountdownTimer.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1312, 840}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1069, 840}}";
 			sepNavSelRange = "{1090, 0}";
-			sepNavVisRange = "{383, 1084}";
+			sepNavVisRange = "{622, 840}";
 			sepNavWindowFrame = "{{61, 207}, {640, 774}}";
 		};
 	};
 	52BBC08A14B3505E00CFE655 /* JGCountdownTimerDelegate.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1312, 603}}";
+			sepNavIntBoundsRect = "{{0, 0}, {912, 423}}";
 			sepNavSelRange = "{233, 55}";
 			sepNavVisRange = "{0, 295}";
 		};
 	};
 	52BBC08B14B3509200CFE655 /* JGCountdownTimerTestCase.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1364, 603}}";
+			sepNavIntBoundsRect = "{{0, 0}, {912, 423}}";
 			sepNavSelRange = "{121, 0}";
 			sepNavVisRange = "{0, 127}";
 		};
 	};
 	52BBC08C14B3509200CFE655 /* JGCountdownTimerTestCase.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1312, 1020}}";
+			sepNavIntBoundsRect = "{{0, 0}, {912, 1020}}";
 			sepNavSelRange = "{2470, 0}";
-			sepNavVisRange = "{1044, 1470}";
+			sepNavVisRange = "{1455, 1059}";
 		};
 	};
 	52BBC0C614B3562B00CFE655 /* PBXTextBookmark */ = {
@@ -706,7 +1227,7 @@
 	};
 	52BBC0D214B357DF00CFE655 /* JGTimeFormatterTestCase.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1312, 603}}";
+			sepNavIntBoundsRect = "{{0, 0}, {912, 423}}";
 			sepNavSelRange = "{120, 0}";
 			sepNavVisRange = "{0, 125}";
 		};
@@ -797,7 +1318,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
 		name = "JGTimerConfigurationViewController.m: 26";
 		rLen = 0;
-		rLoc = 653;
+		rLoc = 683;
 		rType = 0;
 		vrLen = 1625;
 		vrLoc = 348;
@@ -885,15 +1406,15 @@
 	};
 	52CA8B59149D089B0030ADC1 /* JGRunningViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1312, 1320}}";
-			sepNavSelRange = "{261, 0}";
-			sepNavVisRange = "{1218, 980}";
+			sepNavIntBoundsRect = "{{0, 0}, {1139, 1350}}";
+			sepNavSelRange = "{358, 28}";
+			sepNavVisRange = "{155, 808}";
 			sepNavWindowFrame = "{{38, 228}, {640, 774}}";
 		};
 	};
 	52EB416A14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1364, 603}}";
+			sepNavIntBoundsRect = "{{0, 0}, {912, 423}}";
 			sepNavSelRange = "{101, 0}";
 			sepNavVisRange = "{0, 173}";
 		};
@@ -907,16 +1428,16 @@
 	};
 	52EB417114B1218D00308C95 /* JGTimerDurationCalculator.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1364, 580}}";
+			sepNavIntBoundsRect = "{{0, 0}, {912, 423}}";
 			sepNavSelRange = "{270, 0}";
 			sepNavVisRange = "{0, 446}";
 		};
 	};
 	52EB417214B1218D00308C95 /* JGTimerDurationCalculator.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1364, 930}}";
+			sepNavIntBoundsRect = "{{0, 0}, {912, 900}}";
 			sepNavSelRange = "{1319, 0}";
-			sepNavVisRange = "{570, 1211}";
+			sepNavVisRange = "{892, 827}";
 		};
 	};
 }

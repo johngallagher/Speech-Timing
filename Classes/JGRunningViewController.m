@@ -13,7 +13,7 @@
 @implementation JGRunningViewController
 
 -(void)viewDidAppear:(BOOL)animated {
-
+    [[self view] animateCountdownOverDuration:[self animationDuration]];
 }
 
 -(void)viewDidDisappear:(BOOL)animated {

@@ -10,6 +10,7 @@
 #import "JGRunningViewController.h"
 #import "JGTimerController.h"
 #import "JGCountdownTimer.h"
+#import "JGDrawingTestView.h"
 
 @implementation JGTimerConfigurationViewController
 
@@ -23,16 +24,21 @@
     if (selectedRow < 0)
         return;
     
-    NSUInteger durationOfTimer = [[pickerDurations objectAtIndex:selectedRow] intValue];
+    NSUInteger durationOfTimer = [[pickerDurations objectAtIndex:selectedRow] intValue] * 60;
                                           
     JGRunningViewController *runningViewController = [[JGRunningViewController alloc] initWithNibName:@"JGRunningViewController" bundle:nil];
-    [[self navigationController] pushViewController:runningViewController animated:YES];
     
-    [self setTimerController:[JGTimerController timerWithDurationValue:(durationOfTimer * 60) delegate:runningViewController]];
+    [self setTimerController:[JGTimerController timerWithDurationValue:durationOfTimer delegate:runningViewController]];
     [[self timerController] startTimer];
     
-    [self setCountdownTimer:[JGCountdownTimer timerWithDurationValue:(durationOfTimer * 60) delegate:runningViewController]];
+    [self setCountdownTimer:[JGCountdownTimer timerWithDurationValue:durationOfTimer delegate:runningViewController]];
     [[self countdownTimer] startTimer];
+    
+    if ([[runningViewController view] isKindOfClass:[JGDrawingTestView class]]) {
+        [(JGDrawingTestView *)[runningViewController view] setAnimationDuration:durationOfTimer];
+    }
+    
+    [[self navigationController] pushViewController:runningViewController animated:YES];
     
     [runningViewController release];
 }

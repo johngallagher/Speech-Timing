@@ -274,7 +274,7 @@
 						<dict>
 							<key>PBXSmartGroupTreeModuleColumnWidthsKey</key>
 							<array>
-								<real>297</real>
+								<real>330</real>
 							</array>
 							<key>PBXSmartGroupTreeModuleColumnsKey_v4</key>
 							<array>
@@ -287,10 +287,12 @@
 							<array>
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>080E96DDFE201D6D7F000001</string>
+								<string>5242CBEA14B3FC6900C876C7</string>
 								<string>5251B9F8149E5D4300AFC0B6</string>
-								<string>5251B9AB149E59BD00AFC0B6</string>
+								<string>5242CBE714B3FC1E00C876C7</string>
 								<string>29B97315FDCFA39411CA2CEA</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
+								<string>5242CBF714B3FD2500C876C7</string>
 								<string>29B97323FDCFA39411CA2CEA</string>
 								<string>19C28FACFE9D520D11CA2CBB</string>
 								<string>1C37FBAC04509CD000000102</string>
@@ -298,13 +300,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>38</integer>
-									<integer>31</integer>
+									<integer>11</integer>
+									<integer>9</integer>
+									<integer>2</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 344}, {297, 660}}</string>
+							<string>{{0, 0}, {330, 660}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -314,17 +317,17 @@
 					<key>GeometryConfiguration</key>
 					<dict>
 						<key>Frame</key>
-						<string>{{0, 0}, {314, 678}}</string>
+						<string>{{0, 0}, {347, 678}}</string>
 						<key>GroupTreeTableConfiguration</key>
 						<array>
 							<string>MainColumn</string>
-							<real>297</real>
+							<real>330</real>
 						</array>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
 					<key>Proportion</key>
-					<string>314pt</string>
+					<string>347pt</string>
 				</dict>
 				<dict>
 					<key>Dock</key>
@@ -335,7 +338,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>52CA8ADA149CF1A40030ADC1</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>TimerGradient2.png</string>
+								<string>JGDrawingTestView.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -343,33 +346,33 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>52CA8ADB149CF1A40030ADC1</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>TimerGradient2.png</string>
+										<string>JGDrawingTestView.m</string>
 										<key>_historyCapacity</key>
 										<integer>20</integer>
 										<key>bookmark</key>
-										<string>5242CAA814B3D87F00C876C7</string>
+										<string>5242CC4014B400E700C876C7</string>
 										<key>history</key>
 										<array>
-											<string>52BBC12914B363E700CFE655</string>
-											<string>52BBC12A14B363E700CFE655</string>
-											<string>52BBC12B14B363E700CFE655</string>
-											<string>52BBC12C14B363E700CFE655</string>
-											<string>52BBC12D14B363E700CFE655</string>
-											<string>52BBC12E14B363E700CFE655</string>
-											<string>52BBBF9414B31B4500CFE655</string>
-											<string>52BBBFA514B31E5100CFE655</string>
+											<string>5242CC0614B3FD2D00C876C7</string>
+											<string>5242CC0714B3FD2D00C876C7</string>
 											<string>52BBBEA714B2FDE000CFE655</string>
-											<string>52BBBFBE14B322E000CFE655</string>
 											<string>52BBBEB914B2FE9C00CFE655</string>
-											<string>52BBC0C614B3562B00CFE655</string>
-											<string>52BBC0C714B3562B00CFE655</string>
 											<string>52BBC0C914B3562B00CFE655</string>
+											<string>5242CC1714B3FF2200C876C7</string>
+											<string>5242CC1814B3FF2200C876C7</string>
+											<string>5242CC1914B3FF2200C876C7</string>
+											<string>5242CC1B14B3FF2200C876C7</string>
 											<string>52BBC18A14B3862000CFE655</string>
-											<string>52BBC01714B3299E00CFE655</string>
-											<string>52BBC0CB14B3562B00CFE655</string>
-											<string>5242CA6714B3D5D500C876C7</string>
 											<string>5242CA6E14B3D5E700C876C7</string>
-											<string>5242CAA414B3D87300C876C7</string>
+											<string>5242CBFA14B3FD2D00C876C7</string>
+											<string>5242CBFB14B3FD2D00C876C7</string>
+											<string>5242CC0F14B3FD5F00C876C7</string>
+											<string>5242CC3914B400C800C876C7</string>
+											<string>5242CBFD14B3FD2D00C876C7</string>
+											<string>5242CC0014B3FD2D00C876C7</string>
+											<string>5242CC0114B3FD2D00C876C7</string>
+											<string>5242CBFF14B3FD2D00C876C7</string>
+											<string>5242CC3E14B400E600C876C7</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -383,7 +386,7 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {961, 455}}</string>
+								<string>{{0, 0}, {928, 455}}</string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -460,7 +463,7 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {961, 191}}</string>
+										<string>{{10, 27}, {928, 191}}</string>
 									</dict>
 									<key>Module</key>
 									<string>PBXBuildResultsModule</string>
@@ -469,7 +472,7 @@
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>961pt</string>
+					<string>928pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -671,7 +674,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>347330687.60968602</real>
+	<real>347341031.56701303</real>
 	<key>ToolbarConfigUserDefaultsMinorVersion</key>
 	<string>2</string>
 	<key>ToolbarDisplayMode</key>
@@ -688,6 +691,8 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>5242CC2714B3FF6E00C876C7</string>
+		<string>5242CC2314B3FF4B00C876C7</string>
 		<string>/Users/John/Drop Box/Dropbox/Projects/Programming Projects/Current Projects/MeetingTimer/MeetingTimer/MeetingTimer.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
