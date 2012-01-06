@@ -11,6 +11,8 @@
 
 @implementation JGRingingSettingViewController
 
+@synthesize ringTones;
+
 
 
 #pragma mark -
@@ -19,14 +21,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-//    UINavigationItem* item = [[UINavigationItem alloc] initWithTitle:@"title text"];
-//    [bar pushNavigationItem:item animated:YES];
-//    [item release];
+    [self setRingTones:[NSArray arrayWithObjects:@"Ring tone 1", @"Ring tone 2", @"Ring tone 3", @"Ring tone 4", nil]];
+    selectedRingToneIndex = 1;
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(setRingTone)];
     [[self navigationItem] setRightBarButtonItem:doneButton];
     [doneButton release];
-//    self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    UIBarButtonItem *cancelButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancelModal)];
+    [[self navigationItem] setLeftBarButtonItem:cancelButton];
+    [cancelButton release];
 }
 
 -(UINavigationItem *)navigationItem {
@@ -36,7 +40,11 @@
 -(void)setRingTone {
     NSLog(@"Set Ring Tone");
     [[self parentViewController] dismissModalViewControllerAnimated:YES];
+}
 
+-(void)cancelModal {
+    NSLog(@"Cancelled");
+    [[self parentViewController] dismissModalViewControllerAnimated:YES];
 }
 
 /*
@@ -79,7 +87,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return 1;
+    return 4;
 }
 
 
@@ -92,7 +100,12 @@
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     }
-    [[cell textLabel] setText:@"Ringer 1"];
+    [[cell textLabel] setText:[ringTones objectAtIndex:[indexPath row]]];
+    if ([indexPath row] == selectedRingToneIndex) {
+        [cell setAccessoryType:UITableViewCellAccessoryCheckmark];
+    } else {
+        [cell setAccessoryType:UITableViewCellAccessoryNone];
+    }
     return cell;
 }
 
@@ -141,15 +154,23 @@
 #pragma mark Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    //    [[self navigationController] popViewControllerAnimated:YES];
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     [detailViewController release];
-     */
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    if ([indexPath row] == selectedRingToneIndex) {
+        return;
+    }
+    
+    NSIndexPath *oldIndexPath = [NSIndexPath indexPathForRow:selectedRingToneIndex inSection:0];
+    
+    UITableViewCell *newCell = [tableView cellForRowAtIndexPath:indexPath];
+    if (newCell.accessoryType == UITableViewCellAccessoryNone) {
+        newCell.accessoryType = UITableViewCellAccessoryCheckmark;
+        selectedRingToneIndex = [indexPath row];
+    }
+    
+    UITableViewCell *oldCell = [tableView cellForRowAtIndexPath:oldIndexPath];
+    if (oldCell.accessoryType == UITableViewCellAccessoryCheckmark) {
+        oldCell.accessoryType = UITableViewCellAccessoryNone;
+    }
 }
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -198,3 +219,4 @@
 
 
 @end
+

@@ -11,6 +11,12 @@
 
 @interface JGRingingSettingViewController : UIViewController {
     IBOutlet UINavigationItem *_customNavigationItem;
+    NSArray *ringTones;
+//    NSString *selectedRingTone;
+    NSUInteger selectedRingToneIndex;
 }
 
+@property (nonatomic, retain) NSArray *ringTones;
+
 @end
+
