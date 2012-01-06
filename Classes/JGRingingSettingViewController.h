@@ -10,7 +10,7 @@
 
 
 @interface JGRingingSettingViewController : UIViewController {
-
+    IBOutlet UINavigationItem *_customNavigationItem;
 }
 
 @end
