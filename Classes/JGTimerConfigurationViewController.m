@@ -11,6 +11,7 @@
 #import "JGTimerController.h"
 #import "JGCountdownTimer.h"
 #import "JGDrawingTestView.h"
+#import "JGTimerRingingSoundTableViewController.h"
 
 @implementation JGTimerConfigurationViewController
 
@@ -69,6 +70,50 @@
     [pickerLabel setText:[[self pickerDurations] objectAtIndex:row]];
     
     return pickerLabel;    
+}
+
+
+#pragma mark -
+#pragma mark Table view data source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 1;
+}
+
+-(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    return @"Ringing Setting";
+}
+
+// Customize the appearance of table view cells.
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *CellIdentifier = @"Cell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue2 reuseIdentifier:CellIdentifier] autorelease];
+    }
+    [[cell textLabel] setText:@"Ringing Style"];
+    [[cell detailTextLabel] setText:@"Marimba"];
+    return cell;
+}
+
+
+
+#pragma mark -
+#pragma mark Table view delegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [[tableView cellForRowAtIndexPath:indexPath] setSelected:NO animated:YES];
+    // Navigation logic may go here. Create and push another view controller.
+    JGTimerRingingSoundTableViewController *ringingSoundViewController = [[JGTimerRingingSoundTableViewController alloc] initWithNibName:@"JGTimerRingingSoundTableViewController" bundle:nil];
+    [self presentModalViewController:ringingSoundViewController animated:YES];
+//    [self.navigationController pushViewController:ringingSoundViewController animated:YES];
+    [ringingSoundViewController release];
 }
 
 #pragma mark -

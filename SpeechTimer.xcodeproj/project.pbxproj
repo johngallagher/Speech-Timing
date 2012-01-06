@@ -61,6 +61,13 @@
 		52EB416C14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EB416B14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.m */; };
 		52EB417314B1218D00308C95 /* JGTimerDurationCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EB417214B1218D00308C95 /* JGTimerDurationCalculator.m */; };
 		52EB417C14B122DB00308C95 /* JGTimerDurationCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EB417214B1218D00308C95 /* JGTimerDurationCalculator.m */; };
+		52F63E5E14B7590E00876FA4 /* JGInsetGradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F63E5914B7590E00876FA4 /* JGInsetGradientButton.m */; };
+		52F63E5F14B7590E00876FA4 /* JGRedInsetGradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F63E5B14B7590E00876FA4 /* JGRedInsetGradientButton.m */; };
+		52F63E6014B7590E00876FA4 /* JGGreenInsetGradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F63E5D14B7590E00876FA4 /* JGGreenInsetGradientButton.m */; };
+		52F63E8E14B7659700876FA4 /* JGTimerRingingSoundTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F63E8C14B7659700876FA4 /* JGTimerRingingSoundTableViewController.m */; };
+		52F63E8F14B7659700876FA4 /* JGTimerRingingSoundTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52F63E8D14B7659700876FA4 /* JGTimerRingingSoundTableViewController.xib */; };
+		52F63EA714B7689A00876FA4 /* JGRingingSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F63EA514B7689A00876FA4 /* JGRingingSettingViewController.m */; };
+		52F63EA814B7689A00876FA4 /* JGRingingSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52F63EA614B7689A00876FA4 /* JGRingingSettingViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -175,6 +182,18 @@
 		52EB416B14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGTimerDurationCalculatorTestCase.m; sourceTree = "<group>"; };
 		52EB417114B1218D00308C95 /* JGTimerDurationCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGTimerDurationCalculator.h; sourceTree = "<group>"; };
 		52EB417214B1218D00308C95 /* JGTimerDurationCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGTimerDurationCalculator.m; sourceTree = "<group>"; };
+		52F63E5814B7590E00876FA4 /* JGInsetGradientButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGInsetGradientButton.h; sourceTree = "<group>"; };
+		52F63E5914B7590E00876FA4 /* JGInsetGradientButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGInsetGradientButton.m; sourceTree = "<group>"; };
+		52F63E5A14B7590E00876FA4 /* JGRedInsetGradientButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGRedInsetGradientButton.h; sourceTree = "<group>"; };
+		52F63E5B14B7590E00876FA4 /* JGRedInsetGradientButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGRedInsetGradientButton.m; sourceTree = "<group>"; };
+		52F63E5C14B7590E00876FA4 /* JGGreenInsetGradientButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGGreenInsetGradientButton.h; sourceTree = "<group>"; };
+		52F63E5D14B7590E00876FA4 /* JGGreenInsetGradientButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGGreenInsetGradientButton.m; sourceTree = "<group>"; };
+		52F63E8B14B7659700876FA4 /* JGTimerRingingSoundTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGTimerRingingSoundTableViewController.h; sourceTree = "<group>"; };
+		52F63E8C14B7659700876FA4 /* JGTimerRingingSoundTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGTimerRingingSoundTableViewController.m; sourceTree = "<group>"; };
+		52F63E8D14B7659700876FA4 /* JGTimerRingingSoundTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JGTimerRingingSoundTableViewController.xib; sourceTree = "<group>"; };
+		52F63EA414B7689A00876FA4 /* JGRingingSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGRingingSettingViewController.h; sourceTree = "<group>"; };
+		52F63EA514B7689A00876FA4 /* JGRingingSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGRingingSettingViewController.m; sourceTree = "<group>"; };
+		52F63EA614B7689A00876FA4 /* JGRingingSettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JGRingingSettingViewController.xib; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* SpeechTimer-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SpeechTimer-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -204,6 +223,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				52F63E5714B7590400876FA4 /* Buttons */,
 				5242CBEA14B3FC6900C876C7 /* PieChartView */,
 				52BBBE3514B2EC3200CFE655 /* AppDelegate */,
 				5251B9F8149E5D4300AFC0B6 /* ViewControllers */,
@@ -211,6 +231,12 @@
 				5242CBE814B3FC2900C876C7 /* CountdownTimer */,
 				5251B9AB149E59BD00AFC0B6 /* TimerController */,
 				5242CBE714B3FC1E00C876C7 /* TimeFormatter */,
+				52F63E8B14B7659700876FA4 /* JGTimerRingingSoundTableViewController.h */,
+				52F63E8C14B7659700876FA4 /* JGTimerRingingSoundTableViewController.m */,
+				52F63E8D14B7659700876FA4 /* JGTimerRingingSoundTableViewController.xib */,
+				52F63EA414B7689A00876FA4 /* JGRingingSettingViewController.h */,
+				52F63EA514B7689A00876FA4 /* JGRingingSettingViewController.m */,
+				52F63EA614B7689A00876FA4 /* JGRingingSettingViewController.xib */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -418,6 +444,19 @@
 			name = AppDelegate;
 			sourceTree = "<group>";
 		};
+		52F63E5714B7590400876FA4 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				52F63E5814B7590E00876FA4 /* JGInsetGradientButton.h */,
+				52F63E5914B7590E00876FA4 /* JGInsetGradientButton.m */,
+				52F63E5A14B7590E00876FA4 /* JGRedInsetGradientButton.h */,
+				52F63E5B14B7590E00876FA4 /* JGRedInsetGradientButton.m */,
+				52F63E5C14B7590E00876FA4 /* JGGreenInsetGradientButton.h */,
+				52F63E5D14B7590E00876FA4 /* JGGreenInsetGradientButton.m */,
+			);
+			name = Buttons;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -502,6 +541,8 @@
 				52BBC18914B3861900CFE655 /* TimerGradient.png in Resources */,
 				52BBC18E14B3876700CFE655 /* TimerGradient2.png in Resources */,
 				520DB1E414B5195C004386D8 /* Metal_Fan_Texture_320X480_iPhone_Mobile_Wallpaper.png in Resources */,
+				52F63E8F14B7659700876FA4 /* JGTimerRingingSoundTableViewController.xib in Resources */,
+				52F63EA814B7689A00876FA4 /* JGRingingSettingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,6 +588,11 @@
 				52BBC0E014B358EF00CFE655 /* JGTimeFormatter.m in Sources */,
 				5242CBEF14B3FC8A00C876C7 /* JGDrawingTestView.m in Sources */,
 				5242CBF014B3FC8A00C876C7 /* PieChartLayer.m in Sources */,
+				52F63E5E14B7590E00876FA4 /* JGInsetGradientButton.m in Sources */,
+				52F63E5F14B7590E00876FA4 /* JGRedInsetGradientButton.m in Sources */,
+				52F63E6014B7590E00876FA4 /* JGGreenInsetGradientButton.m in Sources */,
+				52F63E8E14B7659700876FA4 /* JGTimerRingingSoundTableViewController.m in Sources */,
+				52F63EA714B7689A00876FA4 /* JGRingingSettingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
