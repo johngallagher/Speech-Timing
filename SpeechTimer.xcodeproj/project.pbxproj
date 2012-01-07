@@ -64,8 +64,6 @@
 		52F63E5E14B7590E00876FA4 /* JGInsetGradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F63E5914B7590E00876FA4 /* JGInsetGradientButton.m */; };
 		52F63E5F14B7590E00876FA4 /* JGRedInsetGradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F63E5B14B7590E00876FA4 /* JGRedInsetGradientButton.m */; };
 		52F63E6014B7590E00876FA4 /* JGGreenInsetGradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F63E5D14B7590E00876FA4 /* JGGreenInsetGradientButton.m */; };
-		52F63E8E14B7659700876FA4 /* JGTimerRingingSoundTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F63E8C14B7659700876FA4 /* JGTimerRingingSoundTableViewController.m */; };
-		52F63E8F14B7659700876FA4 /* JGTimerRingingSoundTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52F63E8D14B7659700876FA4 /* JGTimerRingingSoundTableViewController.xib */; };
 		52F63EA714B7689A00876FA4 /* JGRingingSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F63EA514B7689A00876FA4 /* JGRingingSettingViewController.m */; };
 		52F63EA814B7689A00876FA4 /* JGRingingSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52F63EA614B7689A00876FA4 /* JGRingingSettingViewController.xib */; };
 /* End PBXBuildFile section */
@@ -93,14 +91,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* MeetingTimerAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeetingTimerAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* MeetingTimerAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeetingTimerAppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* SpeechTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeechTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		28860B760F44E54D00985440 /* MeetingTimer.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = MeetingTimer.xcdatamodel; sourceTree = "<group>"; };
 		28860BE40F44EE6400985440 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */ = {isa = PBXFileReference; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2899E55F0DE3E45000AC0155 /* JGTimerConfigurationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JGTimerConfigurationViewController.xib; sourceTree = "<group>"; };
 		28A0AAE50D9B0CCF005BE974 /* SpeechTimer_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeechTimer_Prefix.pch; sourceTree = "<group>"; };
 		28AD735F0D9D9599002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
@@ -188,9 +186,6 @@
 		52F63E5B14B7590E00876FA4 /* JGRedInsetGradientButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGRedInsetGradientButton.m; sourceTree = "<group>"; };
 		52F63E5C14B7590E00876FA4 /* JGGreenInsetGradientButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGGreenInsetGradientButton.h; sourceTree = "<group>"; };
 		52F63E5D14B7590E00876FA4 /* JGGreenInsetGradientButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGGreenInsetGradientButton.m; sourceTree = "<group>"; };
-		52F63E8B14B7659700876FA4 /* JGTimerRingingSoundTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGTimerRingingSoundTableViewController.h; sourceTree = "<group>"; };
-		52F63E8C14B7659700876FA4 /* JGTimerRingingSoundTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGTimerRingingSoundTableViewController.m; sourceTree = "<group>"; };
-		52F63E8D14B7659700876FA4 /* JGTimerRingingSoundTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JGTimerRingingSoundTableViewController.xib; sourceTree = "<group>"; };
 		52F63EA414B7689A00876FA4 /* JGRingingSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGRingingSettingViewController.h; sourceTree = "<group>"; };
 		52F63EA514B7689A00876FA4 /* JGRingingSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGRingingSettingViewController.m; sourceTree = "<group>"; };
 		52F63EA614B7689A00876FA4 /* JGRingingSettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JGRingingSettingViewController.xib; sourceTree = "<group>"; };
@@ -231,12 +226,7 @@
 				5242CBE814B3FC2900C876C7 /* CountdownTimer */,
 				5251B9AB149E59BD00AFC0B6 /* TimerController */,
 				5242CBE714B3FC1E00C876C7 /* TimeFormatter */,
-				52F63E8B14B7659700876FA4 /* JGTimerRingingSoundTableViewController.h */,
-				52F63E8C14B7659700876FA4 /* JGTimerRingingSoundTableViewController.m */,
-				52F63E8D14B7659700876FA4 /* JGTimerRingingSoundTableViewController.xib */,
-				52F63EA414B7689A00876FA4 /* JGRingingSettingViewController.h */,
-				52F63EA514B7689A00876FA4 /* JGRingingSettingViewController.m */,
-				52F63EA614B7689A00876FA4 /* JGRingingSettingViewController.xib */,
+				52D6932D14B87B8E00F09035 /* RingerView */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -444,6 +434,16 @@
 			name = AppDelegate;
 			sourceTree = "<group>";
 		};
+		52D6932D14B87B8E00F09035 /* RingerView */ = {
+			isa = PBXGroup;
+			children = (
+				52F63EA414B7689A00876FA4 /* JGRingingSettingViewController.h */,
+				52F63EA514B7689A00876FA4 /* JGRingingSettingViewController.m */,
+				52F63EA614B7689A00876FA4 /* JGRingingSettingViewController.xib */,
+			);
+			name = RingerView;
+			sourceTree = "<group>";
+		};
 		52F63E5714B7590400876FA4 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
@@ -541,7 +541,6 @@
 				52BBC18914B3861900CFE655 /* TimerGradient.png in Resources */,
 				52BBC18E14B3876700CFE655 /* TimerGradient2.png in Resources */,
 				520DB1E414B5195C004386D8 /* Metal_Fan_Texture_320X480_iPhone_Mobile_Wallpaper.png in Resources */,
-				52F63E8F14B7659700876FA4 /* JGTimerRingingSoundTableViewController.xib in Resources */,
 				52F63EA814B7689A00876FA4 /* JGRingingSettingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -591,7 +590,6 @@
 				52F63E5E14B7590E00876FA4 /* JGInsetGradientButton.m in Sources */,
 				52F63E5F14B7590E00876FA4 /* JGRedInsetGradientButton.m in Sources */,
 				52F63E6014B7590E00876FA4 /* JGGreenInsetGradientButton.m in Sources */,
-				52F63E8E14B7659700876FA4 /* JGTimerRingingSoundTableViewController.m in Sources */,
 				52F63EA714B7689A00876FA4 /* JGRingingSettingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

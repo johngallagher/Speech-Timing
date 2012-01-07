@@ -12,7 +12,7 @@
 #import "JGCountdownTimer.h"
 #import "JGDrawingTestView.h"
 #import "JGTimerRingingSoundTableViewController.h"
-#import "JGRingingSettingViewController.h"
+#import "JGRingerSelectionViewController.h"
 
 @implementation JGTimerConfigurationViewController
 
@@ -111,7 +111,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [[tableView cellForRowAtIndexPath:indexPath] setSelected:NO animated:YES];
     // Navigation logic may go here. Create and push another view controller.
-    JGRingingSettingViewController *ringingSettingViewController = [[JGRingingSettingViewController alloc] initWithNibName:@"JGRingingSettingViewController" bundle:nil];
+    JGRingerSelectionViewController *ringingSettingViewController = [[JGRingerSelectionViewController alloc] initWithNibName:@"JGRingingSettingViewController" bundle:nil];
     [self presentModalViewController:ringingSettingViewController animated:YES];
     
 //    JGTimerRingingSoundTableViewController *ringingSoundViewController = [[JGTimerRingingSoundTableViewController alloc] initWithNibName:@"JGTimerRingingSoundTableViewController" bundle:nil];
