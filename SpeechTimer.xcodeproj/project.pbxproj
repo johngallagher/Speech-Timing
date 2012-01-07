@@ -17,7 +17,6 @@
 		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
 		28C286E10D94DF7D0034E888 /* JGTimerConfigurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */; };
 		28D3F202112F7DC200FD0661 /* MeetingTimer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28D3F201112F7DC200FD0661 /* MeetingTimer.xcdatamodeld */; };
-		520DB1E414B5195C004386D8 /* Metal_Fan_Texture_320X480_iPhone_Mobile_Wallpaper.png in Resources */ = {isa = PBXBuildFile; fileRef = 520DB1E314B5195C004386D8 /* Metal_Fan_Texture_320X480_iPhone_Mobile_Wallpaper.png */; };
 		5242CBEF14B3FC8A00C876C7 /* JGDrawingTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5242CBEC14B3FC8A00C876C7 /* JGDrawingTestView.m */; };
 		5242CBF014B3FC8A00C876C7 /* PieChartLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5242CBEE14B3FC8A00C876C7 /* PieChartLayer.m */; };
 		5242CBF514B3FD0000C876C7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5242CBF414B3FD0000C876C7 /* QuartzCore.framework */; };
@@ -91,21 +90,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* MeetingTimerAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeetingTimerAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* MeetingTimerAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeetingTimerAppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* SpeechTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeechTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		28860B760F44E54D00985440 /* MeetingTimer.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = MeetingTimer.xcdatamodel; sourceTree = "<group>"; };
 		28860BE40F44EE6400985440 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */ = {isa = PBXFileReference; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2899E55F0DE3E45000AC0155 /* JGTimerConfigurationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JGTimerConfigurationViewController.xib; sourceTree = "<group>"; };
 		28A0AAE50D9B0CCF005BE974 /* SpeechTimer_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeechTimer_Prefix.pch; sourceTree = "<group>"; };
 		28AD735F0D9D9599002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		28C286DF0D94DF7D0034E888 /* JGTimerConfigurationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGTimerConfigurationViewController.h; sourceTree = "<group>"; };
 		28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGTimerConfigurationViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		520DB1E314B5195C004386D8 /* Metal_Fan_Texture_320X480_iPhone_Mobile_Wallpaper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Metal_Fan_Texture_320X480_iPhone_Mobile_Wallpaper.png; sourceTree = "<group>"; };
 		5242CBEB14B3FC8A00C876C7 /* JGDrawingTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGDrawingTestView.h; sourceTree = "<group>"; };
 		5242CBEC14B3FC8A00C876C7 /* JGDrawingTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGDrawingTestView.m; sourceTree = "<group>"; };
 		5242CBED14B3FC8A00C876C7 /* PieChartLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieChartLayer.h; sourceTree = "<group>"; };
@@ -334,7 +332,6 @@
 		5242CBF614B3FD1F00C876C7 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				520DB1E314B5195C004386D8 /* Metal_Fan_Texture_320X480_iPhone_Mobile_Wallpaper.png */,
 				52BBC18814B3861900CFE655 /* TimerGradient.png */,
 				52BBC18D14B3876700CFE655 /* TimerGradient2.png */,
 				52BBC17014B37CBE00CFE655 /* GreenButton-highlight.png */,
@@ -540,7 +537,6 @@
 				52BBC17714B37CBE00CFE655 /* RedButton.png in Resources */,
 				52BBC18914B3861900CFE655 /* TimerGradient.png in Resources */,
 				52BBC18E14B3876700CFE655 /* TimerGradient2.png in Resources */,
-				520DB1E414B5195C004386D8 /* Metal_Fan_Texture_320X480_iPhone_Mobile_Wallpaper.png in Resources */,
 				52F63EA814B7689A00876FA4 /* JGRingingSettingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -649,7 +645,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = SpeechTimer_Prefix.pch;
 				INFOPLIST_FILE = "SpeechTimer-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				PRODUCT_NAME = SpeechTimer;
 			};
 			name = Debug;
@@ -662,7 +658,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = SpeechTimer_Prefix.pch;
 				INFOPLIST_FILE = "SpeechTimer-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				PRODUCT_NAME = SpeechTimer;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -731,11 +727,15 @@
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -743,11 +743,15 @@
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 			};

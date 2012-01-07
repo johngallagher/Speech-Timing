@@ -220,4 +220,3 @@
 
 @end
 
-I went to university in Birmingham and didn't like the city at all. And I can sympathise with the road system - it's pretty weird. I hope you have as nice a time as you can surrounded by acres of concrete... aside - I really love concrete.

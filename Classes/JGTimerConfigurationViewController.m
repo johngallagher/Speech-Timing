@@ -11,8 +11,7 @@
 #import "JGTimerController.h"
 #import "JGCountdownTimer.h"
 #import "JGDrawingTestView.h"
-#import "JGTimerRingingSoundTableViewController.h"
-#import "JGRingerSelectionViewController.h"
+#import "JGRingingSettingViewController.h"
 
 @implementation JGTimerConfigurationViewController
 
@@ -111,12 +110,9 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [[tableView cellForRowAtIndexPath:indexPath] setSelected:NO animated:YES];
     // Navigation logic may go here. Create and push another view controller.
-    JGRingerSelectionViewController *ringingSettingViewController = [[JGRingerSelectionViewController alloc] initWithNibName:@"JGRingingSettingViewController" bundle:nil];
+    JGRingingSettingViewController *ringingSettingViewController = [[JGRingingSettingViewController alloc] initWithNibName:@"JGRingingSettingViewController" bundle:nil];
     [self presentModalViewController:ringingSettingViewController animated:YES];
     
-//    JGTimerRingingSoundTableViewController *ringingSoundViewController = [[JGTimerRingingSoundTableViewController alloc] initWithNibName:@"JGTimerRingingSoundTableViewController" bundle:nil];
-//    [self presentModalViewController:ringingSoundViewController animated:YES];
-//    [self.navigationController pushViewController:ringingSoundViewController animated:YES];
     [ringingSettingViewController release];
 }
 
@@ -179,7 +175,7 @@
     // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
     
-    // Relinquish ownership any cached data, images, etc that aren't in use.
+    // Relinquish owownership any cached data, images, etc that aren't in use.
 }
 
 - (void)viewDidUnload {
@@ -193,7 +189,4 @@
 }
 
 @end
-
-
-
 
