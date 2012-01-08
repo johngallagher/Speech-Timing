@@ -303,21 +303,13 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-<<<<<<< Updated upstream
-									<integer>35</integer>
-									<integer>34</integer>
-									<integer>33</integer>
-=======
->>>>>>> Stashed changes
+									<integer>16</integer>
+									<integer>2</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-<<<<<<< Updated upstream
-							<string>{{0, 329}, {330, 660}}</string>
-=======
 							<string>{{0, 0}, {330, 660}}</string>
->>>>>>> Stashed changes
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -350,11 +342,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>52CA8ADA149CF1A40030ADC1</string>
 								<key>PBXProjectModuleLabel</key>
-<<<<<<< Updated upstream
 								<string>JGRunningViewController.m</string>
-=======
-								<string>License.txt</string>
->>>>>>> Stashed changes
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -362,24 +350,14 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>52CA8ADB149CF1A40030ADC1</string>
 										<key>PBXProjectModuleLabel</key>
-<<<<<<< Updated upstream
 										<string>JGRunningViewController.m</string>
 										<key>_historyCapacity</key>
 										<integer>20</integer>
 										<key>bookmark</key>
-										<string>520F742F14BA4924003FEC46</string>
+										<string>520F741A14BA4853003FEC46</string>
 										<key>history</key>
 										<array>
 											<string>5242CC0414B3FD2D00C876C7</string>
-=======
-										<string>License.txt</string>
-										<key>_historyCapacity</key>
-										<integer>20</integer>
-										<key>bookmark</key>
-										<string>52007F4714BA4483006D95EA</string>
-										<key>history</key>
-										<array>
->>>>>>> Stashed changes
 											<string>5242CC0514B3FD2D00C876C7</string>
 											<string>5242CC4814B401EA00C876C7</string>
 											<string>52BBBEA714B2FDE000CFE655</string>
@@ -393,19 +371,12 @@
 											<string>52F63E9E14B7683600876FA4</string>
 											<string>52F63F6814B871C400876FA4</string>
 											<string>52F63F6914B871C400876FA4</string>
-<<<<<<< Updated upstream
 											<string>520F741214BA4853003FEC46</string>
 											<string>520F741314BA4853003FEC46</string>
 											<string>520F741414BA4853003FEC46</string>
 											<string>520F741514BA4853003FEC46</string>
 											<string>520F741714BA4853003FEC46</string>
-											<string>520F741A14BA4853003FEC46</string>
-=======
-											<string>52F63F6A14B871C400876FA4</string>
-											<string>52007F2F14BA4412006D95EA</string>
-											<string>52007F4514BA4483006D95EA</string>
-											<string>52007F4614BA4483006D95EA</string>
->>>>>>> Stashed changes
+											<string>520F741814BA4853003FEC46</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -419,35 +390,21 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-<<<<<<< Updated upstream
-								<string>{{0, 0}, {928, 391}}</string>
-=======
 								<string>{{0, 0}, {928, 400}}</string>
->>>>>>> Stashed changes
 								<key>RubberWindowFrame</key>
 								<string>0 59 1280 719 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-<<<<<<< Updated upstream
-							<string>391pt</string>
-						</dict>
-						<dict>
-							<key>Proportion</key>
-							<string>282pt</string>
-=======
 							<string>400pt</string>
 						</dict>
 						<dict>
 							<key>Proportion</key>
 							<string>273pt</string>
->>>>>>> Stashed changes
 							<key>Tabs</key>
 							<array>
 								<dict>
-									<key>BecomeActive</key>
-									<true/>
 									<key>ContentConfiguration</key>
 									<dict>
 										<key>PBXProjectModuleGUID</key>
@@ -458,13 +415,7 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-<<<<<<< Updated upstream
-										<string>{{10, 27}, {928, 255}}</string>
-=======
 										<string>{{10, 27}, {928, 246}}</string>
->>>>>>> Stashed changes
-										<key>RubberWindowFrame</key>
-										<string>0 59 1280 719 0 0 1280 778 </string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -519,6 +470,8 @@
 									<dict>
 										<key>Frame</key>
 										<string>{{10, 27}, {928, 246}}</string>
+										<key>RubberWindowFrame</key>
+										<string>0 59 1280 719 0 0 1280 778 </string>
 									</dict>
 									<key>Module</key>
 									<string>PBXBuildResultsModule</string>
@@ -546,19 +499,11 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-<<<<<<< Updated upstream
-				<string>520F743014BA4924003FEC46</string>
+				<string>520F73E214BA46E6003FEC46</string>
 				<string>1CA23ED40692098700951B8B</string>
-				<string>520F743114BA4924003FEC46</string>
+				<string>520F73E314BA46E6003FEC46</string>
 				<string>52CA8ADA149CF1A40030ADC1</string>
-				<string>520F743214BA4924003FEC46</string>
-=======
-				<string>52007F3214BA4412006D95EA</string>
-				<string>1CA23ED40692098700951B8B</string>
-				<string>52007F3314BA4412006D95EA</string>
-				<string>52CA8ADA149CF1A40030ADC1</string>
-				<string>52007F3414BA4412006D95EA</string>
->>>>>>> Stashed changes
+				<string>520F73E414BA46E6003FEC46</string>
 				<string>1CA23EDF0692099D00951B8B</string>
 				<string>1CA23EE00692099D00951B8B</string>
 				<string>1CA23EE10692099D00951B8B</string>
@@ -729,11 +674,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-<<<<<<< Updated upstream
-	<real>347752740.62822002</real>
-=======
-	<real>347751555.57666999</real>
->>>>>>> Stashed changes
+	<real>347752531.99094802</real>
 	<key>ToolbarConfigUserDefaultsMinorVersion</key>
 	<string>2</string>
 	<key>ToolbarDisplayMode</key>
