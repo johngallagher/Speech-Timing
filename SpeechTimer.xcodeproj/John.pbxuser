@@ -55,7 +55,7 @@
 			52BBBE8D14B2F4AA00CFE655 /* JGDurationPickerView.m:15 */,
 			5242CC1F14B3FF4A00C876C7 /* JGTimerConfigurationViewController.m:42 */,
 			5242CC2414B3FF6300C876C7 /* JGDrawingTestView.m:56 */,
-			5242CC6E14B404E300C876C7 /* JGRunningViewController.m:87 */,
+			5242CC6E14B404E300C876C7 /* JGTimerRunningViewController.m:87 */,
 			52F63EF814B7787A00876FA4 /* JGRingingSettingViewController.m:14 */,
 		);
 		codeSenseManager = 52CA8AE1149CF1A40030ADC1 /* Code sense */;
@@ -121,10 +121,13 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 347643948;
-			PBXWorkspaceStateSaveDate = 347643948;
+			PBXPerProjectTemplateStateSaveDate = 347752071;
+			PBXWorkspaceStateSaveDate = 347752071;
 		};
 		perUserProjectItems = {
+			520F73DF14BA46E6003FEC46 /* PBXTextBookmark */ = 520F73DF14BA46E6003FEC46 /* PBXTextBookmark */;
+			520F73E014BA46E6003FEC46 /* PBXBookmark */ = 520F73E014BA46E6003FEC46 /* PBXBookmark */;
+			520F73E114BA46E6003FEC46 /* PBXTextBookmark */ = 520F73E114BA46E6003FEC46 /* PBXTextBookmark */;
 			5242CA6E14B3D5E700C876C7 = 5242CA6E14B3D5E700C876C7 /* PBXBookmark */;
 			5242CBFA14B3FD2D00C876C7 = 5242CBFA14B3FD2D00C876C7 /* PBXTextBookmark */;
 			5242CBFB14B3FD2D00C876C7 = 5242CBFB14B3FD2D00C876C7 /* PBXTextBookmark */;
@@ -139,7 +142,7 @@
 			52AB069B14B89F5700059512 = 52AB069B14B89F5700059512 /* PBXTextBookmark */;
 			52BBBEA714B2FDE000CFE655 = 52BBBEA714B2FDE000CFE655 /* PBXTextBookmark */;
 			52BBBEB914B2FE9C00CFE655 = 52BBBEB914B2FE9C00CFE655 /* PBXTextBookmark */;
-			52F2FAF014B8A02D00A9D940 /* PBXTextBookmark */ = 52F2FAF014B8A02D00A9D940 /* PBXTextBookmark */;
+			52F2FAF014B8A02D00A9D940 = 52F2FAF014B8A02D00A9D940 /* PBXTextBookmark */;
 			52F63E9E14B7683600876FA4 = 52F63E9E14B7683600876FA4 /* PBXTextBookmark */;
 			52F63EEE14B777A300876FA4 = 52F63EEE14B777A300876FA4 /* PBXTextBookmark */;
 			52F63EFF14B7787F00876FA4 = 52F63EFF14B7787F00876FA4 /* PBXTextBookmark */;
@@ -151,6 +154,30 @@
 		sourceControlManager = 52CA8AE0149CF1A40030ADC1 /* Source Control */;
 		userBuildSettings = {
 		};
+	};
+	520F73DF14BA46E6003FEC46 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52F63EA414B7689A00876FA4 /* JGRingingSettingViewController.h */;
+		name = "JGRingingSettingViewController.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 464;
+		vrLoc = 0;
+	};
+	520F73E014BA46E6003FEC46 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 52F63E5814B7590E00876FA4 /* JGInsetGradientButton.h */;
+	};
+	520F73E114BA46E6003FEC46 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52F63E5814B7590E00876FA4 /* JGInsetGradientButton.h */;
+		name = "JGInsetGradientButton.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 847;
+		vrLoc = 0;
 	};
 	5242CA6E14B3D5E700C876C7 /* PBXBookmark */ = {
 		isa = PBXBookmark;
@@ -289,7 +316,7 @@
 	};
 	5242CC5F14B404A800C876C7 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 52CA8B58149D089B0030ADC1 /* JGRunningViewController.h */;
+		fRef = 52CA8B58149D089B0030ADC1 /* JGTimerRunningViewController.h */;
 		name = "JGRunningViewController.h: 11";
 		rLen = 0;
 		rLoc = 242;
@@ -297,7 +324,7 @@
 		vrLen = 497;
 		vrLoc = 0;
 	};
-	5242CC6E14B404E300C876C7 /* JGRunningViewController.m:87 */ = {
+	5242CC6E14B404E300C876C7 /* JGTimerRunningViewController.m:87 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -305,7 +332,7 @@
 		continueAfterActions = 0;
 		countType = 0;
 		delayBeforeContinue = 0;
-		fileReference = 52CA8B59149D089B0030ADC1 /* JGRunningViewController.m */;
+		fileReference = 52CA8B59149D089B0030ADC1 /* JGTimerRunningViewController.m */;
 		functionName = "-setTimeRemainingTo:";
 		hitCount = 0;
 		ignoreCount = 0;
@@ -317,7 +344,7 @@
 	};
 	5242CC7714B4055200C876C7 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 52CA8B59149D089B0030ADC1 /* JGRunningViewController.m */;
+		fRef = 52CA8B59149D089B0030ADC1 /* JGTimerRunningViewController.m */;
 		name = "JGRunningViewController.m: 88";
 		rLen = 0;
 		rLoc = 2360;
@@ -589,14 +616,26 @@
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
 	};
-	52CA8B58149D089B0030ADC1 /* JGRunningViewController.h */ = {
+	52CA8B58149D089B0030ADC1 /* JGTimerRunningViewController.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = JGTimerRunningViewController.h;
+		path = "/Users/John/Drop Box/Dropbox/Projects/Programming Projects/Current Projects/MeetingTimer/MeetingTimeriOS5/MeetingTimer/Classes/JGTimerRunningViewController.h";
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {775, 439}}";
 			sepNavSelRange = "{242, 0}";
 			sepNavVisRange = "{0, 497}";
 		};
 	};
-	52CA8B59149D089B0030ADC1 /* JGRunningViewController.m */ = {
+	52CA8B59149D089B0030ADC1 /* JGTimerRunningViewController.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = JGTimerRunningViewController.m;
+		path = "/Users/John/Drop Box/Dropbox/Projects/Programming Projects/Current Projects/MeetingTimer/MeetingTimeriOS5/MeetingTimer/Classes/JGTimerRunningViewController.m";
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1139, 1365}}";
 			sepNavSelRange = "{2360, 0}";
@@ -642,6 +681,13 @@
 		vrLen = 464;
 		vrLoc = 0;
 	};
+	52F63E5814B7590E00876FA4 /* JGInsetGradientButton.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {879, 645}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 847}";
+		};
+	};
 	52F63E9E14B7683600876FA4 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 5242CBEC14B3FC8A00C876C7 /* JGDrawingTestView.m */;
@@ -654,7 +700,7 @@
 	};
 	52F63EA414B7689A00876FA4 /* JGRingingSettingViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {879, 501}}";
+			sepNavIntBoundsRect = "{{0, 0}, {879, 368}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 464}";
 		};
