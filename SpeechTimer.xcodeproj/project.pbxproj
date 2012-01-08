@@ -23,6 +23,7 @@
 		520F73EE14BA46F1003FEC46 /* Bell.aif in Resources */ = {isa = PBXBuildFile; fileRef = 520F73E814BA46F1003FEC46 /* Bell.aif */; };
 		520F73EF14BA46F1003FEC46 /* Alarm.aif in Resources */ = {isa = PBXBuildFile; fileRef = 520F73E914BA46F1003FEC46 /* Alarm.aif */; };
 		520F73F014BA46F1003FEC46 /* Submarine.aif in Resources */ = {isa = PBXBuildFile; fileRef = 520F73EA14BA46F1003FEC46 /* Submarine.aif */; };
+		520F740F14BA484F003FEC46 /* JGRunningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 520F740E14BA484F003FEC46 /* JGRunningViewController.m */; };
 		5242CBEF14B3FC8A00C876C7 /* JGDrawingTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5242CBEC14B3FC8A00C876C7 /* JGDrawingTestView.m */; };
 		5242CBF014B3FC8A00C876C7 /* PieChartLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5242CBEE14B3FC8A00C876C7 /* PieChartLayer.m */; };
 		5242CBF514B3FD0000C876C7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5242CBF414B3FD0000C876C7 /* QuartzCore.framework */; };
@@ -71,12 +72,6 @@
 		52F63EA714B7689A00876FA4 /* JGRingingSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F63EA514B7689A00876FA4 /* JGRingingSettingViewController.m */; };
 		52F63EA814B7689A00876FA4 /* JGRingingSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52F63EA614B7689A00876FA4 /* JGRingingSettingViewController.xib */; };
 		C01FCF5008A954540054247D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C01FCF5008A954540054247C /* AudioToolbox.framework */; };
-		C01FCF5008A9545400542480 /* DigitalAlarm1.aif in Resources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A954540054247F /* DigitalAlarm1.aif */; };
-		C01FCF5008A9545400542482 /* DigitalAlarm2.aif in Resources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A9545400542481 /* DigitalAlarm2.aif */; };
-		C01FCF5008A9545400542484 /* TwoToneBell.aif in Resources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A9545400542483 /* TwoToneBell.aif */; };
-		C01FCF5008A9545400542486 /* Bell.aif in Resources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A9545400542485 /* Bell.aif */; };
-		C01FCF5008A9545400542488 /* Alarm.aif in Resources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A9545400542487 /* Alarm.aif */; };
-		C01FCF5008A954540054248A /* Submarine.aif in Resources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A9545400542489 /* Submarine.aif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +117,8 @@
 		520F73E814BA46F1003FEC46 /* Bell.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bell.aif; sourceTree = "<group>"; };
 		520F73E914BA46F1003FEC46 /* Alarm.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = Alarm.aif; sourceTree = "<group>"; };
 		520F73EA14BA46F1003FEC46 /* Submarine.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = Submarine.aif; sourceTree = "<group>"; };
+		520F740D14BA484F003FEC46 /* JGRunningViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGRunningViewController.h; sourceTree = "<group>"; };
+		520F740E14BA484F003FEC46 /* JGRunningViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGRunningViewController.m; sourceTree = "<group>"; };
 		5242CBEB14B3FC8A00C876C7 /* JGDrawingTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGDrawingTestView.h; sourceTree = "<group>"; };
 		5242CBEC14B3FC8A00C876C7 /* JGDrawingTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGDrawingTestView.m; sourceTree = "<group>"; };
 		5242CBED14B3FC8A00C876C7 /* PieChartLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieChartLayer.h; sourceTree = "<group>"; };
@@ -205,12 +202,6 @@
 		52F63EA614B7689A00876FA4 /* JGRingingSettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JGRingingSettingViewController.xib; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* SpeechTimer-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SpeechTimer-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		C01FCF5008A954540054247C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		C01FCF5008A954540054247F /* DigitalAlarm1.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = DigitalAlarm1.aif; sourceTree = "<group>"; };
-		C01FCF5008A9545400542481 /* DigitalAlarm2.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = DigitalAlarm2.aif; sourceTree = "<group>"; };
-		C01FCF5008A9545400542483 /* TwoToneBell.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = TwoToneBell.aif; sourceTree = "<group>"; };
-		C01FCF5008A9545400542485 /* Bell.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bell.aif; sourceTree = "<group>"; };
-		C01FCF5008A9545400542487 /* Alarm.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = Alarm.aif; sourceTree = "<group>"; };
-		C01FCF5008A9545400542489 /* Submarine.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = Submarine.aif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -407,6 +398,8 @@
 		5251B9F8149E5D4300AFC0B6 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				520F740D14BA484F003FEC46 /* JGRunningViewController.h */,
+				520F740E14BA484F003FEC46 /* JGRunningViewController.m */,
 				28C286DF0D94DF7D0034E888 /* JGTimerConfigurationViewController.h */,
 				28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */,
 			);
@@ -495,12 +488,6 @@
 		C01FCF5008A954540054247E /* SpeechTimer */ = {
 			isa = PBXGroup;
 			children = (
-				C01FCF5008A9545400542489 /* Submarine.aif */,
-				C01FCF5008A9545400542487 /* Alarm.aif */,
-				C01FCF5008A9545400542485 /* Bell.aif */,
-				C01FCF5008A9545400542483 /* TwoToneBell.aif */,
-				C01FCF5008A9545400542481 /* DigitalAlarm2.aif */,
-				C01FCF5008A954540054247F /* DigitalAlarm1.aif */,
 			);
 			path = SpeechTimer;
 			sourceTree = "<group>";
@@ -589,12 +576,6 @@
 				52BBC18914B3861900CFE655 /* TimerGradient.png in Resources */,
 				52BBC18E14B3876700CFE655 /* TimerGradient2.png in Resources */,
 				52F63EA814B7689A00876FA4 /* JGRingingSettingViewController.xib in Resources */,
-				C01FCF5008A9545400542480 /* DigitalAlarm1.aif in Resources */,
-				C01FCF5008A9545400542482 /* DigitalAlarm2.aif in Resources */,
-				C01FCF5008A9545400542484 /* TwoToneBell.aif in Resources */,
-				C01FCF5008A9545400542486 /* Bell.aif in Resources */,
-				C01FCF5008A9545400542488 /* Alarm.aif in Resources */,
-				C01FCF5008A954540054248A /* Submarine.aif in Resources */,
 				520F73EB14BA46F1003FEC46 /* DigitalAlarm1.aif in Resources */,
 				520F73EC14BA46F1003FEC46 /* DigitalAlarm2.aif in Resources */,
 				520F73ED14BA46F1003FEC46 /* TwoToneBell.aif in Resources */,
@@ -649,6 +630,7 @@
 				52F63E5F14B7590E00876FA4 /* JGRedInsetGradientButton.m in Sources */,
 				52F63E6014B7590E00876FA4 /* JGGreenInsetGradientButton.m in Sources */,
 				52F63EA714B7689A00876FA4 /* JGRingingSettingViewController.m in Sources */,
+				520F740F14BA484F003FEC46 /* JGRunningViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

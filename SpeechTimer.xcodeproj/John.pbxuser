@@ -36,9 +36,9 @@
 	};
 	28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {2238, 3060}}";
-			sepNavSelRange = "{4696, 0}";
-			sepNavVisRange = "{4038, 1269}";
+			sepNavIntBoundsRect = "{{0, 0}, {879, 2985}}";
+			sepNavSelRange = "{210, 23}";
+			sepNavVisRange = "{0, 705}";
 			sepNavWindowFrame = "{{15, 4}, {640, 774}}";
 		};
 	};
@@ -125,51 +125,40 @@
 			PBXWorkspaceStateSaveDate = 347752071;
 		};
 		perUserProjectItems = {
-			520F73DF14BA46E6003FEC46 /* PBXTextBookmark */ = 520F73DF14BA46E6003FEC46 /* PBXTextBookmark */;
-			520F73E014BA46E6003FEC46 /* PBXBookmark */ = 520F73E014BA46E6003FEC46 /* PBXBookmark */;
-			520F73E114BA46E6003FEC46 /* PBXTextBookmark */ = 520F73E114BA46E6003FEC46 /* PBXTextBookmark */;
-			5242CA6E14B3D5E700C876C7 = 5242CA6E14B3D5E700C876C7 /* PBXBookmark */;
-			5242CBFA14B3FD2D00C876C7 = 5242CBFA14B3FD2D00C876C7 /* PBXTextBookmark */;
-			5242CBFB14B3FD2D00C876C7 = 5242CBFB14B3FD2D00C876C7 /* PBXTextBookmark */;
-			5242CC0214B3FD2D00C876C7 = 5242CC0214B3FD2D00C876C7 /* PBXTextBookmark */;
-			5242CC0414B3FD2D00C876C7 = 5242CC0414B3FD2D00C876C7 /* PBXTextBookmark */;
-			5242CC0514B3FD2D00C876C7 = 5242CC0514B3FD2D00C876C7 /* PBXTextBookmark */;
-			5242CC3314B400C600C876C7 = 5242CC3314B400C600C876C7 /* PBXBookmark */;
-			5242CC3414B400C600C876C7 = 5242CC3414B400C600C876C7 /* PBXTextBookmark */;
-			5242CC4814B401EA00C876C7 = 5242CC4814B401EA00C876C7 /* PBXTextBookmark */;
-			5242CC5F14B404A800C876C7 = 5242CC5F14B404A800C876C7 /* PBXTextBookmark */;
-			5242CC7714B4055200C876C7 = 5242CC7714B4055200C876C7 /* PBXTextBookmark */;
-			52AB069B14B89F5700059512 = 52AB069B14B89F5700059512 /* PBXTextBookmark */;
-			52BBBEA714B2FDE000CFE655 = 52BBBEA714B2FDE000CFE655 /* PBXTextBookmark */;
-			52BBBEB914B2FE9C00CFE655 = 52BBBEB914B2FE9C00CFE655 /* PBXTextBookmark */;
-			52F2FAF014B8A02D00A9D940 = 52F2FAF014B8A02D00A9D940 /* PBXTextBookmark */;
-			52F63E9E14B7683600876FA4 = 52F63E9E14B7683600876FA4 /* PBXTextBookmark */;
-			52F63EEE14B777A300876FA4 = 52F63EEE14B777A300876FA4 /* PBXTextBookmark */;
-			52F63EFF14B7787F00876FA4 = 52F63EFF14B7787F00876FA4 /* PBXTextBookmark */;
-			52F63F6814B871C400876FA4 = 52F63F6814B871C400876FA4 /* PBXTextBookmark */;
-			52F63F6914B871C400876FA4 = 52F63F6914B871C400876FA4 /* PBXTextBookmark */;
-			52F63F6A14B871C400876FA4 = 52F63F6A14B871C400876FA4 /* PBXTextBookmark */;
-			52F63F6E14B87A8D00876FA4 = 52F63F6E14B87A8D00876FA4 /* PBXTextBookmark */;
+			520F741214BA4853003FEC46 /* PBXTextBookmark */ = 520F741214BA4853003FEC46 /* PBXTextBookmark */;
+			520F741314BA4853003FEC46 /* PBXTextBookmark */ = 520F741314BA4853003FEC46 /* PBXTextBookmark */;
+			520F741414BA4853003FEC46 /* PBXTextBookmark */ = 520F741414BA4853003FEC46 /* PBXTextBookmark */;
+			520F741514BA4853003FEC46 /* PBXTextBookmark */ = 520F741514BA4853003FEC46 /* PBXTextBookmark */;
+			520F741714BA4853003FEC46 /* PBXTextBookmark */ = 520F741714BA4853003FEC46 /* PBXTextBookmark */;
+			520F741814BA4853003FEC46 /* PBXTextBookmark */ = 520F741814BA4853003FEC46 /* PBXTextBookmark */;
+			520F741A14BA4853003FEC46 /* PBXTextBookmark */ = 520F741A14BA4853003FEC46 /* PBXTextBookmark */;
+			5242CA6E14B3D5E700C876C7 /* PBXBookmark */ = 5242CA6E14B3D5E700C876C7 /* PBXBookmark */;
+			5242CBFA14B3FD2D00C876C7 /* PBXTextBookmark */ = 5242CBFA14B3FD2D00C876C7 /* PBXTextBookmark */;
+			5242CBFB14B3FD2D00C876C7 /* PBXTextBookmark */ = 5242CBFB14B3FD2D00C876C7 /* PBXTextBookmark */;
+			5242CC0414B3FD2D00C876C7 /* PBXTextBookmark */ = 5242CC0414B3FD2D00C876C7 /* PBXTextBookmark */;
+			5242CC0514B3FD2D00C876C7 /* PBXTextBookmark */ = 5242CC0514B3FD2D00C876C7 /* PBXTextBookmark */;
+			5242CC3314B400C600C876C7 /* PBXBookmark */ = 5242CC3314B400C600C876C7 /* PBXBookmark */;
+			5242CC3414B400C600C876C7 /* PBXTextBookmark */ = 5242CC3414B400C600C876C7 /* PBXTextBookmark */;
+			5242CC4814B401EA00C876C7 /* PBXTextBookmark */ = 5242CC4814B401EA00C876C7 /* PBXTextBookmark */;
+			52BBBEA714B2FDE000CFE655 /* PBXTextBookmark */ = 52BBBEA714B2FDE000CFE655 /* PBXTextBookmark */;
+			52BBBEB914B2FE9C00CFE655 /* PBXTextBookmark */ = 52BBBEB914B2FE9C00CFE655 /* PBXTextBookmark */;
+			52F63E9E14B7683600876FA4 /* PBXTextBookmark */ = 52F63E9E14B7683600876FA4 /* PBXTextBookmark */;
+			52F63EEE14B777A300876FA4 /* PBXTextBookmark */ = 52F63EEE14B777A300876FA4 /* PBXTextBookmark */;
+			52F63F6814B871C400876FA4 /* PBXTextBookmark */ = 52F63F6814B871C400876FA4 /* PBXTextBookmark */;
+			52F63F6914B871C400876FA4 /* PBXTextBookmark */ = 52F63F6914B871C400876FA4 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 52CA8AE0149CF1A40030ADC1 /* Source Control */;
 		userBuildSettings = {
 		};
 	};
-	520F73DF14BA46E6003FEC46 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 52F63EA414B7689A00876FA4 /* JGRingingSettingViewController.h */;
-		name = "JGRingingSettingViewController.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 464;
-		vrLoc = 0;
+	520F740E14BA484F003FEC46 /* JGRunningViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1139, 1365}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{1801, 567}";
+		};
 	};
-	520F73E014BA46E6003FEC46 /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = 52F63E5814B7590E00876FA4 /* JGInsetGradientButton.h */;
-	};
-	520F73E114BA46E6003FEC46 /* PBXTextBookmark */ = {
+	520F741214BA4853003FEC46 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 52F63E5814B7590E00876FA4 /* JGInsetGradientButton.h */;
 		name = "JGInsetGradientButton.h: 1";
@@ -178,6 +167,84 @@
 		rType = 0;
 		vrLen = 847;
 		vrLoc = 0;
+	};
+	520F741314BA4853003FEC46 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52F63EA514B7689A00876FA4 /* JGRingingSettingViewController.m */;
+		name = "JGRingingSettingViewController.m: 116";
+		rLen = 0;
+		rLoc = 3384;
+		rType = 0;
+		vrLen = 527;
+		vrLoc = 0;
+	};
+	520F741414BA4853003FEC46 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52F63EA414B7689A00876FA4 /* JGRingingSettingViewController.h */;
+		name = "JGRingingSettingViewController.h: 12";
+		rLen = 30;
+		rLoc = 202;
+		rType = 0;
+		vrLen = 464;
+		vrLoc = 0;
+	};
+	520F741514BA4853003FEC46 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 520F741614BA4853003FEC46 /* JGRunningViewController.h */;
+		name = "JGRunningViewController.h: 6";
+		rLen = 0;
+		rLoc = 104;
+		rType = 0;
+		vrLen = 497;
+		vrLoc = 0;
+	};
+	520F741614BA4853003FEC46 /* JGRunningViewController.h */ = {
+		isa = PBXFileReference;
+		name = JGRunningViewController.h;
+		path = "/Users/John/Drop Box/Dropbox/Projects/Programming Projects/Current Projects/MeetingTimer/MeetingTimeriOS5/MeetingTimer/Classes/JGRunningViewController.h";
+		sourceTree = "<absolute>";
+	};
+	520F741714BA4853003FEC46 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
+		name = "JGTimerConfigurationViewController.m: 10";
+		rLen = 23;
+		rLoc = 210;
+		rType = 0;
+		vrLen = 705;
+		vrLoc = 0;
+	};
+	520F741814BA4853003FEC46 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 520F741914BA4853003FEC46 /* JGRunningViewController.m */;
+		name = "JGRunningViewController.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 577;
+		vrLoc = 0;
+	};
+	520F741914BA4853003FEC46 /* JGRunningViewController.m */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.objc;
+		name = JGRunningViewController.m;
+		path = "/Users/John/Drop Box/Dropbox/Projects/Programming Projects/Current Projects/MeetingTimer/MeetingTimeriOS5/MeetingTimer/Classes/JGRunningViewController.m";
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1139, 1365}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{1801, 567}";
+		};
+	};
+	520F741A14BA4853003FEC46 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 520F740E14BA484F003FEC46 /* JGRunningViewController.m */;
+		name = "JGRunningViewController.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 567;
+		vrLoc = 1801;
 	};
 	5242CA6E14B3D5E700C876C7 /* PBXBookmark */ = {
 		isa = PBXBookmark;
@@ -223,16 +290,6 @@
 		rType = 0;
 		vrLen = 1059;
 		vrLoc = 1455;
-	};
-	5242CC0214B3FD2D00C876C7 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 52EB417114B1218D00308C95 /* JGTimerDurationCalculator.h */;
-		name = "JGTimerDurationCalculator.h: 11";
-		rLen = 0;
-		rLoc = 270;
-		rType = 0;
-		vrLen = 446;
-		vrLoc = 0;
 	};
 	5242CC0414B3FD2D00C876C7 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -314,16 +371,6 @@
 		vrLen = 505;
 		vrLoc = 0;
 	};
-	5242CC5F14B404A800C876C7 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 52CA8B58149D089B0030ADC1 /* JGTimerRunningViewController.h */;
-		name = "JGRunningViewController.h: 11";
-		rLen = 0;
-		rLoc = 242;
-		rType = 0;
-		vrLen = 497;
-		vrLoc = 0;
-	};
 	5242CC6E14B404E300C876C7 /* JGTimerRunningViewController.m:87 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
@@ -341,16 +388,6 @@
 		modificationTime = 347568292.301284;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
-	};
-	5242CC7714B4055200C876C7 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 52CA8B59149D089B0030ADC1 /* JGTimerRunningViewController.m */;
-		name = "JGRunningViewController.m: 88";
-		rLen = 0;
-		rLoc = 2360;
-		rType = 0;
-		vrLen = 692;
-		vrLoc = 1671;
 	};
 	5251B9A9149E59B400AFC0B6 /* JGTimerControllerDelegate.h */ = {
 		uiCtxt = {
@@ -410,16 +447,6 @@
 			sepNavSelRange = "{229, 26}";
 			sepNavVisRange = "{0, 1501}";
 		};
-	};
-	52AB069B14B89F5700059512 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 52F63EA414B7689A00876FA4 /* JGRingingSettingViewController.h */;
-		name = "JGRingingSettingViewController.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 464;
-		vrLoc = 0;
 	};
 	52BBBD7114B24B4100CFE655 /* JGPickerViewDelegate.m */ = {
 		isa = PBXFileReference;
@@ -616,19 +643,6 @@
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
 	};
-	52CA8B58149D089B0030ADC1 /* JGTimerRunningViewController.h */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.h;
-		name = JGTimerRunningViewController.h;
-		path = "/Users/John/Drop Box/Dropbox/Projects/Programming Projects/Current Projects/MeetingTimer/MeetingTimeriOS5/MeetingTimer/Classes/JGTimerRunningViewController.h";
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {775, 439}}";
-			sepNavSelRange = "{242, 0}";
-			sepNavVisRange = "{0, 497}";
-		};
-	};
 	52CA8B59149D089B0030ADC1 /* JGTimerRunningViewController.m */ = {
 		isa = PBXFileReference;
 		fileEncoding = 4;
@@ -671,16 +685,6 @@
 			sepNavVisRange = "{892, 827}";
 		};
 	};
-	52F2FAF014B8A02D00A9D940 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 52F63EA414B7689A00876FA4 /* JGRingingSettingViewController.h */;
-		name = "JGRingingSettingViewController.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 464;
-		vrLoc = 0;
-	};
 	52F63E5814B7590E00876FA4 /* JGInsetGradientButton.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {879, 645}}";
@@ -701,15 +705,15 @@
 	52F63EA414B7689A00876FA4 /* JGRingingSettingViewController.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {879, 368}}";
-			sepNavSelRange = "{0, 0}";
+			sepNavSelRange = "{202, 30}";
 			sepNavVisRange = "{0, 464}";
 		};
 	};
 	52F63EA514B7689A00876FA4 /* JGRingingSettingViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1055, 3330}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1132, 3345}}";
 			sepNavSelRange = "{3384, 0}";
-			sepNavVisRange = "{2651, 800}";
+			sepNavVisRange = "{0, 527}";
 		};
 	};
 	52F63EEE14B777A300876FA4 /* PBXTextBookmark */ = {
@@ -740,16 +744,6 @@
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
-	52F63EFF14B7787F00876FA4 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */;
-		name = "JGTimerConfigurationViewController.m: 120";
-		rLen = 0;
-		rLoc = 4696;
-		rType = 0;
-		vrLen = 1269;
-		vrLoc = 4038;
-	};
 	52F63F6814B871C400876FA4 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		name = "JGTimerRingingSoundTableViewController.h: 1";
@@ -767,25 +761,5 @@
 		rType = 0;
 		vrLen = 848;
 		vrLoc = 3406;
-	};
-	52F63F6A14B871C400876FA4 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 52F63EA514B7689A00876FA4 /* JGRingingSettingViewController.m */;
-		name = "JGRingingSettingViewController.m: 116";
-		rLen = 0;
-		rLoc = 3384;
-		rType = 0;
-		vrLen = 838;
-		vrLoc = 2427;
-	};
-	52F63F6E14B87A8D00876FA4 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 52F63EA414B7689A00876FA4 /* JGRingingSettingViewController.h */;
-		name = "JGRingingSettingViewController.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 464;
-		vrLoc = 0;
 	};
 }
