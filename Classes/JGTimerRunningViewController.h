@@ -7,11 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AudioToolbox/AudioToolbox.h>
 #import "JGTimerControllerDelegate.h"
 #import "JGCountdownTimerDelegate.h"
 
-@interface JGRunningViewController : UIViewController <JGTimerControllerDelegate, JGCountdownTimerDelegate> {
+@interface JGTimerRunningViewController : UIViewController <JGTimerControllerDelegate, JGCountdownTimerDelegate> {
     IBOutlet UILabel *timeLabel;
+    CFURLRef soundFileURLRef;
+    
+    SystemSoundID soundFileObject;
 }
 
 -(IBAction)stopTimer:(id)sender;

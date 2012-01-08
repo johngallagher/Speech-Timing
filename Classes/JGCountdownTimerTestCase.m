@@ -1,6 +1,7 @@
 #import "JGCountdownTimerTestCase.h"
 #import "JGCountdownTimerDelegate.h"
 #import "JGCountdownTimer.h"
+#import "OCMockObject.h"
 #import <OCMock/OCMock.h>
 
 @implementation JGCountdownTimerTestCase

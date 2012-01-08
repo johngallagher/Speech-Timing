@@ -220,7 +220,7 @@
 				</object>
 				<object class="NSMutableArray" key="dict.values">
 					<bool key="EncodedWithXMLCoder">YES</bool>
-					<string>JGRunningViewController</string>
+					<string>JGTimerRunningViewController</string>
 					<string>UIResponder</string>
 					<string>JGDrawingTestView</string>
 					<string>{{651, 274}, {320, 480}}</string>

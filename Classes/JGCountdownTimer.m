@@ -47,7 +47,7 @@
 
 
 -(void)timerDidCountDownByOneSecond:(NSTimer *)timer_ {
-    timeRemaining--;
+    timeRemaining--; // Countdown
     [self sendTimeRemainingToDelegate];
 }
 

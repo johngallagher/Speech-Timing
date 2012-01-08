@@ -7,7 +7,7 @@
 //
 
 #import "JGTimerConfigurationViewController.h"
-#import "JGRunningViewController.h"
+#import "JGTimerRunningViewController.h"
 #import "JGTimerController.h"
 #import "JGCountdownTimer.h"
 #import "JGDrawingTestView.h"
@@ -25,9 +25,9 @@
     if (selectedRow < 0)
         return;
     
-    NSUInteger durationOfTimer = [[pickerDurations objectAtIndex:selectedRow] intValue] * 60;
+    NSUInteger durationOfTimer = (NSUInteger) ([[pickerDurations objectAtIndex:(NSUInteger) selectedRow] intValue] * 60);
                                           
-    JGRunningViewController *runningViewController = [[JGRunningViewController alloc] initWithNibName:@"JGRunningViewController" bundle:nil];
+    JGTimerRunningViewController *runningViewController = [[JGTimerRunningViewController alloc] initWithNibName:@"JGRunningViewController" bundle:nil];
     if ([[runningViewController view] isKindOfClass:[JGDrawingTestView class]]) {
         [(JGDrawingTestView *)[runningViewController view] setAnimationDuration:durationOfTimer];
     }
@@ -66,11 +66,12 @@
         [pickerLabel setTextColor:[UIColor blackColor]];
         [pickerLabel setFont:[UIFont boldSystemFontOfSize:20]];
     }
-    
+
     [pickerLabel setText:[[self pickerDurations] objectAtIndex:row]];
     
     return pickerLabel;    
 }
+
 
 
 #pragma mark -
@@ -86,7 +87,7 @@
 }
 
 -(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-    return @"Ringing Setting";
+    return @"";
 }
 
 // Customize the appearance of table view cells.
@@ -185,6 +186,9 @@
 
 - (void)dealloc {
     [managedObjectContext_ release];
+    [timerController release];
+    [pickerDurations release];
+    [countdownTimer release];
     [super dealloc];
 }
 

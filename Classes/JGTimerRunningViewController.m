@@ -6,12 +6,12 @@
 //  Copyright 2011 Synaptic Mishap. All rights reserved.
 //
 
-#import "JGRunningViewController.h"
-#import "JGTimerControllerDelegate.h"
+#import <AudioToolbox/AudioToolbox.h>
+#import "JGTimerRunningViewController.h"
 #import "JGTimeFormatter.h"
 #import "JGDrawingTestView.h"
 
-@implementation JGRunningViewController
+@implementation JGTimerRunningViewController
 
 -(void)viewDidAppear:(BOOL)animated {
     [(JGDrawingTestView *)[self view] animateCountdown];
@@ -39,6 +39,25 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"Did load");
+//    // Get the main bundle for the app
+//    CFBundleRef mainBundle = CFBundleGetMainBundle ();
+//
+//    // Get the URL to the sound file to play. The file in this case
+//    // is "tap.aif"
+//    soundFileURLRef  = CFBundleCopyResourceURL (
+//        mainBundle,
+//        CFSTR ("tap"),
+//        CFSTR ("aif"),
+//        NULL
+//    );
+//
+//    // Create a system sound object representing the sound file
+//    AudioServicesCreateSystemSoundID (
+//        soundFileURLRef,
+//        &soundFileObject
+//    );
+
 }
 
 /*
@@ -62,12 +81,11 @@
     // e.g. self.myOutlet = nil;
 }
 
-- (void)dealloc {
-    [super dealloc];
-}
 
 -(void)showRedCard {
     [[self view] setBackgroundColor:[UIColor redColor]];
+    AudioServicesPlaySystemSound (soundFileObject);
+    AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
 }
 
 -(void)showYellowCard {
@@ -83,8 +101,15 @@
 }
 
 -(void)setTimeRemainingTo:(NSTimeInterval)time_ {
-    NSString *timeText = [[JGTimeFormatter defaultFormatterBehavior] stringForObjectValue:[NSNumber numberWithInt:time_]];
+    NSString *timeText = [[JGTimeFormatter defaultFormatterBehavior] stringForObjectValue:[NSNumber numberWithDouble:time_]];
     [timeLabel setText:timeText];
+}
+
+- (void)dealloc {
+    CFRelease(soundFileURLRef);
+    AudioServicesDisposeSystemSoundID(soundFileObject);
+    [timeLabel release];
+    [super dealloc];
 }
 
 @end
