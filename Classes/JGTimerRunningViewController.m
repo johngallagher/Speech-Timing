@@ -15,6 +15,7 @@
     NSError *error              = nil;
     NSURL   *alertSoundFilename = [[NSBundle mainBundle] URLForResource:alertSoundFilename_ withExtension:@"aif"];
     audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:alertSoundFilename error:&error];
+    [audioPlayer prepareToPlay];
 }
 
 -(void)viewDidAppear:(BOOL)animated {

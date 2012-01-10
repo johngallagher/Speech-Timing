@@ -29,7 +29,7 @@
 }
 
 -(void)loadDefaultAlerts {
-    [self setAlertNames:[NSArray arrayWithObjects:@"Alarm", @"Digital Alarm 1", @"Digital Alarm 2", @"Submarine", @"Two Tone Bell", nil]];
+    [self setAlertNames:[NSArray arrayWithObjects:@"Digital Alarm 1", @"Digital Alarm 2", @"Submarine", @"Two Tone Bell", nil]];
 }
 
 -(void)viewDidLoad {
@@ -101,7 +101,7 @@
     NSIndexPath *oldSelectedAlarmIndexPath = [self oldSelectedAlarmIndexPath];
     if ([indexPath row] == [oldSelectedAlarmIndexPath row])
         return;
-    
+
     UITableViewCell *newCell = [tableView cellForRowAtIndexPath:indexPath];
     if (newCell.accessoryType == UITableViewCellAccessoryNone) {
         newCell.accessoryType = UITableViewCellAccessoryCheckmark;
@@ -139,11 +139,15 @@
     [_delegate changeAlertDidCancel];
 }
 
+#pragma mark -
+#pragma mark Subclassed Methods
+
 -(void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
     // Release any cached data, images, etc. that aren't in use.
 }
+
 
 -(void)dealloc {
     [currentAlertName release];

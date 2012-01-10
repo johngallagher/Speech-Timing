@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D3623260D0F684500981E51 /* MeetingTimerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* MeetingTimerAppDelegate.m */; };
+		1D3623260D0F684500981E51 /* SpeechTimerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* SpeechTimerAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
@@ -100,8 +100,8 @@
 
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1D3623240D0F684500981E51 /* MeetingTimerAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeetingTimerAppDelegate.h; sourceTree = "<group>"; };
-		1D3623250D0F684500981E51 /* MeetingTimerAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeetingTimerAppDelegate.m; sourceTree = "<group>"; };
+		1D3623240D0F684500981E51 /* SpeechTimerAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeechTimerAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* SpeechTimerAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeechTimerAppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* SpeechTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeechTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		28860B760F44E54D00985440 /* MeetingTimer.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = MeetingTimer.xcdatamodel; sourceTree = "<group>"; };
@@ -465,8 +465,8 @@
 		52BBBE3514B2EC3200CFE655 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
-				1D3623240D0F684500981E51 /* MeetingTimerAppDelegate.h */,
-				1D3623250D0F684500981E51 /* MeetingTimerAppDelegate.m */,
+				1D3623240D0F684500981E51 /* SpeechTimerAppDelegate.h */,
+				1D3623250D0F684500981E51 /* SpeechTimerAppDelegate.m */,
 			);
 			name = AppDelegate;
 			sourceTree = "<group>";
@@ -627,7 +627,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
-				1D3623260D0F684500981E51 /* MeetingTimerAppDelegate.m in Sources */,
+				1D3623260D0F684500981E51 /* SpeechTimerAppDelegate.m in Sources */,
 				28C286E10D94DF7D0034E888 /* JGTimerConfigurationViewController.m in Sources */,
 				28D3F202112F7DC200FD0661 /* MeetingTimer.xcdatamodeld in Sources */,
 				52591F35149E453E00DEA711 /* JGTimerController.m in Sources */,

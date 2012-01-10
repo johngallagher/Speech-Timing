@@ -1,5 +1,5 @@
 //
-//  MeetingTimerAppDelegate.h
+//  SpeechTimerAppDelegate.h
 //  MeetingTimer
 //
 //  Created by John Gallagher on 17/12/2011.
@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 
-@interface MeetingTimerAppDelegate : NSObject <UIApplicationDelegate> {
+@interface SpeechTimerAppDelegate : NSObject <UIApplicationDelegate> {
 
     UIWindow               *window;
     UINavigationController *navigationController;

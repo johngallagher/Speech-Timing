@@ -80,15 +80,12 @@
     return pickerLabel;
 }
 
-
-
 #pragma mark -
 #pragma mark Table view data source
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
-
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 1;
@@ -98,7 +95,6 @@
     return @"";
 }
 
-// Customize the appearance of table view cells.
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"Cell";
 
