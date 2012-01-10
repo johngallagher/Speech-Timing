@@ -14,16 +14,16 @@
     if (![delegate_ conformsToProtocol:@protocol(JGCountdownTimerDelegate)]) {
         _delegate = nil;
         return;
-    } 
+    }
     _delegate = delegate_;
 }
 
 -(JGCountdownTimer *)initWithDurationValue:(NSUInteger)durationValue delegate:(id <JGCountdownTimerDelegate>)delegate_ {
     self = [super init];
-    
+
     [self initDelegate:delegate_];
-    timeRemaining = (NSTimeInterval)durationValue;
-    
+    timeRemaining = (NSTimeInterval) durationValue;
+
     return self;
 }
 

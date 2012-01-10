@@ -8,26 +8,30 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
+#import "JGRingingSettingDelegate.h"
+
 @class JGTimerController;
 @class JGCountdownTimer;
 
-@interface JGTimerConfigurationViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate> {
-    IBOutlet    UIPickerView    *timerDurationPickerView;
-    NSArray                     *pickerDurations;
-    JGTimerController           *timerController;
-    JGCountdownTimer            *countdownTimer;
-    
+@interface JGTimerConfigurationViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate, JGRingingSettingDelegate> {
+    IBOutlet UIPickerView *timerDurationPickerView;
+    NSArray               *pickerDurations;
+    JGTimerController     *timerController;
+    JGCountdownTimer      *countdownTimer;
+    NSString              *currentAlertName;
+
 @private
     NSManagedObjectContext *managedObjectContext_;
 }
 
-@property (nonatomic, retain) JGCountdownTimer *countdownTimer;
-@property (nonatomic, retain) JGTimerController *timerController;
-@property (nonatomic, retain) NSArray *pickerDurations;
-@property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
+@property(nonatomic, retain) JGCountdownTimer       *countdownTimer;
+@property(nonatomic, retain) JGTimerController      *timerController;
+@property(nonatomic, retain) NSArray                *pickerDurations;
+@property(nonatomic, retain) NSManagedObjectContext *managedObjectContext;
+@property(nonatomic, retain) NSString               *currentAlertName;
+
 
 -(IBAction)startTimer:(id)sender;
-
 
 
 @end

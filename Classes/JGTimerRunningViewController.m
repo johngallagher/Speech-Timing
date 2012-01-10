@@ -1,24 +1,28 @@
-//
-//  JGRunningViewController.m
-//  MeetingTimer
-//
-//  Created by John Gallagher on 17/12/2011.
-//  Copyright 2011 Synaptic Mishap. All rights reserved.
-//
-
-#import <AudioToolbox/AudioToolbox.h>
 #import "JGTimerRunningViewController.h"
 #import "JGTimeFormatter.h"
 #import "JGDrawingTestView.h"
 
+@interface JGTimerRunningViewController ()
+-(void)setTimeRemainingTo:(NSTimeInterval)time_;
+
+@end
+
 @implementation JGTimerRunningViewController
 
+
+-(void)loadAlertSoundWithFilename:(NSString *)alertSoundFilename_ {
+    // Get the main bundle for the app
+    NSError *error              = nil;
+    NSURL   *alertSoundFilename = [[NSBundle mainBundle] URLForResource:alertSoundFilename_ withExtension:@"aif"];
+    audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:alertSoundFilename error:&error];
+}
+
 -(void)viewDidAppear:(BOOL)animated {
-    [(JGDrawingTestView *)[self view] animateCountdown];
+    [(JGDrawingTestView *) [self view] animateCountdown];
 }
 
 -(void)viewDidDisappear:(BOOL)animated {
-    
+
 }
 
 -(IBAction)stopTimer:(id)sender {
@@ -37,27 +41,8 @@
 */
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad {
+-(void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"Did load");
-//    // Get the main bundle for the app
-//    CFBundleRef mainBundle = CFBundleGetMainBundle ();
-//
-//    // Get the URL to the sound file to play. The file in this case
-//    // is "tap.aif"
-//    soundFileURLRef  = CFBundleCopyResourceURL (
-//        mainBundle,
-//        CFSTR ("tap"),
-//        CFSTR ("aif"),
-//        NULL
-//    );
-//
-//    // Create a system sound object representing the sound file
-//    AudioServicesCreateSystemSoundID (
-//        soundFileURLRef,
-//        &soundFileObject
-//    );
-
 }
 
 /*
@@ -68,24 +53,27 @@
 }
 */
 
-- (void)didReceiveMemoryWarning {
+-(void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
-    
+
     // Release any cached data, images, etc. that aren't in use.
 }
 
-- (void)viewDidUnload {
+-(void)viewDidUnload {
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
 
+-(IBAction)playSound:(id)sender {
+    [audioPlayer play];
+    AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+}
 
 -(void)showRedCard {
     [[self view] setBackgroundColor:[UIColor redColor]];
-    AudioServicesPlaySystemSound (soundFileObject);
-    AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+    [self playSound:self];
 }
 
 -(void)showYellowCard {
@@ -105,9 +93,9 @@
     [timeLabel setText:timeText];
 }
 
-- (void)dealloc {
-    CFRelease(soundFileURLRef);
-    AudioServicesDisposeSystemSoundID(soundFileObject);
+-(void)dealloc {
+    [audioPlayer stop];
+    [audioPlayer release];
     [timeLabel release];
     [super dealloc];
 }

@@ -11,13 +11,13 @@
 
 
 @interface PieChartLayer : CALayer {
-	CGFloat	startAngle;
-	CGFloat endAngle;
+    CGFloat startAngle;
+    CGFloat endAngle;
 }
 
-@property (nonatomic, assign)	CGFloat	startAngle;
-@property (nonatomic, assign)	CGFloat	endAngle;
+@property(nonatomic, assign) CGFloat startAngle;
+@property(nonatomic, assign) CGFloat endAngle;
 
-- (id) lastValueForKey:(NSString*)key;
+-(id)lastValueForKey:(NSString *)key;
 
 @end

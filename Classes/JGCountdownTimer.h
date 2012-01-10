@@ -2,8 +2,8 @@
 #import "JGCountdownTimerDelegate.h"
 
 @interface JGCountdownTimer : NSObject {
-    NSTimeInterval  timeRemaining;
-    NSTimer        *countdownTimer;
+    NSTimeInterval timeRemaining;
+    NSTimer *countdownTimer;
     id <NSObject, JGCountdownTimerDelegate> _delegate;
 }
 
@@ -16,9 +16,6 @@
 
 
 -(void)timerDidCountDownByOneSecond:(NSTimer *)timer_;
-
-
-
 
 
 @end

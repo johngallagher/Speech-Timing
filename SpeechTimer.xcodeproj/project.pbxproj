@@ -49,6 +49,8 @@
 		5251BB59149EA3A700AFC0B6 /* OCProtocolMockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5251BB45149EA3A700AFC0B6 /* OCProtocolMockObject.m */; };
 		52591F35149E453E00DEA711 /* JGTimerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52591F34149E453E00DEA711 /* JGTimerController.m */; };
 		52591F43149E469C00DEA711 /* JGTimerControllerTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */; };
+		528945F714BB2EBD00B4D09B /* DigitalAlarm1_16Bit.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 528945F614BB2EBD00B4D09B /* DigitalAlarm1_16Bit.aiff */; };
+		528945F914BB50F100B4D09B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 528945F814BB50F100B4D09B /* AVFoundation.framework */; };
 		52BBC08914B34FC900CFE655 /* JGCountdownTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BBC08814B34FC900CFE655 /* JGCountdownTimer.m */; };
 		52BBC08D14B3509200CFE655 /* JGCountdownTimerTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BBC08C14B3509200CFE655 /* JGCountdownTimerTestCase.m */; };
 		52BBC09614B3513900CFE655 /* JGCountdownTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BBC08814B34FC900CFE655 /* JGCountdownTimer.m */; };
@@ -61,7 +63,7 @@
 		52BBC17714B37CBE00CFE655 /* RedButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 52BBC17314B37CBE00CFE655 /* RedButton.png */; };
 		52BBC18914B3861900CFE655 /* TimerGradient.png in Resources */ = {isa = PBXBuildFile; fileRef = 52BBC18814B3861900CFE655 /* TimerGradient.png */; };
 		52BBC18E14B3876700CFE655 /* TimerGradient2.png in Resources */ = {isa = PBXBuildFile; fileRef = 52BBC18D14B3876700CFE655 /* TimerGradient2.png */; };
-		52CA8B5C149D089B0030ADC1 /* JGRunningViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52CA8B5A149D089B0030ADC1 /* JGRunningViewController.xib */; };
+		52CA8B5C149D089B0030ADC1 /* JGTimerRunningViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52CA8B5A149D089B0030ADC1 /* JGTimerRunningViewController.xib */; };
 		52EB416C14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EB416B14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.m */; };
 		52EB417314B1218D00308C95 /* JGTimerDurationCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EB417214B1218D00308C95 /* JGTimerDurationCalculator.m */; };
 		52EB417C14B122DB00308C95 /* JGTimerDurationCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EB417214B1218D00308C95 /* JGTimerDurationCalculator.m */; };
@@ -169,6 +171,8 @@
 		52591F3C149E466B00DEA711 /* SpeechTimerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpeechTimerTests-Info.plist"; sourceTree = "<group>"; };
 		52591F40149E469000DEA711 /* JGTimerControllerTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGTimerControllerTestCase.h; sourceTree = "<group>"; };
 		52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGTimerControllerTestCase.m; sourceTree = "<group>"; };
+		528945F614BB2EBD00B4D09B /* DigitalAlarm1_16Bit.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = DigitalAlarm1_16Bit.aiff; sourceTree = "<group>"; };
+		528945F814BB50F100B4D09B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		52BBC08714B34FC900CFE655 /* JGCountdownTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGCountdownTimer.h; sourceTree = "<group>"; };
 		52BBC08814B34FC900CFE655 /* JGCountdownTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGCountdownTimer.m; sourceTree = "<group>"; };
 		52BBC08A14B3505E00CFE655 /* JGCountdownTimerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGCountdownTimerDelegate.h; sourceTree = "<group>"; };
@@ -184,7 +188,7 @@
 		52BBC17314B37CBE00CFE655 /* RedButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RedButton.png; sourceTree = "<group>"; };
 		52BBC18814B3861900CFE655 /* TimerGradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TimerGradient.png; sourceTree = "<group>"; };
 		52BBC18D14B3876700CFE655 /* TimerGradient2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TimerGradient2.png; sourceTree = "<group>"; };
-		52CA8B5A149D089B0030ADC1 /* JGRunningViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = JGRunningViewController.xib; path = Classes/JGRunningViewController.xib; sourceTree = "<group>"; };
+		52CA8B5A149D089B0030ADC1 /* JGTimerRunningViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = JGTimerRunningViewController.xib; path = Classes/JGTimerRunningViewController.xib; sourceTree = "<group>"; };
 		52EB416A14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGTimerDurationCalculatorTestCase.h; sourceTree = "<group>"; };
 		52EB416B14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGTimerDurationCalculatorTestCase.m; sourceTree = "<group>"; };
 		52EB417114B1218D00308C95 /* JGTimerDurationCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGTimerDurationCalculator.h; sourceTree = "<group>"; };
@@ -202,6 +206,7 @@
 		C01FCF5008A954540054247C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		C01FCF5008A954540054247F /* JGTimerRunningViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGTimerRunningViewController.h; sourceTree = "<group>"; };
 		C01FCF5008A9545400542480 /* JGTimerRunningViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGTimerRunningViewController.m; sourceTree = "<group>"; };
+		C01FCF5008A9545400542482 /* JGRingingSettingDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGRingingSettingDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +214,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				528945F914BB50F100B4D09B /* AVFoundation.framework in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */,
@@ -231,6 +237,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C01FCF5008A9545400542482 /* JGRingingSettingDelegate.h */,
 				52F63E5714B7590400876FA4 /* Buttons */,
 				5242CBEA14B3FC6900C876C7 /* PieChartView */,
 				52BBBE3514B2EC3200CFE655 /* AppDelegate */,
@@ -292,6 +299,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				528945F814BB50F100B4D09B /* AVFoundation.framework */,
 				C01FCF5008A954540054247C /* AudioToolbox.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
@@ -305,6 +313,7 @@
 		520F73DE14BA46E4003FEC46 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				528945F614BB2EBD00B4D09B /* DigitalAlarm1_16Bit.aiff */,
 				520F73E514BA46F1003FEC46 /* DigitalAlarm1.aif */,
 				520F73E614BA46F1003FEC46 /* DigitalAlarm2.aif */,
 				520F73E714BA46F1003FEC46 /* TwoToneBell.aif */,
@@ -377,7 +386,7 @@
 			isa = PBXGroup;
 			children = (
 				2899E55F0DE3E45000AC0155 /* JGTimerConfigurationViewController.xib */,
-				52CA8B5A149D089B0030ADC1 /* JGRunningViewController.xib */,
+				52CA8B5A149D089B0030ADC1 /* JGTimerRunningViewController.xib */,
 				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
 			);
 			name = Nibs;
@@ -568,7 +577,7 @@
 			files = (
 				28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */,
 				2899E5600DE3E45000AC0155 /* JGTimerConfigurationViewController.xib in Resources */,
-				52CA8B5C149D089B0030ADC1 /* JGRunningViewController.xib in Resources */,
+				52CA8B5C149D089B0030ADC1 /* JGTimerRunningViewController.xib in Resources */,
 				52BBC17414B37CBE00CFE655 /* GreenButton-highlight.png in Resources */,
 				52BBC17514B37CBE00CFE655 /* GreenButton.png in Resources */,
 				52BBC17614B37CBE00CFE655 /* RedButton-highlight.png in Resources */,
@@ -582,6 +591,7 @@
 				520F73EE14BA46F1003FEC46 /* Bell.aif in Resources */,
 				520F73EF14BA46F1003FEC46 /* Alarm.aif in Resources */,
 				520F73F014BA46F1003FEC46 /* Submarine.aif in Resources */,
+				528945F714BB2EBD00B4D09B /* DigitalAlarm1_16Bit.aiff in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

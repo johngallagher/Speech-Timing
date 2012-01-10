@@ -8,15 +8,15 @@
     if (![delegate_ conformsToProtocol:@protocol(JGTimerControllerDelegate)]) {
         _delegate = nil;
         return;
-    } 
+    }
     _delegate = delegate_;
 }
 
 -(void)initCardTimesFromDuration:(NSUInteger)duration_ {
     JGTimerDurationCalculator *calculator = [[JGTimerDurationCalculator calculatorWithDuration:duration_] retain];
-    greenCardTime       = [calculator greenCardTime];
-    yellowCardTime      = [calculator yellowCardTime];
-    redCardTime         = [calculator redCardTime];
+    greenCardTime  = [calculator greenCardTime];
+    yellowCardTime = [calculator yellowCardTime];
+    redCardTime    = [calculator redCardTime];
     [calculator release];
 }
 
@@ -27,25 +27,25 @@
 
 -(JGTimerController *)initWithDurationValue:(NSUInteger)durationValue delegate:(id <JGTimerControllerDelegate>)delegate_ {
     self = [super init];
-    
+
     [self initDelegate:delegate_];
     [self initCardTimesFromDuration:durationValue];
     timerRunning = NO;
-    
+
     return self;
 }
 
 -(void)startTimer {
     timerRunning = YES;
-    
+
     if (redCardTime == 0) {
         [self showRedCard:nil];
         return;
     }
-    
-    [NSTimer scheduledTimerWithTimeInterval:greenCardTime     target:self selector:@selector(showGreenCard:)  userInfo:nil repeats:NO];
-    [NSTimer scheduledTimerWithTimeInterval:yellowCardTime    target:self selector:@selector(showYellowCard:) userInfo:nil repeats:NO];
-    [NSTimer scheduledTimerWithTimeInterval:redCardTime       target:self selector:@selector(showRedCard:)    userInfo:nil repeats:NO];
+
+    [NSTimer scheduledTimerWithTimeInterval:greenCardTime target:self selector:@selector(showGreenCard:) userInfo:nil repeats:NO];
+    [NSTimer scheduledTimerWithTimeInterval:yellowCardTime target:self selector:@selector(showYellowCard:) userInfo:nil repeats:NO];
+    [NSTimer scheduledTimerWithTimeInterval:redCardTime target:self selector:@selector(showRedCard:) userInfo:nil repeats:NO];
 }
 
 -(void)showCard:(NSString *)cardName andInvalidateTimer:(NSTimer *)timer_ {

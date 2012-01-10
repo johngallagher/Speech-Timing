@@ -8,5 +8,4 @@
 +(JGTimeFormatter *)defaultFormatterBehavior;
 
 
-
 @end

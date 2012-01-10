@@ -19,23 +19,26 @@
 
 @interface JGInsetGradientButton : UIButton {
     CAGradientLayer *gradientLayer;
-    UIColor *_highColor;
-    UIColor *_middleHighColor;
-    UIColor *_middleLowColor;
-    UIColor *_lowColor;
+    UIColor         *_highColor;
+    UIColor         *_middleHighColor;
+    UIColor         *_middleLowColor;
+    UIColor         *_lowColor;
 }
 
-@property (nonatomic, retain) UIColor *_lowColor;
-@property (nonatomic, retain) UIColor *_middleLowColor;
-@property (nonatomic, retain) UIColor *_middleHighColor;
-@property (nonatomic, retain) UIColor *_highColor;
-@property (nonatomic, retain) CAGradientLayer *gradientLayer;
+@property(nonatomic, retain) UIColor         *_lowColor;
+@property(nonatomic, retain) UIColor         *_middleLowColor;
+@property(nonatomic, retain) UIColor         *_middleHighColor;
+@property(nonatomic, retain) UIColor         *_highColor;
+@property(nonatomic, retain) CAGradientLayer *gradientLayer;
 
 
-- (void)setHighColor:(UIColor*)color;
--(void)setMiddleHighColor:(UIColor*)color;
--(void)setMiddleLowColor:(UIColor*)color;
-- (void)setLowColor:(UIColor*)color;
+-(void)setHighColor:(UIColor *)color;
+
+-(void)setMiddleHighColor:(UIColor *)color;
+
+-(void)setMiddleLowColor:(UIColor *)color;
+
+-(void)setLowColor:(UIColor *)color;
 
 @end
 

@@ -16,7 +16,7 @@
     [self setMiddleLowColor:RGBCOLOR(8, 138, 9)];
     [self setMiddleHighColor:RGBCOLOR(0, 148, 0)];
     [self setHighColor:RGBCOLOR(107, 175, 107)];
-    
+
 }
 
 -(void)fillWithHighlightedGradientColours {
@@ -24,7 +24,7 @@
     [self setLowColor:RGBCOLOR(0, 54, 0)];
     [self setMiddleLowColor:RGBCOLOR(5, 87, 5)];
     [self setMiddleHighColor:RGBCOLOR(0, 97, 0)];
-    [self setHighColor:RGBCOLOR(76, 125, 76)];    
+    [self setHighColor:RGBCOLOR(76, 125, 76)];
 }
 
 @end

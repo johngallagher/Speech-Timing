@@ -7,23 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+
 @class PieChartLayer;
 
 @interface JGDrawingTestView : UIView {
     PieChartLayer *pieChartLayer;
-	BOOL			animating;
-	BOOL			killing;
-    
-    NSUInteger      animationDuration;
+    NSUInteger animationDuration;
 }
 
-@property (nonatomic) NSUInteger animationDuration;
+@property(nonatomic) NSUInteger animationDuration;
 
 -(void)animateCountdownOverDuration:(NSUInteger)duration_;
+
 -(void)animateCountdown;
-
-
-
 
 
 @end

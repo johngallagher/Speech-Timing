@@ -1,22 +1,16 @@
-//
-//  JGRingingSettingViewController.h
-//  SpeechTimer
-//
-//  Created by John Gallagher on 06/01/2012.
-//  Copyright 2012 Synaptic Mishap. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
+#import "JGRingingSettingDelegate.h"
 
-
-@interface JGRingingSettingViewController : UIViewController {
+@interface JGRingingSettingViewController : UIViewController <UITableViewDataSource, UITableViewDelegate> {
     IBOutlet UINavigationItem *_customNavigationItem;
-    NSArray *ringTones;
-//    NSString *selectedRingTone;
-    NSUInteger selectedRingToneIndex;
+    NSArray                   *ringTones;
+    id <JGRingingSettingDelegate, NSObject> _delegate;
+    NSString *currentAlertName;
 }
 
-@property (nonatomic, retain) NSArray *ringTones;
+@property(nonatomic, retain) NSArray  *ringTones;
+@property(nonatomic, retain) NSString *currentAlertName;
+@property(nonatomic, retain) id delegate;
 
 @end
 
