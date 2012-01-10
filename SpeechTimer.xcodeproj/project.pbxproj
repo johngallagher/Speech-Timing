@@ -70,7 +70,7 @@
 		52F63E5E14B7590E00876FA4 /* JGInsetGradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F63E5914B7590E00876FA4 /* JGInsetGradientButton.m */; };
 		52F63E5F14B7590E00876FA4 /* JGRedInsetGradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F63E5B14B7590E00876FA4 /* JGRedInsetGradientButton.m */; };
 		52F63E6014B7590E00876FA4 /* JGGreenInsetGradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F63E5D14B7590E00876FA4 /* JGGreenInsetGradientButton.m */; };
-		52F63EA714B7689A00876FA4 /* JGRingingSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F63EA514B7689A00876FA4 /* JGRingingSettingViewController.m */; };
+		52F63EA714B7689A00876FA4 /* JGModalAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F63EA514B7689A00876FA4 /* JGModalAlertViewController.m */; };
 		52F63EA814B7689A00876FA4 /* JGRingingSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52F63EA614B7689A00876FA4 /* JGRingingSettingViewController.xib */; };
 		C01FCF5008A954540054247D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C01FCF5008A954540054247C /* AudioToolbox.framework */; };
 		C01FCF5008A9545400542481 /* JGTimerRunningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A9545400542480 /* JGTimerRunningViewController.m */; };
@@ -199,8 +199,8 @@
 		52F63E5B14B7590E00876FA4 /* JGRedInsetGradientButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGRedInsetGradientButton.m; sourceTree = "<group>"; };
 		52F63E5C14B7590E00876FA4 /* JGGreenInsetGradientButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGGreenInsetGradientButton.h; sourceTree = "<group>"; };
 		52F63E5D14B7590E00876FA4 /* JGGreenInsetGradientButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGGreenInsetGradientButton.m; sourceTree = "<group>"; };
-		52F63EA414B7689A00876FA4 /* JGRingingSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGRingingSettingViewController.h; sourceTree = "<group>"; };
-		52F63EA514B7689A00876FA4 /* JGRingingSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGRingingSettingViewController.m; sourceTree = "<group>"; };
+		52F63EA414B7689A00876FA4 /* JGModalAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGModalAlertViewController.h; sourceTree = "<group>"; };
+		52F63EA514B7689A00876FA4 /* JGModalAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGModalAlertViewController.m; sourceTree = "<group>"; };
 		52F63EA614B7689A00876FA4 /* JGRingingSettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JGRingingSettingViewController.xib; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* SpeechTimer-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SpeechTimer-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		C01FCF5008A954540054247C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -474,8 +474,8 @@
 		52D6932D14B87B8E00F09035 /* RingerView */ = {
 			isa = PBXGroup;
 			children = (
-				52F63EA414B7689A00876FA4 /* JGRingingSettingViewController.h */,
-				52F63EA514B7689A00876FA4 /* JGRingingSettingViewController.m */,
+				52F63EA414B7689A00876FA4 /* JGModalAlertViewController.h */,
+				52F63EA514B7689A00876FA4 /* JGModalAlertViewController.m */,
 				52F63EA614B7689A00876FA4 /* JGRingingSettingViewController.xib */,
 			);
 			name = RingerView;
@@ -639,7 +639,7 @@
 				52F63E5E14B7590E00876FA4 /* JGInsetGradientButton.m in Sources */,
 				52F63E5F14B7590E00876FA4 /* JGRedInsetGradientButton.m in Sources */,
 				52F63E6014B7590E00876FA4 /* JGGreenInsetGradientButton.m in Sources */,
-				52F63EA714B7689A00876FA4 /* JGRingingSettingViewController.m in Sources */,
+				52F63EA714B7689A00876FA4 /* JGModalAlertViewController.m in Sources */,
 				C01FCF5008A9545400542481 /* JGTimerRunningViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -6,7 +6,9 @@
 
 
 @protocol JGRingingSettingDelegate
--(void)ringToneDidChangeTo:(NSString *)alertName_;
+-(void)currentAlertDidChangeTo:(NSString *)alertName_;
 
--(void)ringToneChangeCancelled;
+-(void)changeAlertDidCancel;
+
+-(NSString *)currentAlertName;
 @end

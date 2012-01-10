@@ -122,13 +122,12 @@
  If the model doesn't already exist, it is created from the application's model.
  */
 -(NSManagedObjectModel *)managedObjectModel {
-
     if (managedObjectModel_ != nil) {
         return managedObjectModel_;
     }
-//    NSString *modelPath = [[NSBundle mainBundle] pathForResource:@"MeetingTimer" ofType:@"momd"];
-//    NSURL    *modelURL  = [NSURL fileURLWithPath:modelPath];
-//    managedObjectModel_ = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
+    NSString *modelPath = [[NSBundle mainBundle] pathForResource:@"MeetingTimer" ofType:@"momd"];
+    NSURL    *modelURL  = [NSURL fileURLWithPath:modelPath];
+    managedObjectModel_ = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
     return managedObjectModel_;
 }
 

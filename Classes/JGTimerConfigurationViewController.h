@@ -15,6 +15,8 @@
 
 @interface JGTimerConfigurationViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate, JGRingingSettingDelegate> {
     IBOutlet UIPickerView *timerDurationPickerView;
+    IBOutlet UITableView  *currentAlertTableView;
+
     NSArray               *pickerDurations;
     JGTimerController     *timerController;
     JGCountdownTimer      *countdownTimer;

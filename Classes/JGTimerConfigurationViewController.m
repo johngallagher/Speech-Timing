@@ -11,7 +11,7 @@
 #import "JGTimerController.h"
 #import "JGCountdownTimer.h"
 #import "JGDrawingTestView.h"
-#import "JGRingingSettingViewController.h"
+#import "JGModalAlertViewController.h"
 
 @implementation JGTimerConfigurationViewController
 
@@ -20,7 +20,6 @@
 @synthesize pickerDurations;
 @synthesize managedObjectContext = managedObjectContext_;
 @synthesize currentAlertName;
-
 
 -(NSString *)currentAlertFilename {
     return [[self currentAlertName] stringByReplacingOccurrencesOfString:@" " withString:@""];
@@ -75,7 +74,8 @@
         [pickerLabel setFont:[UIFont boldSystemFontOfSize:20]];
     }
 
-    [pickerLabel setText:[[self pickerDurations] objectAtIndex:row]];
+    if (row >= 0)
+        [pickerLabel setText:[[self pickerDurations] objectAtIndex:(NSUInteger)row]];
 
     return pickerLabel;
 }
@@ -111,8 +111,6 @@
     return cell;
 }
 
-
-
 #pragma mark -
 #pragma mark Audio Ringer Setting Table view delegate
 
@@ -120,7 +118,7 @@
     [[tableView cellForRowAtIndexPath:indexPath] setSelected:NO animated:YES];
 
     // Navigation logic may go here. Create and push another view controller.
-    JGRingingSettingViewController *ringingSettingViewController = [[JGRingingSettingViewController alloc] initWithNibName:@"JGRingingSettingViewController" bundle:nil];
+    JGModalAlertViewController *ringingSettingViewController = [[JGModalAlertViewController alloc] initWithNibName:@"JGRingingSettingViewController" bundle:nil];
     [ringingSettingViewController setDelegate:self];
     
     [self presentModalViewController:ringingSettingViewController animated:YES];
@@ -153,34 +151,6 @@
 
     [super viewDidAppear:animated];
 }
-/*
-- (void)viewWillDisappear:(BOOL)animated {
-    [super viewWillDisappear:animated];
-}
-*/
-/*
-- (void)viewDidDisappear:(BOOL)animated {
-    [super viewDidDisappear:animated];
-}
-*/
-
-/*
- // Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations.
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
- */
-
-/*
-// Implementing the above methods to update the table view in response to individual changes may have performance implications if a large number of changes are made simultaneously. If this proves to be an issue, you can instead just implement controllerDidChangeContent: which notifies the delegate that all section and object changes have been processed. 
- 
- - (void)controllerDidChangeContent:(NSFetchedResultsController *)controller {
-    // In the simplest, most efficient, case, reload the table view.
-    [self.tableView reloadData];
-}
- */
-
 
 #pragma mark -
 #pragma mark Memory management
@@ -188,8 +158,7 @@
 -(void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
-
-    // Relinquish owownership any cached data, images, etc that aren't in use.
+    // Relinquish ownership any cached data, images, etc that aren't in use.
 }
 
 -(void)viewDidUnload {
@@ -208,12 +177,14 @@
 
 #pragma mark -
 #pragma mark Delegate Methods for setting timer alert
--(void)ringToneDidChangeTo:(NSString *)alertName_ {
+-(void)currentAlertDidChangeTo:(NSString *)alertName_ {
     [self setCurrentAlertName:alertName_];
+    UITableViewCell *cell = [currentAlertTableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+    [[cell detailTextLabel] setText:[self currentAlertName]];
     [self dismissModalViewControllerAnimated:YES];
 }
 
--(void)ringToneChangeCancelled {
+-(void)changeAlertDidCancel {
     [self dismissModalViewControllerAnimated:YES];
 }
 
