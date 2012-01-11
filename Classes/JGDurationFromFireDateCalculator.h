@@ -4,5 +4,5 @@
 
 }
 
-+(NSUInteger)durationFromFireDate:(id)o;
++(NSUInteger)positiveDurationFromFireDate:(NSDate *)date_;
 @end

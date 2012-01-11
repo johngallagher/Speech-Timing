@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dcf27bc1-0f3a-4126-a516-d7d4567fa020" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/JGDurationFromFireDateCalculator.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/JGDurationFromFireDateCalculator.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/JGDurationFromFireDateCalculatorTestCase.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/JGDurationFromFireDateCalculatorTestCase.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SpeechTimer.xcodeproj/project.xcworkspace/xcuserdata/John.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/SpeechTimer.xcodeproj/project.xcworkspace/xcuserdata/John.xcuserdatad/UserInterfaceState.xcuserstate" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/JGTimerConfigurationViewController.m" afterPath="$PROJECT_DIR$/Classes/JGTimerConfigurationViewController.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/JGTimerRunningViewController.m" afterPath="$PROJECT_DIR$/Classes/JGTimerRunningViewController.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SpeechTimer.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/SpeechTimer.xcodeproj/project.pbxproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/JGDurationFromFireDateCalculator.h" afterPath="$PROJECT_DIR$/Classes/JGDurationFromFireDateCalculator.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/JGDurationFromFireDateCalculator.m" afterPath="$PROJECT_DIR$/Classes/JGDurationFromFireDateCalculator.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/JGDurationFromFireDateCalculatorTestCase.m" afterPath="$PROJECT_DIR$/Classes/JGDurationFromFireDateCalculatorTestCase.m" />
     </list>
     <list id="09881062-60ce-4b51-b613-9e69bf443e0c" name="Rejected commit: Default" comment="Added playing of sound on the red card appearing. Sound doesn't get played in simulator so we need to check on device to get this working." />
     <ignored path="MeetingTimer.iws" />
@@ -34,19 +29,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="JGDurationFromFireDateCalculator.m" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="JGDurationFromFireDateCalculator.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Classes/JGDurationFromFireDateCalculator.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="24" selection-start="158" selection-end="171" vertical-scroll-proportion="0.13238771">
+            <state line="7" column="4" selection-start="220" selection-end="220" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JGDurationFromFireDateCalculator.h" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="JGDurationFromFireDateCalculator.h" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Classes/JGDurationFromFireDateCalculator.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="13" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0">
+            <state line="6" column="51" selection-start="147" selection-end="147" vertical-scroll-proportion="0.19858156">
               <folding />
             </state>
           </provider>
@@ -55,7 +50,7 @@
       <file leaf-file-name="JGDurationFromFireDateCalculatorTestCase.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Classes/JGDurationFromFireDateCalculatorTestCase.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="70" selection-start="751" selection-end="751" vertical-scroll-proportion="0.0">
+            <state line="28" column="81" selection-start="1072" selection-end="1072" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -90,8 +85,8 @@
         <option value="$PROJECT_DIR$/Classes/JGTimerConfigurationViewController.m" />
         <option value="$PROJECT_DIR$/Classes/JGTimerRunningViewController.m" />
         <option value="$PROJECT_DIR$/Classes/JGDurationFromFireDateCalculatorTestCase.m" />
-        <option value="$PROJECT_DIR$/Classes/JGDurationFromFireDateCalculator.h" />
         <option value="$PROJECT_DIR$/Classes/JGDurationFromFireDateCalculator.m" />
+        <option value="$PROJECT_DIR$/Classes/JGDurationFromFireDateCalculator.h" />
       </list>
     </option>
   </component>
@@ -454,7 +449,7 @@
     <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moved ivars onto running controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="Two tests passing for duration converter." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -478,6 +473,7 @@
     <MESSAGE value="Refactored timer starting" />
     <MESSAGE value="Added extra logging." />
     <MESSAGE value="Moved ivars onto running controller" />
+    <MESSAGE value="Two tests passing for duration converter." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -574,21 +570,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Classes/JGDurationFromFireDateCalculatorTestCase.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="70" selection-start="751" selection-end="751" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/JGDurationFromFireDateCalculator.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0">
+        <state line="28" column="81" selection-start="1072" selection-end="1072" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Classes/JGDurationFromFireDateCalculator.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="24" selection-start="158" selection-end="171" vertical-scroll-proportion="0.13238771">
+        <state line="7" column="4" selection-start="220" selection-end="220" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/JGDurationFromFireDateCalculator.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="51" selection-start="147" selection-end="147" vertical-scroll-proportion="0.19858156">
           <folding />
         </state>
       </provider>

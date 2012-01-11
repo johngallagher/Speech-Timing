@@ -14,14 +14,20 @@
 @implementation JGDurationFromFireDateCalculatorTestCase
 
 -(void)testGivenFireDateOfNowDurationShouldBeZero {
-    NSUInteger actualDuration = [JGDurationFromFireDateCalculator durationFromFireDate:[NSDate date]];
+    NSUInteger actualDuration = [JGDurationFromFireDateCalculator positiveDurationFromFireDate:[NSDate date]];
     NSUInteger expectedDuration = 0;
     STAssertEquals(actualDuration, expectedDuration, nil);
 }
 
 -(void)testGivenFireDateOfOneSecondBeforeNowDurationShouldBeOne {
-    NSUInteger actualDuration = [JGDurationFromFireDateCalculator durationFromFireDate:[NSDate dateWithTimeIntervalSinceNow:1]];
+    NSUInteger actualDuration = [JGDurationFromFireDateCalculator positiveDurationFromFireDate:[NSDate dateWithTimeIntervalSinceNow:1]];
     NSUInteger expectedDuration = 1;
+    STAssertEquals(actualDuration, expectedDuration, nil);
+}
+
+-(void)testGivenFireDateOfOneSecondAfterNowDurationShouldBeZero {
+    NSUInteger actualDuration = [JGDurationFromFireDateCalculator positiveDurationFromFireDate:[NSDate dateWithTimeIntervalSinceNow:-1]];
+    NSUInteger expectedDuration = 0;
     STAssertEquals(actualDuration, expectedDuration, nil);
 }
 
