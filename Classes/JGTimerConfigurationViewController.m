@@ -7,8 +7,6 @@
 
 @implementation JGTimerConfigurationViewController
 
-@synthesize countdownTimer;
-@synthesize timerController;
 @synthesize pickerDurations;
 @synthesize managedObjectContext = managedObjectContext_;
 @synthesize currentAlertName;
@@ -114,7 +112,6 @@
     [super viewDidLoad];
 
     [self setPickerDurations:[NSArray arrayWithObjects:@"1            ", @"2            ", @"3            ", @"4            ", @"5            ", @"6            ", @"7            ", @"8            ", @"9            ", @"10            ", @"15            ", @"20            ", @"25            ", @"30            ", nil]];
-    timerController = nil;
 
     [self setCurrentAlertName:@"Digital Alarm 1"];
 }
@@ -124,12 +121,6 @@
 }
 
 -(void)viewDidAppear:(BOOL)animated {
-    [[self timerController] stopTimer];
-    [self setTimerController:nil];
-
-    [[self countdownTimer] stopTimer];
-    [self setCountdownTimer:nil];
-
     [super viewDidAppear:animated];
 }
 
@@ -149,9 +140,7 @@
 
 -(void)dealloc {
     [managedObjectContext_ release];
-    [timerController release];
     [pickerDurations release];
-    [countdownTimer release];
     [currentAlertName release];
     [super dealloc];
 }

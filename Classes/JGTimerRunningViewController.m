@@ -24,7 +24,8 @@
 }
 
 -(void)initViewControllerWithFireDate:(NSDate *)fireDate {
-    
+    // TODO Change duration to fire date
+    NSUInteger durationOfTimer = 0;
     [(JGDrawingTestView *) [self view] setAnimationDuration:durationOfTimer];
     [self loadAlertSoundWithFilename:[self currentAlertFilename]];
 
@@ -48,6 +49,11 @@
 }
 
 -(void)viewDidDisappear:(BOOL)animated {
+    [[self timerController] stopTimer];
+    [self setTimerController:nil];
+
+    [[self countdownTimer] stopTimer];
+    [self setCountdownTimer:nil];
 
 }
 
