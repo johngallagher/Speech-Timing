@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dcf27bc1-0f3a-4126-a516-d7d4567fa020" name="Default" comment="Duration changed to time interval. This breaks">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/JGAlert.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/JGAlert.m" />
+    <list id="dcf27bc1-0f3a-4126-a516-d7d4567fa020" name="Default" comment="Duration changed to time interval. This breaks" />
+    <list id="09881062-60ce-4b51-b613-9e69bf443e0c" name="Rejected commit: Default" comment="Added playing of sound on the red card appearing. Sound doesn't get played in simulator so we need to check on device to get this working." />
+    <list default="true" id="80879804-cb4f-4c78-b8e1-bd65721e23c3" name="New changelist" comment="">
       <change type="MOVED" beforePath="$PROJECT_DIR$/Classes/JGTimerDurationCalculator.h" afterPath="$PROJECT_DIR$/Classes/JGCardTimesCalculator.h" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/Classes/JGTimerDurationCalculator.m" afterPath="$PROJECT_DIR$/Classes/JGCardTimesCalculator.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/JGAlert.h" afterPath="$PROJECT_DIR$/Classes/JGAlert.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/JGTimerController.h" afterPath="$PROJECT_DIR$/Classes/JGTimerController.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/JGTimerController.m" afterPath="$PROJECT_DIR$/Classes/JGTimerController.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/JGTimerControllerTestCase.m" afterPath="$PROJECT_DIR$/Classes/JGTimerControllerTestCase.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/JGTimerDurationCalculatorTestCase.h" afterPath="$PROJECT_DIR$/Classes/JGTimerDurationCalculatorTestCase.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/JGTimerDurationCalculatorTestCase.m" afterPath="$PROJECT_DIR$/Classes/JGTimerDurationCalculatorTestCase.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SpeechTimer.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/SpeechTimer.xcodeproj/project.pbxproj" />
     </list>
-    <list id="09881062-60ce-4b51-b613-9e69bf443e0c" name="Rejected commit: Default" comment="Added playing of sound on the red card appearing. Sound doesn't get played in simulator so we need to check on device to get this working." />
     <ignored path="MeetingTimer.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -57,7 +56,7 @@
       <file leaf-file-name="JGAlert.h" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Classes/JGAlert.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="211" selection-end="211" vertical-scroll-proportion="0.41791046">
+            <state line="10" column="21" selection-start="232" selection-end="232" vertical-scroll-proportion="0.41791046">
               <folding />
             </state>
           </provider>
@@ -410,9 +409,11 @@
     <task active="true" id="Default" summary="Default task">
       <changelist id="dcf27bc1-0f3a-4126-a516-d7d4567fa020" name="Default" comment="" />
       <changelist id="09881062-60ce-4b51-b613-9e69bf443e0c" name="Rejected commit: Default" comment="Added playing of sound on the red card appearing. Sound doesn't get played in simulator so we need to check on device to get this working." />
+      <changelist id="80879804-cb4f-4c78-b8e1-bd65721e23c3" name="New changelist" comment="" />
       <created>1325956840538</created>
-      <updated>1326019580952</updated>
+      <updated>1326303087378</updated>
     </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -492,7 +493,7 @@
     <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Got rid of duplication." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added alert which wraps start time and fire time." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -519,6 +520,7 @@
     <MESSAGE value="Two tests passing for duration converter." />
     <MESSAGE value="Added positive duration conversion." />
     <MESSAGE value="Got rid of duplication." />
+    <MESSAGE value="Added alert which wraps start time and fire time." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -631,7 +633,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Classes/JGAlert.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="211" selection-end="211" vertical-scroll-proportion="0.41791046">
+        <state line="10" column="21" selection-start="232" selection-end="232" vertical-scroll-proportion="0.41791046">
           <folding />
         </state>
       </provider>
