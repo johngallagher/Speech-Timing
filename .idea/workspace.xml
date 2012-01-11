@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dcf27bc1-0f3a-4126-a516-d7d4567fa020" name="Default" comment="">
+    <list default="true" id="dcf27bc1-0f3a-4126-a516-d7d4567fa020" name="Default" comment="Duration changed to time interval. This breaks">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/JGAlert.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/JGAlert.m" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Classes/JGTimerDurationCalculator.h" afterPath="$PROJECT_DIR$/Classes/JGCardTimesCalculator.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Classes/JGTimerDurationCalculator.m" afterPath="$PROJECT_DIR$/Classes/JGCardTimesCalculator.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/JGTimerControllerTestCase.h" afterPath="$PROJECT_DIR$/Classes/JGTimerControllerTestCase.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/JGTimerController.h" afterPath="$PROJECT_DIR$/Classes/JGTimerController.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/JGTimerController.m" afterPath="$PROJECT_DIR$/Classes/JGTimerController.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/JGTimerControllerTestCase.m" afterPath="$PROJECT_DIR$/Classes/JGTimerControllerTestCase.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/JGTimerDurationCalculatorTestCase.h" afterPath="$PROJECT_DIR$/Classes/JGTimerDurationCalculatorTestCase.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/JGTimerDurationCalculatorTestCase.m" afterPath="$PROJECT_DIR$/Classes/JGTimerDurationCalculatorTestCase.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SpeechTimer.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/SpeechTimer.xcodeproj/project.pbxproj" />
     </list>
     <list id="09881062-60ce-4b51-b613-9e69bf443e0c" name="Rejected commit: Default" comment="Added playing of sound on the red card appearing. Sound doesn't get played in simulator so we need to check on device to get this working." />
     <ignored path="MeetingTimer.iws" />
@@ -28,37 +36,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="JGTimerControllerTestCase.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Classes/JGTimerControllerTestCase.h">
+      <file leaf-file-name="JGTimerDurationCalculatorTestCase.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Classes/JGTimerDurationCalculatorTestCase.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="7" selection-start="752" selection-end="752" vertical-scroll-proportion="0.0">
+            <state line="9" column="38" selection-start="233" selection-end="233" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JGTimerControllerTestCase.m" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Classes/JGTimerControllerTestCase.m">
+      <file leaf-file-name="JGTimerDurationCalculatorTestCase.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Classes/JGTimerDurationCalculatorTestCase.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="0" selection-start="2887" selection-end="3158" vertical-scroll-proportion="0.80061823">
+            <state line="10" column="80" selection-start="511" selection-end="511" vertical-scroll-proportion="-2.5454545">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JGTimerController.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Classes/JGTimerController.m">
+      <file leaf-file-name="JGAlert.h" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Classes/JGAlert.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="0" selection-start="1174" selection-end="1174" vertical-scroll-proportion="0.0">
+            <state line="10" column="0" selection-start="211" selection-end="211" vertical-scroll-proportion="0.41791046">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JGTimerRunningViewController.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Classes/JGTimerRunningViewController.m">
+      <file leaf-file-name="JGAlert.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Classes/JGAlert.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="59" selection-start="1121" selection-end="1121" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JGCardTimesCalculator.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Classes/JGCardTimesCalculator.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="26" selection-start="1445" selection-end="1445" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -79,14 +96,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Classes/JGModalAlertViewController+NewCategory.h" />
-        <option value="$PROJECT_DIR$/Classes/MeetingTimerAppDelegate.m" />
-        <option value="$PROJECT_DIR$/Classes/JGModalAlertViewController.m" />
-        <option value="$PROJECT_DIR$/Classes/JGTimerDurationCalculatorTestCase.m" />
-        <option value="$PROJECT_DIR$/Classes/JGCountdownTimer.h" />
-        <option value="$PROJECT_DIR$/Classes/JGCountdownTimer.m" />
-        <option value="$PROJECT_DIR$/Classes/SpeechTimerAppDelegate.m" />
-        <option value="$PROJECT_DIR$/Classes/JGTimerConfigurationViewController.h" />
         <option value="$PROJECT_DIR$/Classes/JGTimerRunningViewController.h" />
         <option value="$PROJECT_DIR$/Classes/JGTimerConfigurationViewController.m" />
         <option value="$PROJECT_DIR$/Classes/JGTimerRunningViewController.m" />
@@ -94,14 +103,22 @@
         <option value="$PROJECT_DIR$/Classes/JGDurationFromFireDateCalculator.h" />
         <option value="$PROJECT_DIR$/Classes/JGDurationFromFireDateCalculatorTestCase.m" />
         <option value="$PROJECT_DIR$/Classes/JGTimerControllerTestCase.h" />
+        <option value="$PROJECT_DIR$/Classes/JGTimerController.h" />
+        <option value="$PROJECT_DIR$/Classes/JGTimerDurationCalculator.m" />
+        <option value="$PROJECT_DIR$/Classes/JGTimerDurationCalculator.h" />
         <option value="$PROJECT_DIR$/Classes/JGTimerControllerTestCase.m" />
+        <option value="$PROJECT_DIR$/Classes/JGTimerController.m" />
+        <option value="$PROJECT_DIR$/Classes/JGTimerDurationCalculatorTestCase.h" />
+        <option value="$PROJECT_DIR$/Classes/JGTimerDurationCalculatorTestCase.m" />
+        <option value="$PROJECT_DIR$/Classes/JGAlert.m" />
+        <option value="$PROJECT_DIR$/Classes/JGAlert.h" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1280" />
-    <option name="height" value="998" />
+    <option name="height" value="774" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -286,6 +303,24 @@
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="DurationCalculator" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SpeechTimer" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Classes" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="CountdownTimer" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
             </PATH_ELEMENT>
@@ -296,7 +331,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.lastSelected" value="preferences.editor" />
+    <property name="options.lastSelected" value="preferences.keymap" />
     <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
     <property name="OBJC.PRESERVED_TARGET_SELECTION" value="" />
@@ -401,24 +436,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="998" extended-state="0" />
+    <frame x="0" y="22" width="1280" height="774" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34615386" sideWeight="0.49403343" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.46005917" sideWeight="0.49403343" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28254437" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32840237" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32777777" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17104216" sideWeight="0.59319526" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21797931" sideWeight="0.75222224" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32458234" sideWeight="0.53994083" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5325444" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21797931" sideWeight="0.602071" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34649912" sideWeight="0.49960223" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24777777" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24777777" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988167" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="100" y="122" width="1080" height="574" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32840237" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39940828" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -457,7 +492,7 @@
     <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added positive duration conversion." />
+    <option name="LAST_COMMIT_MESSAGE" value="Got rid of duplication." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -483,60 +518,12 @@
     <MESSAGE value="Moved ivars onto running controller" />
     <MESSAGE value="Two tests passing for duration converter." />
     <MESSAGE value="Added positive duration conversion." />
+    <MESSAGE value="Got rid of duplication." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Classes/JGTimerController.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="7" selection-start="555" selection-end="555" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIViewController.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="158" column="8" selection-start="7425" selection-end="7425" vertical-scroll-proportion="0.3322785">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/JGCountdownTimer.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="32" selection-start="1036" selection-end="1036" vertical-scroll-proportion="0.40930232">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/JGDurationFromFireDateCalculatorTestCase.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="456" selection-end="456" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/JGTimerConfigurationViewController.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="143" column="24" selection-start="4988" selection-end="4988" vertical-scroll-proportion="4.631579">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/JGDrawingTestView.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="32" selection-start="345" selection-end="345" vertical-scroll-proportion="0.33252427">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/JGTimerConfigurationViewController.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="693" selection-end="693" vertical-scroll-proportion="0.61165047">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Classes/JGTimerRunningViewController.h">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="40" selection-start="458" selection-end="458" vertical-scroll-proportion="0.0">
@@ -572,20 +559,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/JGTimerRunningViewController.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="59" selection-start="1121" selection-end="1121" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/JGTimerController.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="1174" selection-end="1174" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Classes/JGTimerControllerTestCase.h">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="7" selection-start="752" selection-end="752" vertical-scroll-proportion="0.0">
@@ -593,9 +566,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/JGTimerRunningViewController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="59" selection-start="1121" selection-end="1121" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/JGTimerController.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/JGCardTimesCalculator.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="368" selection-end="368" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Classes/JGTimerControllerTestCase.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="0" selection-start="2887" selection-end="3158" vertical-scroll-proportion="0.80061823">
+        <state line="99" column="62" selection-start="3368" selection-end="3368" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/JGTimerController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="75" selection-start="724" selection-end="724" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/JGTimerDurationCalculatorTestCase.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="38" selection-start="233" selection-end="233" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/JGTimerDurationCalculatorTestCase.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="80" selection-start="511" selection-end="511" vertical-scroll-proportion="-2.5454545">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/JGCardTimesCalculator.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="26" selection-start="1445" selection-end="1445" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/JGAlert.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/JGAlert.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="211" selection-end="211" vertical-scroll-proportion="0.41791046">
           <folding />
         </state>
       </provider>
