@@ -5,7 +5,7 @@
 
 // 0 minutes
 -(void)testGivenDurationBelow3ShouldReturn0ForAllCards {
-    JGTimerDurationCalculator *calculator = [JGTimerDurationCalculator calculatorWithDuration:3];
+    JGTimerDurationCalculator *calculator = [JGTimerDurationCalculator calculatorWithDuration:2];
 
     STAssertEquals([calculator greenCardTime], (NSTimeInterval) 0, nil);
     STAssertEquals([calculator yellowCardTime], (NSTimeInterval) 0, nil);

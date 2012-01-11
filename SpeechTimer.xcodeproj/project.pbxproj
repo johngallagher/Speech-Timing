@@ -49,7 +49,6 @@
 		5251BB59149EA3A700AFC0B6 /* OCProtocolMockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5251BB45149EA3A700AFC0B6 /* OCProtocolMockObject.m */; };
 		52591F35149E453E00DEA711 /* JGTimerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52591F34149E453E00DEA711 /* JGTimerController.m */; };
 		52591F43149E469C00DEA711 /* JGTimerControllerTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */; };
-		528945F714BB2EBD00B4D09B /* DigitalAlarm1_16Bit.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 528945F614BB2EBD00B4D09B /* DigitalAlarm1_16Bit.aiff */; };
 		528945F914BB50F100B4D09B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 528945F814BB50F100B4D09B /* AVFoundation.framework */; };
 		52BBC08914B34FC900CFE655 /* JGCountdownTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BBC08814B34FC900CFE655 /* JGCountdownTimer.m */; };
 		52BBC08D14B3509200CFE655 /* JGCountdownTimerTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BBC08C14B3509200CFE655 /* JGCountdownTimerTestCase.m */; };
@@ -171,7 +170,6 @@
 		52591F3C149E466B00DEA711 /* SpeechTimerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpeechTimerTests-Info.plist"; sourceTree = "<group>"; };
 		52591F40149E469000DEA711 /* JGTimerControllerTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGTimerControllerTestCase.h; sourceTree = "<group>"; };
 		52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGTimerControllerTestCase.m; sourceTree = "<group>"; };
-		528945F614BB2EBD00B4D09B /* DigitalAlarm1_16Bit.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = DigitalAlarm1_16Bit.aiff; sourceTree = "<group>"; };
 		528945F814BB50F100B4D09B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		52BBC08714B34FC900CFE655 /* JGCountdownTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGCountdownTimer.h; sourceTree = "<group>"; };
 		52BBC08814B34FC900CFE655 /* JGCountdownTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGCountdownTimer.m; sourceTree = "<group>"; };
@@ -313,7 +311,6 @@
 		520F73DE14BA46E4003FEC46 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
-				528945F614BB2EBD00B4D09B /* DigitalAlarm1_16Bit.aiff */,
 				520F73E514BA46F1003FEC46 /* DigitalAlarm1.aif */,
 				520F73E614BA46F1003FEC46 /* DigitalAlarm2.aif */,
 				520F73E714BA46F1003FEC46 /* TwoToneBell.aif */,
@@ -591,7 +588,6 @@
 				520F73EE14BA46F1003FEC46 /* Bell.aif in Resources */,
 				520F73EF14BA46F1003FEC46 /* Alarm.aif in Resources */,
 				520F73F014BA46F1003FEC46 /* Submarine.aif in Resources */,
-				528945F714BB2EBD00B4D09B /* DigitalAlarm1_16Bit.aiff in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -701,6 +697,7 @@
 				INFOPLIST_FILE = "SpeechTimer-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				PRODUCT_NAME = SpeechTimer;
+				TEST_AFTER_BUILD = YES;
 			};
 			name = Debug;
 		};
@@ -714,6 +711,7 @@
 				INFOPLIST_FILE = "SpeechTimer-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				PRODUCT_NAME = SpeechTimer;
+				TEST_AFTER_BUILD = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -722,7 +720,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				BUNDLE_LOADER = "$(CONFIGURATION_BUILD_DIR)/MeetingTimer.app/MeetingTimer";
+				BUNDLE_LOADER = "$(CONFIGURATION_BUILD_DIR)/SpeechTimer.app/SpeechTimer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -744,6 +742,7 @@
 				);
 				PRODUCT_NAME = SpeechTimerTests;
 				SDKROOT = iphoneos;
+				TEST_AFTER_BUILD = YES;
 				TEST_HOST_PRODUCT_NAME = MeetingTimer;
 				WRAPPER_EXTENSION = octest;
 			};
@@ -773,6 +772,7 @@
 				);
 				PRODUCT_NAME = SpeechTimerTests;
 				SDKROOT = iphoneos;
+				TEST_AFTER_BUILD = YES;
 				WRAPPER_EXTENSION = octest;
 				ZERO_LINK = NO;
 			};
@@ -791,6 +791,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				SDKROOT = iphoneos;
+				TEST_AFTER_BUILD = YES;
 			};
 			name = Debug;
 		};
@@ -808,6 +809,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
+				TEST_AFTER_BUILD = YES;
 			};
 			name = Release;
 		};

@@ -1,11 +1,3 @@
-//
-//  RootViewController.m
-//  MeetingTimer
-//
-//  Created by John Gallagher on 17/12/2011.
-//  Copyright 2011 Synaptic Mishap. All rights reserved.
-//
-
 #import "JGTimerConfigurationViewController.h"
 #import "JGTimerRunningViewController.h"
 #import "JGTimerController.h"
@@ -52,12 +44,10 @@
 #pragma mark -
 #pragma mark Duration Picker Data Source and Delegate methods
 
-// returns the number of 'columns' to display.
 -(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
     return 1;
 }
 
-// returns the # of rows in each component..
 -(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
     return 14;
 }

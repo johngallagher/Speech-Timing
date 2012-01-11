@@ -1,6 +1,6 @@
 //
 //  JGCountdownTimerDelegate.h
-//  MeetingTimer
+//  SpeechTimer
 //
 //  Created by John Gallagher on 03/01/2012.
 //  Copyright 2012 Synaptic Mishap. All rights reserved.

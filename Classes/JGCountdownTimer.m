@@ -1,6 +1,6 @@
 //
 //  JGCountdownTimer.m
-//  MeetingTimer
+//  SpeechTimer
 //
 //  Created by John Gallagher on 03/01/2012.
 //  Copyright 2012 Synaptic Mishap. All rights reserved.
@@ -9,6 +9,8 @@
 #import "JGCountdownTimer.h"
 
 @implementation JGCountdownTimer
+
+@synthesize timerEndDate;
 
 -(void)initDelegate:(id <JGCountdownTimerDelegate>)delegate_ {
     if (![delegate_ conformsToProtocol:@protocol(JGCountdownTimerDelegate)]) {
@@ -22,13 +24,13 @@
     self = [super init];
 
     [self initDelegate:delegate_];
-    timeRemaining = (NSTimeInterval) durationValue;
+    [self setTimerEndDate:[NSDate dateWithTimeIntervalSinceNow:durationValue]];
 
     return self;
 }
 
 -(void)sendTimeRemainingToDelegate {
-    [_delegate timeRemainingDidChangeTo:timeRemaining];
+    [_delegate timeRemainingDidChangeTo:round([[self timerEndDate] timeIntervalSinceNow])];
 }
 
 +(JGCountdownTimer *)timerWithDurationValue:(NSUInteger)durationValue delegate:(id <JGCountdownTimerDelegate>)delegate_ {
@@ -47,9 +49,12 @@
 
 
 -(void)timerDidCountDownByOneSecond:(NSTimer *)timer_ {
-    timeRemaining--; // Countdown
     [self sendTimeRemainingToDelegate];
 }
 
+-(void)dealloc {
+    [timerEndDate release];
+    [super dealloc];
+}
 
 @end

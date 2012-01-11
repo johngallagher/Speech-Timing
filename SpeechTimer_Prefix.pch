@@ -1,5 +1,5 @@
 //
-// Prefix header for all source files of the 'MeetingTimer' target in the 'MeetingTimer' project
+// Prefix header for all source files of the 'SpeechTimer' target in the 'SpeechTimer' project
 //
 
 #import <Availability.h>

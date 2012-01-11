@@ -1,6 +1,6 @@
 //
 //  SpeechTimerAppDelegate.m
-//  MeetingTimer
+//  SpeechTimer
 //
 //  Created by John Gallagher on 17/12/2011.
 //  Copyright 2011 Synaptic Mishap. All rights reserved.
@@ -125,7 +125,7 @@
     if (managedObjectModel_ != nil) {
         return managedObjectModel_;
     }
-    NSString *modelPath = [[NSBundle mainBundle] pathForResource:@"MeetingTimer" ofType:@"momd"];
+    NSString *modelPath = [[NSBundle mainBundle] pathForResource:@"SpeechTimer" ofType:@"momd"];
     NSURL    *modelURL  = [NSURL fileURLWithPath:modelPath];
     managedObjectModel_ = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
     return managedObjectModel_;
@@ -142,7 +142,7 @@
         return persistentStoreCoordinator_;
     }
 
-    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"MeetingTimer.sqlite"];
+    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"SpeechTimer.sqlite"];
 
     NSError *error = nil;
     persistentStoreCoordinator_ = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
