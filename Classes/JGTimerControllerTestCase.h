@@ -15,9 +15,8 @@
 #import <SenTestingKit/SenTestingKit.h>
 #import <UIKit/UIKit.h>
 #import <OCMock/OCMock.h>
-//#import "application_headers" as required
-
 
 @interface JGTimerControllerTestCase : SenTestCase {
+    id mockDelegate;
 }
 @end

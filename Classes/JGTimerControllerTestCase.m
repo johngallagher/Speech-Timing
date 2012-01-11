@@ -8,16 +8,15 @@
 
 #import "JGTimerControllerTestCase.h"
 #import "JGTimerController.h"
-//#import <OCMock/OCMock.h>
 #import "JGTimerControllerDelegate.h"
-#import "OCMockObject.h"
-#import "OCMArg.h"
 
 @implementation JGTimerControllerTestCase
 
--(void)testGivenThreeSecondDurationAtHalfDurationShouldNotCallAnyCard {
-    id mockDelegate = [OCMockObject mockForProtocol:@protocol(JGTimerControllerDelegate)];
+-(void)setUp {
+    mockDelegate = [OCMockObject mockForProtocol:@protocol(JGTimerControllerDelegate)];
+}
 
+-(void)testGivenThreeSecondDurationAtHalfDurationShouldNotCallAnyCard {
     JGTimerController *timer = [JGTimerController timerWithDurationValue:3 delegate:mockDelegate];
     [timer startTimer];
 
@@ -27,7 +26,6 @@
 }
 
 -(void)testGivenThreeSecondDurationAfterHalfDurationShouldHaveCalledGreenCard {
-    id mockDelegate = [OCMockObject mockForProtocol:@protocol(JGTimerControllerDelegate)];
     [[mockDelegate expect] showGreenCard];
 
     JGTimerController *timer = [JGTimerController timerWithDurationValue:3 delegate:mockDelegate];
@@ -39,7 +37,6 @@
 }
 
 -(void)testGivenThreeSecondDurationAfterThreeQuartersOfDurationShouldHaveCalledGreenThenYellowCard {
-    id mockDelegate = [OCMockObject mockForProtocol:@protocol(JGTimerControllerDelegate)];
     [[mockDelegate expect] showGreenCard];
     [[mockDelegate expect] showYellowCard];
 
@@ -52,7 +49,6 @@
 }
 
 -(void)testGivenThreeSecondDurationAfterThreeSecondShouldHaveCalledGreenThenYellowThenRedCard {
-    id mockDelegate = [OCMockObject mockForProtocol:@protocol(JGTimerControllerDelegate)];
     [[mockDelegate expect] showGreenCard];
     [[mockDelegate expect] showYellowCard];
     [[mockDelegate expect] showRedCard];
@@ -68,7 +64,7 @@
 
 // We have no expectations - we know we've checked for confirmity with protocol if this doesn't crash.
 -(void)testIfDelegateDoesntRespondToProtocolShouldNotCrash {
-    id mockDelegate = [OCMockObject mockForClass:[NSString class]];
+    mockDelegate = [OCMockObject mockForClass:[NSString class]];
     [[mockDelegate expect] conformsToProtocol:[OCMArg any]];
 
     JGTimerController *timer = [JGTimerController timerWithDurationValue:1 delegate:mockDelegate];
@@ -79,7 +75,6 @@
 }
 
 -(void)testGivenZeroDurationShouldImmediatelyCallshowRedCard {
-    id mockDelegate = [OCMockObject mockForProtocol:@protocol(JGTimerControllerDelegate)];
     [[mockDelegate expect] showRedCard];
 
     JGTimerController *timer = [JGTimerController timerWithDurationValue:0 delegate:mockDelegate];
@@ -87,5 +82,14 @@
 
     [mockDelegate verify];
 }
+
+//-(void)testGivenFireDateOfNowShouldImmediatelyShowRedCard {
+//    [[mockDelegate expect] showRedCard];
+//
+//    JGTimerController *timer = [JGTimerController timerWithDurationValue:0 delegate:mockDelegate];
+//    [timer startTimer];
+//
+//    [mockDelegate verify];
+//}
 
 @end
