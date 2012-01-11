@@ -17,14 +17,7 @@
     return [[self currentAlertName] stringByReplacingOccurrencesOfString:@" " withString:@""];
 }
 
--(IBAction)startTimer:(id)sender {
-    NSInteger selectedRow = [timerDurationPickerView selectedRowInComponent:0];
-    if (selectedRow < 0)
-        return;
-
-    NSUInteger durationOfTimer = (NSUInteger) ([[pickerDurations objectAtIndex:(NSUInteger) selectedRow] intValue] *
-                                               60);
-
+-(void)startTimerWithDuration:(NSUInteger)durationOfTimer {
     JGTimerRunningViewController *runningViewController = [[JGTimerRunningViewController alloc] initWithNibName:@"JGTimerRunningViewController" bundle:nil];
     if ([[runningViewController view] isKindOfClass:[JGDrawingTestView class]]) {
         [(JGDrawingTestView *) [runningViewController view] setAnimationDuration:durationOfTimer];
@@ -39,6 +32,18 @@
     [[self countdownTimer] startTimer];
 
     [runningViewController release];
+}
+
+-(int)timerDurationFromPickerRowSelected:(NSInteger)selectedRow {
+    return ([[pickerDurations objectAtIndex:(NSUInteger) selectedRow] intValue] * 60);
+}
+
+-(IBAction)startTimer:(id)sender {
+    NSInteger selectedRow = [timerDurationPickerView selectedRowInComponent:0];
+    if (selectedRow < 0)
+        return;
+
+    [self startTimerWithDuration:[self timerDurationFromPickerRowSelected:selectedRow]];
 }
 
 #pragma mark -

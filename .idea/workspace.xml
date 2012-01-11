@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dcf27bc1-0f3a-4126-a516-d7d4567fa020" name="Default" comment="Replaced all instances of Meeting with Speech.  Also changed the timer controller so it counts relative to the current time. Tests pass.">
+    <list default="true" id="dcf27bc1-0f3a-4126-a516-d7d4567fa020" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/JGCountdownTimer.m" afterPath="$PROJECT_DIR$/Classes/JGCountdownTimer.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/JGTimerConfigurationViewController.m" afterPath="$PROJECT_DIR$/Classes/JGTimerConfigurationViewController.m" />
     </list>
     <list id="09881062-60ce-4b51-b613-9e69bf443e0c" name="Rejected commit: Default" comment="Added playing of sound on the red card appearing. Sound doesn't get played in simulator so we need to check on device to get this working." />
     <ignored path="MeetingTimer.iws" />
@@ -27,37 +27,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="JGCountdownTimerTestCase.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Classes/JGCountdownTimerTestCase.m">
+      <file leaf-file-name="JGTimerController.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Classes/JGTimerController.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="23" selection-start="1748" selection-end="1748" vertical-scroll-proportion="0.0">
+            <state line="4" column="11" selection-start="84" selection-end="84" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JGCountdownTimer.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Classes/JGCountdownTimer.h">
+      <file leaf-file-name="JGTimerConfigurationViewController.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Classes/JGTimerConfigurationViewController.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="23" selection-start="220" selection-end="220" vertical-scroll-proportion="0.0">
+            <state line="27" column="43" selection-start="1199" selection-end="1199" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JGCountdownTimerDelegate.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Classes/JGCountdownTimerDelegate.h">
+      <file leaf-file-name="JGTimerController.m" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Classes/JGTimerController.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="7" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0">
+            <state line="53" column="73" selection-start="1988" selection-end="1988" vertical-scroll-proportion="0.5790754">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JGTimerRunningViewController.m" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="JGTimerRunningViewController.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Classes/JGTimerRunningViewController.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="7" selection-start="2561" selection-end="2561" vertical-scroll-proportion="0.33170733">
+            <state line="12" column="67" selection-start="312" selection-end="313" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -98,11 +98,11 @@
         <option value="$PROJECT_DIR$/Classes/MeetingTimerAppDelegate.m" />
         <option value="$PROJECT_DIR$/Classes/JGTimerRunningViewController.m" />
         <option value="$PROJECT_DIR$/Classes/JGModalAlertViewController.m" />
-        <option value="$PROJECT_DIR$/Classes/JGTimerConfigurationViewController.m" />
         <option value="$PROJECT_DIR$/Classes/SpeechTimerAppDelegate.m" />
         <option value="$PROJECT_DIR$/Classes/JGTimerDurationCalculatorTestCase.m" />
         <option value="$PROJECT_DIR$/Classes/JGCountdownTimer.h" />
         <option value="$PROJECT_DIR$/Classes/JGCountdownTimer.m" />
+        <option value="$PROJECT_DIR$/Classes/JGTimerConfigurationViewController.m" />
       </list>
     </option>
   </component>
@@ -237,6 +237,24 @@
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="ViewControllers" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SpeechTimer" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Classes" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="TimerController" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
             </PATH_ELEMENT>
@@ -276,7 +294,7 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="preferences.sourceCode.Objective-C" />
+    <property name="options.lastSelected" value="preferences.sourceCode.General" />
     <property name="FullScreen" value="false" />
     <property name="OBJC.PRESERVED_TARGET_SELECTION" value="" />
     <property name="GoToClass.includeJavaFiles" value="false" />
@@ -383,13 +401,13 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34615386" sideWeight="0.49403343" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28254437" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32840237" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32840237" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32840237" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2211615" sideWeight="0.21745563" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32140017" sideWeight="0.67011833" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32140017" sideWeight="0.67159766" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5325444" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2211615" sideWeight="0.21745563" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34649912" sideWeight="0.49960223" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32988167" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988167" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988167" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="100" y="122" width="1080" height="574" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -433,7 +451,7 @@
     <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Replaced all instances of Meeting with Speech.  Also changed the timer controller so it counts relative to the current time. Tests pass." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored to be more readable." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -453,16 +471,12 @@
     <MESSAGE value="Done a load of cleanup and we now show the correct alarm and it changes correctly." />
     <MESSAGE value="Removed the Alarm from the list because it sounds crackly towards the end." />
     <MESSAGE value="Replaced all instances of Meeting with Speech.  Also changed the timer controller so it counts relative to the current time. Tests pass." />
+    <MESSAGE value="Refactored to be more readable." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIViewController.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="167" column="8" selection-start="8105" selection-end="8105" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Classes/JGRingingSettingDelegate.h">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="7" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0">
@@ -473,13 +487,6 @@
     <entry file="file://$PROJECT_DIR$/Classes/JGTimerRunningViewController.h">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="4" selection-start="328" selection-end="328" vertical-scroll-proportion="0.13238771" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/JGTimerConfigurationViewController.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Classes/JGModalAlertViewController.h">
@@ -524,13 +531,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/JGTimerController.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Classes/JGCountdownTimerTestCase.m">
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="23" selection-start="1748" selection-end="1748" vertical-scroll-proportion="0.0">
@@ -561,7 +561,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Classes/JGTimerRunningViewController.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="7" selection-start="2561" selection-end="2561" vertical-scroll-proportion="0.33170733">
+        <state line="12" column="67" selection-start="312" selection-end="313" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/JGTimerConfigurationViewController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="43" selection-start="1199" selection-end="1199" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/JGTimerController.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="11" selection-start="84" selection-end="84" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/JGTimerController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="73" selection-start="1988" selection-end="1988" vertical-scroll-proportion="0.5790754">
           <folding />
         </state>
       </provider>
