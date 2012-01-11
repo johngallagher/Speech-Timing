@@ -23,6 +23,7 @@
 
     JGTimerConfigurationViewController *rootViewController = (JGTimerConfigurationViewController *) [navigationController topViewController];
     rootViewController.managedObjectContext = self.managedObjectContext;
+    NSLog(@"Started");
 }
 
 
@@ -52,7 +53,7 @@
      If your application supports background execution, called instead of applicationWillTerminate: when the user quits.
      */
     [self saveContext];
-//    NSLog(@"Did enter background");
+    NSLog(@"Did enter background");
 }
 
 
@@ -60,7 +61,7 @@
     /*
      Called as part of  transition from the background to the inactive state: here you can undo many of the changes made on entering the background.
      */
-//    NSLog(@"Did enter foreground");
+    NSLog(@"Did enter foreground");
 }
 
 
@@ -68,7 +69,7 @@
     /*
      Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
      */
-//    NSLog(@"Did become active");
+    NSLog(@"Did become active");
 }
 
 
@@ -77,6 +78,7 @@
  */
 -(void)applicationWillTerminate:(UIApplication *)application {
     [self saveContext];
+    NSLog(@"Did terminate");
 }
 
 
