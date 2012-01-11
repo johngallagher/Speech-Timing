@@ -20,22 +20,39 @@
     _delegate = delegate_;
 }
 
+-(NSDate *)timerEndDateFromDuration:(NSUInteger)durationValue {
+    return [NSDate dateWithTimeIntervalSinceNow:durationValue];
+}
+
 -(JGCountdownTimer *)initWithDurationValue:(NSUInteger)durationValue delegate:(id <JGCountdownTimerDelegate>)delegate_ {
     self = [super init];
 
     [self initDelegate:delegate_];
-    [self setTimerEndDate:[NSDate dateWithTimeIntervalSinceNow:durationValue]];
+    [self setTimerEndDate:[self timerEndDateFromDuration:durationValue]];
 
     return self;
 }
 
+-(NSTimeInterval)timeRemaining {
+    return round([[self timerEndDate] timeIntervalSinceNow]);
+}
+
 -(void)sendTimeRemainingToDelegate {
-    [_delegate timeRemainingDidChangeTo:round([[self timerEndDate] timeIntervalSinceNow])];
+    [_delegate timeRemainingDidChangeTo:[self timeRemaining]];
 }
 
 +(JGCountdownTimer *)timerWithDurationValue:(NSUInteger)durationValue delegate:(id <JGCountdownTimerDelegate>)delegate_ {
     JGCountdownTimer *instance = [[[JGCountdownTimer alloc] initWithDurationValue:durationValue delegate:delegate_] autorelease];
     return instance;
+}
+
+-(void)timerDidCountDownByOneSecond:(NSTimer *)timer_ {
+    [self sendTimeRemainingToDelegate];
+}
+
+-(void)dealloc {
+    [timerEndDate release];
+    [super dealloc];
 }
 
 -(void)startTimer {
@@ -45,16 +62,6 @@
 
 -(void)stopTimer {
     [countdownTimer invalidate];
-}
-
-
--(void)timerDidCountDownByOneSecond:(NSTimer *)timer_ {
-    [self sendTimeRemainingToDelegate];
-}
-
--(void)dealloc {
-    [timerEndDate release];
-    [super dealloc];
 }
 
 @end
