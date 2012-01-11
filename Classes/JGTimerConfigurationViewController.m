@@ -18,19 +18,9 @@
 }
 
 -(void)startTimerWithDuration:(NSUInteger)durationOfTimer {
-    JGTimerRunningViewController *runningViewController = [[JGTimerRunningViewController alloc] initWithNibName:@"JGTimerRunningViewController" bundle:nil];
-    if ([[runningViewController view] isKindOfClass:[JGDrawingTestView class]]) {
-        [(JGDrawingTestView *) [runningViewController view] setAnimationDuration:durationOfTimer];
-    }
-    [runningViewController loadAlertSoundWithFilename:[self currentAlertFilename]];
+    // TODO Calculate fire date from duration
+    JGTimerRunningViewController *runningViewController = [JGTimerRunningViewController viewControllerWithFireDate:nil];
     [[self navigationController] pushViewController:runningViewController animated:YES];
-
-    [self setTimerController:[JGTimerController timerWithDurationValue:durationOfTimer delegate:runningViewController]];
-    [[self timerController] startTimer];
-
-    [self setCountdownTimer:[JGCountdownTimer timerWithDurationValue:durationOfTimer delegate:runningViewController]];
-    [[self countdownTimer] startTimer];
-
     [runningViewController release];
 }
 

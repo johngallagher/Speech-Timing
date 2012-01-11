@@ -3,11 +3,21 @@
 #import "JGTimerControllerDelegate.h"
 #import "JGCountdownTimerDelegate.h"
 #import <AVFoundation/AVFoundation.h>
+#import "JGCountdownTimer.h"
+#import "JGTimerController.h"
 
 @interface JGTimerRunningViewController : UIViewController <JGTimerControllerDelegate, JGCountdownTimerDelegate> {
     IBOutlet UILabel *timeLabel;
     AVAudioPlayer    *audioPlayer;
+    JGTimerController     *timerController;
+    JGCountdownTimer      *countdownTimer;
 }
+
+@property(nonatomic, retain) JGCountdownTimer *countdownTimer;
+@property(nonatomic, retain) JGTimerController *timerController;
+
+
++(JGTimerRunningViewController *)viewControllerWithFireDate:(NSDate *)fireDate;
 
 -(void)loadAlertSoundWithFilename:(NSString *)alertSoundFilename_;
 

@@ -18,16 +18,12 @@
     IBOutlet UITableView  *currentAlertTableView;
 
     NSArray               *pickerDurations;
-    JGTimerController     *timerController;
-    JGCountdownTimer      *countdownTimer;
     NSString              *currentAlertName;
 
 @private
     NSManagedObjectContext *managedObjectContext_;
 }
 
-@property(nonatomic, retain) JGCountdownTimer       *countdownTimer;
-@property(nonatomic, retain) JGTimerController      *timerController;
 @property(nonatomic, retain) NSArray                *pickerDurations;
 @property(nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 @property(nonatomic, retain) NSString               *currentAlertName;

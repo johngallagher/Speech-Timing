@@ -1,14 +1,39 @@
 #import "JGTimerRunningViewController.h"
 #import "JGTimeFormatter.h"
 #import "JGDrawingTestView.h"
+#import "JGTimerController.h"
+#import "JGCountdownTimer.h"
 
 @interface JGTimerRunningViewController ()
+-(void)initViewControllerWithFireDate:(NSDate *)fireDate;
+
 -(void)setTimeRemainingTo:(NSTimeInterval)time_;
 
 @end
 
 @implementation JGTimerRunningViewController
 
+@synthesize countdownTimer;
+@synthesize timerController;
+
+
++(JGTimerRunningViewController *)viewControllerWithFireDate:(NSDate *)fireDate {
+    JGTimerRunningViewController *runningViewController = [[[JGTimerRunningViewController alloc] initWithNibName:@"JGTimerRunningViewController" bundle:nil] autorelease];
+    [runningViewController initViewControllerWithFireDate:fireDate];
+    return runningViewController;
+}
+
+-(void)initViewControllerWithFireDate:(NSDate *)fireDate {
+    
+    [(JGDrawingTestView *) [self view] setAnimationDuration:durationOfTimer];
+    [self loadAlertSoundWithFilename:[self currentAlertFilename]];
+
+    [self setTimerController:[JGTimerController timerWithDurationValue:durationOfTimer delegate:self]];
+    [[self timerController] startTimer];
+
+    [self setCountdownTimer:[JGCountdownTimer timerWithDurationValue:durationOfTimer delegate:self]];
+    [[self countdownTimer] startTimer];
+}
 
 -(void)loadAlertSoundWithFilename:(NSString *)alertSoundFilename_ {
     // Get the main bundle for the app
@@ -98,6 +123,8 @@
     [audioPlayer stop];
     [audioPlayer release];
     [timeLabel release];
+    [countdownTimer release];
+    [timerController release];
     [super dealloc];
 }
 
