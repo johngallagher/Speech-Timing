@@ -16,7 +16,7 @@
 		2899E5600DE3E45000AC0155 /* JGTimerConfigurationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E55F0DE3E45000AC0155 /* JGTimerConfigurationViewController.xib */; };
 		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
 		28C286E10D94DF7D0034E888 /* JGTimerConfigurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */; };
-		28D3F202112F7DC200FD0661 /* MeetingTimer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28D3F201112F7DC200FD0661 /* MeetingTimer.xcdatamodeld */; };
+		28D3F202112F7DC200FD0661 /* SpeechTimer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28D3F201112F7DC200FD0661 /* SpeechTimer.xcdatamodeld */; };
 		520F73EB14BA46F1003FEC46 /* DigitalAlarm1.aif in Resources */ = {isa = PBXBuildFile; fileRef = 520F73E514BA46F1003FEC46 /* DigitalAlarm1.aif */; };
 		520F73EC14BA46F1003FEC46 /* DigitalAlarm2.aif in Resources */ = {isa = PBXBuildFile; fileRef = 520F73E614BA46F1003FEC46 /* DigitalAlarm2.aif */; };
 		520F73ED14BA46F1003FEC46 /* TwoToneBell.aif in Resources */ = {isa = PBXBuildFile; fileRef = 520F73E714BA46F1003FEC46 /* TwoToneBell.aif */; };
@@ -103,7 +103,7 @@
 		1D3623250D0F684500981E51 /* SpeechTimerAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeechTimerAppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* SpeechTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeechTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		28860B760F44E54D00985440 /* MeetingTimer.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = MeetingTimer.xcdatamodel; sourceTree = "<group>"; };
+		28860B760F44E54D00985440 /* SpeechTimer.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; path = SpeechTimer.xcdatamodel; sourceTree = "<group>"; };
 		28860BE40F44EE6400985440 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2899E55F0DE3E45000AC0155 /* JGTimerConfigurationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JGTimerConfigurationViewController.xib; sourceTree = "<group>"; };
@@ -289,7 +289,7 @@
 				5242CBF614B3FD1F00C876C7 /* Images */,
 				5242CBF714B3FD2500C876C7 /* Nibs */,
 				8D1107310486CEB800E47090 /* SpeechTimer-Info.plist */,
-				28D3F201112F7DC200FD0661 /* MeetingTimer.xcdatamodeld */,
+				28D3F201112F7DC200FD0661 /* SpeechTimer.xcdatamodeld */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -625,7 +625,7 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* SpeechTimerAppDelegate.m in Sources */,
 				28C286E10D94DF7D0034E888 /* JGTimerConfigurationViewController.m in Sources */,
-				28D3F202112F7DC200FD0661 /* MeetingTimer.xcdatamodeld in Sources */,
+				28D3F202112F7DC200FD0661 /* SpeechTimer.xcdatamodeld in Sources */,
 				52591F35149E453E00DEA711 /* JGTimerController.m in Sources */,
 				52EB417314B1218D00308C95 /* JGTimerDurationCalculator.m in Sources */,
 				52BBC08914B34FC900CFE655 /* JGCountdownTimer.m in Sources */,
@@ -846,13 +846,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		28D3F201112F7DC200FD0661 /* MeetingTimer.xcdatamodeld */ = {
+		28D3F201112F7DC200FD0661 /* SpeechTimer.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				28860B760F44E54D00985440 /* MeetingTimer.xcdatamodel */,
+				28860B760F44E54D00985440 /* SpeechTimer.xcdatamodel */,
 			);
-			currentVersion = 28860B760F44E54D00985440 /* MeetingTimer.xcdatamodel */;
-			path = MeetingTimer.xcdatamodeld;
+			currentVersion = 28860B760F44E54D00985440 /* SpeechTimer.xcdatamodel */;
+			path = SpeechTimer.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

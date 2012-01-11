@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dcf27bc1-0f3a-4126-a516-d7d4567fa020" name="Default" comment="">
+    <list default="true" id="dcf27bc1-0f3a-4126-a516-d7d4567fa020" name="Default" comment="Refactored timer starting">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/JGTimerConfigurationViewController.m" afterPath="$PROJECT_DIR$/Classes/JGTimerConfigurationViewController.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/SpeechTimerAppDelegate.m" afterPath="$PROJECT_DIR$/Classes/SpeechTimerAppDelegate.m" />
     </list>
     <list id="09881062-60ce-4b51-b613-9e69bf443e0c" name="Rejected commit: Default" comment="Added playing of sound on the red card appearing. Sound doesn't get played in simulator so we need to check on device to get this working." />
     <ignored path="MeetingTimer.iws" />
@@ -36,37 +36,19 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="SpeechTimerAppDelegate.m" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Classes/SpeechTimerAppDelegate.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="80" column="0" selection-start="2816" selection-end="2816" vertical-scroll-proportion="0.29787233">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="JGTimerConfigurationViewController.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Classes/JGTimerConfigurationViewController.m">
           <provider selected="true" editor-type-id="text-editor">
             <state line="27" column="43" selection-start="1199" selection-end="1199" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JGTimerController.m" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Classes/JGTimerController.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="73" selection-start="1988" selection-end="1988" vertical-scroll-proportion="0.5790754">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JGTimerRunningViewController.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Classes/JGTimerRunningViewController.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="67" selection-start="312" selection-end="313" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JGCountdownTimer.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Classes/JGCountdownTimer.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="32" selection-start="1036" selection-end="1036" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -98,11 +80,11 @@
         <option value="$PROJECT_DIR$/Classes/MeetingTimerAppDelegate.m" />
         <option value="$PROJECT_DIR$/Classes/JGTimerRunningViewController.m" />
         <option value="$PROJECT_DIR$/Classes/JGModalAlertViewController.m" />
-        <option value="$PROJECT_DIR$/Classes/SpeechTimerAppDelegate.m" />
         <option value="$PROJECT_DIR$/Classes/JGTimerDurationCalculatorTestCase.m" />
         <option value="$PROJECT_DIR$/Classes/JGCountdownTimer.h" />
         <option value="$PROJECT_DIR$/Classes/JGCountdownTimer.m" />
         <option value="$PROJECT_DIR$/Classes/JGTimerConfigurationViewController.m" />
+        <option value="$PROJECT_DIR$/Classes/SpeechTimerAppDelegate.m" />
       </list>
     </option>
   </component>
@@ -151,6 +133,16 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="DirectoryView.Xcode">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SpeechTimer" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeDirectoryView$1$1" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -161,6 +153,20 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="SpeechTimer" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SpeechTimer" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -279,29 +285,19 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="DirectoryView.Xcode">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SpeechTimer" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeDirectoryView$1$1" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="preferences.sourceCode.General" />
+    <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
     <property name="OBJC.PRESERVED_TARGET_SELECTION" value="" />
-    <property name="GoToClass.includeJavaFiles" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
   </component>
-  <component name="RunManager" selected="OCUnit.SpeechTimer - Tests">
+  <component name="RunManager" selected="Application.SpeechTimer - Debug">
     <configuration default="false" name="SpeechTimer - Debug" type="AppleRunConfiguration" factoryName="Application" temporary="true" PROJECT_NAME="SpeechTimer" TARGET_NAME="SpeechTimer" CONFIG_NAME="Debug" SDK_NAME="iphonesimulator5.0" ARCH_ID="Standard" DEVICE="IPHONE" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
       <envs />
       <RunnerSettings RunnerId="AppRunner" />
@@ -401,9 +397,8 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34615386" sideWeight="0.49403343" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28254437" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32840237" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32840237" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2211615" sideWeight="0.21745563" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32140017" sideWeight="0.67159766" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32140017" sideWeight="0.67011833" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5325444" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2211615" sideWeight="0.21745563" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34649912" sideWeight="0.49960223" order="7" side_tool="true" content_ui="tabs" />
@@ -413,6 +408,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32840237" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39940828" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -451,7 +447,7 @@
     <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored to be more readable." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored timer starting" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -472,6 +468,7 @@
     <MESSAGE value="Removed the Alarm from the list because it sounds crackly towards the end." />
     <MESSAGE value="Replaced all instances of Meeting with Speech.  Also changed the timer controller so it counts relative to the current time. Tests pass." />
     <MESSAGE value="Refactored to be more readable." />
+    <MESSAGE value="Refactored timer starting" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -498,23 +495,12 @@
     </entry>
     <entry file="file://$USER_HOME$/Library/Caches/appCode10/DerivedData/SpeechTimer-51124f39/Build/Products/Debug-iphonesimulator/SpeechTimerTests.octest/License.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="34" selection-start="358" selection-end="358" vertical-scroll-proportion="0.2038835">
-          <folding />
-        </state>
+        <state line="6" column="34" selection-start="358" selection-end="358" vertical-scroll-proportion="0.2038835" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Library/Caches/appCode10/DerivedData/SpeechTimer-51124f39/Build/Products/Debug-iphonesimulator/SpeechTimerTests.octest/Info.plist">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/SpeechTimerAppDelegate.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="58" selection-start="2674" selection-end="2674" vertical-scroll-proportion="0.52955085">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Classes/JGModalAlertViewController.m">
@@ -552,16 +538,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/JGCountdownTimer.m">
+    <entry file="file://$PROJECT_DIR$/Classes/JGTimerController.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="32" selection-start="1036" selection-end="1036" vertical-scroll-proportion="0.0">
+        <state line="49" column="0" selection-start="1791" selection-end="1791" vertical-scroll-proportion="0.4428224">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Classes/JGTimerRunningViewController.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="67" selection-start="312" selection-end="313" vertical-scroll-proportion="0.0">
+        <state line="12" column="67" selection-start="312" selection-end="313" vertical-scroll-proportion="0.34063262">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/JGCountdownTimer.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="32" selection-start="1036" selection-end="1036" vertical-scroll-proportion="0.40875912">
           <folding />
         </state>
       </provider>
@@ -580,9 +573,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/JGTimerController.m">
+    <entry file="file://$PROJECT_DIR$/Classes/SpeechTimerAppDelegate.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="73" selection-start="1988" selection-end="1988" vertical-scroll-proportion="0.5790754">
+        <state line="80" column="0" selection-start="2816" selection-end="2816" vertical-scroll-proportion="0.29787233">
           <folding />
         </state>
       </provider>
