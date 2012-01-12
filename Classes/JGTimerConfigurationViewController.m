@@ -15,11 +15,6 @@
     return [[self currentAlertName] stringByReplacingOccurrencesOfString:@" " withString:@""];
 }
 
--(NSString *)currentAlertName {
-    return [self currentAlertName];
-}
-
-
 -(void)startTimerWithDuration:(NSUInteger)durationOfTimer {
     // TODO Calculate fire date from duration
     NSDate *fireDate = [[NSDate date] dateByAddingTimeInterval:durationOfTimer];
@@ -32,7 +27,7 @@
 }
 
 -(NSUInteger)timerDurationFromPickerRowSelected:(NSInteger)selectedRow {
-    return [[pickerDurations objectAtIndex:(NSUInteger)selectedRow] unsignedIntegerValue] * 60;
+    return (NSUInteger)[[pickerDurations objectAtIndex:(NSUInteger)selectedRow] intValue] * 60;
 }
 
 -(IBAction)startTimer:(id)sender {
