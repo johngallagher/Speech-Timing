@@ -12,10 +12,7 @@
     calculator = [JGCardTimesCalculator calculatorWithStartTime:startTime andFireTime:[startTime dateByAddingTimeInterval:duration]];
 }
 
-
-
-// 0 minutes
--(void)testGivenDurationBelow3ShouldReturn0ForAllCards {
+-(void)testGivenDuration0ShouldReturn0ForAllCards {
     [self setUpCalculatorStartingNowWithDuration:0];
 
     JGCardTimings *expectedTimings = [JGCardTimings cardTimingsWithGreenTime:[NSDate date] yellowTime:[NSDate date] redTime:[NSDate date]];
@@ -24,22 +21,17 @@
     STAssertEqualObjects(expectedTimings, actualTimings, @"Actual timings are %@", actualTimings);
 }
 
-//-(void)testGivenDuration0ShouldReturn0ForAllCards {
-//    calculator = [JGCardTimesCalculator calculatorWithStartTime:[NSDate date] andFireTime:[NSDate date]];
-//
-//    STAssertEquals([calculator greenCardTime], (NSTimeInterval) 0, nil);
-//    STAssertEquals([calculator yellowCardTime], (NSTimeInterval) 0, nil);
-//    STAssertEquals([calculator redCardTime], (NSTimeInterval) 0, nil);
-//}
-//
-////Up to 4 minutes
-//-(void)testGivenDurationInRangeBelow4MinutesTimesShouldBeIncrementsOfQuarter {
-//    [self setUpCalculatorStartingNowWithDuration:3];
-//
-//    STAssertEquals([calculator greenCardTime], (NSTimeInterval) 1.5, nil);
-//    STAssertEquals([calculator yellowCardTime], (NSTimeInterval) 2.25, nil);
-//    STAssertEquals([calculator redCardTime], (NSTimeInterval) 3, nil);
-//}
+-(void)testGivenDurationInRangeBelow4MinutesTimesShouldBeIncrementsOfQuarter {
+    NSLog(@"Time is %@", [NSDate date]);
+    [self setUpCalculatorStartingNowWithDuration:40];
+
+    JGCardTimings *expectedTimings = [JGCardTimings cardTimingsWithGreenTime:[NSDate dateWithTimeIntervalSinceNow:20]
+                                                                  yellowTime:[NSDate dateWithTimeIntervalSinceNow:30]
+                                                                     redTime:[NSDate dateWithTimeIntervalSinceNow:40]];
+    JGCardTimings *actualTimings = [calculator cardTimings];
+
+    STAssertEqualObjects(actualTimings, expectedTimings, nil);
+}
 //
 //-(void)testGivenDurationBoundaryBelowFourMinutesTimesShouldBeIncrementsOfQuarter {
 //    [self setUpCalculatorStartingNowWithDuration:239];

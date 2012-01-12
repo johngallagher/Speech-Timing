@@ -34,7 +34,7 @@
 }
 
 -(NSString *)description {
-    return [NSString stringWithFormat:@"G %@, Y %@, R %@", [self greenCardTime], [self yellowCardTime], [self redCardTime]];
+    return [NSString stringWithFormat:@"\nG %@\nY %@\nR %@\n", [self greenCardTime], [self yellowCardTime], [self redCardTime]];
 }
 
 
