@@ -22,7 +22,6 @@
 }
 
 -(void)testGivenDurationInRangeBelow4MinutesTimesShouldBeIncrementsOfQuarter {
-    NSLog(@"Time is %@", [NSDate date]);
     [self setUpCalculatorStartingNowWithDuration:40];
 
     JGCardTimings *expectedTimings = [JGCardTimings cardTimingsWithGreenTime:[NSDate dateWithTimeIntervalSinceNow:20]

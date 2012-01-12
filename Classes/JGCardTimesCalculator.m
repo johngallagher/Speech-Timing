@@ -50,7 +50,7 @@
 -(JGCardTimesCalculator *)initWithStartTime:(NSDate *)startTime_ andFireTime:(NSDate *)fireTime_ {
     self = [super init];
     [self setStartTime:startTime_];
-    [self initTimesFromDuration:[startTime_ timeIntervalSinceDate:fireTime_]];
+    [self initTimesFromDuration:[fireTime_ timeIntervalSinceDate:startTime_]];
     return self;
 }
 
