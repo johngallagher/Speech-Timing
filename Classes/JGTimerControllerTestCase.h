@@ -22,4 +22,6 @@
     id mockDelegate;
     JGTimerController *timer;
 }
+@property(nonatomic, retain) id mockDelegate;
+
 @end

@@ -4,17 +4,11 @@
     <list id="dcf27bc1-0f3a-4126-a516-d7d4567fa020" name="Default" comment="Duration changed to time interval. This breaks" />
     <list id="09881062-60ce-4b51-b613-9e69bf443e0c" name="Rejected commit: Default" comment="Added playing of sound on the red card appearing. Sound doesn't get played in simulator so we need to check on device to get this working." />
     <list id="80879804-cb4f-4c78-b8e1-bd65721e23c3" name="New changelist" comment="" />
-    <list default="true" id="cfb3d852-0088-437e-a12c-d626d784fe35" name="Change to Fire Dates with Start times" comment="Issue was time interval with args the wrong way round. Also changed the time interval to much greater value - 40 so the test is clearer.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/JGCardTimes.h" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Classes/JGCardTimings.h" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Classes/JGCardTimings.m" afterPath="$PROJECT_DIR$/Classes/JGCardTimes.m" />
+    <list default="true" id="cfb3d852-0088-437e-a12c-d626d784fe35" name="Change to Fire Dates with Start times" comment="Only one test fails now - the one with the timer in the past.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/JGCardTimesCalculator.h" afterPath="$PROJECT_DIR$/Classes/JGCardTimesCalculator.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/JGCardTimesCalculator.m" afterPath="$PROJECT_DIR$/Classes/JGCardTimesCalculator.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/JGTimerController.m" afterPath="$PROJECT_DIR$/Classes/JGTimerController.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/JGTimerControllerTestCase.h" afterPath="$PROJECT_DIR$/Classes/JGTimerControllerTestCase.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/JGTimerControllerTestCase.m" afterPath="$PROJECT_DIR$/Classes/JGTimerControllerTestCase.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/JGTimerDurationCalculatorTestCase.m" afterPath="$PROJECT_DIR$/Classes/JGTimerDurationCalculatorTestCase.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SpeechTimer.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/SpeechTimer.xcodeproj/project.pbxproj" />
     </list>
     <ignored path="MeetingTimer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,46 +31,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="JGCardTimes.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Classes/JGCardTimes.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="16" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JGTimerController.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Classes/JGTimerController.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="425" selection-end="425" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JGTimerController.m" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="JGTimerController.m" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Classes/JGTimerController.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="7" selection-start="3098" selection-end="3098" vertical-scroll-proportion="0.0">
+            <state line="58" column="26" selection-start="2336" selection-end="2336" vertical-scroll-proportion="0.9391026">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JGTimerControllerTestCase.m" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="JGTimerControllerTestCase.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Classes/JGTimerControllerTestCase.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="4" selection-start="797" selection-end="797" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JGTimerControllerTestCase.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Classes/JGTimerControllerTestCase.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="103" column="0" selection-start="2834" selection-end="2999" vertical-scroll-proportion="0.9166667">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JGTimerDurationCalculatorTestCase.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Classes/JGTimerDurationCalculatorTestCase.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="1" selection-start="2148" selection-end="2148" vertical-scroll-proportion="0.0">
+            <state line="35" column="24" selection-start="1093" selection-end="1093" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -111,15 +87,15 @@
         <option value="$PROJECT_DIR$/Classes/JGCardTimes.m" />
         <option value="$PROJECT_DIR$/Classes/JGCardTimes.h" />
         <option value="$PROJECT_DIR$/Classes/JGTimerDurationCalculatorTestCase.m" />
-        <option value="$PROJECT_DIR$/Classes/JGTimerController.m" />
         <option value="$PROJECT_DIR$/Classes/JGTimerControllerTestCase.m" />
+        <option value="$PROJECT_DIR$/Classes/JGTimerController.m" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1280" />
-    <option name="height" value="774" />
+    <option name="height" value="998" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -357,30 +333,32 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
-  <component name="RunManager" selected="OCUnit.SpeechTimer - Tests">
-    <configuration default="false" name="SpeechTimer - Debug" type="AppleRunConfiguration" factoryName="Application" temporary="true" PROJECT_NAME="SpeechTimer" TARGET_NAME="SpeechTimer" CONFIG_NAME="Debug" SDK_NAME="iphonesimulator5.0" ARCH_ID="Standard" DEVICE="IPHONE" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
-      <envs />
-      <RunnerSettings RunnerId="AppRunner" />
-      <RunnerSettings RunnerId="InstrumentsRunner" />
-      <ConfigurationWrapper RunnerId="AppRunner" />
-      <ConfigurationWrapper RunnerId="InstrumentsRunner" />
-      <method>
-        <option name="com.jetbrains.cidr.execution.StopCurrentSessionBeforeRunTaskProvider$StopCurrentSessionBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="false" name="-[JGTimerDurationCalculatorTestCase testGivenDuration0ShouldReturn0ForAllCards]" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" PROJECT_NAME="SpeechTimer" TARGET_NAME="SpeechTimerTests" CONFIG_NAME="Debug" SDK_NAME="iphonesimulator5.0" ARCH_ID="Standard" DEVICE="IPHONE" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="JGTimerDurationCalculatorTestCase" TEST_METHOD="testGivenDuration0ShouldReturn0ForAllCards">
-      <envs />
-      <RunnerSettings RunnerId="AppRunner" />
-      <ConfigurationWrapper RunnerId="AppRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="-[JGTimerDurationCalculatorTestCase testGivenDurationInRangeBelow4MinutesTimesShouldBeIncrementsOfQuarter]" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" PROJECT_NAME="SpeechTimer" TARGET_NAME="SpeechTimerTests" CONFIG_NAME="Debug" SDK_NAME="iphonesimulator5.0" ARCH_ID="Standard" DEVICE="IPHONE" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="JGTimerDurationCalculatorTestCase" TEST_METHOD="testGivenDurationInRangeBelow4MinutesTimesShouldBeIncrementsOfQuarter">
-      <envs />
-      <RunnerSettings RunnerId="AppRunner" />
-      <ConfigurationWrapper RunnerId="AppRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="OCUnit.Test - JGTimerControllerTestCase">
     <configuration default="false" name="-[JGTimerDurationCalculatorTestCase testGivenDurationBoundaryBelowFourMinutesTimesShouldBeIncrementsOfQuarter]" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" PROJECT_NAME="SpeechTimer" TARGET_NAME="SpeechTimerTests" CONFIG_NAME="Debug" SDK_NAME="iphonesimulator5.0" ARCH_ID="Standard" DEVICE="IPHONE" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="JGTimerDurationCalculatorTestCase" TEST_METHOD="testGivenDurationBoundaryBelowFourMinutesTimesShouldBeIncrementsOfQuarter">
+      <envs />
+      <RunnerSettings RunnerId="AppRunner" />
+      <ConfigurationWrapper RunnerId="AppRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="-[JGTimerControllerTestCase testGivenStartTimeInPastBeforeGreenCardShouldCallAllThreeCards]" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" PROJECT_NAME="SpeechTimer" TARGET_NAME="SpeechTimerTests" CONFIG_NAME="Debug" SDK_NAME="iphonesimulator5.0" ARCH_ID="Standard" DEVICE="IPHONE" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="JGTimerControllerTestCase" TEST_METHOD="testGivenStartTimeInPastBeforeGreenCardShouldCallAllThreeCards">
+      <envs />
+      <RunnerSettings RunnerId="AppRunner" />
+      <ConfigurationWrapper RunnerId="AppRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="-[JGTimerControllerTestCase testGivenStartTimeInPastAfterGreenCardShouldImmediatelyCallGreenCard]" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" PROJECT_NAME="SpeechTimer" TARGET_NAME="SpeechTimerTests" CONFIG_NAME="Debug" SDK_NAME="iphonesimulator5.0" ARCH_ID="Standard" DEVICE="IPHONE" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="JGTimerControllerTestCase" TEST_METHOD="testGivenStartTimeInPastAfterGreenCardShouldImmediatelyCallGreenCard">
+      <envs />
+      <RunnerSettings RunnerId="AppRunner" />
+      <ConfigurationWrapper RunnerId="AppRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="-[JGTimerControllerTestCase testGivenInvalidTimeIntervalShouldDoNothing]" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" PROJECT_NAME="SpeechTimer" TARGET_NAME="SpeechTimerTests" CONFIG_NAME="Debug" SDK_NAME="iphonesimulator5.0" ARCH_ID="Standard" DEVICE="IPHONE" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="JGTimerControllerTestCase" TEST_METHOD="testGivenInvalidTimeIntervalShouldDoNothing">
+      <envs />
+      <RunnerSettings RunnerId="AppRunner" />
+      <ConfigurationWrapper RunnerId="AppRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="-[JGTimerControllerTestCase testGivenThreeSecondDurationAfterHalfDurationShouldHaveCalledGreenCard]" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" PROJECT_NAME="SpeechTimer" TARGET_NAME="SpeechTimerTests" CONFIG_NAME="Debug" SDK_NAME="iphonesimulator5.0" ARCH_ID="Standard" DEVICE="IPHONE" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="JGTimerControllerTestCase" TEST_METHOD="testGivenThreeSecondDurationAfterHalfDurationShouldHaveCalledGreenCard">
       <envs />
       <RunnerSettings RunnerId="AppRunner" />
       <ConfigurationWrapper RunnerId="AppRunner" />
@@ -414,7 +392,7 @@
       <ConfigurationWrapper RunnerId="AppRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="SpeechTimer - Calculator Timer Tests" type="OCUnitRunConfiguration" factoryName="OCUnit" PROJECT_NAME="SpeechTimer" TARGET_NAME="SpeechTimerTests" CONFIG_NAME="Debug" SDK_NAME="iphonesimulator5.0" ARCH_ID="Standard" DEVICE="IPHONE" DEBUGGER="GDB" REAL_DEVICE_SN="88827XXMY7K" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="JGTimerDurationCalculatorTestCase">
+    <configuration default="false" name="Test - JGTimerControllerTestCase" type="OCUnitRunConfiguration" factoryName="OCUnit" PROJECT_NAME="SpeechTimer" TARGET_NAME="SpeechTimerTests" CONFIG_NAME="Debug" SDK_NAME="iphonesimulator5.0" ARCH_ID="Standard" DEVICE="IPHONE" DEBUGGER="GDB" REAL_DEVICE_SN="88827XXMY7K" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="JGTimerControllerTestCase">
       <envs>
         <env name="TEST_AFTER_BUILD" value="YES" />
       </envs>
@@ -422,20 +400,18 @@
       <ConfigurationWrapper RunnerId="AppRunner" />
       <method />
     </configuration>
-    <list size="7">
-      <item index="0" class="java.lang.String" itemvalue="Application.SpeechTimer - Debug" />
-      <item index="1" class="java.lang.String" itemvalue="Application.SpeechTimer - Device" />
-      <item index="2" class="java.lang.String" itemvalue="OCUnit.SpeechTimer - Tests" />
-      <item index="3" class="java.lang.String" itemvalue="OCUnit.SpeechTimer - Calculator Timer Tests" />
-      <item index="4" class="java.lang.String" itemvalue="OCUnit.-[JGTimerDurationCalculatorTestCase testGivenDuration0ShouldReturn0ForAllCards]" />
-      <item index="5" class="java.lang.String" itemvalue="OCUnit.-[JGTimerDurationCalculatorTestCase testGivenDurationInRangeBelow4MinutesTimesShouldBeIncrementsOfQuarter]" />
-      <item index="6" class="java.lang.String" itemvalue="OCUnit.-[JGTimerDurationCalculatorTestCase testGivenDurationBoundaryBelowFourMinutesTimesShouldBeIncrementsOfQuarter]" />
+    <list size="8">
+      <item index="0" class="java.lang.String" itemvalue="Application.SpeechTimer - Device" />
+      <item index="1" class="java.lang.String" itemvalue="OCUnit.SpeechTimer - Tests" />
+      <item index="2" class="java.lang.String" itemvalue="OCUnit.Test - JGTimerControllerTestCase" />
+      <item index="3" class="java.lang.String" itemvalue="OCUnit.-[JGTimerDurationCalculatorTestCase testGivenDurationBoundaryBelowFourMinutesTimesShouldBeIncrementsOfQuarter]" />
+      <item index="4" class="java.lang.String" itemvalue="OCUnit.-[JGTimerControllerTestCase testGivenStartTimeInPastBeforeGreenCardShouldCallAllThreeCards]" />
+      <item index="5" class="java.lang.String" itemvalue="OCUnit.-[JGTimerControllerTestCase testGivenStartTimeInPastAfterGreenCardShouldImmediatelyCallGreenCard]" />
+      <item index="6" class="java.lang.String" itemvalue="OCUnit.-[JGTimerControllerTestCase testGivenInvalidTimeIntervalShouldDoNothing]" />
+      <item index="7" class="java.lang.String" itemvalue="OCUnit.-[JGTimerControllerTestCase testGivenThreeSecondDurationAfterHalfDurationShouldHaveCalledGreenCard]" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="StructureViewFactory">
-    <option name="AUTOSCROLL_FROM_SOURCE" value="true" />
-  </component>
   <component name="SvnConfiguration" maxAnnotateRevisions="500">
     <option name="USER" value="" />
     <option name="PASSWORD" value="" />
@@ -487,27 +463,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="774" extended-state="0" />
+    <frame x="0" y="22" width="1280" height="998" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46005917" sideWeight="0.49403343" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28254437" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32840237" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46" sideWeight="0.49085122" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.62777776" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20222223" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32692307" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17104216" sideWeight="0.7529586" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32458234" sideWeight="0.5414201" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5325444" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21797931" sideWeight="0.602071" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34649912" sideWeight="0.49960223" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.45857987" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988167" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20604613" sideWeight="0.7411111" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3237868" sideWeight="0.6711111" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5322222" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32444444" sideWeight="0.24444444" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46" sideWeight="0.50278443" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2588889" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288889" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="100" y="122" width="1080" height="574" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39940828" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39940828" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -543,7 +519,7 @@
     <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Issue was time interval with args the wrong way round. Also changed the time interval to much greater value - 40 so the test is clearer." />
+    <option name="LAST_COMMIT_MESSAGE" value="Only one test fails now - the one with the timer in the past." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -577,28 +553,15 @@
     <MESSAGE value="Unused code." />
     <MESSAGE value="Refactored some of the calculator tests and commented every other one out to concentrate on getting one test working." />
     <MESSAGE value="Issue was time interval with args the wrong way round. Also changed the time interval to much greater value - 40 so the test is clearer." />
+    <MESSAGE value="Only one test fails now - the one with the timer in the past." />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Classes/JGTimerController.m</url>
-          <line>23</line>
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Classes/JGCountdownTimerTestCase.h">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="8" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/JGTimerControllerTestCase.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="4" selection-start="797" selection-end="797" vertical-scroll-proportion="0.39529413">
           <folding />
         </state>
       </provider>
@@ -666,37 +629,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/JGCardTimes.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="16" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Classes/JGTimerDurationCalculatorTestCase.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="1" selection-start="2148" selection-end="2148" vertical-scroll-proportion="0.0">
+        <state line="49" column="1" selection-start="2148" selection-end="2148" vertical-scroll-proportion="0.02354788">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Classes/JGTimerController.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="425" selection-end="425" vertical-scroll-proportion="0.0">
+        <state line="17" column="0" selection-start="425" selection-end="425" vertical-scroll-proportion="0.37362638">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/JGTimerController.m">
+    <entry file="file://$PROJECT_DIR$/Classes/JGCardTimes.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="7" selection-start="3098" selection-end="3098" vertical-scroll-proportion="0.0">
+        <state line="3" column="16" selection-start="42" selection-end="42" vertical-scroll-proportion="0.06593407">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/JGTimerControllerTestCase.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="4" selection-start="797" selection-end="797" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Classes/JGTimerControllerTestCase.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="0" selection-start="2834" selection-end="2999" vertical-scroll-proportion="0.9166667">
+        <state line="35" column="24" selection-start="1093" selection-end="1093" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/JGTimerController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="26" selection-start="2336" selection-end="2336" vertical-scroll-proportion="0.9391026">
           <folding />
         </state>
       </provider>
