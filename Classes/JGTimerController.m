@@ -27,10 +27,10 @@
 }
 
 -(JGTimerController *)initWithStartTime:(NSDate *)startTime andFireTime:(NSDate *)fireTime_ delegate_:(id <JGTimerControllerDelegate>)delegate_ {
-//    BOOL startTimeIsLaterThanFireTime = ([startTime compare:fireTime_] == NSOrderedDescending);
-//    if (startTimeIsLaterThanFireTime) {
-//        return nil;
-//    }
+    BOOL startTimeIsLaterThanFireTime = ([startTime compare:fireTime_] == NSOrderedDescending);
+    if (startTimeIsLaterThanFireTime) {
+        return nil;
+    }
     
     self = [super init];
 

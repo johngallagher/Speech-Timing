@@ -116,22 +116,22 @@
     [mockDelegate verify];
 }
 
-//-(void)testGivenInvalidTimeIntervalShouldDoNothing {
-//    [self startTimerWithTimeInterval:-2];
-//    STAssertNil(timer, nil);
-//    [mockDelegate verify];
-//}
+-(void)testGivenInvalidTimeIntervalShouldDoNothing {
+    [self startTimerWithTimeInterval:-2];
+    STAssertNil(timer, nil);
+    [mockDelegate verify];
+}
 
-//-(void)testGivenStartTimeInPastBeforeGreenCardShouldCallAllThreeCards {
-//    [[mockDelegate expect] showGreenCard];
-//    [[mockDelegate expect] showYellowCard];
-//    [[mockDelegate expect] showRedCard];
-//
-//    [self startTimerWithStartTimeIntervalBeforeNow:1 andDuration:3];
-//    [self stopTimerAfterTimeInterval:2.1];
-//
-//    [mockDelegate verify];
-//}
+-(void)testGivenStartTimeInPastBeforeGreenCardShouldCallAllThreeCards {
+    [[mockDelegate expect] showGreenCard];
+    [[mockDelegate expect] showYellowCard];
+    [[mockDelegate expect] showRedCard];
+
+    [self startTimerWithStartTimeIntervalBeforeNow:1 andDuration:3];
+    [self stopTimerAfterTimeInterval:2.1];
+
+    [mockDelegate verify];
+}
 
 -(void)testGivenStartTimeInPastAfterGreenCardShouldImmediatelyCallGreenCard {
     [[mockDelegate expect] showGreenCard];
