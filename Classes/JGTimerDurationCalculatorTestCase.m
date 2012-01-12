@@ -1,11 +1,20 @@
 #import "JGTimerDurationCalculatorTestCase.h"
-#import "JGTimerDurationCalculator.h"
+#import "JGCardTimesCalculator.h"
 
 @implementation JGTimerDurationCalculatorTestCase
 
+-(void)setUpCalculatorStartingNowWithDuration:(NSUInteger)duration {
+    calculator = [JGCardTimesCalculator calculatorWithStartTime:[NSDate date] andFireTime:[NSDate dateWithTimeIntervalSinceNow:duration]];
+}
+
+-(void)setUpCalculatorStartedAt:(NSDate *)startTime withDuration:(NSUInteger)duration {
+    calculator = [JGCardTimesCalculator calculatorWithStartTime:startTime andFireTime:[startTime dateByAddingTimeInterval:duration]];
+}
+
 // 0 minutes
 -(void)testGivenDurationBelow3ShouldReturn0ForAllCards {
-    JGTimerDurationCalculator *calculator = [JGTimerDurationCalculator calculatorWithDuration:2];
+    [self setUpCalculatorStartingNowWithDuration:0];
+    calculator = [JGCardTimesCalculator calculatorWithStartTime:0 andFireTime:[NSDate date]];
 
     STAssertEquals([calculator greenCardTime], (NSTimeInterval) 0, nil);
     STAssertEquals([calculator yellowCardTime], (NSTimeInterval) 0, nil);
@@ -13,7 +22,7 @@
 }
 
 -(void)testGivenDuration0ShouldReturn0ForAllCards {
-    JGTimerDurationCalculator *calculator = [JGTimerDurationCalculator calculatorWithDuration:0];
+    JGCardTimesCalculator *calculator = [JGCardTimesCalculator calculatorWithStartTime:[NSDate date] andFireTime:[NSDate date]];
 
     STAssertEquals([calculator greenCardTime], (NSTimeInterval) 0, nil);
     STAssertEquals([calculator yellowCardTime], (NSTimeInterval) 0, nil);
@@ -22,7 +31,7 @@
 
 //Up to 4 minutes
 -(void)testGivenDurationInRangeBelow4MinutesTimesShouldBeIncrementsOfQuarter {
-    JGTimerDurationCalculator *calculator = [JGTimerDurationCalculator calculatorWithDuration:3];
+    [self setUpCalculatorStartingNowWithDuration:3];
 
     STAssertEquals([calculator greenCardTime], (NSTimeInterval) 1.5, nil);
     STAssertEquals([calculator yellowCardTime], (NSTimeInterval) 2.25, nil);
@@ -30,7 +39,7 @@
 }
 
 -(void)testGivenDurationBoundaryBelowFourMinutesTimesShouldBeIncrementsOfQuarter {
-    JGTimerDurationCalculator *calculator = [JGTimerDurationCalculator calculatorWithDuration:239];
+    [self setUpCalculatorStartingNowWithDuration:239];
 
     STAssertEquals([calculator greenCardTime], (NSTimeInterval) 119.50, nil);
     STAssertEquals([calculator yellowCardTime], (NSTimeInterval) 179.25, nil);
@@ -39,7 +48,7 @@
 
 //4 minutes-9.9 minutes
 -(void)testGivenDurationBoundaryAtFourMinutesTimesShouldBeIncrementsOfOneMinute {
-    JGTimerDurationCalculator *calculator = [JGTimerDurationCalculator calculatorWithDuration:240];
+    [self setUpCalculatorStartingNowWithDuration:240];
 
     STAssertEquals([calculator greenCardTime], (NSTimeInterval) 120.00, nil);
     STAssertEquals([calculator yellowCardTime], (NSTimeInterval) 180.00, nil);
@@ -47,7 +56,7 @@
 }
 
 -(void)testGivenDurationBoundaryBelowTenMinutesTimesShouldBeIncrementsOfOneMinute {
-    JGTimerDurationCalculator *calculator = [JGTimerDurationCalculator calculatorWithDuration:599];
+    [self setUpCalculatorStartingNowWithDuration:599];
 
     STAssertEquals([calculator greenCardTime], (NSTimeInterval) 479.00, nil);
     STAssertEquals([calculator yellowCardTime], (NSTimeInterval) 539.00, nil);
@@ -55,7 +64,7 @@
 }
 // 10 minutes-29.9 minutes
 -(void)testGivenDurationBoundaryAtTenMinutesTimesShouldBeIncrementsOfTwoMinutes {
-    JGTimerDurationCalculator *calculator = [JGTimerDurationCalculator calculatorWithDuration:600];
+    [self setUpCalculatorStartingNowWithDuration:600];
 
     STAssertEquals([calculator greenCardTime], (NSTimeInterval) 360.00, nil);
     STAssertEquals([calculator yellowCardTime], (NSTimeInterval) 480.00, nil);
@@ -63,7 +72,7 @@
 }
 
 -(void)testGivenDurationBoundaryBelowThirtyMinutesTimesShouldBeIncrementsOfTwoMinutes {
-    JGTimerDurationCalculator *calculator = [JGTimerDurationCalculator calculatorWithDuration:1799];
+    [self setUpCalculatorStartingNowWithDuration:1799];
 
     STAssertEquals([calculator greenCardTime], (NSTimeInterval) 1559.00, nil);
     STAssertEquals([calculator yellowCardTime], (NSTimeInterval) 1679.00, nil);
@@ -72,7 +81,7 @@
 
 // 30 minutes+
 -(void)testGivenDurationBoundaryAtThirtyMinutesTimesShouldBeIncrementsOfFiveMinutes {
-    JGTimerDurationCalculator *calculator = [JGTimerDurationCalculator calculatorWithDuration:1800];
+    [self setUpCalculatorStartingNowWithDuration:1800];
 
     STAssertEquals([calculator greenCardTime], (NSTimeInterval) 1200.00, nil);
     STAssertEquals([calculator yellowCardTime], (NSTimeInterval) 1500.00, nil);
@@ -80,7 +89,7 @@
 }
 
 -(void)testGivenDurationBoundaryAboveThirtyMinutesTimesShouldBeIncrementsOfFiveMinutes {
-    JGTimerDurationCalculator *calculator = [JGTimerDurationCalculator calculatorWithDuration:3000];
+    [self setUpCalculatorStartingNowWithDuration:3000];
 
     STAssertEquals([calculator greenCardTime], (NSTimeInterval) 2400.00, nil);
     STAssertEquals([calculator yellowCardTime], (NSTimeInterval) 2700.00, nil);

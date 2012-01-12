@@ -5,7 +5,7 @@
 @synthesize fireTime;
 
 -(NSTimeInterval)duration {
-    return [startTime timeIntervalSinceDate:fireTime]
+    return [startTime timeIntervalSinceDate:fireTime];
 }
 
 -(void)dealloc {

@@ -8,9 +8,30 @@
 
 #import "JGCountdownTimer.h"
 
+@interface JGCountdownTimer ()
+-(JGCountdownTimer *)initStartingAt:(NSDate *)startTime_ withFireDate:(NSDate *)fireDate_ delegate:(id <JGCountdownTimerDelegate>)delegate_;
+
+-(void)initDelegate:(id <JGCountdownTimerDelegate>)delegate_;
+
+
+@end
+
 @implementation JGCountdownTimer
 
 @synthesize timerEndDate;
+
++(JGCountdownTimer *)timerStartingAt:(NSDate *)startTime_ withFireDate:(NSDate *)fireDate_ delegate:(id <JGCountdownTimerDelegate>)delegate_ {
+    return [[[JGCountdownTimer alloc] initStartingAt:startTime_ withFireDate:fireDate_ delegate:delegate_] autorelease];
+}
+
+-(JGCountdownTimer *)initStartingAt:(NSDate *)startTime_ withFireDate:(NSDate *)fireDate_ delegate:(id <JGCountdownTimerDelegate>)delegate_ {
+    self = [super init];
+
+    [self initDelegate:delegate_];
+    [self setTimerEndDate:fireDate_];
+
+    return self;
+}
 
 -(void)initDelegate:(id <JGCountdownTimerDelegate>)delegate_ {
     if (![delegate_ conformsToProtocol:@protocol(JGCountdownTimerDelegate)]) {
@@ -20,30 +41,12 @@
     _delegate = delegate_;
 }
 
--(NSDate *)timerEndDateFromDuration:(NSUInteger)durationValue {
-    return [NSDate dateWithTimeIntervalSinceNow:durationValue];
-}
-
--(JGCountdownTimer *)initWithDurationValue:(NSUInteger)durationValue delegate:(id <JGCountdownTimerDelegate>)delegate_ {
-    self = [super init];
-
-    [self initDelegate:delegate_];
-    [self setTimerEndDate:[self timerEndDateFromDuration:durationValue]];
-
-    return self;
-}
-
 -(NSTimeInterval)timeRemaining {
     return round([[self timerEndDate] timeIntervalSinceNow]);
 }
 
 -(void)sendTimeRemainingToDelegate {
     [_delegate timeRemainingDidChangeTo:[self timeRemaining]];
-}
-
-+(JGCountdownTimer *)timerWithDurationValue:(NSUInteger)durationValue delegate:(id <JGCountdownTimerDelegate>)delegate_ {
-    JGCountdownTimer *instance = [[[JGCountdownTimer alloc] initWithDurationValue:durationValue delegate:delegate_] autorelease];
-    return instance;
 }
 
 -(void)timerDidCountDownByOneSecond:(NSTimer *)timer_ {

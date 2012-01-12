@@ -6,16 +6,14 @@
 
     id <NSObject, JGTimerControllerDelegate> _delegate;
 
-    NSTimeInterval greenCardTime;
-    NSTimeInterval yellowCardTime;
-    NSTimeInterval redCardTime;
+    NSDate *greenCardTime;
+    NSDate *yellowCardTime;
+    NSDate *redCardTime;
 
     BOOL timerRunning;
 }
 
-+(JGTimerController *)timerWithDurationValue:(NSUInteger)durationValue delegate:(id <JGTimerControllerDelegate>)delegate_;
-
--(JGTimerController *)initWithDurationValue:(NSUInteger)durationValue delegate:(id <JGTimerControllerDelegate>)delegate_;
++(JGTimerController *)timerStartingAt:(NSDate *)startDate_ withFireDate:(NSDate *)fireDate_ delegate:(id <JGTimerControllerDelegate>)delegate_;
 
 -(void)startTimer;
 
@@ -27,5 +25,6 @@
 
 -(void)showRedCard:(NSTimer *)timer_;
 
++(JGTimerController *)timerStartingNowWithTimeInterval:(NSTimeInterval)timeInterval_ delegate:(id <JGTimerControllerDelegate>)delegate_;
 @end
 

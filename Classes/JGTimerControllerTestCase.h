@@ -16,7 +16,10 @@
 #import <UIKit/UIKit.h>
 #import <OCMock/OCMock.h>
 
+@class JGTimerController;
+
 @interface JGTimerControllerTestCase : SenTestCase {
     id mockDelegate;
+    JGTimerController *timer;
 }
 @end

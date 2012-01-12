@@ -9,7 +9,7 @@
 
 @property(nonatomic, retain) NSDate *timerEndDate;
 
-+(JGCountdownTimer *)timerWithDurationValue:(NSUInteger)durationValue delegate:(id <JGCountdownTimerDelegate>)delegate_;
++(JGCountdownTimer *)timerStartingAt:(NSDate *)startTime_ withFireDate:(NSDate *)fireDate_ delegate:(id <JGCountdownTimerDelegate>)delegate_;
 
 
 -(void)startTimer;

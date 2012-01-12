@@ -1,11 +1,9 @@
 #import "JGTimerRunningViewController.h"
 #import "JGTimeFormatter.h"
 #import "JGDrawingTestView.h"
-#import "JGTimerController.h"
-#import "JGCountdownTimer.h"
 
 @interface JGTimerRunningViewController ()
--(void)initViewControllerWithFireDate:(NSDate *)fireDate;
+-(void)initViewControllerWithStartDate:(NSDate *)startDate_ andFireDate:(NSDate *)fireDate_;
 
 -(void)setTimeRemainingTo:(NSTimeInterval)time_;
 
@@ -19,20 +17,20 @@
 
 +(JGTimerRunningViewController *)viewControllerWithFireDate:(NSDate *)fireDate {
     JGTimerRunningViewController *runningViewController = [[[JGTimerRunningViewController alloc] initWithNibName:@"JGTimerRunningViewController" bundle:nil] autorelease];
-    [runningViewController initViewControllerWithFireDate:fireDate];
+    [runningViewController initViewControllerWithStartDate:fireDate andFireDate:nil];
     return runningViewController;
 }
 
--(void)initViewControllerWithFireDate:(NSDate *)fireDate {
+-(void)initViewControllerWithStartDate:(NSDate *)startDate_ andFireDate:(NSDate *)fireDate_ {
     // TODO Change duration to fire date
     NSUInteger durationOfTimer = 0;
     [(JGDrawingTestView *) [self view] setAnimationDuration:durationOfTimer];
     [self loadAlertSoundWithFilename:[self currentAlertFilename]];
 
-    [self setTimerController:[JGTimerController timerWithDurationValue:durationOfTimer delegate:self]];
+    [self setTimerController:[JGTimerController timerStartingAt:startDate_ withFireDate:fireDate_ delegate:self]];
     [[self timerController] startTimer];
 
-    [self setCountdownTimer:[JGCountdownTimer timerWithDurationValue:durationOfTimer delegate:self]];
+    [self setCountdownTimer:[JGCountdownTimer timerStartingAt:startDate_ withFireDate:fireDate_ delegate:self]];
     [[self countdownTimer] startTimer];
 }
 
