@@ -96,10 +96,10 @@
     [mockDelegate verify];
 }
 
-//-(void)testGivenFireDateInThePastShouldShowRedCard {
-//    [[mockDelegate expect] showRedCard];
-//    [self startTimerWithTimeInterval:-2];
-//    [mockDelegate verify];
-//}
+-(void)testGivenFireDateInThePastShouldShowRedCard {
+    [[mockDelegate expect] showRedCard];
+    [self startTimerWithTimeInterval:-2];
+    [mockDelegate verify];
+}
 
 @end

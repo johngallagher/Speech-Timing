@@ -75,7 +75,7 @@
 -(void)startTimer {
     timerRunning = YES;
 
-    if (redCardTime == 0) {
+    if (round([redCardTime timeIntervalSinceNow]) == 0) {
         [self showRedCard:nil];
         return;
     }

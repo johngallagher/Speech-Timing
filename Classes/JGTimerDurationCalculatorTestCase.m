@@ -1,6 +1,6 @@
 #import "JGTimerDurationCalculatorTestCase.h"
 #import "JGCardTimesCalculator.h"
-#import "JGCardTimings.h"
+#import "JGCardTimes.h"
 
 @implementation JGTimerDurationCalculatorTestCase
 
@@ -15,8 +15,8 @@
 -(void)testGivenDuration0ShouldReturn0ForAllCards {
     [self setUpCalculatorStartingNowWithDuration:0];
 
-    JGCardTimings *expectedTimings = [JGCardTimings cardTimingsWithGreenTime:[NSDate date] yellowTime:[NSDate date] redTime:[NSDate date]];
-    JGCardTimings *actualTimings = [calculator cardTimings];
+    JGCardTimes *expectedTimings = [JGCardTimes cardTimesWithGreenTime:[NSDate date] yellowTime:[NSDate date] redTime:[NSDate date]];
+    JGCardTimes *actualTimings   = [calculator cardTimings];
 
     STAssertEqualObjects(expectedTimings, actualTimings, @"Actual timings are %@", actualTimings);
 }
@@ -24,70 +24,75 @@
 -(void)testGivenDurationInRangeBelow4MinutesTimesShouldBeIncrementsOfQuarter {
     [self setUpCalculatorStartingNowWithDuration:40];
 
-    JGCardTimings *expectedTimings = [JGCardTimings cardTimingsWithGreenTime:[NSDate dateWithTimeIntervalSinceNow:20]
-                                                                  yellowTime:[NSDate dateWithTimeIntervalSinceNow:30]
-                                                                     redTime:[NSDate dateWithTimeIntervalSinceNow:40]];
-    JGCardTimings *actualTimings = [calculator cardTimings];
+    JGCardTimes *expectedTimings = [JGCardTimes cardTimesWithTimeIntervalSinceNowGreen:20 yellow:30 red:40];
+    JGCardTimes *actualTimings = [calculator cardTimings];
 
     STAssertEqualObjects(actualTimings, expectedTimings, nil);
 }
-//
-//-(void)testGivenDurationBoundaryBelowFourMinutesTimesShouldBeIncrementsOfQuarter {
-//    [self setUpCalculatorStartingNowWithDuration:239];
-//
-//    STAssertEquals([calculator greenCardTime], (NSTimeInterval) 119.50, nil);
-//    STAssertEquals([calculator yellowCardTime], (NSTimeInterval) 179.25, nil);
-//    STAssertEquals([calculator redCardTime], (NSTimeInterval) 239.00, nil);
-//}
-//
-////4 minutes-9.9 minutes
-//-(void)testGivenDurationBoundaryAtFourMinutesTimesShouldBeIncrementsOfOneMinute {
-//    [self setUpCalculatorStartingNowWithDuration:240];
-//
-//    STAssertEquals([calculator greenCardTime], (NSTimeInterval) 120.00, nil);
-//    STAssertEquals([calculator yellowCardTime], (NSTimeInterval) 180.00, nil);
-//    STAssertEquals([calculator redCardTime], (NSTimeInterval) 240.00, nil);
-//}
-//
-//-(void)testGivenDurationBoundaryBelowTenMinutesTimesShouldBeIncrementsOfOneMinute {
-//    [self setUpCalculatorStartingNowWithDuration:599];
-//
-//    STAssertEquals([calculator greenCardTime], (NSTimeInterval) 479.00, nil);
-//    STAssertEquals([calculator yellowCardTime], (NSTimeInterval) 539.00, nil);
-//    STAssertEquals([calculator redCardTime], (NSTimeInterval) 599.00, nil);
-//}
-//// 10 minutes-29.9 minutes
-//-(void)testGivenDurationBoundaryAtTenMinutesTimesShouldBeIncrementsOfTwoMinutes {
-//    [self setUpCalculatorStartingNowWithDuration:600];
-//
-//    STAssertEquals([calculator greenCardTime], (NSTimeInterval) 360.00, nil);
-//    STAssertEquals([calculator yellowCardTime], (NSTimeInterval) 480.00, nil);
-//    STAssertEquals([calculator redCardTime], (NSTimeInterval) 600.00, nil);
-//}
-//
-//-(void)testGivenDurationBoundaryBelowThirtyMinutesTimesShouldBeIncrementsOfTwoMinutes {
-//    [self setUpCalculatorStartingNowWithDuration:1799];
-//
-//    STAssertEquals([calculator greenCardTime], (NSTimeInterval) 1559.00, nil);
-//    STAssertEquals([calculator yellowCardTime], (NSTimeInterval) 1679.00, nil);
-//    STAssertEquals([calculator redCardTime], (NSTimeInterval) 1799.00, nil);
-//}
-//
-//// 30 minutes+
-//-(void)testGivenDurationBoundaryAtThirtyMinutesTimesShouldBeIncrementsOfFiveMinutes {
-//    [self setUpCalculatorStartingNowWithDuration:1800];
-//
-//    STAssertEquals([calculator greenCardTime], (NSTimeInterval) 1200.00, nil);
-//    STAssertEquals([calculator yellowCardTime], (NSTimeInterval) 1500.00, nil);
-//    STAssertEquals([calculator redCardTime], (NSTimeInterval) 1800.00, nil);
-//}
-//
-//-(void)testGivenDurationBoundaryAboveThirtyMinutesTimesShouldBeIncrementsOfFiveMinutes {
-//    [self setUpCalculatorStartingNowWithDuration:3000];
-//
-//    STAssertEquals([calculator greenCardTime], (NSTimeInterval) 2400.00, nil);
-//    STAssertEquals([calculator yellowCardTime], (NSTimeInterval) 2700.00, nil);
-//    STAssertEquals([calculator redCardTime], (NSTimeInterval) 3000.00, nil);
-//}
+
+-(void)testGivenDurationBoundaryBelowFourMinutesTimesShouldBeIncrementsOfQuarter {
+    [self setUpCalculatorStartingNowWithDuration:239];
+
+    JGCardTimes *expectedTimings = [JGCardTimes cardTimesWithTimeIntervalSinceNowGreen:119.50 yellow:179.25 red:239.0];
+    JGCardTimes *actualTimings = [calculator cardTimings];
+
+    STAssertEqualObjects(actualTimings, expectedTimings, nil);
+}
+
+//4 minutes-9.9 minutes
+-(void)testGivenDurationBoundaryAtFourMinutesTimesShouldBeIncrementsOfOneMinute {
+    [self setUpCalculatorStartingNowWithDuration:240];
+
+    JGCardTimes *expectedTimings = [JGCardTimes cardTimesWithTimeIntervalSinceNowGreen:120 yellow:180 red:240];
+    JGCardTimes *actualTimings = [calculator cardTimings];
+
+    STAssertEqualObjects(actualTimings, expectedTimings, nil);
+}
+
+-(void)testGivenDurationBoundaryBelowTenMinutesTimesShouldBeIncrementsOfOneMinute {
+    [self setUpCalculatorStartingNowWithDuration:599];
+
+    JGCardTimes *expectedTimings = [JGCardTimes cardTimesWithTimeIntervalSinceNowGreen:479 yellow:539 red:599];
+    JGCardTimes *actualTimings = [calculator cardTimings];
+
+    STAssertEqualObjects(actualTimings, expectedTimings, nil);
+}
+// 10 minutes-29.9 minutes
+-(void)testGivenDurationBoundaryAtTenMinutesTimesShouldBeIncrementsOfTwoMinutes {
+    [self setUpCalculatorStartingNowWithDuration:600];
+
+    JGCardTimes *expectedTimings = [JGCardTimes cardTimesWithTimeIntervalSinceNowGreen:360 yellow:480 red:600];
+    JGCardTimes *actualTimings = [calculator cardTimings];
+
+    STAssertEqualObjects(actualTimings, expectedTimings, nil);
+}
+
+-(void)testGivenDurationBoundaryBelowThirtyMinutesTimesShouldBeIncrementsOfTwoMinutes {
+    [self setUpCalculatorStartingNowWithDuration:1799];
+
+    JGCardTimes *expectedTimings = [JGCardTimes cardTimesWithTimeIntervalSinceNowGreen:1559 yellow:1679 red:1799];
+    JGCardTimes *actualTimings = [calculator cardTimings];
+
+    STAssertEqualObjects(actualTimings, expectedTimings, nil);
+}
+
+// 30 minutes+
+-(void)testGivenDurationBoundaryAtThirtyMinutesTimesShouldBeIncrementsOfFiveMinutes {
+    [self setUpCalculatorStartingNowWithDuration:1800];
+
+    JGCardTimes *expectedTimings = [JGCardTimes cardTimesWithTimeIntervalSinceNowGreen:1200 yellow:1500 red:1800];
+    JGCardTimes *actualTimings = [calculator cardTimings];
+
+    STAssertEqualObjects(actualTimings, expectedTimings, nil);
+}
+
+-(void)testGivenDurationBoundaryAboveThirtyMinutesTimesShouldBeIncrementsOfFiveMinutes {
+    [self setUpCalculatorStartingNowWithDuration:3000];
+
+    JGCardTimes *expectedTimings = [JGCardTimes cardTimesWithTimeIntervalSinceNowGreen:2400 yellow:2700 red:3000];
+    JGCardTimes *actualTimings = [calculator cardTimings];
+
+    STAssertEqualObjects(actualTimings, expectedTimings, nil);
+}
 
 @end

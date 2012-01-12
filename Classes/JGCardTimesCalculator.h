@@ -1,6 +1,6 @@
 #import <Foundation/Foundation.h>
 
-@class JGCardTimings;
+@class JGCardTimes;
 
 
 @interface JGCardTimesCalculator : NSObject {
@@ -22,5 +22,5 @@
 
 -(NSDate *)redCardTime;
 
--(JGCardTimings *)cardTimings;
+-(JGCardTimes *)cardTimings;
 @end

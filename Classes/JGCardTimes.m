@@ -1,18 +1,23 @@
-#import "JGCardTimings.h"
+#import "JGCardTimes.h"
 
 
-@implementation JGCardTimings
+@implementation JGCardTimes
 
 @synthesize greenCardTime;
 @synthesize yellowCardTime;
 @synthesize redCardTime;
 
-
-+(JGCardTimings *)cardTimingsWithGreenTime:(NSDate *)greenCardTime_ yellowTime:(NSDate *)yellowCardTime_ redTime:(NSDate *)redCardTime_ {
-    return [[[JGCardTimings alloc] initWithGreenTime:greenCardTime_ yellowTime:yellowCardTime_ redTime:redCardTime_] autorelease];
++(JGCardTimes *)cardTimesWithTimeIntervalSinceNowGreen:(NSTimeInterval)g yellow:(NSTimeInterval)y red:(NSTimeInterval)r {
+    return [self cardTimesWithGreenTime:[NSDate dateWithTimeIntervalSinceNow:g]
+                                    yellowTime:[NSDate dateWithTimeIntervalSinceNow:y]
+                                       redTime:[NSDate dateWithTimeIntervalSinceNow:r]];
 }
 
--(JGCardTimings *)initWithGreenTime:(NSDate *)greenCardTime_ yellowTime:(NSDate *)yellowCardTime_ redTime:(NSDate *)redCardTime_ {
++(JGCardTimes *)cardTimesWithGreenTime:(NSDate *)greenCardTime_ yellowTime:(NSDate *)yellowCardTime_ redTime:(NSDate *)redCardTime_ {
+    return [[[JGCardTimes alloc] initWithGreenTime:greenCardTime_ yellowTime:yellowCardTime_ redTime:redCardTime_] autorelease];
+}
+
+-(JGCardTimes *)initWithGreenTime:(NSDate *)greenCardTime_ yellowTime:(NSDate *)yellowCardTime_ redTime:(NSDate *)redCardTime_ {
     self = [super init];
     if (self) {
         greenCardTime = [greenCardTime_ retain];
@@ -24,10 +29,10 @@
 }
 
 -(BOOL)isEqual:(id)object {
-    if (![object isKindOfClass:[JGCardTimings class]])
+    if (![object isKindOfClass:[JGCardTimes class]])
         return [super isEqual:object];
 
-    JGCardTimings *cardTimings = object;
+    JGCardTimes *cardTimings = object;
     return (round([greenCardTime timeIntervalSinceDate:[cardTimings greenCardTime]]) == 0) &&
            (round([yellowCardTime timeIntervalSinceDate:[cardTimings yellowCardTime]]) == 0) &&
            (round([redCardTime timeIntervalSinceDate:[cardTimings redCardTime]]) == 0);
