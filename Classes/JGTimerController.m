@@ -53,19 +53,6 @@
     [calculator release];
 }
 
-
-// TODO get rid of this - don't want anything with time interval
-//-(JGTimerController *)initWithTimeInterval:(NSTimeInterval)timeInterval_ delegate_:(id <JGTimerControllerDelegate>)delegate_ {
-//    self = [super init];
-//
-//    [self initDelegate:delegate_];
-//    [self initWithStartTime:timeInterval_ fireTime:nil];
-//    timerRunning = NO;
-//
-//    return self;
-//}
-
-
 -(void)addGreenCardTimer {
     NSTimeInterval greenTimeInterval = [greenCardTime timeIntervalSinceDate:[NSDate date]];
     if (greenTimeInterval > 0) {

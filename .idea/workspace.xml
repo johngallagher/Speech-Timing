@@ -4,21 +4,9 @@
     <list id="dcf27bc1-0f3a-4126-a516-d7d4567fa020" name="Default" comment="Duration changed to time interval. This breaks" />
     <list id="09881062-60ce-4b51-b613-9e69bf443e0c" name="Rejected commit: Default" comment="Added playing of sound on the red card appearing. Sound doesn't get played in simulator so we need to check on device to get this working." />
     <list id="80879804-cb4f-4c78-b8e1-bd65721e23c3" name="New changelist" comment="" />
-    <list default="true" id="cfb3d852-0088-437e-a12c-d626d784fe35" name="Change to Fire Dates with Start times" comment="Broken tests - but lots of refactoring work done.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/JGCardTimings.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/JGCardTimings.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SpeechTimer.xcodeproj/project.xcworkspace/xcuserdata/John.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/SpeechTimer.xcodeproj/project.xcworkspace/xcuserdata/John.xcuserdatad/UserInterfaceState.xcuserstate" />
+    <list default="true" id="cfb3d852-0088-437e-a12c-d626d784fe35" name="Change to Fire Dates with Start times" comment="Broken tests still. Added a card timings object to make tests more readable.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/JGCardTimesCalculator.h" afterPath="$PROJECT_DIR$/Classes/JGCardTimesCalculator.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/JGCardTimesCalculator.m" afterPath="$PROJECT_DIR$/Classes/JGCardTimesCalculator.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/JGCountdownTimer.h" afterPath="$PROJECT_DIR$/Classes/JGCountdownTimer.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/JGCountdownTimer.m" afterPath="$PROJECT_DIR$/Classes/JGCountdownTimer.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/JGCountdownTimerTestCase.h" afterPath="$PROJECT_DIR$/Classes/JGCountdownTimerTestCase.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/JGCountdownTimerTestCase.m" afterPath="$PROJECT_DIR$/Classes/JGCountdownTimerTestCase.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/JGTimerControllerTestCase.m" afterPath="$PROJECT_DIR$/Classes/JGTimerControllerTestCase.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/JGTimerDurationCalculatorTestCase.m" afterPath="$PROJECT_DIR$/Classes/JGTimerDurationCalculatorTestCase.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/JGTimerRunningViewController.m" afterPath="$PROJECT_DIR$/Classes/JGTimerRunningViewController.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SpeechTimer.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/SpeechTimer.xcodeproj/project.pbxproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/JGTimerController.m" afterPath="$PROJECT_DIR$/Classes/JGTimerController.m" />
     </list>
     <ignored path="MeetingTimer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,10 +29,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="JGTimerControllerTestCase.m" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="JGTimerController.m" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Classes/JGTimerController.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="54" column="0" selection-start="2195" selection-end="2195" vertical-scroll-proportion="0.565762">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JGTimerControllerTestCase.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Classes/JGTimerControllerTestCase.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="7" selection-start="1375" selection-end="1375" vertical-scroll-proportion="0.33194155">
+            <state line="28" column="38" selection-start="758" selection-end="758" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -77,15 +74,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JGCardTimesCalculator.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Classes/JGCardTimesCalculator.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="18" selection-start="607" selection-end="607" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -104,7 +92,6 @@
         <option value="$PROJECT_DIR$/Classes/JGAlert.h" />
         <option value="$PROJECT_DIR$/Classes/JGAlert.m" />
         <option value="$PROJECT_DIR$/Classes/JGTimerController.h" />
-        <option value="$PROJECT_DIR$/Classes/JGTimerController.m" />
         <option value="$PROJECT_DIR$/Classes/JGTimerControllerTestCase.h" />
         <option value="$PROJECT_DIR$/Classes/JGCountdownTimerTestCase.h" />
         <option value="$PROJECT_DIR$/Classes/JGTimerRunningViewController.m" />
@@ -117,6 +104,7 @@
         <option value="$PROJECT_DIR$/Classes/JGCardTimesCalculator.m" />
         <option value="$PROJECT_DIR$/Classes/JGTimerDurationCalculatorTestCase.m" />
         <option value="$PROJECT_DIR$/Classes/JGCardTimings.m" />
+        <option value="$PROJECT_DIR$/Classes/JGTimerController.m" />
       </list>
     </option>
   </component>
@@ -526,7 +514,7 @@
     <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Broken tests - but lots of refactoring work done." />
+    <option name="LAST_COMMIT_MESSAGE" value="Broken tests still. Added a card timings object to make tests more readable." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -556,6 +544,7 @@
     <MESSAGE value="Added alert which wraps start time and fire time." />
     <MESSAGE value="Added todo" />
     <MESSAGE value="Broken tests - but lots of refactoring work done." />
+    <MESSAGE value="Broken tests still. Added a card timings object to make tests more readable." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -606,13 +595,6 @@
     <entry file="file://$PROJECT_DIR$/Classes/JGCountdownTimerTestCase.m">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="76" selection-start="702" selection-end="702" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/JGTimerController.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="22" selection-start="761" selection-end="761" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -668,7 +650,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Classes/JGTimerControllerTestCase.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="7" selection-start="1375" selection-end="1375" vertical-scroll-proportion="0.33194155">
+        <state line="28" column="38" selection-start="758" selection-end="758" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/JGTimerController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="0" selection-start="2195" selection-end="2195" vertical-scroll-proportion="0.565762">
           <folding />
         </state>
       </provider>
