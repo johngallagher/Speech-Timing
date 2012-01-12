@@ -52,6 +52,7 @@
 		527B9C5914BDDC63008EE913 /* JGDurationFromFireDateCalculatorTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A9545400542487 /* JGDurationFromFireDateCalculatorTestCase.m */; };
 		527B9C5A14BDDC6C008EE913 /* JGDurationFromFireDateCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A9545400542483 /* JGDurationFromFireDateCalculator.m */; };
 		527B9C5B14BDDC6E008EE913 /* JGDurationFromFireDateCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A9545400542483 /* JGDurationFromFireDateCalculator.m */; };
+		527B9C6514BEF359008EE913 /* JGCardTimings.m in Sources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A954540054248B /* JGCardTimings.m */; };
 		528945F914BB50F100B4D09B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 528945F814BB50F100B4D09B /* AVFoundation.framework */; };
 		52BBC08914B34FC900CFE655 /* JGCountdownTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BBC08814B34FC900CFE655 /* JGCountdownTimer.m */; };
 		52BBC08D14B3509200CFE655 /* JGCountdownTimerTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BBC08C14B3509200CFE655 /* JGCountdownTimerTestCase.m */; };
@@ -77,6 +78,7 @@
 		C01FCF5008A954540054247D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C01FCF5008A954540054247C /* AudioToolbox.framework */; };
 		C01FCF5008A9545400542481 /* JGTimerRunningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A9545400542480 /* JGTimerRunningViewController.m */; };
 		C01FCF5008A9545400542489 /* JGAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A9545400542488 /* JGAlert.m */; };
+		C01FCF5008A954540054248C /* JGCardTimings.m in Sources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A954540054248B /* JGCardTimings.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -215,6 +217,8 @@
 		C01FCF5008A9545400542487 /* JGDurationFromFireDateCalculatorTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGDurationFromFireDateCalculatorTestCase.m; sourceTree = "<group>"; };
 		C01FCF5008A9545400542488 /* JGAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGAlert.m; sourceTree = "<group>"; };
 		C01FCF5008A954540054248A /* JGAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGAlert.h; sourceTree = "<group>"; };
+		C01FCF5008A954540054248B /* JGCardTimings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGCardTimings.m; sourceTree = "<group>"; };
+		C01FCF5008A954540054248D /* JGCardTimings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGCardTimings.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,6 +249,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C01FCF5008A954540054248D /* JGCardTimings.h */,
+				C01FCF5008A954540054248B /* JGCardTimings.m */,
 				C01FCF5008A954540054248A /* JGAlert.h */,
 				C01FCF5008A9545400542488 /* JGAlert.m */,
 				C01FCF5008A9545400542487 /* JGDurationFromFireDateCalculatorTestCase.m */,
@@ -655,6 +661,7 @@
 				C01FCF5008A9545400542481 /* JGTimerRunningViewController.m in Sources */,
 				527B9C5A14BDDC6C008EE913 /* JGDurationFromFireDateCalculator.m in Sources */,
 				C01FCF5008A9545400542489 /* JGAlert.m in Sources */,
+				C01FCF5008A954540054248C /* JGCardTimings.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -691,6 +698,7 @@
 				52BBC0DF14B358EF00CFE655 /* JGTimeFormatter.m in Sources */,
 				527B9C5914BDDC63008EE913 /* JGDurationFromFireDateCalculatorTestCase.m in Sources */,
 				527B9C5B14BDDC6E008EE913 /* JGDurationFromFireDateCalculator.m in Sources */,
+				527B9C6514BEF359008EE913 /* JGCardTimings.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

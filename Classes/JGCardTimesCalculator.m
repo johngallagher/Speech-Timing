@@ -1,4 +1,5 @@
 #import "JGCardTimesCalculator.h"
+#import "JGCardTimings.h"
 
 
 @implementation JGCardTimesCalculator
@@ -68,6 +69,10 @@
 -(void)dealloc {
     [startTime release];
     [super dealloc];
+}
+
+-(JGCardTimings *)cardTimings {
+    return [JGCardTimings cardTimingsWithGreenTime:[self greenCardTime] yellowTime:[self yellowCardTime] redTime:[self redCardTime]];
 }
 
 @end

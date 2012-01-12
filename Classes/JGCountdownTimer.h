@@ -11,13 +11,14 @@
 
 +(JGCountdownTimer *)timerStartingAt:(NSDate *)startTime_ withFireDate:(NSDate *)fireDate_ delegate:(id <JGCountdownTimerDelegate>)delegate_;
 
++(JGCountdownTimer *)timerStartingNowWithTimeInterval:(NSTimeInterval)i delegate:(id)o;
+
+-(JGCountdownTimer *)initStartingAt:(NSDate *)startTime_ withFireDate:(NSDate *)fireDate_ delegate:(id <JGCountdownTimerDelegate>)delegate_;
 
 -(void)startTimer;
 
 -(void)stopTimer;
 
-
--(void)timerDidCountDownByOneSecond:(NSTimer *)timer_;
 
 
 @end

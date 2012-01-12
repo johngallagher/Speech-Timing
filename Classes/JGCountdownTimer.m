@@ -9,9 +9,15 @@
 #import "JGCountdownTimer.h"
 
 @interface JGCountdownTimer ()
--(JGCountdownTimer *)initStartingAt:(NSDate *)startTime_ withFireDate:(NSDate *)fireDate_ delegate:(id <JGCountdownTimerDelegate>)delegate_;
 
--(void)initDelegate:(id <JGCountdownTimerDelegate>)delegate_;
+-(void)_initDelegate:(id <JGCountdownTimerDelegate>)delegate_;
+
+-(NSTimeInterval)_timeRemaining;
+
+-(void)_sendTimeRemainingToDelegate;
+
+
+-(void)_timerDidCountDownByOneSecond:(NSTimer *)timer_;
 
 
 @end
@@ -20,6 +26,10 @@
 
 @synthesize timerEndDate;
 
++(JGCountdownTimer *)timerStartingNowWithTimeInterval:(NSTimeInterval)i delegate:(id)o {
+    return [[[JGCountdownTimer alloc] initStartingAt:[NSDate date] withFireDate:[NSDate dateWithTimeIntervalSinceNow:i] delegate:o] autorelease];
+}
+
 +(JGCountdownTimer *)timerStartingAt:(NSDate *)startTime_ withFireDate:(NSDate *)fireDate_ delegate:(id <JGCountdownTimerDelegate>)delegate_ {
     return [[[JGCountdownTimer alloc] initStartingAt:startTime_ withFireDate:fireDate_ delegate:delegate_] autorelease];
 }
@@ -27,13 +37,23 @@
 -(JGCountdownTimer *)initStartingAt:(NSDate *)startTime_ withFireDate:(NSDate *)fireDate_ delegate:(id <JGCountdownTimerDelegate>)delegate_ {
     self = [super init];
 
-    [self initDelegate:delegate_];
+    [self _initDelegate:delegate_];
     [self setTimerEndDate:fireDate_];
 
     return self;
 }
 
--(void)initDelegate:(id <JGCountdownTimerDelegate>)delegate_ {
+-(void)startTimer {
+    countdownTimer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(_timerDidCountDownByOneSecond:) userInfo:nil repeats:YES];
+    [self _sendTimeRemainingToDelegate];
+}
+
+-(void)stopTimer {
+    [countdownTimer invalidate];
+}
+
+#pragma mark Private
+-(void)_initDelegate:(id <JGCountdownTimerDelegate>)delegate_ {
     if (![delegate_ conformsToProtocol:@protocol(JGCountdownTimerDelegate)]) {
         _delegate = nil;
         return;
@@ -41,30 +61,23 @@
     _delegate = delegate_;
 }
 
--(NSTimeInterval)timeRemaining {
+-(NSTimeInterval)_timeRemaining {
     return round([[self timerEndDate] timeIntervalSinceNow]);
 }
 
--(void)sendTimeRemainingToDelegate {
-    [_delegate timeRemainingDidChangeTo:[self timeRemaining]];
+-(void)_sendTimeRemainingToDelegate {
+    [_delegate timeRemainingDidChangeTo:[self _timeRemaining]];
 }
 
--(void)timerDidCountDownByOneSecond:(NSTimer *)timer_ {
-    [self sendTimeRemainingToDelegate];
+-(void)_timerDidCountDownByOneSecond:(NSTimer *)timer_ {
+    [self _sendTimeRemainingToDelegate];
 }
 
+#pragma mark Overrides
 -(void)dealloc {
     [timerEndDate release];
     [super dealloc];
 }
 
--(void)startTimer {
-    countdownTimer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timerDidCountDownByOneSecond:) userInfo:nil repeats:YES];
-    [self sendTimeRemainingToDelegate];
-}
-
--(void)stopTimer {
-    [countdownTimer invalidate];
-}
 
 @end

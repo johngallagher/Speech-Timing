@@ -1,5 +1,7 @@
 #import <Foundation/Foundation.h>
 
+@class JGCardTimings;
+
 
 @interface JGCardTimesCalculator : NSObject {
     NSTimeInterval greenCardTimeInterval;
@@ -20,4 +22,5 @@
 
 -(NSDate *)redCardTime;
 
+-(JGCardTimings *)cardTimings;
 @end

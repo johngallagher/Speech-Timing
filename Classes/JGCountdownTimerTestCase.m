@@ -4,62 +4,76 @@
 #import "OCMockObject.h"
 //#import <OCMock/OCMock.h>
 
+@interface JGCountdownTimerTestCase ()
+-(void)startTimerWithTimeInterval:(NSTimeInterval)timeInterval_;
+
+-(void)stopTimerAfterTimeInterval:(NSTimeInterval)timeInterval_;
+
+-(void)pauseForTimeInterval:(NSTimeInterval)timeInterval_;
+
+@end
+
 @implementation JGCountdownTimerTestCase
 
--(void)testTimerRunningForOneSecondShouldDecreaseTimeRemaining {
-    id mockDelegate = [OCMockObject mockForProtocol:@protocol(JGCountdownTimerDelegate)];
-    [[mockDelegate expect] timeRemainingDidChangeTo:10];
-    [[mockDelegate expect] timeRemainingDidChangeTo:9];
-
-    JGCountdownTimer *timer = [JGCountdownTimer timerStartingAt:10 withFireDate:nil delegate:mockDelegate];
-    [timer startTimer];
-
-    [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:1.1]];
-    [timer stopTimer];
-
-    [mockDelegate verify];
+-(void)setUp {
+    [super setUp];
+    mockDelegate = [OCMockObject mockForProtocol:@protocol(JGCountdownTimerDelegate)];
 }
 
+-(void)startTimerWithTimeInterval:(NSTimeInterval)timeInterval_ {
+    timer = [JGCountdownTimer timerStartingNowWithTimeInterval:timeInterval_ delegate:mockDelegate];
+    [timer startTimer];
+}
+
+-(void)stopTimerAfterTimeInterval:(NSTimeInterval)timeInterval_ {
+    [self pauseForTimeInterval:timeInterval_];
+    [timer stopTimer];
+}
+
+-(void)pauseForTimeInterval:(NSTimeInterval)timeInterval_ {
+    [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:timeInterval_]];
+}
+
+//-(void)testTimerRunningForOneSecondShouldDecreaseTimeRemaining {
+//    [[mockDelegate expect] timeRemainingDidChangeTo:10];
+//    [[mockDelegate expect] timeRemainingDidChangeTo:9];
+//
+//    [self startTimerWithTimeInterval:10];
+//    [self stopTimerAfterTimeInterval:1.1];
+//
+//    [mockDelegate verify];
+//}
+
 -(void)testTimerRunningForTwoSecondsShouldDecreaseTimeRemaining {
-    id mockDelegate = [OCMockObject mockForProtocol:@protocol(JGCountdownTimerDelegate)];
     [[mockDelegate expect] timeRemainingDidChangeTo:10];
     [[mockDelegate expect] timeRemainingDidChangeTo:9];
     [[mockDelegate expect] timeRemainingDidChangeTo:8];
 
-    JGCountdownTimer *timer = [JGCountdownTimer timerStartingAt:10 withFireDate:nil delegate:mockDelegate];
-    [timer startTimer];
-
-    [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:2.1]];
-    [timer stopTimer];
+    [self startTimerWithTimeInterval:10];
+    [self stopTimerAfterTimeInterval:2.1];
 
     [mockDelegate verify];
 }
 
 -(void)testTimerRunningShouldGoNegative {
-    id mockDelegate = [OCMockObject mockForProtocol:@protocol(JGCountdownTimerDelegate)];
     [[mockDelegate expect] timeRemainingDidChangeTo:1];
     [[mockDelegate expect] timeRemainingDidChangeTo:0];
     [[mockDelegate expect] timeRemainingDidChangeTo:-1];
 
-    JGCountdownTimer *timer = [JGCountdownTimer timerStartingAt:1 withFireDate:nil delegate:mockDelegate];
-    [timer startTimer];
+    [self startTimerWithTimeInterval:1];
 
-    [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:2.1]];
-    [timer stopTimer];
+    [self stopTimerAfterTimeInterval:2.1];
 
     [mockDelegate verify];
 }
 
 -(void)testTimerOnStopShouldStopTimer {
-    id mockDelegate = [OCMockObject mockForProtocol:@protocol(JGCountdownTimerDelegate)];
     [[mockDelegate expect] timeRemainingDidChangeTo:1];
     [[mockDelegate expect] timeRemainingDidChangeTo:0];
 
-    JGCountdownTimer *timer = [JGCountdownTimer timerStartingAt:1 withFireDate:nil delegate:mockDelegate];
-    [timer startTimer];
+    [self startTimerWithTimeInterval:1];
 
-    [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:1.1]];
-    [timer stopTimer];
+    [self stopTimerAfterTimeInterval:1.1];
     [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:2]];
 
     [mockDelegate verify];

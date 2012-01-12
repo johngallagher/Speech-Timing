@@ -1,8 +1,11 @@
 #import <SenTestingKit/SenTestingKit.h>
 #import <UIKit/UIKit.h>
 
-@interface JGCountdownTimerTestCase : SenTestCase {
+@class JGCountdownTimer;
 
+@interface JGCountdownTimerTestCase : SenTestCase {
+    JGCountdownTimer *timer;
+    id mockDelegate;
 }
 
 
