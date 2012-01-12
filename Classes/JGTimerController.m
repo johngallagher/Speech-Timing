@@ -50,16 +50,15 @@
 }
 
 -(void)initWithStartTime:(NSDate *)startTime_ fireTime:(NSDate *)fireTime_ {
-    // TODO change duration calculator to time interval
     JGCardTimesCalculator *calculator = [[JGCardTimesCalculator calculatorWithStartTime:startTime_ andFireTime:fireTime_] retain];
     greenCardTime  = [calculator greenCardTime];
     yellowCardTime = [calculator yellowCardTime];
     redCardTime    = [calculator redCardTime];
-    //    NSLog(@"Green time: %@ Yellow time: %@ REd Time %@", greenCardTime, yellowCardTime, redCardTime);
     // TODO add method to the protocol - vibrate - at the time limit. If we're past the time limit don't vibrate.
     [calculator release];
 }
 
+// TODO Refactor out all the repetition and have a "red/green/yellow" parameter which indicates the colour of card.
 -(NSTimeInterval)redCardTimeIntervalSinceNow {
     NSTimeInterval redTimeInterval = [redCardTime timeIntervalSinceDate:[NSDate date]];
     return redTimeInterval;

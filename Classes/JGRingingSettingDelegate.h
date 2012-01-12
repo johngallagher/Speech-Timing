@@ -5,6 +5,8 @@
 //
 
 
+#import <Foundation/Foundation.h>
+
 @protocol JGRingingSettingDelegate
 -(void)currentAlertDidChangeTo:(NSString *)alertName_;
 

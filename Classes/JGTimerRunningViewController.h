@@ -19,6 +19,9 @@
 
 +(JGTimerRunningViewController *)viewControllerWithFireDate:(NSDate *)fireDate;
 
++(JGTimerRunningViewController *)viewControllerWithStartDate:(NSDate *)startDate_ fireDate:(NSDate *)fireDate_ alarmFilename:(NSString *)an;
+
+
 -(void)loadAlertSoundWithFilename:(NSString *)alertSoundFilename_;
 
 -(IBAction)stopTimer:(id)sender;

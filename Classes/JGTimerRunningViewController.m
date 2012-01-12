@@ -21,11 +21,18 @@
     return runningViewController;
 }
 
+
++(JGTimerRunningViewController *)viewControllerWithStartDate:(NSDate *)startDate_ fireDate:(NSDate *)fireDate_ alarmFilename:(NSString *)an {
+    JGTimerRunningViewController *runningViewController = [[[JGTimerRunningViewController alloc] initWithNibName:@"JGTimerRunningViewController" bundle:nil] autorelease];
+    [runningViewController initViewControllerWithStartDate:startDate_ fireDate:fireDate_ alarmFilename:an];
+    return runningViewController;
+}
+
 -(void)initViewControllerWithStartDate:(NSDate *)startDate_ fireDate:(NSDate *)fireDate_ alarmFilename:(NSString *)an {
     // TODO Change duration to fire date
     // TODO Bundle up alarm stuff into alarm object
     NSUInteger durationOfTimer = 0;
-    [(JGDrawingTestView *) [self view] setAnimationDuration:durationOfTimer];
+    [(JGDrawingTestView *) [self view] setAnimationDuration:durationOfTimer]; // TODO get us drawing the animation partway through.
     [self loadAlertSoundWithFilename:an];
 
     [self setTimerController:[JGTimerController timerStartingAt:startDate_ withFireDate:fireDate_ delegate:self]];

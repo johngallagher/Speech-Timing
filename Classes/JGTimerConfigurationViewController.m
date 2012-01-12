@@ -15,15 +15,24 @@
     return [[self currentAlertName] stringByReplacingOccurrencesOfString:@" " withString:@""];
 }
 
+-(NSString *)currentAlertName {
+    return [self currentAlertName];
+}
+
+
 -(void)startTimerWithDuration:(NSUInteger)durationOfTimer {
     // TODO Calculate fire date from duration
-    JGTimerRunningViewController *runningViewController = [JGTimerRunningViewController viewControllerWithFireDate:nil];
+    NSDate *fireDate = [[NSDate date] dateByAddingTimeInterval:durationOfTimer];
+    NSDate *today = [NSDate date];
+    JGTimerRunningViewController *runningViewController = [JGTimerRunningViewController viewControllerWithStartDate:today
+                                                                                                           fireDate:fireDate
+                                                                                                      alarmFilename:[self currentAlertFilename]];
     [[self navigationController] pushViewController:runningViewController animated:YES];
     [runningViewController release];
 }
 
--(int)timerDurationFromPickerRowSelected:(NSInteger)selectedRow {
-    return ([[pickerDurations objectAtIndex:(NSUInteger) selectedRow] intValue] * 60);
+-(NSUInteger)timerDurationFromPickerRowSelected:(NSInteger)selectedRow {
+    return [[pickerDurations objectAtIndex:(NSUInteger)selectedRow] unsignedIntegerValue] * 60;
 }
 
 -(IBAction)startTimer:(id)sender {
