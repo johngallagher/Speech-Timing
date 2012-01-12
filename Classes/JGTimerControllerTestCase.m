@@ -122,6 +122,24 @@
     [mockDelegate verify];
 }
 
+/*
+    Total time  - 3.00
+
+    Start time  - 0
+    TEST        - 1 Before green
+
+    Green time  - 1.5
+    TEST        - 1.6 After green, before yellow
+
+    Yellow time - 2.25
+    TEST        - 2.3 After yellow, before red
+
+    Red time    - 3.00
+    TEST        - 3.1 After red
+
+ */
+#pragma mark Start time in past
+#pragma mark 
 -(void)testGivenStartTimeInPastBeforeGreenCardShouldCallAllThreeCards {
     [[mockDelegate expect] showGreenCard];
     [[mockDelegate expect] showYellowCard];
@@ -133,11 +151,63 @@
     [mockDelegate verify];
 }
 
--(void)testGivenStartTimeInPastAfterGreenCardShouldImmediatelyCallGreenCard {
+-(void)testGivenStartTimeInPastAfterGreenBeforeYellowShouldCallAllThree {
+    [[mockDelegate expect] showGreenCard];
+    [[mockDelegate expect] showYellowCard];
+    [[mockDelegate expect] showRedCard];
+
+    [self startTimerWithStartTimeIntervalBeforeNow:1.6 andDuration:3];
+    [self stopTimerAfterTimeInterval:1.5];
+
+    [mockDelegate verify];
+}
+-(void)testGivenStartTimeInPastAfterYellowBeforeRedShouldCallYellowAndRed {
+    [[mockDelegate expect] showYellowCard];
+    [[mockDelegate expect] showRedCard];
+
+    [self startTimerWithStartTimeIntervalBeforeNow:2.3 andDuration:3];
+    [self stopTimerAfterTimeInterval:0.8];
+
+    [mockDelegate verify];
+}
+
+-(void)testGivenStartTimeInPastAfterRedShouldCallRed {
+    [[mockDelegate expect] showRedCard];
+
+    [self startTimerWithStartTimeIntervalBeforeNow:3.5 andDuration:3];
+    [self stopTimerAfterTimeInterval:0.1];
+
+    [mockDelegate verify];
+}
+
+
+-(void)testGivenStartTimeInPastBeforeGreenShouldImmediatelyShowNothing {
+    [self startTimerWithStartTimeIntervalBeforeNow:1 andDuration:3];
+
+    [mockDelegate verify];
+}
+
+-(void)testGivenStartTimeInPastAfterGreenBeforeYellowShouldImmediatelyCallGreen {
     [[mockDelegate expect] showGreenCard];
 
-    [self startTimerWithStartTimeIntervalBeforeNow:2 andDuration:3];
+    [self startTimerWithStartTimeIntervalBeforeNow:1.6 andDuration:3];
     
+    [mockDelegate verify];
+}
+
+-(void)testGivenStartTimeInPastAfterYellowBeforeRedShouldImmediatelyCallYellow {
+    [[mockDelegate expect] showYellowCard];
+
+    [self startTimerWithStartTimeIntervalBeforeNow:2.3 andDuration:3];
+
+    [mockDelegate verify];
+}
+
+-(void)testGivenStartTimeInPastAfterRedShouldImmediatelyCallRed {
+    [[mockDelegate expect] showRedCard];
+
+    [self startTimerWithStartTimeIntervalBeforeNow:3.5 andDuration:3];
+
     [mockDelegate verify];
 }
 

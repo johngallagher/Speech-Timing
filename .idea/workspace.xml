@@ -4,7 +4,7 @@
     <list id="dcf27bc1-0f3a-4126-a516-d7d4567fa020" name="Default" comment="Duration changed to time interval. This breaks" />
     <list id="09881062-60ce-4b51-b613-9e69bf443e0c" name="Rejected commit: Default" comment="Added playing of sound on the red card appearing. Sound doesn't get played in simulator so we need to check on device to get this working." />
     <list id="80879804-cb4f-4c78-b8e1-bd65721e23c3" name="New changelist" comment="" />
-    <list default="true" id="cfb3d852-0088-437e-a12c-d626d784fe35" name="Change to Fire Dates with Start times" comment="Issue with tests found out - we're not stopping the timer on one of the tests. Added this to the teardown method. All enabled tests pass.">
+    <list default="true" id="cfb3d852-0088-437e-a12c-d626d784fe35" name="Change to Fire Dates with Start times" comment="Reenabled tests and hey presto we pass.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/JGTimerController.m" afterPath="$PROJECT_DIR$/Classes/JGTimerController.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/JGTimerControllerTestCase.m" afterPath="$PROJECT_DIR$/Classes/JGTimerControllerTestCase.m" />
@@ -30,10 +30,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="JGTimerController.m" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="JGTimerControllerTestCase.m" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Classes/JGTimerControllerTestCase.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="141" column="13" selection-start="4175" selection-end="4175" vertical-scroll-proportion="-0.9120879">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JGTimerControllerTestCase.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Classes/JGTimerControllerTestCase.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="4" selection-start="797" selection-end="797" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JGTimerController.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Classes/JGTimerController.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="5" selection-start="1397" selection-end="1397" vertical-scroll-proportion="0.6730769">
+            <state line="71" column="33" selection-start="3039" selection-end="3039" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -68,8 +86,8 @@
         <option value="$PROJECT_DIR$/Classes/JGCardTimes.m" />
         <option value="$PROJECT_DIR$/Classes/JGCardTimes.h" />
         <option value="$PROJECT_DIR$/Classes/JGTimerDurationCalculatorTestCase.m" />
-        <option value="$PROJECT_DIR$/Classes/JGTimerControllerTestCase.m" />
         <option value="$PROJECT_DIR$/Classes/JGTimerController.m" />
+        <option value="$PROJECT_DIR$/Classes/JGTimerControllerTestCase.m" />
       </list>
     </option>
   </component>
@@ -452,11 +470,11 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20222223" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32692307" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3237868" sideWeight="0.24111111" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3237868" sideWeight="0.4911111" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3237868" sideWeight="0.4911111" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5322222" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32444444" sideWeight="0.24444444" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46" sideWeight="0.50278443" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2588889" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2588889" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288889" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="100" y="122" width="1080" height="574" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -500,7 +518,7 @@
     <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Issue with tests found out - we're not stopping the timer on one of the tests. Added this to the teardown method. All enabled tests pass." />
+    <option name="LAST_COMMIT_MESSAGE" value="Reenabled tests and hey presto we pass." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -536,6 +554,7 @@
     <MESSAGE value="Issue was time interval with args the wrong way round. Also changed the time interval to much greater value - 40 so the test is clearer." />
     <MESSAGE value="Only one test fails now - the one with the timer in the past." />
     <MESSAGE value="Issue with tests found out - we're not stopping the timer on one of the tests. Added this to the teardown method. All enabled tests pass." />
+    <MESSAGE value="Reenabled tests and hey presto we pass." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -632,23 +651,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/JGTimerControllerTestCase.m">
+    <entry file="file://$PROJECT_DIR$/Classes/JGTimerController.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="123" column="0" selection-start="3845" selection-end="3845" vertical-scroll-proportion="0.41758242">
+        <state line="71" column="33" selection-start="3039" selection-end="3039" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Classes/JGTimerControllerTestCase.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="4" selection-start="797" selection-end="797" vertical-scroll-proportion="0.21978022">
+        <state line="22" column="4" selection-start="797" selection-end="797" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/JGTimerController.m">
+    <entry file="file://$PROJECT_DIR$/Classes/JGTimerControllerTestCase.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="5" selection-start="1397" selection-end="1397" vertical-scroll-proportion="0.6730769">
+        <state line="141" column="13" selection-start="4175" selection-end="4175" vertical-scroll-proportion="-0.9120879">
           <folding />
         </state>
       </provider>

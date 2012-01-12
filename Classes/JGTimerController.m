@@ -31,7 +31,7 @@
     if (startTimeIsLaterThanFireTime) {
         return nil;
     }
-    
+
     self = [super init];
 
     [self initDelegate:delegate_];
@@ -55,17 +55,22 @@
     greenCardTime  = [calculator greenCardTime];
     yellowCardTime = [calculator yellowCardTime];
     redCardTime    = [calculator redCardTime];
-//    NSLog(@"Green time: %@ Yellow time: %@ REd Time %@", greenCardTime, yellowCardTime, redCardTime);
+    //    NSLog(@"Green time: %@ Yellow time: %@ REd Time %@", greenCardTime, yellowCardTime, redCardTime);
     // TODO add method to the protocol - vibrate - at the time limit. If we're past the time limit don't vibrate.
     // TODO work out what card we should be showing right now
     [calculator release];
 }
 
 -(void)showCurrentCard {
-    NSTimeInterval greenTimeInterval = [greenCardTime timeIntervalSinceDate:[NSDate date]];
-//    NSLog(@"Green time interval is %f", greenTimeInterval);
-    if (greenTimeInterval < 0) {
+    NSTimeInterval greenTimeInterval  = [greenCardTime timeIntervalSinceDate:[NSDate date]];
+    NSTimeInterval yellowTimeInterval = [yellowCardTime timeIntervalSinceDate:[NSDate date]];
+    NSTimeInterval redTimeInterval    = [redCardTime timeIntervalSinceDate:[NSDate date]];
+    if (greenTimeInterval <= 0 && yellowTimeInterval > 0) {
         [self _showCard:@"Green"];
+    } else if (yellowTimeInterval <= 0 && redTimeInterval > 0) {
+        [self _showCard:@"Yellow"];
+    } else if (redTimeInterval <= 0) {
+        [self _showCard:@"Red"];
     }
 }
 
@@ -114,7 +119,6 @@
     [timer_ invalidate];
     [self _showCard:cardName];
 }
-
 
 
 -(void)showGreenCard:(NSTimer *)timer_ {
