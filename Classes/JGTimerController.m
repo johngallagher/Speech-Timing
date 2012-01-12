@@ -57,41 +57,80 @@
     redCardTime    = [calculator redCardTime];
     //    NSLog(@"Green time: %@ Yellow time: %@ REd Time %@", greenCardTime, yellowCardTime, redCardTime);
     // TODO add method to the protocol - vibrate - at the time limit. If we're past the time limit don't vibrate.
-    // TODO work out what card we should be showing right now
     [calculator release];
 }
 
--(void)showCurrentCard {
-    NSTimeInterval greenTimeInterval  = [greenCardTime timeIntervalSinceDate:[NSDate date]];
+-(NSTimeInterval)redCardTimeIntervalSinceNow {
+    NSTimeInterval redTimeInterval = [redCardTime timeIntervalSinceDate:[NSDate date]];
+    return redTimeInterval;
+}
+
+-(NSTimeInterval)yellowCardTimeIntervalSinceNow {
     NSTimeInterval yellowTimeInterval = [yellowCardTime timeIntervalSinceDate:[NSDate date]];
-    NSTimeInterval redTimeInterval    = [redCardTime timeIntervalSinceDate:[NSDate date]];
-    if (greenTimeInterval <= 0 && yellowTimeInterval > 0) {
+    return yellowTimeInterval;
+}
+
+-(NSTimeInterval)greenCardTimeIntervalSinceNow {
+    NSTimeInterval greenTimeInterval = [greenCardTime timeIntervalSinceDate:[NSDate date]];
+    return greenTimeInterval;
+}
+
+-(BOOL)betweenGreenAndYellowCards {
+    return [self greenCardTimeIntervalSinceNow] <= 0 && [self yellowCardTimeIntervalSinceNow] > 0;
+}
+
+-(BOOL)betweenYellowAndRedCards {
+    return [self yellowCardTimeIntervalSinceNow] <= 0 && [self redCardTimeIntervalSinceNow] > 0;
+}
+
+-(BOOL)afterRedCard {
+    return [self redCardTimeIntervalSinceNow] <= 0;
+}
+
+-(void)showCurrentCard {
+    if ([self betweenGreenAndYellowCards]) {
         [self _showCard:@"Green"];
-    } else if (yellowTimeInterval <= 0 && redTimeInterval > 0) {
+        return;
+    }
+
+    if ([self betweenYellowAndRedCards]) {
         [self _showCard:@"Yellow"];
-    } else if (redTimeInterval <= 0) {
+        return;
+    }
+    
+    if ([self afterRedCard]) {
         [self _showCard:@"Red"];
     }
 }
 
+-(BOOL)beforeGreenCard {
+    return [self greenCardTimeIntervalSinceNow] > 0;
+}
+
+-(BOOL)beforeYellowCard {
+    return [self yellowCardTimeIntervalSinceNow] > 0;
+}
+
+-(BOOL)beforeRedCard {
+    return [self redCardTimeIntervalSinceNow] > 0;
+}
+
+
 -(void)addGreenCardTimer {
-    NSTimeInterval greenTimeInterval = [greenCardTime timeIntervalSinceDate:[NSDate date]];
-    if (greenTimeInterval > 0) {
-        [NSTimer scheduledTimerWithTimeInterval:greenTimeInterval target:self selector:@selector(showGreenCard:) userInfo:nil repeats:NO];
+    if ([self beforeGreenCard]) {
+        [NSTimer scheduledTimerWithTimeInterval:[self greenCardTimeIntervalSinceNow] target:self selector:@selector(showGreenCard:) userInfo:nil repeats:NO];
     }
 }
 
 -(void)addYellowCardTimer {
-    NSTimeInterval yellowTimeInterval = [yellowCardTime timeIntervalSinceDate:[NSDate date]];
-    if (yellowTimeInterval > 0) {
-        [NSTimer scheduledTimerWithTimeInterval:yellowTimeInterval target:self selector:@selector(showYellowCard:) userInfo:nil repeats:NO];
+    if ([self beforeYellowCard]) {
+        [NSTimer scheduledTimerWithTimeInterval:[self yellowCardTimeIntervalSinceNow] target:self selector:@selector(showYellowCard:) userInfo:nil repeats:NO];
     }
 }
 
 -(void)addRedCardTimer {
-    NSTimeInterval redTimeInterval = [redCardTime timeIntervalSinceDate:[NSDate date]];
-    if (redTimeInterval > 0) {
-        [NSTimer scheduledTimerWithTimeInterval:redTimeInterval target:self selector:@selector(showRedCard:) userInfo:nil repeats:NO];
+    if ([self beforeRedCard]) {
+        [NSTimer scheduledTimerWithTimeInterval:[self redCardTimeIntervalSinceNow] target:self selector:@selector(showRedCard:) userInfo:nil repeats:NO];
     }
 }
 
