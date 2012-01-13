@@ -13,29 +13,29 @@
     BOOL durationImpliesFiveMinuteIncrements = (duration_ >= 1800);
 
     if (durationImpliesQuarterIncrements) {
-        greenCardTimeInterval = 0.5 * duration_;
+        greenCardTimeInterval  = 0.5 * duration_;
         yellowCardTimeInterval = 0.75 * duration_;
     } else
         if (durationImpliesOneMinuteIncrements) {
-            greenCardTimeInterval = duration_ - 120;
+            greenCardTimeInterval  = duration_ - 120;
             yellowCardTimeInterval = duration_ - 60;
         } else
             if (durationImpliesTwoMinuteIncrements) {
-                greenCardTimeInterval = duration_ - 240;
+                greenCardTimeInterval  = duration_ - 240;
                 yellowCardTimeInterval = duration_ - 120;
             } else
                 if (durationImpliesFiveMinuteIncrements) {
-                    greenCardTimeInterval = duration_ - 600;
+                    greenCardTimeInterval  = duration_ - 600;
                     yellowCardTimeInterval = duration_ - 300;
                 }
-    redCardTimeInterval = duration_;
+    redCardTimeInterval                      = duration_;
 }
 
 -(void)initTimesFromDuration:(NSTimeInterval)duration_ {
     if (duration_ == 0) {
-        greenCardTimeInterval = 0;
+        greenCardTimeInterval  = 0;
         yellowCardTimeInterval = 0;
-        redCardTimeInterval = 0;
+        redCardTimeInterval    = 0;
         return;
     }
 

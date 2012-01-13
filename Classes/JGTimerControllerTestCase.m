@@ -6,11 +6,9 @@
 //  Copyright 2011 Synaptic Mishap. All rights reserved.
 //
 
-#import <QuartzCore/QuartzCore.h>
+#import "JGTimerControllerDelegate.h"
 #import "JGTimerControllerTestCase.h"
 #import "JGTimerController.h"
-#import "JGTimerControllerDelegate.h"
-#import "OCObserverMockObject.h"
 
 @interface JGTimerControllerTestCase ()
 -(void)pauseForTimeInterval:(NSTimeInterval)timeInterval_;
@@ -39,7 +37,7 @@
 
 -(void)startTimerWithStartTimeIntervalBeforeNow:(NSTimeInterval)beforeNow_ andDuration:(NSTimeInterval)duration_ {
     timer = [JGTimerController timerStartingAt:[[NSDate date] dateByAddingTimeInterval:(0 - beforeNow_)]
-                                  withFireDate:[[NSDate date] dateByAddingTimeInterval:(duration_ - beforeNow_)]
+                                  withFireTime:[[NSDate date] dateByAddingTimeInterval:(duration_ - beforeNow_)]
                                       delegate:mockDelegate];
     [timer startTimer];
 }
@@ -69,7 +67,7 @@
 
 -(void)testGivenThreeSecondDurationAfterHalfDurationShouldHaveCalledGreenCard {
     [[mockDelegate expect] showGreenCard];
-    
+
     [self startTimerWithTimeInterval:3.0];
     [self stopTimerAfterTimeInterval:1.51];
 
@@ -161,6 +159,7 @@
 
     [mockDelegate verify];
 }
+
 -(void)testGivenStartTimeInPastAfterYellowBeforeRedShouldCallYellowAndRed {
     [[mockDelegate expect] showYellowCard];
     [[mockDelegate expect] showRedCard];
@@ -191,7 +190,7 @@
     [[mockDelegate expect] showGreenCard];
 
     [self startTimerWithStartTimeIntervalBeforeNow:1.6 andDuration:3];
-    
+
     [mockDelegate verify];
 }
 

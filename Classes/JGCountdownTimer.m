@@ -27,18 +27,18 @@
 @synthesize timerEndDate;
 
 +(JGCountdownTimer *)timerStartingNowWithTimeInterval:(NSTimeInterval)i delegate:(id)o {
-    return [[[JGCountdownTimer alloc] initStartingAt:[NSDate date] withFireDate:[NSDate dateWithTimeIntervalSinceNow:i] delegate:o] autorelease];
+    return [[[JGCountdownTimer alloc] initStartingAt:[NSDate date] withFireTime:[NSDate dateWithTimeIntervalSinceNow:i] delegate:o] autorelease];
 }
 
-+(JGCountdownTimer *)timerStartingAt:(NSDate *)startTime_ withFireDate:(NSDate *)fireDate_ delegate:(id <JGCountdownTimerDelegate>)delegate_ {
-    return [[[JGCountdownTimer alloc] initStartingAt:startTime_ withFireDate:fireDate_ delegate:delegate_] autorelease];
++(JGCountdownTimer *)timerStartingAt:(NSDate *)startTime_ withFireTime:(NSDate *)fireTime_ delegate:(id <JGCountdownTimerDelegate>)delegate_ {
+    return [[[JGCountdownTimer alloc] initStartingAt:startTime_ withFireTime:fireTime_ delegate:delegate_] autorelease];
 }
 
--(JGCountdownTimer *)initStartingAt:(NSDate *)startTime_ withFireDate:(NSDate *)fireDate_ delegate:(id <JGCountdownTimerDelegate>)delegate_ {
+-(JGCountdownTimer *)initStartingAt:(NSDate *)startTime_ withFireTime:(NSDate *)fireTime_ delegate:(id <JGCountdownTimerDelegate>)delegate_ {
     self = [super init];
 
     [self _initDelegate:delegate_];
-    [self setTimerEndDate:fireDate_];
+    [self setTimerEndDate:fireTime_];
 
     return self;
 }

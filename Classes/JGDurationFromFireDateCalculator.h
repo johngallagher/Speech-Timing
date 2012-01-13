@@ -1,8 +1,8 @@
 #import <Foundation/Foundation.h>
 
-@interface JGDurationFromFireDateCalculator : NSObject {
+@interface JGDurationFromFireTimeCalculator : NSObject {
 
 }
 
-+(NSUInteger)positiveDurationFromFireDate:(NSDate *)date_;
++(NSUInteger)positiveDurationFromFireTime:(NSDate *)date_;
 @end

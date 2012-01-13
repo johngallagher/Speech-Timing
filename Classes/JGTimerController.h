@@ -13,7 +13,7 @@
     BOOL timerRunning;
 }
 
-+(JGTimerController *)timerStartingAt:(NSDate *)startDate_ withFireDate:(NSDate *)fireDate_ delegate:(id <JGTimerControllerDelegate>)delegate_;
++(JGTimerController *)timerStartingAt:(NSDate *)startTime_ withFireTime:(NSDate *)fireTime_ delegate:(id <JGTimerControllerDelegate>)delegate_;
 
 -(void)startTimer;
 

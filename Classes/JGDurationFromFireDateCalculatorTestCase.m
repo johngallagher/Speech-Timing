@@ -1,5 +1,5 @@
 //
-//  JGDurationFromFireDateCalculatorTestCase.m
+//  JGDurationFromFireTimeCalculatorTestCase.m
 //  SpeechTimer
 //
 //  Created by John Gallagher on 01/11/12.
@@ -11,22 +11,22 @@
 
 #import <UIKit/UIKit.h>
 
-@implementation JGDurationFromFireDateCalculatorTestCase
+@implementation JGDurationFromFireTimeCalculatorTestCase
 
--(void)testGivenFireDateOfNowDurationShouldBeZero {
-    NSUInteger actualDuration = [JGDurationFromFireDateCalculator positiveDurationFromFireDate:[NSDate date]];
+-(void)testGivenFireTimeOfNowDurationShouldBeZero {
+    NSUInteger actualDuration   = [JGDurationFromFireTimeCalculator positiveDurationFromFireTime:[NSDate date]];
     NSUInteger expectedDuration = 0;
     STAssertEquals(actualDuration, expectedDuration, nil);
 }
 
--(void)testGivenFireDateOfOneSecondBeforeNowDurationShouldBeOne {
-    NSUInteger actualDuration = [JGDurationFromFireDateCalculator positiveDurationFromFireDate:[NSDate dateWithTimeIntervalSinceNow:1]];
+-(void)testGivenFireTimeOfOneSecondBeforeNowDurationShouldBeOne {
+    NSUInteger actualDuration   = [JGDurationFromFireTimeCalculator positiveDurationFromFireTime:[NSDate dateWithTimeIntervalSinceNow:1]];
     NSUInteger expectedDuration = 1;
     STAssertEquals(actualDuration, expectedDuration, nil);
 }
 
--(void)testGivenFireDateOfOneSecondAfterNowDurationShouldBeZero {
-    NSUInteger actualDuration = [JGDurationFromFireDateCalculator positiveDurationFromFireDate:[NSDate dateWithTimeIntervalSinceNow:-1]];
+-(void)testGivenFireTimeOfOneSecondAfterNowDurationShouldBeZero {
+    NSUInteger actualDuration   = [JGDurationFromFireTimeCalculator positiveDurationFromFireTime:[NSDate dateWithTimeIntervalSinceNow:-1]];
     NSUInteger expectedDuration = 0;
     STAssertEquals(actualDuration, expectedDuration, nil);
 }

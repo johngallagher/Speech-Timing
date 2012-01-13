@@ -15,10 +15,13 @@
 
 @interface JGTimerConfigurationViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate, JGRingingSettingDelegate> {
     IBOutlet UIPickerView *timerDurationPickerView;
-    IBOutlet UITableView  *currentAlertTableView;
+    IBOutlet UITableView *currentAlertTableView;
 
-    NSArray               *pickerDurations;
-    NSString              *currentAlertName;
+    NSArray  *pickerDurations;
+    NSString *currentAlertName;
+
+    //    NSDate *startTime;
+    //    NSDate *fireTime;
 
 @private
     NSManagedObjectContext *managedObjectContext_;

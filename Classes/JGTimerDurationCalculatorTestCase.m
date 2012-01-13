@@ -25,7 +25,7 @@
     [self setUpCalculatorStartingNowWithDuration:40];
 
     JGCardTimes *expectedTimings = [JGCardTimes cardTimesWithTimeIntervalSinceNowGreen:20 yellow:30 red:40];
-    JGCardTimes *actualTimings = [calculator cardTimings];
+    JGCardTimes *actualTimings   = [calculator cardTimings];
 
     STAssertEqualObjects(actualTimings, expectedTimings, nil);
 }
@@ -34,7 +34,7 @@
     [self setUpCalculatorStartingNowWithDuration:239];
 
     JGCardTimes *expectedTimings = [JGCardTimes cardTimesWithTimeIntervalSinceNowGreen:119.50 yellow:179.25 red:239.0];
-    JGCardTimes *actualTimings = [calculator cardTimings];
+    JGCardTimes *actualTimings   = [calculator cardTimings];
 
     STAssertEqualObjects(actualTimings, expectedTimings, nil);
 }
@@ -44,7 +44,7 @@
     [self setUpCalculatorStartingNowWithDuration:240];
 
     JGCardTimes *expectedTimings = [JGCardTimes cardTimesWithTimeIntervalSinceNowGreen:120 yellow:180 red:240];
-    JGCardTimes *actualTimings = [calculator cardTimings];
+    JGCardTimes *actualTimings   = [calculator cardTimings];
 
     STAssertEqualObjects(actualTimings, expectedTimings, nil);
 }
@@ -53,7 +53,7 @@
     [self setUpCalculatorStartingNowWithDuration:599];
 
     JGCardTimes *expectedTimings = [JGCardTimes cardTimesWithTimeIntervalSinceNowGreen:479 yellow:539 red:599];
-    JGCardTimes *actualTimings = [calculator cardTimings];
+    JGCardTimes *actualTimings   = [calculator cardTimings];
 
     STAssertEqualObjects(actualTimings, expectedTimings, nil);
 }
@@ -62,7 +62,7 @@
     [self setUpCalculatorStartingNowWithDuration:600];
 
     JGCardTimes *expectedTimings = [JGCardTimes cardTimesWithTimeIntervalSinceNowGreen:360 yellow:480 red:600];
-    JGCardTimes *actualTimings = [calculator cardTimings];
+    JGCardTimes *actualTimings   = [calculator cardTimings];
 
     STAssertEqualObjects(actualTimings, expectedTimings, nil);
 }
@@ -71,7 +71,7 @@
     [self setUpCalculatorStartingNowWithDuration:1799];
 
     JGCardTimes *expectedTimings = [JGCardTimes cardTimesWithTimeIntervalSinceNowGreen:1559 yellow:1679 red:1799];
-    JGCardTimes *actualTimings = [calculator cardTimings];
+    JGCardTimes *actualTimings   = [calculator cardTimings];
 
     STAssertEqualObjects(actualTimings, expectedTimings, nil);
 }
@@ -81,7 +81,7 @@
     [self setUpCalculatorStartingNowWithDuration:1800];
 
     JGCardTimes *expectedTimings = [JGCardTimes cardTimesWithTimeIntervalSinceNowGreen:1200 yellow:1500 red:1800];
-    JGCardTimes *actualTimings = [calculator cardTimings];
+    JGCardTimes *actualTimings   = [calculator cardTimings];
 
     STAssertEqualObjects(actualTimings, expectedTimings, nil);
 }
@@ -90,7 +90,7 @@
     [self setUpCalculatorStartingNowWithDuration:3000];
 
     JGCardTimes *expectedTimings = [JGCardTimes cardTimesWithTimeIntervalSinceNowGreen:2400 yellow:2700 red:3000];
-    JGCardTimes *actualTimings = [calculator cardTimings];
+    JGCardTimes *actualTimings   = [calculator cardTimings];
 
     STAssertEqualObjects(actualTimings, expectedTimings, nil);
 }

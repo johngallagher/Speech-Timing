@@ -7,19 +7,19 @@
 #import "JGTimerController.h"
 
 @interface JGTimerRunningViewController : UIViewController <JGTimerControllerDelegate, JGCountdownTimerDelegate> {
-    IBOutlet UILabel *timeLabel;
-    AVAudioPlayer    *audioPlayer;
-    JGTimerController     *timerController;
-    JGCountdownTimer      *countdownTimer;
+    IBOutlet UILabel  *timeLabel;
+    AVAudioPlayer     *audioPlayer;
+    JGTimerController *timerController;
+    JGCountdownTimer  *countdownTimer;
 }
 
-@property(nonatomic, retain) JGCountdownTimer *countdownTimer;
+@property(nonatomic, retain) JGCountdownTimer  *countdownTimer;
 @property(nonatomic, retain) JGTimerController *timerController;
 
 
-+(JGTimerRunningViewController *)viewControllerWithFireDate:(NSDate *)fireDate;
++(JGTimerRunningViewController *)viewControllerWithFireTime:(NSDate *)fireTime;
 
-+(JGTimerRunningViewController *)viewControllerWithStartDate:(NSDate *)startDate_ fireDate:(NSDate *)fireDate_ alarmFilename:(NSString *)an;
++(JGTimerRunningViewController *)viewControllerWithStartTime:(NSDate *)startTime_ fireTime:(NSDate *)fireTime_ alarmFilename:(NSString *)an;
 
 
 -(void)loadAlertSoundWithFilename:(NSString *)alertSoundFilename_;

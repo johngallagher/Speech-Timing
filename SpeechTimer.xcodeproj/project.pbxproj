@@ -23,30 +23,12 @@
 		520F73EE14BA46F1003FEC46 /* Bell.aif in Resources */ = {isa = PBXBuildFile; fileRef = 520F73E814BA46F1003FEC46 /* Bell.aif */; };
 		520F73EF14BA46F1003FEC46 /* Alarm.aif in Resources */ = {isa = PBXBuildFile; fileRef = 520F73E914BA46F1003FEC46 /* Alarm.aif */; };
 		520F73F014BA46F1003FEC46 /* Submarine.aif in Resources */ = {isa = PBXBuildFile; fileRef = 520F73EA14BA46F1003FEC46 /* Submarine.aif */; };
+		521BCEA414C043F900695F8B /* JGTimerDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A954540054248E /* JGTimerDefaults.m */; };
+		521BCEA514C0445600695F8B /* JGAbstractSingletonObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A9545400542492 /* JGAbstractSingletonObject.m */; };
 		5242CBEF14B3FC8A00C876C7 /* JGDrawingTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5242CBEC14B3FC8A00C876C7 /* JGDrawingTestView.m */; };
 		5242CBF014B3FC8A00C876C7 /* PieChartLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5242CBEE14B3FC8A00C876C7 /* PieChartLayer.m */; };
 		5242CBF514B3FD0000C876C7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5242CBF414B3FD0000C876C7 /* QuartzCore.framework */; };
 		5251B9C8149E5C4100AFC0B6 /* JGTimerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52591F34149E453E00DEA711 /* JGTimerController.m */; };
-		5251BB46149EA3A700AFC0B6 /* License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5251BB1E149EA3A600AFC0B6 /* License.txt */; };
-		5251BB47149EA3A700AFC0B6 /* NSInvocation+OCMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5251BB20149EA3A600AFC0B6 /* NSInvocation+OCMAdditions.m */; };
-		5251BB48149EA3A700AFC0B6 /* NSMethodSignature+OCMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5251BB22149EA3A600AFC0B6 /* NSMethodSignature+OCMAdditions.m */; };
-		5251BB49149EA3A700AFC0B6 /* NSNotificationCenter+OCMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5251BB24149EA3A600AFC0B6 /* NSNotificationCenter+OCMAdditions.m */; };
-		5251BB4A149EA3A700AFC0B6 /* OCClassMockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5251BB26149EA3A600AFC0B6 /* OCClassMockObject.m */; };
-		5251BB4B149EA3A700AFC0B6 /* OCMArg.m in Sources */ = {isa = PBXBuildFile; fileRef = 5251BB28149EA3A600AFC0B6 /* OCMArg.m */; };
-		5251BB4C149EA3A700AFC0B6 /* OCMBoxedReturnValueProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 5251BB2A149EA3A600AFC0B6 /* OCMBoxedReturnValueProvider.m */; };
-		5251BB4D149EA3A700AFC0B6 /* OCMConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 5251BB2C149EA3A600AFC0B6 /* OCMConstraint.m */; };
-		5251BB4E149EA3A700AFC0B6 /* OCMExceptionReturnValueProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 5251BB2E149EA3A700AFC0B6 /* OCMExceptionReturnValueProvider.m */; };
-		5251BB4F149EA3A700AFC0B6 /* OCMIndirectReturnValueProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 5251BB30149EA3A700AFC0B6 /* OCMIndirectReturnValueProvider.m */; };
-		5251BB50149EA3A700AFC0B6 /* OCMNotificationPoster.m in Sources */ = {isa = PBXBuildFile; fileRef = 5251BB32149EA3A700AFC0B6 /* OCMNotificationPoster.m */; };
-		5251BB51149EA3A700AFC0B6 /* OCMObserverRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 5251BB34149EA3A700AFC0B6 /* OCMObserverRecorder.m */; };
-		5251BB52149EA3A700AFC0B6 /* OCMockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5251BB37149EA3A700AFC0B6 /* OCMockObject.m */; };
-		5251BB53149EA3A700AFC0B6 /* OCMockRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 5251BB39149EA3A700AFC0B6 /* OCMockRecorder.m */; };
-		5251BB54149EA3A700AFC0B6 /* OCMPassByRefSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5251BB3B149EA3A700AFC0B6 /* OCMPassByRefSetter.m */; };
-		5251BB55149EA3A700AFC0B6 /* OCMReturnValueProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 5251BB3D149EA3A700AFC0B6 /* OCMReturnValueProvider.m */; };
-		5251BB56149EA3A700AFC0B6 /* OCObserverMockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5251BB3F149EA3A700AFC0B6 /* OCObserverMockObject.m */; };
-		5251BB57149EA3A700AFC0B6 /* OCPartialMockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5251BB41149EA3A700AFC0B6 /* OCPartialMockObject.m */; };
-		5251BB58149EA3A700AFC0B6 /* OCPartialMockRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 5251BB43149EA3A700AFC0B6 /* OCPartialMockRecorder.m */; };
-		5251BB59149EA3A700AFC0B6 /* OCProtocolMockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5251BB45149EA3A700AFC0B6 /* OCProtocolMockObject.m */; };
 		52591F35149E453E00DEA711 /* JGTimerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52591F34149E453E00DEA711 /* JGTimerController.m */; };
 		52591F43149E469C00DEA711 /* JGTimerControllerTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */; };
 		527B9C5914BDDC63008EE913 /* JGDurationFromFireDateCalculatorTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A9545400542487 /* JGDurationFromFireDateCalculatorTestCase.m */; };
@@ -79,6 +61,9 @@
 		C01FCF5008A9545400542481 /* JGTimerRunningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A9545400542480 /* JGTimerRunningViewController.m */; };
 		C01FCF5008A9545400542489 /* JGAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A9545400542488 /* JGAlert.m */; };
 		C01FCF5008A954540054248C /* JGCardTimes.m in Sources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A954540054248B /* JGCardTimes.m */; };
+		C01FCF5008A954540054248F /* JGTimerDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A954540054248E /* JGTimerDefaults.m */; };
+		C01FCF5008A9545400542493 /* JGAbstractSingletonObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A9545400542492 /* JGAbstractSingletonObject.m */; };
+		C01FCF5008A9545400542495 /* JGTimerDefaultsTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A9545400542494 /* JGTimerDefaultsTestCase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,46 +115,6 @@
 		5242CBEE14B3FC8A00C876C7 /* PieChartLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PieChartLayer.m; sourceTree = "<group>"; };
 		5242CBF414B3FD0000C876C7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		5251B9A9149E59B400AFC0B6 /* JGTimerControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGTimerControllerDelegate.h; sourceTree = "<group>"; };
-		5251BB1E149EA3A600AFC0B6 /* License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
-		5251BB1F149EA3A600AFC0B6 /* NSInvocation+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSInvocation+OCMAdditions.h"; sourceTree = "<group>"; };
-		5251BB20149EA3A600AFC0B6 /* NSInvocation+OCMAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSInvocation+OCMAdditions.m"; sourceTree = "<group>"; };
-		5251BB21149EA3A600AFC0B6 /* NSMethodSignature+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMethodSignature+OCMAdditions.h"; sourceTree = "<group>"; };
-		5251BB22149EA3A600AFC0B6 /* NSMethodSignature+OCMAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMethodSignature+OCMAdditions.m"; sourceTree = "<group>"; };
-		5251BB23149EA3A600AFC0B6 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
-		5251BB24149EA3A600AFC0B6 /* NSNotificationCenter+OCMAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter+OCMAdditions.m"; sourceTree = "<group>"; };
-		5251BB25149EA3A600AFC0B6 /* OCClassMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCClassMockObject.h; sourceTree = "<group>"; };
-		5251BB26149EA3A600AFC0B6 /* OCClassMockObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCClassMockObject.m; sourceTree = "<group>"; };
-		5251BB27149EA3A600AFC0B6 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
-		5251BB28149EA3A600AFC0B6 /* OCMArg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCMArg.m; sourceTree = "<group>"; };
-		5251BB29149EA3A600AFC0B6 /* OCMBoxedReturnValueProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMBoxedReturnValueProvider.h; sourceTree = "<group>"; };
-		5251BB2A149EA3A600AFC0B6 /* OCMBoxedReturnValueProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCMBoxedReturnValueProvider.m; sourceTree = "<group>"; };
-		5251BB2B149EA3A600AFC0B6 /* OCMConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMConstraint.h; sourceTree = "<group>"; };
-		5251BB2C149EA3A600AFC0B6 /* OCMConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCMConstraint.m; sourceTree = "<group>"; };
-		5251BB2D149EA3A700AFC0B6 /* OCMExceptionReturnValueProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMExceptionReturnValueProvider.h; sourceTree = "<group>"; };
-		5251BB2E149EA3A700AFC0B6 /* OCMExceptionReturnValueProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCMExceptionReturnValueProvider.m; sourceTree = "<group>"; };
-		5251BB2F149EA3A700AFC0B6 /* OCMIndirectReturnValueProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMIndirectReturnValueProvider.h; sourceTree = "<group>"; };
-		5251BB30149EA3A700AFC0B6 /* OCMIndirectReturnValueProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCMIndirectReturnValueProvider.m; sourceTree = "<group>"; };
-		5251BB31149EA3A700AFC0B6 /* OCMNotificationPoster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMNotificationPoster.h; sourceTree = "<group>"; };
-		5251BB32149EA3A700AFC0B6 /* OCMNotificationPoster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCMNotificationPoster.m; sourceTree = "<group>"; };
-		5251BB33149EA3A700AFC0B6 /* OCMObserverRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMObserverRecorder.h; sourceTree = "<group>"; };
-		5251BB34149EA3A700AFC0B6 /* OCMObserverRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCMObserverRecorder.m; sourceTree = "<group>"; };
-		5251BB35149EA3A700AFC0B6 /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMock.h; sourceTree = "<group>"; };
-		5251BB36149EA3A700AFC0B6 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
-		5251BB37149EA3A700AFC0B6 /* OCMockObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCMockObject.m; sourceTree = "<group>"; };
-		5251BB38149EA3A700AFC0B6 /* OCMockRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockRecorder.h; sourceTree = "<group>"; };
-		5251BB39149EA3A700AFC0B6 /* OCMockRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCMockRecorder.m; sourceTree = "<group>"; };
-		5251BB3A149EA3A700AFC0B6 /* OCMPassByRefSetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMPassByRefSetter.h; sourceTree = "<group>"; };
-		5251BB3B149EA3A700AFC0B6 /* OCMPassByRefSetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCMPassByRefSetter.m; sourceTree = "<group>"; };
-		5251BB3C149EA3A700AFC0B6 /* OCMReturnValueProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMReturnValueProvider.h; sourceTree = "<group>"; };
-		5251BB3D149EA3A700AFC0B6 /* OCMReturnValueProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCMReturnValueProvider.m; sourceTree = "<group>"; };
-		5251BB3E149EA3A700AFC0B6 /* OCObserverMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCObserverMockObject.h; sourceTree = "<group>"; };
-		5251BB3F149EA3A700AFC0B6 /* OCObserverMockObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCObserverMockObject.m; sourceTree = "<group>"; };
-		5251BB40149EA3A700AFC0B6 /* OCPartialMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCPartialMockObject.h; sourceTree = "<group>"; };
-		5251BB41149EA3A700AFC0B6 /* OCPartialMockObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCPartialMockObject.m; sourceTree = "<group>"; };
-		5251BB42149EA3A700AFC0B6 /* OCPartialMockRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCPartialMockRecorder.h; sourceTree = "<group>"; };
-		5251BB43149EA3A700AFC0B6 /* OCPartialMockRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCPartialMockRecorder.m; sourceTree = "<group>"; };
-		5251BB44149EA3A700AFC0B6 /* OCProtocolMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCProtocolMockObject.h; sourceTree = "<group>"; };
-		5251BB45149EA3A700AFC0B6 /* OCProtocolMockObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCProtocolMockObject.m; sourceTree = "<group>"; };
 		52591F33149E453E00DEA711 /* JGTimerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGTimerController.h; sourceTree = "<group>"; };
 		52591F34149E453E00DEA711 /* JGTimerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGTimerController.m; sourceTree = "<group>"; };
 		52591F3B149E466B00DEA711 /* SpeechTimerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeechTimerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -219,6 +164,12 @@
 		C01FCF5008A954540054248A /* JGAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGAlert.h; sourceTree = "<group>"; };
 		C01FCF5008A954540054248B /* JGCardTimes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGCardTimes.m; sourceTree = "<group>"; };
 		C01FCF5008A954540054248D /* JGCardTimes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGCardTimes.h; sourceTree = "<group>"; };
+		C01FCF5008A954540054248E /* JGTimerDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGTimerDefaults.m; sourceTree = "<group>"; };
+		C01FCF5008A9545400542490 /* JGTimerDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGTimerDefaults.h; sourceTree = "<group>"; };
+		C01FCF5008A9545400542491 /* JGAbstractSingletonObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGAbstractSingletonObject.h; sourceTree = "<group>"; };
+		C01FCF5008A9545400542492 /* JGAbstractSingletonObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGAbstractSingletonObject.m; sourceTree = "<group>"; };
+		C01FCF5008A9545400542494 /* JGTimerDefaultsTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGTimerDefaultsTestCase.m; sourceTree = "<group>"; };
+		C01FCF5008A9545400542496 /* JGTimerDefaultsTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGTimerDefaultsTestCase.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,6 +200,12 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C01FCF5008A9545400542496 /* JGTimerDefaultsTestCase.h */,
+				C01FCF5008A9545400542494 /* JGTimerDefaultsTestCase.m */,
+				C01FCF5008A9545400542492 /* JGAbstractSingletonObject.m */,
+				C01FCF5008A9545400542491 /* JGAbstractSingletonObject.h */,
+				C01FCF5008A9545400542490 /* JGTimerDefaults.h */,
+				C01FCF5008A954540054248E /* JGTimerDefaults.m */,
 				C01FCF5008A954540054248D /* JGCardTimes.h */,
 				C01FCF5008A954540054248B /* JGCardTimes.m */,
 				C01FCF5008A954540054248A /* JGAlert.h */,
@@ -283,7 +240,6 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				5251BB1D149EA3A600AFC0B6 /* OCMock */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -434,53 +390,6 @@
 			name = ViewControllers;
 			sourceTree = "<group>";
 		};
-		5251BB1D149EA3A600AFC0B6 /* OCMock */ = {
-			isa = PBXGroup;
-			children = (
-				5251BB1E149EA3A600AFC0B6 /* License.txt */,
-				5251BB1F149EA3A600AFC0B6 /* NSInvocation+OCMAdditions.h */,
-				5251BB20149EA3A600AFC0B6 /* NSInvocation+OCMAdditions.m */,
-				5251BB21149EA3A600AFC0B6 /* NSMethodSignature+OCMAdditions.h */,
-				5251BB22149EA3A600AFC0B6 /* NSMethodSignature+OCMAdditions.m */,
-				5251BB23149EA3A600AFC0B6 /* NSNotificationCenter+OCMAdditions.h */,
-				5251BB24149EA3A600AFC0B6 /* NSNotificationCenter+OCMAdditions.m */,
-				5251BB25149EA3A600AFC0B6 /* OCClassMockObject.h */,
-				5251BB26149EA3A600AFC0B6 /* OCClassMockObject.m */,
-				5251BB27149EA3A600AFC0B6 /* OCMArg.h */,
-				5251BB28149EA3A600AFC0B6 /* OCMArg.m */,
-				5251BB29149EA3A600AFC0B6 /* OCMBoxedReturnValueProvider.h */,
-				5251BB2A149EA3A600AFC0B6 /* OCMBoxedReturnValueProvider.m */,
-				5251BB2B149EA3A600AFC0B6 /* OCMConstraint.h */,
-				5251BB2C149EA3A600AFC0B6 /* OCMConstraint.m */,
-				5251BB2D149EA3A700AFC0B6 /* OCMExceptionReturnValueProvider.h */,
-				5251BB2E149EA3A700AFC0B6 /* OCMExceptionReturnValueProvider.m */,
-				5251BB2F149EA3A700AFC0B6 /* OCMIndirectReturnValueProvider.h */,
-				5251BB30149EA3A700AFC0B6 /* OCMIndirectReturnValueProvider.m */,
-				5251BB31149EA3A700AFC0B6 /* OCMNotificationPoster.h */,
-				5251BB32149EA3A700AFC0B6 /* OCMNotificationPoster.m */,
-				5251BB33149EA3A700AFC0B6 /* OCMObserverRecorder.h */,
-				5251BB34149EA3A700AFC0B6 /* OCMObserverRecorder.m */,
-				5251BB35149EA3A700AFC0B6 /* OCMock.h */,
-				5251BB36149EA3A700AFC0B6 /* OCMockObject.h */,
-				5251BB37149EA3A700AFC0B6 /* OCMockObject.m */,
-				5251BB38149EA3A700AFC0B6 /* OCMockRecorder.h */,
-				5251BB39149EA3A700AFC0B6 /* OCMockRecorder.m */,
-				5251BB3A149EA3A700AFC0B6 /* OCMPassByRefSetter.h */,
-				5251BB3B149EA3A700AFC0B6 /* OCMPassByRefSetter.m */,
-				5251BB3C149EA3A700AFC0B6 /* OCMReturnValueProvider.h */,
-				5251BB3D149EA3A700AFC0B6 /* OCMReturnValueProvider.m */,
-				5251BB3E149EA3A700AFC0B6 /* OCObserverMockObject.h */,
-				5251BB3F149EA3A700AFC0B6 /* OCObserverMockObject.m */,
-				5251BB40149EA3A700AFC0B6 /* OCPartialMockObject.h */,
-				5251BB41149EA3A700AFC0B6 /* OCPartialMockObject.m */,
-				5251BB42149EA3A700AFC0B6 /* OCPartialMockRecorder.h */,
-				5251BB43149EA3A700AFC0B6 /* OCPartialMockRecorder.m */,
-				5251BB44149EA3A700AFC0B6 /* OCProtocolMockObject.h */,
-				5251BB45149EA3A700AFC0B6 /* OCProtocolMockObject.m */,
-			);
-			path = OCMock;
-			sourceTree = "<group>";
-		};
 		52BBBE3514B2EC3200CFE655 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -546,9 +455,9 @@
 			buildPhases = (
 				52591F36149E466B00DEA711 /* Resources */,
 				52591F37149E466B00DEA711 /* Sources */,
+				5251BAF4149EA31100AFC0B6 /* CopyFiles */,
 				52591F38149E466B00DEA711 /* Frameworks */,
 				52591F39149E466B00DEA711 /* ShellScript */,
-				5251BAF4149EA31100AFC0B6 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -617,7 +526,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5251BB46149EA3A700AFC0B6 /* License.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -662,6 +570,8 @@
 				527B9C5A14BDDC6C008EE913 /* JGDurationFromFireDateCalculator.m in Sources */,
 				C01FCF5008A9545400542489 /* JGAlert.m in Sources */,
 				C01FCF5008A954540054248C /* JGCardTimes.m in Sources */,
+				C01FCF5008A954540054248F /* JGTimerDefaults.m in Sources */,
+				C01FCF5008A9545400542493 /* JGAbstractSingletonObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -671,25 +581,6 @@
 			files = (
 				52591F43149E469C00DEA711 /* JGTimerControllerTestCase.m in Sources */,
 				5251B9C8149E5C4100AFC0B6 /* JGTimerController.m in Sources */,
-				5251BB47149EA3A700AFC0B6 /* NSInvocation+OCMAdditions.m in Sources */,
-				5251BB48149EA3A700AFC0B6 /* NSMethodSignature+OCMAdditions.m in Sources */,
-				5251BB49149EA3A700AFC0B6 /* NSNotificationCenter+OCMAdditions.m in Sources */,
-				5251BB4A149EA3A700AFC0B6 /* OCClassMockObject.m in Sources */,
-				5251BB4B149EA3A700AFC0B6 /* OCMArg.m in Sources */,
-				5251BB4C149EA3A700AFC0B6 /* OCMBoxedReturnValueProvider.m in Sources */,
-				5251BB4D149EA3A700AFC0B6 /* OCMConstraint.m in Sources */,
-				5251BB4E149EA3A700AFC0B6 /* OCMExceptionReturnValueProvider.m in Sources */,
-				5251BB4F149EA3A700AFC0B6 /* OCMIndirectReturnValueProvider.m in Sources */,
-				5251BB50149EA3A700AFC0B6 /* OCMNotificationPoster.m in Sources */,
-				5251BB51149EA3A700AFC0B6 /* OCMObserverRecorder.m in Sources */,
-				5251BB52149EA3A700AFC0B6 /* OCMockObject.m in Sources */,
-				5251BB53149EA3A700AFC0B6 /* OCMockRecorder.m in Sources */,
-				5251BB54149EA3A700AFC0B6 /* OCMPassByRefSetter.m in Sources */,
-				5251BB55149EA3A700AFC0B6 /* OCMReturnValueProvider.m in Sources */,
-				5251BB56149EA3A700AFC0B6 /* OCObserverMockObject.m in Sources */,
-				5251BB57149EA3A700AFC0B6 /* OCPartialMockObject.m in Sources */,
-				5251BB58149EA3A700AFC0B6 /* OCPartialMockRecorder.m in Sources */,
-				5251BB59149EA3A700AFC0B6 /* OCProtocolMockObject.m in Sources */,
 				52EB416C14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.m in Sources */,
 				52EB417C14B122DB00308C95 /* JGCardTimesCalculator.m in Sources */,
 				52BBC08D14B3509200CFE655 /* JGCountdownTimerTestCase.m in Sources */,
@@ -699,6 +590,9 @@
 				527B9C5914BDDC63008EE913 /* JGDurationFromFireDateCalculatorTestCase.m in Sources */,
 				527B9C5B14BDDC6E008EE913 /* JGDurationFromFireDateCalculator.m in Sources */,
 				527B9C6514BEF359008EE913 /* JGCardTimes.m in Sources */,
+				C01FCF5008A9545400542495 /* JGTimerDefaultsTestCase.m in Sources */,
+				521BCEA414C043F900695F8B /* JGTimerDefaults.m in Sources */,
+				521BCEA514C0445600695F8B /* JGAbstractSingletonObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -755,6 +649,7 @@
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 					"\"$(SRCROOT)\"",
+					"\"/Volumes/OCMock 1.77/Release\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -762,6 +657,7 @@
 				GCC_PREFIX_HEADER = "";
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)\"";
 				INFOPLIST_FILE = "SpeechTimerTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"-framework",
 					SenTestingKit,
@@ -787,9 +683,11 @@
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 					"\"$(SRCROOT)\"",
+					"\"/Volumes/OCMock 1.77/Release\"",
 				);
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				INFOPLIST_FILE = "SpeechTimerTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,

@@ -1,8 +1,7 @@
+#import <OCMock/OCMock.h>
 #import "JGCountdownTimerTestCase.h"
 #import "JGCountdownTimerDelegate.h"
 #import "JGCountdownTimer.h"
-#import "OCMockObject.h"
-//#import <OCMock/OCMock.h>
 
 @interface JGCountdownTimerTestCase ()
 -(void)startTimerWithTimeInterval:(NSTimeInterval)timeInterval_;

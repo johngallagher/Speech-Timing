@@ -3,7 +3,7 @@
 #import "JGDrawingTestView.h"
 
 @interface JGTimerRunningViewController ()
--(void)initViewControllerWithStartDate:(NSDate *)startDate_ fireDate:(NSDate *)fireDate_ alarmFilename:(NSString *)an;
+-(void)initViewControllerWithStartTime:(NSDate *)startTime_ fireTime:(NSDate *)fireTime_ alarmFilename:(NSString *)an;
 
 -(void)setTimeRemainingTo:(NSTimeInterval)time_;
 
@@ -15,31 +15,32 @@
 @synthesize timerController;
 
 
-+(JGTimerRunningViewController *)viewControllerWithFireDate:(NSDate *)fireDate {
++(JGTimerRunningViewController *)viewControllerWithFireTime:(NSDate *)fireTime {
     JGTimerRunningViewController *runningViewController = [[[JGTimerRunningViewController alloc] initWithNibName:@"JGTimerRunningViewController" bundle:nil] autorelease];
-    [runningViewController initViewControllerWithStartDate:fireDate fireDate:nil alarmFilename:nil];
+    [runningViewController initViewControllerWithStartTime:fireTime fireTime:nil alarmFilename:nil];
     return runningViewController;
 }
 
 
-+(JGTimerRunningViewController *)viewControllerWithStartDate:(NSDate *)startDate_ fireDate:(NSDate *)fireDate_ alarmFilename:(NSString *)an {
++(JGTimerRunningViewController *)viewControllerWithStartTime:(NSDate *)startTime_ fireTime:(NSDate *)fireTime_ alarmFilename:(NSString *)an {
     JGTimerRunningViewController *runningViewController = [[[JGTimerRunningViewController alloc] initWithNibName:@"JGTimerRunningViewController" bundle:nil] autorelease];
-    [runningViewController initViewControllerWithStartDate:startDate_ fireDate:fireDate_ alarmFilename:an];
+    [runningViewController initViewControllerWithStartTime:startTime_ fireTime:fireTime_ alarmFilename:an];
     return runningViewController;
 }
 
--(void)initViewControllerWithStartDate:(NSDate *)startDate_ fireDate:(NSDate *)fireDate_ alarmFilename:(NSString *)an {
+-(void)initViewControllerWithStartTime:(NSDate *)startTime_ fireTime:(NSDate *)fireTime_ alarmFilename:(NSString *)an {
     // TODO Change duration to fire date
     // TODO Bundle up alarm stuff into alarm object
-    NSUInteger durationOfTimer = 0;
-    [(JGDrawingTestView *) [self view] setAnimationDuration:durationOfTimer]; // TODO get us drawing the animation partway through.
+    NSUInteger durationOfTimer = 60;
+    [(JGDrawingTestView *)[self view] setAnimationDuration:durationOfTimer]; // TODO get us drawing the animation partway through.
     [self loadAlertSoundWithFilename:an];
 
-    [self setTimerController:[JGTimerController timerStartingAt:startDate_ withFireDate:fireDate_ delegate:self]];
+    [self setTimerController:[JGTimerController timerStartingAt:startTime_ withFireTime:fireTime_ delegate:self]];
     [[self timerController] startTimer];
 
-    [self setCountdownTimer:[JGCountdownTimer timerStartingAt:startDate_ withFireDate:fireDate_ delegate:self]];
+    [self setCountdownTimer:[JGCountdownTimer timerStartingAt:startTime_ withFireTime:fireTime_ delegate:self]];
     [[self countdownTimer] startTimer];
+    NSLog(@"Did init timer");
 }
 
 -(void)loadAlertSoundWithFilename:(NSString *)alertSoundFilename_ {
@@ -51,7 +52,7 @@
 }
 
 -(void)viewDidAppear:(BOOL)animated {
-    [(JGDrawingTestView *) [self view] animateCountdown];
+    [(JGDrawingTestView *)[self view] animateCountdown];
 }
 
 -(void)viewDidDisappear:(BOOL)animated {

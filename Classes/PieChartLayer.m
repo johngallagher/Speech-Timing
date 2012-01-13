@@ -25,7 +25,7 @@ static inline double radians(double degrees) {
 -(id)initWithLayer:(id)layer {
     if ((self = [super initWithLayer:layer])) {
         if ([layer isKindOfClass:[PieChartLayer class]]) {
-            PieChartLayer *other = (PieChartLayer *) layer;
+            PieChartLayer *other = (PieChartLayer *)layer;
             self.startAngle = other.startAngle;
             self.endAngle   = other.endAngle;
         }
@@ -46,10 +46,10 @@ static inline double radians(double degrees) {
 -(void)drawInContext:(CGContextRef)ctx {
 
     /* Getting some values */
-    CGFloat radius      = (CGFloat) (fmin(self.bounds.size.width, self.bounds.size.height) / 4);
+    CGFloat radius      = (CGFloat)(fmin(self.bounds.size.width, self.bounds.size.height) / 4);
     CGPoint centerPoint = CGPointMake(CGRectGetWidth(self.bounds) / 2, CGRectGetHeight(self.bounds) / 3);
-    CGFloat sAngle      = (CGFloat) radians(self.startAngle);
-    CGFloat eAngle      = (CGFloat) radians(self.endAngle);
+    CGFloat sAngle      = (CGFloat)radians(self.startAngle);
+    CGFloat eAngle      = (CGFloat)radians(self.endAngle);
 
     /* Drawing arc */
     CGContextMoveToPoint(ctx, centerPoint.x, centerPoint.y);
@@ -65,7 +65,7 @@ static inline double radians(double degrees) {
 #pragma mark Public API
 
 -(id)lastValueForKey:(NSString *)key {
-    PieChartLayer *last = (PieChartLayer *) self.presentationLayer;
+    PieChartLayer *last = (PieChartLayer *)self.presentationLayer;
     return [last valueForKey:key];
 }
 

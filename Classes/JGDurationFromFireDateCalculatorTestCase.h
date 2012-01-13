@@ -1,5 +1,5 @@
 //
-//  JGDurationFromFireDateCalculatorTestCase.h
+//  JGDurationFromFireTimeCalculatorTestCase.h
 //  SpeechTimer
 //
 //  Created by John Gallagher on 01/11/12.
@@ -11,6 +11,6 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
-@interface JGDurationFromFireDateCalculatorTestCase : SenTestCase
+@interface JGDurationFromFireTimeCalculatorTestCase : SenTestCase
 
 @end

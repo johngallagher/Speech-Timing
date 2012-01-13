@@ -64,10 +64,10 @@
         // two colors specified for high and low
         [gradientLayer setColors:
             [NSArray arrayWithObjects:
-                (id) [_highColor CGColor],
-                (id) [_middleHighColor CGColor],
-                (id) [_middleLowColor CGColor],
-                (id) [_lowColor CGColor], nil]];
+                (id)[_highColor CGColor],
+                (id)[_middleHighColor CGColor],
+                (id)[_middleLowColor CGColor],
+                (id)[_lowColor CGColor], nil]];
         [gradientLayer setLocations:
             [NSArray arrayWithObjects:
                 [NSNumber numberWithFloat:0.0],

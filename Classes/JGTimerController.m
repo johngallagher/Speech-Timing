@@ -18,8 +18,8 @@
 
 @implementation JGTimerController
 
-+(JGTimerController *)timerStartingAt:(NSDate *)startDate_ withFireDate:(NSDate *)fireDate_ delegate:(id <JGTimerControllerDelegate>)delegate_ {
-    return [[[JGTimerController alloc] initWithStartTime:startDate_ andFireTime:fireDate_ delegate_:delegate_] autorelease];
++(JGTimerController *)timerStartingAt:(NSDate *)startTime_ withFireTime:(NSDate *)fireTime_ delegate:(id <JGTimerControllerDelegate>)delegate_ {
+    return [[[JGTimerController alloc] initWithStartTime:startTime_ andFireTime:fireTime_ delegate_:delegate_] autorelease];
 }
 
 +(JGTimerController *)timerStartingNowWithTimeInterval:(NSTimeInterval)timeInterval_ delegate:(id <JGTimerControllerDelegate>)delegate_ {
@@ -96,7 +96,7 @@
         [self _showCard:@"Yellow"];
         return;
     }
-    
+
     if ([self afterRedCard]) {
         [self _showCard:@"Red"];
     }

@@ -9,8 +9,8 @@
 
 +(JGCardTimes *)cardTimesWithTimeIntervalSinceNowGreen:(NSTimeInterval)g yellow:(NSTimeInterval)y red:(NSTimeInterval)r {
     return [self cardTimesWithGreenTime:[NSDate dateWithTimeIntervalSinceNow:g]
-                                    yellowTime:[NSDate dateWithTimeIntervalSinceNow:y]
-                                       redTime:[NSDate dateWithTimeIntervalSinceNow:r]];
+                             yellowTime:[NSDate dateWithTimeIntervalSinceNow:y]
+                                redTime:[NSDate dateWithTimeIntervalSinceNow:r]];
 }
 
 +(JGCardTimes *)cardTimesWithGreenTime:(NSDate *)greenCardTime_ yellowTime:(NSDate *)yellowCardTime_ redTime:(NSDate *)redCardTime_ {
@@ -20,9 +20,9 @@
 -(JGCardTimes *)initWithGreenTime:(NSDate *)greenCardTime_ yellowTime:(NSDate *)yellowCardTime_ redTime:(NSDate *)redCardTime_ {
     self = [super init];
     if (self) {
-        greenCardTime = [greenCardTime_ retain];
+        greenCardTime  = [greenCardTime_ retain];
         yellowCardTime = [yellowCardTime_ retain];
-        redCardTime = [redCardTime_ retain];
+        redCardTime    = [redCardTime_ retain];
     }
 
     return self;
