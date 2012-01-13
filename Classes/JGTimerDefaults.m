@@ -51,10 +51,10 @@ NSString * const kCurrentAlert = @"currentAlertName";
 
 -(BOOL)timerIsRunning {
     if ([self defaultStartTime] == nil && [self defaultFireTime] == nil) {
-        return YES;
+        return NO;
     } else
         if ([self defaultStartTime] != nil && [self defaultFireTime] != nil) {
-            return NO;
+            return YES;
         } else {
             [self _resetDates];
             return NO;

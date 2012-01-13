@@ -14,5 +14,7 @@
     [timerDefaults setValue:mockUserDefaults forKey:@"userDefaults"];
 
     STAssertFalse([timerDefaults timerIsRunning], nil);
+    
+    [mockUserDefaults verify];
 }
 @end
