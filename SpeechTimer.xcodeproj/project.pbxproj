@@ -25,10 +25,11 @@
 		520F73F014BA46F1003FEC46 /* Submarine.aif in Resources */ = {isa = PBXBuildFile; fileRef = 520F73EA14BA46F1003FEC46 /* Submarine.aif */; };
 		521BCEA414C043F900695F8B /* JGTimerDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A954540054248E /* JGTimerDefaults.m */; };
 		521BCEA514C0445600695F8B /* JGAbstractSingletonObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A9545400542492 /* JGAbstractSingletonObject.m */; };
-		521BCEC414C04D0100695F8B /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 521BCEC314C04D0100695F8B /* libOCMock.a */; };
 		5242CBEF14B3FC8A00C876C7 /* JGDrawingTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5242CBEC14B3FC8A00C876C7 /* JGDrawingTestView.m */; };
 		5242CBF014B3FC8A00C876C7 /* PieChartLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5242CBEE14B3FC8A00C876C7 /* PieChartLayer.m */; };
 		5242CBF514B3FD0000C876C7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5242CBF414B3FD0000C876C7 /* QuartzCore.framework */; };
+		5243241A14C06FCC00AFDE61 /* Library in Resources */ = {isa = PBXBuildFile; fileRef = 5243241914C06FCC00AFDE61 /* Library */; };
+		5243241C14C0702900AFDE61 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5243241B14C0702900AFDE61 /* libOCMock.a */; };
 		5251B9C8149E5C4100AFC0B6 /* JGTimerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52591F34149E453E00DEA711 /* JGTimerController.m */; };
 		52591F35149E453E00DEA711 /* JGTimerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52591F34149E453E00DEA711 /* JGTimerController.m */; };
 		52591F43149E469C00DEA711 /* JGTimerControllerTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */; };
@@ -78,13 +79,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		5251BAF4149EA31100AFC0B6 /* CopyFiles */ = {
+		5251BAF4149EA31100AFC0B6 /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -110,12 +112,13 @@
 		520F73E814BA46F1003FEC46 /* Bell.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bell.aif; sourceTree = "<group>"; };
 		520F73E914BA46F1003FEC46 /* Alarm.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = Alarm.aif; sourceTree = "<group>"; };
 		520F73EA14BA46F1003FEC46 /* Submarine.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = Submarine.aif; sourceTree = "<group>"; };
-		521BCEC314C04D0100695F8B /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = Libraries/libOCMock.a; sourceTree = "<group>"; };
 		5242CBEB14B3FC8A00C876C7 /* JGDrawingTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGDrawingTestView.h; sourceTree = "<group>"; };
 		5242CBEC14B3FC8A00C876C7 /* JGDrawingTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGDrawingTestView.m; sourceTree = "<group>"; };
 		5242CBED14B3FC8A00C876C7 /* PieChartLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieChartLayer.h; sourceTree = "<group>"; };
 		5242CBEE14B3FC8A00C876C7 /* PieChartLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PieChartLayer.m; sourceTree = "<group>"; };
 		5242CBF414B3FD0000C876C7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5243241914C06FCC00AFDE61 /* Library */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Library; sourceTree = "<group>"; };
+		5243241B14C0702900AFDE61 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = Library/libOCMock.a; sourceTree = "<group>"; };
 		5251B9A9149E59B400AFC0B6 /* JGTimerControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGTimerControllerDelegate.h; sourceTree = "<group>"; };
 		52591F33149E453E00DEA711 /* JGTimerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGTimerController.h; sourceTree = "<group>"; };
 		52591F34149E453E00DEA711 /* JGTimerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGTimerController.m; sourceTree = "<group>"; };
@@ -193,7 +196,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				521BCEC414C04D0100695F8B /* libOCMock.a in Frameworks */,
+				5243241C14C0702900AFDE61 /* libOCMock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,14 +246,14 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				521BCEC314C04D0100695F8B /* libOCMock.a */,
+				5243241B14C0702900AFDE61 /* libOCMock.a */,
+				5243241914C06FCC00AFDE61 /* Library */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 				52591F3C149E466B00DEA711 /* SpeechTimerTests-Info.plist */,
-				C01FCF5008A954540054247E /* SpeechTimer */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -426,13 +429,6 @@
 			name = Buttons;
 			sourceTree = "<group>";
 		};
-		C01FCF5008A954540054247E /* SpeechTimer */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SpeechTimer;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -459,7 +455,7 @@
 			buildPhases = (
 				52591F36149E466B00DEA711 /* Resources */,
 				52591F37149E466B00DEA711 /* Sources */,
-				5251BAF4149EA31100AFC0B6 /* CopyFiles */,
+				5251BAF4149EA31100AFC0B6 /* Copy Files */,
 				52591F38149E466B00DEA711 /* Frameworks */,
 				52591F39149E466B00DEA711 /* ShellScript */,
 			);
@@ -530,6 +526,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5243241A14C06FCC00AFDE61 /* Library in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -659,16 +656,11 @@
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREFIX_HEADER = "";
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Libraries/Headers";
+				HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)/Library/Headers\"";
 				INFOPLIST_FILE = "SpeechTimerTests-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(PROJECT_DIR)/Libraries\"",
-				);
+				LIBRARY_SEARCH_PATHS = "\"$(PROJECT_DIR)/Library\"";
 				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-force_load",
-					"$(PROJECT_DIR)/Libraries/libOCMock.a",
+					"-all_load",
 					"-framework",
 					Foundation,
 					"-framework",
@@ -698,16 +690,11 @@
 					"\"/Volumes/OCMock 1.77/Release\"",
 				);
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Libraries/Headers";
+				HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)/Library/Headers\"";
 				INFOPLIST_FILE = "SpeechTimerTests-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(PROJECT_DIR)/Libraries\"",
-				);
+				LIBRARY_SEARCH_PATHS = "\"$(PROJECT_DIR)/Library\"";
 				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-force_load",
-					"$(PROJECT_DIR)/Libraries/libOCMock.a",
+					"-all_load",
 					"-framework",
 					Foundation,
 					"-framework",
