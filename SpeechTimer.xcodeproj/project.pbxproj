@@ -25,6 +25,7 @@
 		520F73F014BA46F1003FEC46 /* Submarine.aif in Resources */ = {isa = PBXBuildFile; fileRef = 520F73EA14BA46F1003FEC46 /* Submarine.aif */; };
 		521BCEA414C043F900695F8B /* JGTimerDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A954540054248E /* JGTimerDefaults.m */; };
 		521BCEA514C0445600695F8B /* JGAbstractSingletonObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A9545400542492 /* JGAbstractSingletonObject.m */; };
+		521BCEC414C04D0100695F8B /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 521BCEC314C04D0100695F8B /* libOCMock.a */; };
 		5242CBEF14B3FC8A00C876C7 /* JGDrawingTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5242CBEC14B3FC8A00C876C7 /* JGDrawingTestView.m */; };
 		5242CBF014B3FC8A00C876C7 /* PieChartLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5242CBEE14B3FC8A00C876C7 /* PieChartLayer.m */; };
 		5242CBF514B3FD0000C876C7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5242CBF414B3FD0000C876C7 /* QuartzCore.framework */; };
@@ -109,6 +110,7 @@
 		520F73E814BA46F1003FEC46 /* Bell.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bell.aif; sourceTree = "<group>"; };
 		520F73E914BA46F1003FEC46 /* Alarm.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = Alarm.aif; sourceTree = "<group>"; };
 		520F73EA14BA46F1003FEC46 /* Submarine.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = Submarine.aif; sourceTree = "<group>"; };
+		521BCEC314C04D0100695F8B /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = Libraries/libOCMock.a; sourceTree = "<group>"; };
 		5242CBEB14B3FC8A00C876C7 /* JGDrawingTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGDrawingTestView.h; sourceTree = "<group>"; };
 		5242CBEC14B3FC8A00C876C7 /* JGDrawingTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGDrawingTestView.m; sourceTree = "<group>"; };
 		5242CBED14B3FC8A00C876C7 /* PieChartLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieChartLayer.h; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				521BCEC414C04D0100695F8B /* libOCMock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +243,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				521BCEC314C04D0100695F8B /* libOCMock.a */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -655,14 +659,22 @@
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREFIX_HEADER = "";
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)\"";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Libraries/Headers";
 				INFOPLIST_FILE = "SpeechTimerTests-Info.plist";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(PROJECT_DIR)/Libraries\"",
+				);
 				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-force_load",
+					"$(PROJECT_DIR)/Libraries/libOCMock.a",
+					"-framework",
+					Foundation,
 					"-framework",
 					SenTestingKit,
 					"-framework",
-					Foundation,
+					UIKit,
 				);
 				PRODUCT_NAME = SpeechTimerTests;
 				SDKROOT = iphoneos;
@@ -686,9 +698,16 @@
 					"\"/Volumes/OCMock 1.77/Release\"",
 				);
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Libraries/Headers";
 				INFOPLIST_FILE = "SpeechTimerTests-Info.plist";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(PROJECT_DIR)/Libraries\"",
+				);
 				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-force_load",
+					"$(PROJECT_DIR)/Libraries/libOCMock.a",
 					"-framework",
 					Foundation,
 					"-framework",
