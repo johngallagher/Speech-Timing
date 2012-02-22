@@ -124,16 +124,16 @@
 		52591F34149E453E00DEA711 /* JGTimerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGTimerController.m; sourceTree = "<group>"; };
 		52591F3B149E466B00DEA711 /* SpeechTimerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeechTimerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52591F3C149E466B00DEA711 /* SpeechTimerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpeechTimerTests-Info.plist"; sourceTree = "<group>"; };
-		52591F40149E469000DEA711 /* JGTimerControllerTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGTimerControllerTestCase.h; sourceTree = "<group>"; };
-		52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGTimerControllerTestCase.m; sourceTree = "<group>"; };
+		52591F40149E469000DEA711 /* JGTimerControllerTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JGTimerControllerTestCase.h; path = Classes/JGTimerControllerTestCase.h; sourceTree = "<group>"; };
+		52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JGTimerControllerTestCase.m; path = Classes/JGTimerControllerTestCase.m; sourceTree = "<group>"; };
 		528945F814BB50F100B4D09B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		52BBC08714B34FC900CFE655 /* JGCountdownTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGCountdownTimer.h; sourceTree = "<group>"; };
 		52BBC08814B34FC900CFE655 /* JGCountdownTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGCountdownTimer.m; sourceTree = "<group>"; };
 		52BBC08A14B3505E00CFE655 /* JGCountdownTimerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGCountdownTimerDelegate.h; sourceTree = "<group>"; };
-		52BBC08B14B3509200CFE655 /* JGCountdownTimerTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGCountdownTimerTestCase.h; sourceTree = "<group>"; };
-		52BBC08C14B3509200CFE655 /* JGCountdownTimerTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGCountdownTimerTestCase.m; sourceTree = "<group>"; };
-		52BBC0D214B357DF00CFE655 /* JGTimeFormatterTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGTimeFormatterTestCase.h; sourceTree = "<group>"; };
-		52BBC0D314B357DF00CFE655 /* JGTimeFormatterTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGTimeFormatterTestCase.m; sourceTree = "<group>"; };
+		52BBC08B14B3509200CFE655 /* JGCountdownTimerTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JGCountdownTimerTestCase.h; path = Classes/JGCountdownTimerTestCase.h; sourceTree = "<group>"; };
+		52BBC08C14B3509200CFE655 /* JGCountdownTimerTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JGCountdownTimerTestCase.m; path = Classes/JGCountdownTimerTestCase.m; sourceTree = "<group>"; };
+		52BBC0D214B357DF00CFE655 /* JGTimeFormatterTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JGTimeFormatterTestCase.h; path = Classes/JGTimeFormatterTestCase.h; sourceTree = "<group>"; };
+		52BBC0D314B357DF00CFE655 /* JGTimeFormatterTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JGTimeFormatterTestCase.m; path = Classes/JGTimeFormatterTestCase.m; sourceTree = "<group>"; };
 		52BBC0DD14B358EF00CFE655 /* JGTimeFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGTimeFormatter.h; sourceTree = "<group>"; };
 		52BBC0DE14B358EF00CFE655 /* JGTimeFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGTimeFormatter.m; sourceTree = "<group>"; };
 		52BBC17014B37CBE00CFE655 /* GreenButton-highlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GreenButton-highlight.png"; sourceTree = "<group>"; };
@@ -143,8 +143,8 @@
 		52BBC18814B3861900CFE655 /* TimerGradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TimerGradient.png; sourceTree = "<group>"; };
 		52BBC18D14B3876700CFE655 /* TimerGradient2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TimerGradient2.png; sourceTree = "<group>"; };
 		52CA8B5A149D089B0030ADC1 /* JGTimerRunningViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = JGTimerRunningViewController.xib; path = Classes/JGTimerRunningViewController.xib; sourceTree = "<group>"; };
-		52EB416A14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGTimerDurationCalculatorTestCase.h; sourceTree = "<group>"; };
-		52EB416B14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGTimerDurationCalculatorTestCase.m; sourceTree = "<group>"; };
+		52EB416A14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JGTimerDurationCalculatorTestCase.h; path = Classes/JGTimerDurationCalculatorTestCase.h; sourceTree = "<group>"; };
+		52EB416B14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JGTimerDurationCalculatorTestCase.m; path = Classes/JGTimerDurationCalculatorTestCase.m; sourceTree = "<group>"; };
 		52EB417114B1218D00308C95 /* JGCardTimesCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGCardTimesCalculator.h; sourceTree = "<group>"; };
 		52EB417214B1218D00308C95 /* JGCardTimesCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGCardTimesCalculator.m; sourceTree = "<group>"; };
 		52F63E5814B7590E00876FA4 /* JGInsetGradientButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGInsetGradientButton.h; sourceTree = "<group>"; };
@@ -163,8 +163,8 @@
 		C01FCF5008A9545400542482 /* JGRingingSettingDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGRingingSettingDelegate.h; sourceTree = "<group>"; };
 		C01FCF5008A9545400542483 /* JGDurationFromFireDateCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGDurationFromFireDateCalculator.m; sourceTree = "<group>"; };
 		C01FCF5008A9545400542485 /* JGDurationFromFireDateCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGDurationFromFireDateCalculator.h; sourceTree = "<group>"; };
-		C01FCF5008A9545400542486 /* JGDurationFromFireDateCalculatorTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGDurationFromFireDateCalculatorTestCase.h; sourceTree = "<group>"; };
-		C01FCF5008A9545400542487 /* JGDurationFromFireDateCalculatorTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGDurationFromFireDateCalculatorTestCase.m; sourceTree = "<group>"; };
+		C01FCF5008A9545400542486 /* JGDurationFromFireDateCalculatorTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JGDurationFromFireDateCalculatorTestCase.h; path = Classes/JGDurationFromFireDateCalculatorTestCase.h; sourceTree = "<group>"; };
+		C01FCF5008A9545400542487 /* JGDurationFromFireDateCalculatorTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JGDurationFromFireDateCalculatorTestCase.m; path = Classes/JGDurationFromFireDateCalculatorTestCase.m; sourceTree = "<group>"; };
 		C01FCF5008A9545400542488 /* JGAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGAlert.m; sourceTree = "<group>"; };
 		C01FCF5008A954540054248A /* JGAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGAlert.h; sourceTree = "<group>"; };
 		C01FCF5008A954540054248B /* JGCardTimes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGCardTimes.m; sourceTree = "<group>"; };
@@ -173,8 +173,8 @@
 		C01FCF5008A9545400542490 /* JGTimerDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGTimerDefaults.h; sourceTree = "<group>"; };
 		C01FCF5008A9545400542491 /* JGAbstractSingletonObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGAbstractSingletonObject.h; sourceTree = "<group>"; };
 		C01FCF5008A9545400542492 /* JGAbstractSingletonObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGAbstractSingletonObject.m; sourceTree = "<group>"; };
-		C01FCF5008A9545400542494 /* JGTimerDefaultsTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGTimerDefaultsTestCase.m; sourceTree = "<group>"; };
-		C01FCF5008A9545400542496 /* JGTimerDefaultsTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGTimerDefaultsTestCase.h; sourceTree = "<group>"; };
+		C01FCF5008A9545400542494 /* JGTimerDefaultsTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JGTimerDefaultsTestCase.m; path = Classes/JGTimerDefaultsTestCase.m; sourceTree = "<group>"; };
+		C01FCF5008A9545400542496 /* JGTimerDefaultsTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JGTimerDefaultsTestCase.h; path = Classes/JGTimerDefaultsTestCase.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,20 +206,11 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				C01FCF5008A9545400542496 /* JGTimerDefaultsTestCase.h */,
-				C01FCF5008A9545400542494 /* JGTimerDefaultsTestCase.m */,
-				C01FCF5008A9545400542492 /* JGAbstractSingletonObject.m */,
-				C01FCF5008A9545400542491 /* JGAbstractSingletonObject.h */,
-				C01FCF5008A9545400542490 /* JGTimerDefaults.h */,
-				C01FCF5008A954540054248E /* JGTimerDefaults.m */,
-				C01FCF5008A954540054248D /* JGCardTimes.h */,
-				C01FCF5008A954540054248B /* JGCardTimes.m */,
-				C01FCF5008A954540054248A /* JGAlert.h */,
-				C01FCF5008A9545400542488 /* JGAlert.m */,
-				C01FCF5008A9545400542487 /* JGDurationFromFireDateCalculatorTestCase.m */,
-				C01FCF5008A9545400542486 /* JGDurationFromFireDateCalculatorTestCase.h */,
-				C01FCF5008A9545400542485 /* JGDurationFromFireDateCalculator.h */,
-				C01FCF5008A9545400542483 /* JGDurationFromFireDateCalculator.m */,
+				528DCF5414F3FA1700A94E6D /* AbstractSingleton */,
+				528DCF5514F3FA2800A94E6D /* TimerDefaults */,
+				528DCF5614F3FA3700A94E6D /* CardTimes */,
+				528DCF5714F3FA4A00A94E6D /* Alert */,
+				528DCF5814F3FA5000A94E6D /* DuratinFromFireTimeCalculator */,
 				C01FCF5008A9545400542482 /* JGRingingSettingDelegate.h */,
 				52F63E5714B7590400876FA4 /* Buttons */,
 				5242CBEA14B3FC6900C876C7 /* PieChartView */,
@@ -249,6 +240,7 @@
 				5243241B14C0702900AFDE61 /* libOCMock.a */,
 				5243241914C06FCC00AFDE61 /* Library */,
 				080E96DDFE201D6D7F000001 /* Classes */,
+				528DCF5314F3F96500A94E6D /* Tests */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
@@ -309,8 +301,6 @@
 		5242CBE714B3FC1E00C876C7 /* TimeFormatter */ = {
 			isa = PBXGroup;
 			children = (
-				52BBC0D214B357DF00CFE655 /* JGTimeFormatterTestCase.h */,
-				52BBC0D314B357DF00CFE655 /* JGTimeFormatterTestCase.m */,
 				52BBC0DD14B358EF00CFE655 /* JGTimeFormatter.h */,
 				52BBC0DE14B358EF00CFE655 /* JGTimeFormatter.m */,
 			);
@@ -323,8 +313,6 @@
 				52BBC08814B34FC900CFE655 /* JGCountdownTimer.m */,
 				52BBC08714B34FC900CFE655 /* JGCountdownTimer.h */,
 				52BBC08A14B3505E00CFE655 /* JGCountdownTimerDelegate.h */,
-				52BBC08B14B3509200CFE655 /* JGCountdownTimerTestCase.h */,
-				52BBC08C14B3509200CFE655 /* JGCountdownTimerTestCase.m */,
 			);
 			name = CountdownTimer;
 			sourceTree = "<group>";
@@ -334,8 +322,6 @@
 			children = (
 				52EB417114B1218D00308C95 /* JGCardTimesCalculator.h */,
 				52EB417214B1218D00308C95 /* JGCardTimesCalculator.m */,
-				52EB416A14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.h */,
-				52EB416B14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.m */,
 			);
 			name = DurationCalculator;
 			sourceTree = "<group>";
@@ -380,8 +366,6 @@
 				5251B9A9149E59B400AFC0B6 /* JGTimerControllerDelegate.h */,
 				52591F33149E453E00DEA711 /* JGTimerController.h */,
 				52591F34149E453E00DEA711 /* JGTimerController.m */,
-				52591F40149E469000DEA711 /* JGTimerControllerTestCase.h */,
-				52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */,
 			);
 			name = TimerController;
 			sourceTree = "<group>";
@@ -395,6 +379,70 @@
 				28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		528DCF5314F3F96500A94E6D /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C01FCF5008A9545400542487 /* JGDurationFromFireDateCalculatorTestCase.m */,
+				C01FCF5008A9545400542486 /* JGDurationFromFireDateCalculatorTestCase.h */,
+				C01FCF5008A9545400542496 /* JGTimerDefaultsTestCase.h */,
+				C01FCF5008A9545400542494 /* JGTimerDefaultsTestCase.m */,
+				52BBC08B14B3509200CFE655 /* JGCountdownTimerTestCase.h */,
+				52BBC08C14B3509200CFE655 /* JGCountdownTimerTestCase.m */,
+				52591F40149E469000DEA711 /* JGTimerControllerTestCase.h */,
+				52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */,
+				52BBC0D214B357DF00CFE655 /* JGTimeFormatterTestCase.h */,
+				52BBC0D314B357DF00CFE655 /* JGTimeFormatterTestCase.m */,
+				52EB416A14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.h */,
+				52EB416B14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.m */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		528DCF5414F3FA1700A94E6D /* AbstractSingleton */ = {
+			isa = PBXGroup;
+			children = (
+				C01FCF5008A9545400542492 /* JGAbstractSingletonObject.m */,
+				C01FCF5008A9545400542491 /* JGAbstractSingletonObject.h */,
+			);
+			name = AbstractSingleton;
+			sourceTree = "<group>";
+		};
+		528DCF5514F3FA2800A94E6D /* TimerDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				C01FCF5008A9545400542490 /* JGTimerDefaults.h */,
+				C01FCF5008A954540054248E /* JGTimerDefaults.m */,
+			);
+			name = TimerDefaults;
+			sourceTree = "<group>";
+		};
+		528DCF5614F3FA3700A94E6D /* CardTimes */ = {
+			isa = PBXGroup;
+			children = (
+				C01FCF5008A954540054248D /* JGCardTimes.h */,
+				C01FCF5008A954540054248B /* JGCardTimes.m */,
+			);
+			name = CardTimes;
+			sourceTree = "<group>";
+		};
+		528DCF5714F3FA4A00A94E6D /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				C01FCF5008A954540054248A /* JGAlert.h */,
+				C01FCF5008A9545400542488 /* JGAlert.m */,
+			);
+			name = Alert;
+			sourceTree = "<group>";
+		};
+		528DCF5814F3FA5000A94E6D /* DuratinFromFireTimeCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				C01FCF5008A9545400542485 /* JGDurationFromFireDateCalculator.h */,
+				C01FCF5008A9545400542483 /* JGDurationFromFireDateCalculator.m */,
+			);
+			name = DuratinFromFireTimeCalculator;
 			sourceTree = "<group>";
 		};
 		52BBBE3514B2EC3200CFE655 /* AppDelegate */ = {
