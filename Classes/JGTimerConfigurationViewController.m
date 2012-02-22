@@ -197,12 +197,16 @@
     return [[JGTimerDefaults sharedInstance] defaultFireTime];
 }
 
--(void)restoreFromUserDefaults {
+-(void)continueTimer {
+    NSDate *startTime = [self startTimeFromDefaults];
+    NSDate *fireTime  = [self fireTimeFromDefaults];
+    [self _continueTimerWithStartTime:startTime fireTime:fireTime];
+}
+
+-(void)restoreViewFromUserDefaults {
     [self updateCurrentAlertNameFromDefaults];
     if ([self timerIsRunning]) {
-        NSDate *startTime = [self startTimeFromDefaults];
-        NSDate *fireTime  = [self fireTimeFromDefaults];
-        [self _continueTimerWithStartTime:startTime fireTime:fireTime];
+        [self continueTimer];
     }
 }
 #pragma mark -
@@ -212,7 +216,7 @@
     [super viewDidLoad];
 
     [self setPickerDurations:[NSArray arrayWithObjects:@"1            ", @"2            ", @"3            ", @"4            ", @"5            ", @"6            ", @"7            ", @"8            ", @"9            ", @"10            ", @"15            ", @"20            ", @"25            ", @"30            ", nil]];
-    [self restoreFromUserDefaults];
+    [self restoreViewFromUserDefaults];
 }
 
 -(void)viewWillAppear:(BOOL)animated {
