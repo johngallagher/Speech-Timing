@@ -66,6 +66,7 @@
 		C01FCF5008A954540054248F /* JGTimerDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A954540054248E /* JGTimerDefaults.m */; };
 		C01FCF5008A9545400542493 /* JGAbstractSingletonObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A9545400542492 /* JGAbstractSingletonObject.m */; };
 		C01FCF5008A9545400542495 /* JGTimerDefaultsTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A9545400542494 /* JGTimerDefaultsTestCase.m */; };
+		C01FCF5008A9545400542499 /* JGAlertTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A9545400542498 /* JGAlertTestCase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -175,6 +176,8 @@
 		C01FCF5008A9545400542492 /* JGAbstractSingletonObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGAbstractSingletonObject.m; sourceTree = "<group>"; };
 		C01FCF5008A9545400542494 /* JGTimerDefaultsTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JGTimerDefaultsTestCase.m; path = Classes/JGTimerDefaultsTestCase.m; sourceTree = "<group>"; };
 		C01FCF5008A9545400542496 /* JGTimerDefaultsTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JGTimerDefaultsTestCase.h; path = Classes/JGTimerDefaultsTestCase.h; sourceTree = "<group>"; };
+		C01FCF5008A9545400542497 /* JGAlertTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGAlertTestCase.h; sourceTree = "<group>"; };
+		C01FCF5008A9545400542498 /* JGAlertTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGAlertTestCase.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -384,6 +387,8 @@
 		528DCF5314F3F96500A94E6D /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				C01FCF5008A9545400542498 /* JGAlertTestCase.m */,
+				C01FCF5008A9545400542497 /* JGAlertTestCase.h */,
 				C01FCF5008A9545400542487 /* JGDurationFromFireDateCalculatorTestCase.m */,
 				C01FCF5008A9545400542486 /* JGDurationFromFireDateCalculatorTestCase.h */,
 				C01FCF5008A9545400542496 /* JGTimerDefaultsTestCase.h */,
@@ -621,6 +626,7 @@
 				C01FCF5008A954540054248C /* JGCardTimes.m in Sources */,
 				C01FCF5008A954540054248F /* JGTimerDefaults.m in Sources */,
 				C01FCF5008A9545400542493 /* JGAbstractSingletonObject.m in Sources */,
+				C01FCF5008A9545400542499 /* JGAlertTestCase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

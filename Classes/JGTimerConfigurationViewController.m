@@ -51,11 +51,11 @@
 
 #pragma mark Defaults
 -(void)saveStartTimeToDefaults:(NSDate *)date {
-    [[JGTimerDefaults sharedInstance] setStartTime:date];
+    [[JGTimerDefaults sharedInstance] set_startTime:date];
 }
 
 -(void)saveFireTimeToDefaults:(NSDate *)date {
-    [[JGTimerDefaults sharedInstance] setFireTime:date];
+    [[JGTimerDefaults sharedInstance] set_fireTime:date];
 }
 
 -(void)saveCurrentAlertNameToDefaults {
@@ -69,16 +69,12 @@
     [self saveStartTimeToDefaults:startTime];
     [self saveFireTimeToDefaults:fireTime];
 
-    JGTimerRunningViewController *runningViewController = [JGTimerRunningViewController viewControllerWithStartTime:startTime
-                                                                                                           fireTime:fireTime
-                                                                                                      alarmFilename:[self _currentAlertFilename]];
+    JGTimerRunningViewController *runningViewController = [JGTimerRunningViewController viewControllerWithAlert:startTime];
     [[self navigationController] pushViewController:runningViewController animated:YES];
 }
 
 -(void)_continueTimerWithStartTime:(NSDate *)startTime_ fireTime:(NSDate *)fireTime_ {
-    JGTimerRunningViewController *runningViewController = [JGTimerRunningViewController viewControllerWithStartTime:startTime_
-                                                                                                           fireTime:fireTime_
-                                                                                                      alarmFilename:[self _currentAlertFilename]];
+    JGTimerRunningViewController *runningViewController = [JGTimerRunningViewController viewControllerWithAlert:startTime_];
     [[self navigationController] pushViewController:runningViewController animated:YES];
 }
 

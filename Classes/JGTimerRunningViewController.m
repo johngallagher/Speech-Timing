@@ -1,6 +1,7 @@
 #import "JGTimerRunningViewController.h"
 #import "JGTimeFormatter.h"
 #import "JGDrawingTestView.h"
+#import "JGAlert.h"
 
 @interface JGTimerRunningViewController ()
 -(void)initViewControllerWithStartTime:(NSDate *)startTime_ fireTime:(NSDate *)fireTime_ alarmFilename:(NSString *)an;
@@ -26,6 +27,11 @@
     JGTimerRunningViewController *runningViewController = [[[JGTimerRunningViewController alloc] initWithNibName:@"JGTimerRunningViewController" bundle:nil] autorelease];
     [runningViewController initViewControllerWithStartTime:startTime_ fireTime:fireTime_ alarmFilename:an];
     return runningViewController;
+}
+
++(JGTimerRunningViewController *)viewControllerWithAlert:(JGAlert *)alert_ {
+    [self viewControllerWithStartTime:[alert_ startTime] fireTime:[alert_ fireTime] alarmFilename:[alert_ filename]]
+    return ;
 }
 
 -(void)initViewControllerWithStartTime:(NSDate *)startTime_ fireTime:(NSDate *)fireTime_ alarmFilename:(NSString *)an {

@@ -6,6 +6,8 @@
 #import "JGCountdownTimer.h"
 #import "JGTimerController.h"
 
+@class JGAlert;
+
 @interface JGTimerRunningViewController : UIViewController <JGTimerControllerDelegate, JGCountdownTimerDelegate> {
     IBOutlet UILabel  *timeLabel;
     AVAudioPlayer     *audioPlayer;
@@ -19,7 +21,7 @@
 
 +(JGTimerRunningViewController *)viewControllerWithFireTime:(NSDate *)fireTime;
 
-+(JGTimerRunningViewController *)viewControllerWithStartTime:(NSDate *)startTime_ fireTime:(NSDate *)fireTime_ alarmFilename:(NSString *)an;
++(JGTimerRunningViewController *)viewControllerWithAlert:(JGAlert *)alert_;
 
 
 -(void)loadAlertSoundWithFilename:(NSString *)alertSoundFilename_;
