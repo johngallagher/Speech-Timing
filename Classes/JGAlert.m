@@ -17,6 +17,11 @@
 @synthesize startTime = _startTime;
 @synthesize fireTime = _fireTime;
 
+
++(id)alertWithName:(NSString *)name_ {
+    return [self alertWithStartTime:nil fireTime:nil name:name_];
+}
+
 +(id)alertStartingNowWithDuration:(NSTimeInterval)duration_ name:(NSString *)name_ {
     return [self alertWithStartTime:[NSDate date] fireTime:[NSDate dateWithTimeIntervalSinceNow:duration_] name:name_];
 }

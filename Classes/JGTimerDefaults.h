@@ -28,5 +28,7 @@ extern NSString * const kCurrentAlert ;
 
 -(JGAlert *)alert;
 
+-(void)invalidateAlert;
+
 
 @end

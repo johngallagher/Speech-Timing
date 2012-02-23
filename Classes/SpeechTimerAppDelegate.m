@@ -15,21 +15,16 @@
 @synthesize window;
 @synthesize navigationController;
 
-
 #pragma mark -
 #pragma mark Application lifecycle
 
 -(void)awakeFromNib {
     JGTimerConfigurationViewController *rootViewController = (JGTimerConfigurationViewController *)[navigationController topViewController];
     rootViewController.managedObjectContext = self.managedObjectContext;
-    NSLog(@"Started");
 }
 
 
 -(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
-    // Override point for customization after application launch.
-
     // Set the navigation controller as the window's root view controller and display.
     self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];

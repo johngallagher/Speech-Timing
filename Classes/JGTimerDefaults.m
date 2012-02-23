@@ -72,5 +72,11 @@ NSString * const kCurrentAlert = @"currentAlertName";
 -(JGAlert *)alert {
     return [JGAlert alertWithStartTime:[self startTime] fireTime:[self fireTime] name:[self alertName]];
 }
+
+-(void)invalidateAlert {
+    [self setFireTime:nil];
+    [self setStartTime:nil];
+}
+
 @end
 

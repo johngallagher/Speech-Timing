@@ -2,6 +2,7 @@
 #import "JGTimeFormatter.h"
 #import "JGDrawingTestView.h"
 #import "JGAlert.h"
+#import "JGTimerDefaults.h"
 
 @interface JGTimerRunningViewController ()
 -(void)initViewControllerWithStartTime:(NSDate *)startTime_ fireTime:(NSDate *)fireTime_ alarmFilename:(NSString *)an;
@@ -65,7 +66,7 @@
 
     [[self countdownTimer] stopTimer];
     [self setCountdownTimer:nil];
-
+    [[JGTimerDefaults sharedInstance] invalidateAlert];
 }
 
 -(IBAction)stopTimer:(id)sender {

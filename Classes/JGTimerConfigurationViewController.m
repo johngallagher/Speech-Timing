@@ -19,6 +19,9 @@
 
 -(void)_startTimer;
 
+-(void)restoreViewFromUserDefaults;
+
+
 @end
 
 @implementation JGTimerConfigurationViewController
@@ -27,6 +30,18 @@
 @synthesize managedObjectContext = managedObjectContext_;
 @synthesize currentAlertName;
 @synthesize currentAlert;
+
+#pragma mark View lifecycle
+
+-(void)viewDidLoad {
+    [super viewDidLoad];
+    [self setPickerDurations:[NSArray arrayWithObjects:@"1            ", @"2            ", @"3            ", @"4            ", @"5            ", @"6            ", @"7            ", @"8            ", @"9            ", @"10            ", @"15            ", @"20            ", @"25            ", @"30            ", nil]];
+}
+
+-(void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self restoreViewFromUserDefaults];
+}
 
 #pragma mark Public
 -(IBAction)startTimer:(id)sender {
@@ -73,17 +88,20 @@
     return [[JGTimerDefaults sharedInstance] timerIsRunning];
 }
 
--(void)continueTimer {
+-(void)updateAlertFromDefaults {
     [self setCurrentAlert:[[JGTimerDefaults sharedInstance] alert]];
+}
+
+-(void)continueTimer {
     [self pushRunningViewControllerWithCurrentAlert];
 }
 
 -(void)restoreViewFromUserDefaults {
+    [self updateAlertFromDefaults];
     if ([self timerIsRunning]) {
         [self continueTimer];
     }
 }
-
 
 -(void)updateCurrentAlertNameIndicator {
     UITableViewCell *cell = [currentAlertTableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
@@ -163,7 +181,7 @@
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier] autorelease];
     }
     [[cell textLabel] setText:@"Ringing Style"];
-    [[cell detailTextLabel] setText:[self currentAlertName]];
+    [[cell detailTextLabel] setText:[[self currentAlert] name]];
     return cell;
 }
 

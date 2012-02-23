@@ -7,6 +7,8 @@
     NSString *_name;
 }
 
++(id)alertWithName:(NSString *)name_;
+
 +(id)alertStartingNowWithDuration:(NSTimeInterval)duration_ name:(NSString *)name_;
 
 +(id)alertWithStartTime:(NSDate *)startTime_ fireTime:(NSDate *)fireTime_ name:(NSString *)name_;
