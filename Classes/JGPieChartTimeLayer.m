@@ -6,7 +6,7 @@
 //  Copyright 2011 Nomad Planet. All rights reserved.
 //
 
-#import "PieChartLayer.h"
+#import "JGPieChartTimeLayer.h"
 
 
 static inline double radians(double degrees) {
@@ -14,7 +14,7 @@ static inline double radians(double degrees) {
 }
 
 
-@implementation PieChartLayer
+@implementation JGPieChartTimeLayer
 
 @synthesize startAngle;
 @synthesize endAngle;
@@ -24,8 +24,8 @@ static inline double radians(double degrees) {
 
 -(id)initWithLayer:(id)layer {
     if ((self = [super initWithLayer:layer])) {
-        if ([layer isKindOfClass:[PieChartLayer class]]) {
-            PieChartLayer *other = (PieChartLayer *)layer;
+        if ([layer isKindOfClass:[JGPieChartTimeLayer class]]) {
+            JGPieChartTimeLayer *other = (JGPieChartTimeLayer *)layer;
             self.startAngle = other.startAngle;
             self.endAngle   = other.endAngle;
         }
@@ -65,7 +65,7 @@ static inline double radians(double degrees) {
 #pragma mark Public API
 
 -(id)lastValueForKey:(NSString *)key {
-    PieChartLayer *last = (PieChartLayer *)self.presentationLayer;
+    JGPieChartTimeLayer *last = (JGPieChartTimeLayer *)self.presentationLayer;
     return [last valueForKey:key];
 }
 

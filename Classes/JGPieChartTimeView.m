@@ -6,11 +6,11 @@
 //  Copyright 2012 Synaptic Mishap. All rights reserved.
 //
 
-#import "JGDrawingTestView.h"
+#import "JGPieChartTimeView.h"
 #import <QuartzCore/QuartzCore.h>
-#import "PieChartLayer.h"
+#import "JGPieChartTimeLayer.h"
 
-@interface JGDrawingTestView ()
+@interface JGPieChartTimeView ()
 
 -(CABasicAnimation *)_animationForKeyPath:(NSString *)keyPath
                                 fromValue:(NSNumber *)fromValue
@@ -22,7 +22,7 @@
 @end
 
 
-@implementation JGDrawingTestView
+@implementation JGPieChartTimeView
 
 @synthesize animationDuration;
 
@@ -41,7 +41,7 @@
 }
 
 -(void)awakeFromNib {
-    PieChartLayer *pcl = [[PieChartLayer alloc] init];
+    JGPieChartTimeLayer *pcl = [[JGPieChartTimeLayer alloc] init];
     pcl.needsDisplayOnBoundsChange = YES;
     pcl.frame                      = self.bounds;
     pcl.startAngle                 = -90;

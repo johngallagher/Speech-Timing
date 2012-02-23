@@ -10,7 +10,7 @@
 #import <QuartzCore/QuartzCore.h>
 
 
-@interface PieChartLayer : CALayer {
+@interface JGPieChartTimeLayer : CALayer {
     CGFloat startAngle;
     CGFloat endAngle;
 }

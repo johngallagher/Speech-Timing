@@ -1,6 +1,6 @@
 #import "JGTimerRunningViewController.h"
 #import "JGTimeFormatter.h"
-#import "JGDrawingTestView.h"
+#import "JGPieChartTimeView.h"
 #import "JGAlert.h"
 #import "JGTimerDefaults.h"
 
@@ -37,7 +37,7 @@
 -(void)initViewControllerWithStartTime:(NSDate *)startTime_ fireTime:(NSDate *)fireTime_ alarmFilename:(NSString *)an {
     // TODO Change duration to fire date
     NSUInteger durationOfTimer = 60;
-    [(JGDrawingTestView *)[self view] setAnimationDuration:durationOfTimer]; // TODO get us drawing the animation partway through.
+    [(JGPieChartTimeView *)[self view] setAnimationDuration:durationOfTimer]; // TODO get us drawing the animation partway through.
     [self loadAlertSoundWithFilename:an];
 
     [self setTimerController:[JGTimerController timerStartingAt:startTime_ withFireTime:fireTime_ delegate:self]];
@@ -57,7 +57,7 @@
 }
 
 -(void)viewDidAppear:(BOOL)animated {
-    [(JGDrawingTestView *)[self view] animateCountdown];
+    [(JGPieChartTimeView *)[self view] animateCountdown];
 }
 
 -(void)viewDidDisappear:(BOOL)animated {

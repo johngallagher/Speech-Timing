@@ -24,8 +24,8 @@
 		520F73EF14BA46F1003FEC46 /* Alarm.aif in Resources */ = {isa = PBXBuildFile; fileRef = 520F73E914BA46F1003FEC46 /* Alarm.aif */; };
 		520F73F014BA46F1003FEC46 /* Submarine.aif in Resources */ = {isa = PBXBuildFile; fileRef = 520F73EA14BA46F1003FEC46 /* Submarine.aif */; };
 		521BCEA514C0445600695F8B /* JGAbstractSingletonObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A9545400542492 /* JGAbstractSingletonObject.m */; };
-		5242CBEF14B3FC8A00C876C7 /* JGDrawingTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5242CBEC14B3FC8A00C876C7 /* JGDrawingTestView.m */; };
-		5242CBF014B3FC8A00C876C7 /* PieChartLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5242CBEE14B3FC8A00C876C7 /* PieChartLayer.m */; };
+		5242CBEF14B3FC8A00C876C7 /* JGPieChartTimeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5242CBEC14B3FC8A00C876C7 /* JGPieChartTimeView.m */; };
+		5242CBF014B3FC8A00C876C7 /* JGPieChartTimeLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5242CBEE14B3FC8A00C876C7 /* JGPieChartTimeLayer.m */; };
 		5242CBF514B3FD0000C876C7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5242CBF414B3FD0000C876C7 /* QuartzCore.framework */; };
 		5243241A14C06FCC00AFDE61 /* Library in Resources */ = {isa = PBXBuildFile; fileRef = 5243241914C06FCC00AFDE61 /* Library */; };
 		524C1D3014F64C32004D2EEA /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 524C1D2F14F64C32004D2EEA /* libOCMock.a */; };
@@ -110,10 +110,10 @@
 		520F73E814BA46F1003FEC46 /* Bell.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bell.aif; sourceTree = "<group>"; };
 		520F73E914BA46F1003FEC46 /* Alarm.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = Alarm.aif; sourceTree = "<group>"; };
 		520F73EA14BA46F1003FEC46 /* Submarine.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = Submarine.aif; sourceTree = "<group>"; };
-		5242CBEB14B3FC8A00C876C7 /* JGDrawingTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGDrawingTestView.h; sourceTree = "<group>"; };
-		5242CBEC14B3FC8A00C876C7 /* JGDrawingTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGDrawingTestView.m; sourceTree = "<group>"; };
-		5242CBED14B3FC8A00C876C7 /* PieChartLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieChartLayer.h; sourceTree = "<group>"; };
-		5242CBEE14B3FC8A00C876C7 /* PieChartLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PieChartLayer.m; sourceTree = "<group>"; };
+		5242CBEB14B3FC8A00C876C7 /* JGPieChartTimeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGPieChartTimeView.h; sourceTree = "<group>"; };
+		5242CBEC14B3FC8A00C876C7 /* JGPieChartTimeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGPieChartTimeView.m; sourceTree = "<group>"; };
+		5242CBED14B3FC8A00C876C7 /* JGPieChartTimeLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGPieChartTimeLayer.h; sourceTree = "<group>"; };
+		5242CBEE14B3FC8A00C876C7 /* JGPieChartTimeLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGPieChartTimeLayer.m; sourceTree = "<group>"; };
 		5242CBF414B3FD0000C876C7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		5243241914C06FCC00AFDE61 /* Library */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Library; sourceTree = "<group>"; };
 		524C1D2F14F64C32004D2EEA /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = Library/libOCMock.a; sourceTree = "<group>"; };
@@ -334,10 +334,10 @@
 		5242CBEA14B3FC6900C876C7 /* PieChartView */ = {
 			isa = PBXGroup;
 			children = (
-				5242CBEB14B3FC8A00C876C7 /* JGDrawingTestView.h */,
-				5242CBEC14B3FC8A00C876C7 /* JGDrawingTestView.m */,
-				5242CBED14B3FC8A00C876C7 /* PieChartLayer.h */,
-				5242CBEE14B3FC8A00C876C7 /* PieChartLayer.m */,
+				5242CBEB14B3FC8A00C876C7 /* JGPieChartTimeView.h */,
+				5242CBEC14B3FC8A00C876C7 /* JGPieChartTimeView.m */,
+				5242CBED14B3FC8A00C876C7 /* JGPieChartTimeLayer.h */,
+				5242CBEE14B3FC8A00C876C7 /* JGPieChartTimeLayer.m */,
 			);
 			name = PieChartView;
 			sourceTree = "<group>";
@@ -616,8 +616,8 @@
 				52EB417314B1218D00308C95 /* JGCardTimesCalculator.m in Sources */,
 				52BBC08914B34FC900CFE655 /* JGCountdownTimer.m in Sources */,
 				52BBC0E014B358EF00CFE655 /* JGTimeFormatter.m in Sources */,
-				5242CBEF14B3FC8A00C876C7 /* JGDrawingTestView.m in Sources */,
-				5242CBF014B3FC8A00C876C7 /* PieChartLayer.m in Sources */,
+				5242CBEF14B3FC8A00C876C7 /* JGPieChartTimeView.m in Sources */,
+				5242CBF014B3FC8A00C876C7 /* JGPieChartTimeLayer.m in Sources */,
 				52F63E5E14B7590E00876FA4 /* JGInsetGradientButton.m in Sources */,
 				52F63E5F14B7590E00876FA4 /* JGRedInsetGradientButton.m in Sources */,
 				52F63E6014B7590E00876FA4 /* JGGreenInsetGradientButton.m in Sources */,

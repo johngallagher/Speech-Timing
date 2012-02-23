@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@class PieChartLayer;
+@class JGPieChartTimeLayer;
 
-@interface JGDrawingTestView : UIView {
-    PieChartLayer *pieChartLayer;
+@interface JGPieChartTimeView : UIView {
+    JGPieChartTimeLayer *pieChartLayer;
     NSUInteger animationDuration;
 }
 
