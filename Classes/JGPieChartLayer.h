@@ -21,9 +21,11 @@
 
 @property(nonatomic, assign) CGFloat startAngle;
 @property(nonatomic, assign) CGFloat endAngle;
+@property(nonatomic, retain) JGPieChartAnimation *pieChartAnimation;
 
--(id)initWithPieChartAnimation:(JGPieChartAnimation *)aPieChartAnimation;
 
--(id)pieChartTimeLayerValueForKey:(NSString *)key;
+-(id)initWithPieChartAnimation:(JGPieChartAnimation *)aPieChartAnimation andFrame:(CGRect)frame_;
+
+-(id)lastValueForKey:(NSString *)key;
 
 @end

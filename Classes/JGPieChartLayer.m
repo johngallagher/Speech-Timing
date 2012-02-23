@@ -19,16 +19,21 @@ static inline double radians(double degrees) {
 
 @synthesize startAngle;
 @synthesize endAngle;
+@synthesize pieChartAnimation;
+
 
 #pragma mark -
 #pragma mark CALayer
 
--(id)initWithPieChartAnimation:(JGPieChartAnimation *)aPieChartAnimation {
+
+-(id)initWithPieChartAnimation:(JGPieChartAnimation *)aPieChartAnimation andFrame:(CGRect)frame_ {
     self = [super init];
     if (self) {
         pieChartAnimation = [aPieChartAnimation retain];
         self.needsDisplayOnBoundsChange = YES;
-        self.frame                      = self.bounds;
+        self.frame                      = frame_;
+        startAngle = [aPieChartAnimation startAngle];
+        endAngle = [aPieChartAnimation endAngle];
         [self setValue:[NSNumber numberWithFloat:[aPieChartAnimation startAngle]] forKey:@"startAngle"];
         [self setValue:[NSNumber numberWithFloat:[aPieChartAnimation endAngle]] forKey:@"endAngle"];
     }
@@ -78,7 +83,7 @@ static inline double radians(double degrees) {
 #pragma mark -
 #pragma mark Public API
 
--(id)pieChartTimeLayerValueForKey:(NSString *)key {
+-(id)lastValueForKey:(NSString *)key {
     JGPieChartLayer *last = (JGPieChartLayer *)self.presentationLayer;
     return [last valueForKey:key];
 }

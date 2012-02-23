@@ -26,18 +26,11 @@
 @implementation JGTimerRunningView
 
 @synthesize animationDuration;
-//@synthesize pieChartAnimation = _pieChartAnimation;
 
-
-//-(id)initWithFrame:(CGRect)frame {
-//    self = [super initWithFrame:frame];
-//    return self;
-//}
-
--(void)setPieChartAnimation:(JGPieChartAnimation *)pieChartAnimation {
+-(void)setupWithPieChartAnimation:(JGPieChartAnimation *)pieChartAnimation {
     animationDuration = [pieChartAnimation duration];
 
-    JGPieChartLayer *layer = [[JGPieChartLayer alloc] initWithPieChartAnimation:pieChartAnimation];
+    JGPieChartLayer *layer = [[JGPieChartLayer alloc] initWithPieChartAnimation:pieChartAnimation andFrame:[self bounds]];
     pieChartLayer = [layer retain];
 
     [layer release];
@@ -45,6 +38,20 @@
     [[self layer] addSublayer:pieChartLayer];
 }
 
+-(void)startCountdownAnimation {
+    [CATransaction begin];
+    [CATransaction setAnimationDuration:[self animationDuration]];
+    [CATransaction setAnimationTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear]];
+    [self _animateToAngle:270];
+    [CATransaction commit];
+}
+
+-(void)_animateToAngle:(CGFloat)angle {
+    NSNumber *startAngle_ = [pieChartLayer lastValueForKey:@"endAngle"]; // [NSNumber numberWithFloat:-90.0]
+    CABasicAnimation *animEndAngle = [self _animationForKeyPath:@"endAngle" fromValue:[NSNumber numberWithFloat:-90.0] toValue:[NSNumber numberWithFloat:angle]];
+    [pieChartLayer addAnimation:animEndAngle forKey:@"animateEndAngle"];
+}
+Conf
 -(CABasicAnimation *)_animationForKeyPath:(NSString *)keyPath
                                 fromValue:(NSNumber *)fromValue
                                   toValue:(NSNumber *)toValue {
@@ -56,24 +63,6 @@
     anim.toValue        = toValue;
     anim.timingFunction = timingFunction;
     return anim;
-}
-
--(void)_animateToAngle:(CGFloat)angle {
-    NSNumber *eAngle = [pieChartLayer pieChartTimeLayerValueForKey:@"endAngle"];
-
-    // Create animations
-    CABasicAnimation *animEndAngle = [self _animationForKeyPath:@"endAngle" fromValue:eAngle toValue:[NSNumber numberWithFloat:angle]];
-
-    // Start animations
-    [pieChartLayer addAnimation:animEndAngle forKey:@"animateEndAngle"];
-}
-
--(void)startCountdownAnimation {
-    [CATransaction begin];
-    [CATransaction setAnimationDuration:[self animationDuration]];
-    [CATransaction setAnimationTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear]];
-    [self _animateToAngle:270];
-    [CATransaction commit];
 }
 
 -(void)dealloc {

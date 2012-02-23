@@ -18,7 +18,7 @@
 
 @property(nonatomic) NSTimeInterval animationDuration;
 
--(void)setPieChartAnimation:(JGPieChartAnimation *)pieChartAnimation;
+-(void)setupWithPieChartAnimation:(JGPieChartAnimation *)pieChartAnimation;
 
 -(void)startCountdownAnimation;
 

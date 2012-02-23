@@ -55,7 +55,7 @@
 
     // TODO Setup pie chart animation with start/end angle and duration based on the start time and fire time - for now just use 60 seconds.
     JGPieChartAnimation *pieChartAnimation = [[JGPieChartAnimation alloc] initWithStartAngle:-90 endAngle:-90 duration:60];
-    [(JGTimerRunningView *)[self view] setPieChartAnimation:pieChartAnimation];
+    [(JGTimerRunningView *)[self view] setupWithPieChartAnimation:pieChartAnimation];
     [pieChartAnimation release];
 
     [self loadAlertSoundWithFilename:an];
