@@ -10,14 +10,14 @@
 #pragma mark Filename
 -(void)testGivenOneWordNameThenFilenameShouldGiveNameWithAIFFExtension {
     JGAlert *alert = [JGAlert alertWithStartTime:nil fireTime:nil name:@"Submarine"];
-    NSString *alertFilename = [alert filename];
-    STAssertTrue([alertFilename isEqualToString:@"Submarine.aiff"], @"String %@ should be equal to %@", alertFilename, @"Submarine.aiff");
+    NSString *alertFilename = [alert filenameWithoutExtension];
+    STAssertTrue([alertFilename isEqualToString:@"Submarine"], @"String %@ should be equal to %@", alertFilename, @"Submarine");
 }
 
 -(void)testGivenTwoWordNameThenFilenameShouldGiveIntercapsNameWithAIFFExtension {
     JGAlert *alert = [JGAlert alertWithStartTime:nil fireTime:nil name:@"Submarine Sound"];
-    NSString *alertFilename = [alert filename];
-    STAssertTrue([alertFilename isEqualToString:@"SubmarineSound.aiff"], @"String %@ should be equal to %@", alertFilename, @"Submarine.aiff");
+    NSString *alertFilename = [alert filenameWithoutExtension];
+    STAssertTrue([alertFilename isEqualToString:@"SubmarineSound"], @"String %@ should be equal to %@", alertFilename, @"SubmarineSound");
 }
 
 #pragma mark Default Name

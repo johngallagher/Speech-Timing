@@ -27,6 +27,6 @@
 -(NSDate *)startTime;
 -(NSDate *)fireTime;
 
--(NSString *)filename;
+-(NSString *)filenameWithoutExtension;
 
 @end

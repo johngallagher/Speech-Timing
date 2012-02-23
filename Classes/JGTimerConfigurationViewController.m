@@ -58,7 +58,7 @@
 }
 
 -(void)_startTimerWithDuration:(NSUInteger)durationOfTimer {
-    _currentAlert = [JGAlert alertStartingNowWithDuration:durationOfTimer name:[_currentAlert name]];
+    _currentAlert = [[JGAlert alertStartingNowWithDuration:durationOfTimer name:[_currentAlert name]] retain];
     [_currentAlert saveToTimerDefaults];
 
     [self pushRunningViewControllerWithCurrentAlert];
@@ -90,7 +90,7 @@
 }
 
 -(void)restoreAlertFromDefaults {
-    _currentAlert = [[JGTimerDefaults sharedInstance] alert];
+    _currentAlert = [[[JGTimerDefaults sharedInstance] alert] retain];
 }
 
 -(void)continueTimer {

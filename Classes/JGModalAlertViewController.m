@@ -48,8 +48,7 @@
 #pragma mark Data Source Helper Methods
 
 -(void)setTextForIndexPath:(NSIndexPath *)indexPath forCell:(UITableViewCell *)cell {
-    if ([indexPath row] >= 0)
-        [[cell textLabel] setText:[alertNames objectAtIndex:(NSUInteger)[indexPath row]]];
+    [[cell textLabel] setText:[alertNames objectAtIndex:(NSUInteger)[indexPath row]]];
 }
 
 -(void)setCheckmarkForIndexPath:(NSIndexPath *)indexPath cell:(UITableViewCell *)cell {
@@ -113,8 +112,7 @@
 }
 
 -(void)updateCurrentAlertNameFromSelectedIndexPath:(NSIndexPath *)indexPath {
-    if ([indexPath row] >= 0)
-        [self setCurrentAlertName:[alertNames objectAtIndex:(NSUInteger)[indexPath row]]];
+    [self setCurrentAlertName:[alertNames objectAtIndex:(NSUInteger)[indexPath row]]];
 }
 
 #pragma mark -

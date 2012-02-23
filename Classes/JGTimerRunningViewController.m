@@ -31,7 +31,7 @@
 }
 
 +(JGTimerRunningViewController *)viewControllerWithAlert:(JGAlert *)alert_ {
-    return [self viewControllerWithStartTime:[alert_ startTime] fireTime:[alert_ fireTime] alarmFilename:[alert_ filename]];
+    return [self viewControllerWithStartTime:[alert_ startTime] fireTime:[alert_ fireTime] alarmFilename:[alert_ filenameWithoutExtension]];
 }
 
 -(void)initViewControllerWithStartTime:(NSDate *)startTime_ fireTime:(NSDate *)fireTime_ alarmFilename:(NSString *)an {

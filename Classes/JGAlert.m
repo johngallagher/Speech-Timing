@@ -65,8 +65,8 @@
     [super dealloc];
 }
 
--(NSString *)filename {
-    return [[[self name] stringByReplacingOccurrencesOfString:@" " withString:@""] stringByAppendingString:@".aiff"];
+-(NSString *)filenameWithoutExtension {
+    return [[self name] stringByReplacingOccurrencesOfString:@" " withString:@""];
 }
 
 -(void)updateNameFromDefaults {
