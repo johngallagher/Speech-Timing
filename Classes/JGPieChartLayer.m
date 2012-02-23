@@ -6,7 +6,8 @@
 //  Copyright 2011 Nomad Planet. All rights reserved.
 //
 
-#import "JGPieChartTimeLayer.h"
+#import "JGPieChartLayer.h"
+#import "JGPieChartAnimation.h"
 
 
 static inline double radians(double degrees) {
@@ -14,7 +15,7 @@ static inline double radians(double degrees) {
 }
 
 
-@implementation JGPieChartTimeLayer
+@implementation JGPieChartLayer
 
 @synthesize startAngle;
 @synthesize endAngle;
@@ -22,16 +23,29 @@ static inline double radians(double degrees) {
 #pragma mark -
 #pragma mark CALayer
 
--(id)initWithLayer:(id)layer {
-    if ((self = [super initWithLayer:layer])) {
-        if ([layer isKindOfClass:[JGPieChartTimeLayer class]]) {
-            JGPieChartTimeLayer *other = (JGPieChartTimeLayer *)layer;
-            self.startAngle = other.startAngle;
-            self.endAngle   = other.endAngle;
-        }
+-(id)initWithPieChartAnimation:(JGPieChartAnimation *)aPieChartAnimation {
+    self = [super init];
+    if (self) {
+        pieChartAnimation = [aPieChartAnimation retain];
+        self.needsDisplayOnBoundsChange = YES;
+        self.frame                      = self.bounds;
+        [self setValue:[NSNumber numberWithFloat:[aPieChartAnimation startAngle]] forKey:@"startAngle"];
+        [self setValue:[NSNumber numberWithFloat:[aPieChartAnimation endAngle]] forKey:@"endAngle"];
     }
+
     return self;
 }
+
+//-(id)initWithLayer:(id)layer {
+//    if ((self = [super initWithLayer:layer])) {
+//        if ([layer isKindOfClass:[JGPieChartTimeLayer class]]) {
+//            JGPieChartTimeLayer *pieChartTimeLayer = (JGPieChartTimeLayer *)layer;
+//            self.startAngle = pieChartTimeLayer.startAngle;
+//            self.endAngle   = pieChartTimeLayer.endAngle;
+//        }
+//    }
+//    return self;
+//}
 
 +(BOOL)needsDisplayForKey:(NSString *)key {
     if ([key isEqualToString:@"startAngle"]
@@ -64,9 +78,14 @@ static inline double radians(double degrees) {
 #pragma mark -
 #pragma mark Public API
 
--(id)lastValueForKey:(NSString *)key {
-    JGPieChartTimeLayer *last = (JGPieChartTimeLayer *)self.presentationLayer;
+-(id)pieChartTimeLayerValueForKey:(NSString *)key {
+    JGPieChartLayer *last = (JGPieChartLayer *)self.presentationLayer;
     return [last valueForKey:key];
+}
+
+-(void)dealloc {
+    [pieChartAnimation release];
+    [super dealloc];
 }
 
 @end

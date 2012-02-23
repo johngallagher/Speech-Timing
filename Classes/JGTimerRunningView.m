@@ -6,11 +6,12 @@
 //  Copyright 2012 Synaptic Mishap. All rights reserved.
 //
 
-#import "JGPieChartTimeView.h"
+#import "JGTimerRunningView.h"
 #import <QuartzCore/QuartzCore.h>
-#import "JGPieChartTimeLayer.h"
+#import "JGPieChartLayer.h"
+#import "JGPieChartAnimation.h"
 
-@interface JGPieChartTimeView ()
+@interface JGTimerRunningView ()
 
 -(CABasicAnimation *)_animationForKeyPath:(NSString *)keyPath
                                 fromValue:(NSNumber *)fromValue
@@ -22,36 +23,26 @@
 @end
 
 
-@implementation JGPieChartTimeView
+@implementation JGTimerRunningView
 
 @synthesize animationDuration;
+//@synthesize pieChartAnimation = _pieChartAnimation;
 
--(id)initWithFrame:(CGRect)frame {
 
-    self = [super initWithFrame:frame];
-    if (self) {
-        // Initialization code.
-    }
-    return self;
-}
+//-(id)initWithFrame:(CGRect)frame {
+//    self = [super initWithFrame:frame];
+//    return self;
+//}
 
--(void)dealloc {
-    [pieChartLayer release];
-    [super dealloc];
-}
+-(void)setPieChartAnimation:(JGPieChartAnimation *)pieChartAnimation {
+    animationDuration = [pieChartAnimation duration];
 
--(void)awakeFromNib {
-    JGPieChartTimeLayer *pcl = [[JGPieChartTimeLayer alloc] init];
-    pcl.needsDisplayOnBoundsChange = YES;
-    pcl.frame                      = self.bounds;
-    pcl.startAngle                 = -90;
-    pcl.endAngle                   = -90;
-    pieChartLayer = [pcl retain];
-    [pcl release];
+    JGPieChartLayer *layer = [[JGPieChartLayer alloc] initWithPieChartAnimation:pieChartAnimation];
+    pieChartLayer = [layer retain];
 
-    [pieChartLayer setValue:[NSNumber numberWithFloat:-90.0] forKey:@"startAngle"];
-    [pieChartLayer setValue:[NSNumber numberWithFloat:-90.0] forKey:@"endAngle"];
-    [self.layer addSublayer:pieChartLayer];
+    [layer release];
+
+    [[self layer] addSublayer:pieChartLayer];
 }
 
 -(CABasicAnimation *)_animationForKeyPath:(NSString *)keyPath
@@ -68,7 +59,7 @@
 }
 
 -(void)_animateToAngle:(CGFloat)angle {
-    NSNumber *eAngle = [pieChartLayer lastValueForKey:@"endAngle"];
+    NSNumber *eAngle = [pieChartLayer pieChartTimeLayerValueForKey:@"endAngle"];
 
     // Create animations
     CABasicAnimation *animEndAngle = [self _animationForKeyPath:@"endAngle" fromValue:eAngle toValue:[NSNumber numberWithFloat:angle]];
@@ -77,18 +68,17 @@
     [pieChartLayer addAnimation:animEndAngle forKey:@"animateEndAngle"];
 }
 
--(void)animateCountdown {
-    [self animateCountdownOverDuration:[self animationDuration]];
-}
-
--(void)animateCountdownOverDuration:(NSUInteger)duration_ {
+-(void)startCountdownAnimation {
     [CATransaction begin];
-    [CATransaction setAnimationDuration:duration_];
+    [CATransaction setAnimationDuration:[self animationDuration]];
     [CATransaction setAnimationTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear]];
     [self _animateToAngle:270];
-
     [CATransaction commit];
 }
 
+-(void)dealloc {
+    [pieChartLayer release];
+    [super dealloc];
+}
 @end
 

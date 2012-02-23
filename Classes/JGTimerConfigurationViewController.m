@@ -19,7 +19,12 @@
 
 -(void)_startTimer;
 
--(void)restoreViewFromUserDefaults;
+-(BOOL)timerIsRunning;
+
+-(void)restoreAlertFromDefaults;
+
+
+-(void)continueTimer;
 
 
 @end
@@ -40,7 +45,11 @@
 
 -(void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    [self restoreViewFromUserDefaults];
+    
+    [self restoreAlertFromDefaults];
+    if ([self timerIsRunning]) {
+        [self continueTimer];
+    }
 }
 
 #pragma mark Public
@@ -95,13 +104,6 @@
 
 -(void)continueTimer {
     [self pushRunningViewControllerWithCurrentAlert];
-}
-
--(void)restoreViewFromUserDefaults {
-    [self restoreAlertFromDefaults];
-    if ([self timerIsRunning]) {
-        [self continueTimer];
-    }
 }
 
 -(void)updateCurrentAlertNameIndicator {

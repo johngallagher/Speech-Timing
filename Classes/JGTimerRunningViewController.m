@@ -1,8 +1,9 @@
 #import "JGTimerRunningViewController.h"
 #import "JGTimeFormatter.h"
-#import "JGPieChartTimeView.h"
+#import "JGTimerRunningView.h"
 #import "JGAlert.h"
 #import "JGTimerDefaults.h"
+#import "JGPieChartAnimation.h"
 
 @interface JGTimerRunningViewController ()
 -(void)initViewControllerWithStartTime:(NSDate *)startTime_ fireTime:(NSDate *)fireTime_ alarmFilename:(NSString *)an;
@@ -15,6 +16,20 @@
 
 @synthesize countdownTimer;
 @synthesize timerController;
+
+#pragma mark View Appear/Disappear
+-(void)viewDidAppear:(BOOL)animated {
+    [(JGTimerRunningView *)[self view] startCountdownAnimation];
+}
+
+-(void)viewDidDisappear:(BOOL)animated {
+    [[self timerController] stopTimer];
+    [self setTimerController:nil];
+
+    [[self countdownTimer] stopTimer];
+    [self setCountdownTimer:nil];
+    [[JGTimerDefaults sharedInstance] invalidateAlert];
+}
 
 
 +(JGTimerRunningViewController *)viewControllerWithFireTime:(NSDate *)fireTime {
@@ -35,9 +50,14 @@
 }
 
 -(void)initViewControllerWithStartTime:(NSDate *)startTime_ fireTime:(NSDate *)fireTime_ alarmFilename:(NSString *)an {
-    // TODO Change duration to fire date
-    NSUInteger durationOfTimer = 60;
-    [(JGPieChartTimeView *)[self view] setAnimationDuration:durationOfTimer]; // TODO get us drawing the animation partway through.
+//    NSUInteger durationOfTimer = 60;
+//    [(JGTimerRunningView *)[self view] setAnimationDuration:60];
+
+    // TODO Setup pie chart animation with start/end angle and duration based on the start time and fire time - for now just use 60 seconds.
+    JGPieChartAnimation *pieChartAnimation = [[JGPieChartAnimation alloc] initWithStartAngle:-90 endAngle:-90 duration:60];
+    [(JGTimerRunningView *)[self view] setPieChartAnimation:pieChartAnimation];
+    [pieChartAnimation release];
+
     [self loadAlertSoundWithFilename:an];
 
     [self setTimerController:[JGTimerController timerStartingAt:startTime_ withFireTime:fireTime_ delegate:self]];
@@ -56,18 +76,6 @@
     [audioPlayer prepareToPlay];
 }
 
--(void)viewDidAppear:(BOOL)animated {
-    [(JGPieChartTimeView *)[self view] animateCountdown];
-}
-
--(void)viewDidDisappear:(BOOL)animated {
-    [[self timerController] stopTimer];
-    [self setTimerController:nil];
-
-    [[self countdownTimer] stopTimer];
-    [self setCountdownTimer:nil];
-    [[JGTimerDefaults sharedInstance] invalidateAlert];
-}
 
 -(IBAction)stopTimer:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
