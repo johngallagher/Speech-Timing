@@ -56,6 +56,7 @@
     JGTimerRunningViewController *runningViewController = [JGTimerRunningViewController viewControllerWithAlert:[self currentAlert]];
     [[self navigationController] pushViewController:runningViewController animated:YES];
 }
+
 -(void)_startTimerWithDuration:(NSUInteger)durationOfTimer {
     [self setCurrentAlert:[JGAlert alertStartingNowWithDuration:durationOfTimer name:[self currentAlertName]]];
     [[self currentAlert] saveToTimerDefaults];
@@ -88,7 +89,7 @@
     return [[JGTimerDefaults sharedInstance] timerIsRunning];
 }
 
--(void)updateAlertFromDefaults {
+-(void)restoreAlertFromDefaults {
     [self setCurrentAlert:[[JGTimerDefaults sharedInstance] alert]];
 }
 
@@ -97,7 +98,7 @@
 }
 
 -(void)restoreViewFromUserDefaults {
-    [self updateAlertFromDefaults];
+    [self restoreAlertFromDefaults];
     if ([self timerIsRunning]) {
         [self continueTimer];
     }
@@ -116,7 +117,24 @@
     return currentAlertName;
 }
 
-#pragma mark Modal View Controller Actions
+// TODO: Change JGRingingSettingDelegate and current alert name and alert modal to all be consistent naming
+#pragma mark -
+#pragma mark Modal Alert View Controller
+-(void)pushAlertNameViewController {
+    JGModalAlertViewController *ringingSettingViewController = [[JGModalAlertViewController alloc] initWithNibName:@"JGRingingSettingViewController" bundle:nil];
+    [ringingSettingViewController setDelegate:self];
+    [ringingSettingViewController setCurrentAlertName:[[self currentAlert] name]];
+    [self presentModalViewController:ringingSettingViewController animated:YES];
+    [ringingSettingViewController release];
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [[tableView cellForRowAtIndexPath:indexPath] setSelected:NO animated:YES];
+
+    [self pushAlertNameViewController];
+}
+
+#pragma mark Modal Alert View Delegate
 -(void)currentAlertNameDidChangeTo:(NSString *)alertName_ {
     [[JGTimerDefaults sharedInstance] setCurrentAlertName:alertName_];
     [currentAlert updateNameFromDefaults];
@@ -183,21 +201,6 @@
     [[cell textLabel] setText:@"Ringing Style"];
     [[cell detailTextLabel] setText:[[self currentAlert] name]];
     return cell;
-}
-
-#pragma mark -
-#pragma mark Audio Ringer Setting Table view delegate
-
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [[tableView cellForRowAtIndexPath:indexPath] setSelected:NO animated:YES];
-
-    // Navigation logic may go here. Create and push another view controller.
-    JGModalAlertViewController *ringingSettingViewController = [[JGModalAlertViewController alloc] initWithNibName:@"JGRingingSettingViewController" bundle:nil];
-    [ringingSettingViewController setDelegate:self];
-
-    [self presentModalViewController:ringingSettingViewController animated:YES];
-
-    [ringingSettingViewController release];
 }
 
 

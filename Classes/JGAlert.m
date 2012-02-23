@@ -57,12 +57,7 @@
 }
 
 -(void)updateNameFromDefaults {
-    NSString *defaultAlertName = [[JGTimerDefaults sharedInstance] alertName];
-    if (defaultAlertName) {
-        [self setName:defaultAlertName];
-    } else {
-        [self setName:@"Digital Alarm 1"];
-    }
+    [self setName:[[JGTimerDefaults sharedInstance] alertName]];
 }
 
 -(NSString *)name {

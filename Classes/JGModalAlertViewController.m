@@ -36,7 +36,6 @@
     [super viewDidLoad];
 
     [self loadDefaultAlerts];
-    [self setCurrentAlertName:[_delegate currentAlertName]];
     [self setRightBarButtonToBeDone];
     [self setLeftBarButtonToCancel];
 }
