@@ -39,12 +39,7 @@ NSString * const kCurrentAlert = @"currentAlertName";
 }
 
 -(NSString *)alertName {
-    NSString *_alertName = [userDefaults objectForKey:kCurrentAlert];
-    if (_alertName) {
-        return _alertName;
-    } else {
-        return @"Digital Alarm 1";
-    }
+    return [userDefaults objectForKey:kCurrentAlert];
 }
 
 -(void)setCurrentAlertName:(NSString *)currentAlertName_ {

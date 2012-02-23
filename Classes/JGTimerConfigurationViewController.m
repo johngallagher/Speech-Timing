@@ -29,7 +29,7 @@
 @synthesize pickerDurations;
 @synthesize managedObjectContext = managedObjectContext_;
 @synthesize currentAlertName;
-@synthesize currentAlert;
+@synthesize currentAlert = _currentAlert;
 
 #pragma mark View lifecycle
 
@@ -53,13 +53,13 @@
 
 #pragma mark Private
 -(void)pushRunningViewControllerWithCurrentAlert {
-    JGTimerRunningViewController *runningViewController = [JGTimerRunningViewController viewControllerWithAlert:[self currentAlert]];
+    JGTimerRunningViewController *runningViewController = [JGTimerRunningViewController viewControllerWithAlert:_currentAlert];
     [[self navigationController] pushViewController:runningViewController animated:YES];
 }
 
 -(void)_startTimerWithDuration:(NSUInteger)durationOfTimer {
-    [self setCurrentAlert:[JGAlert alertStartingNowWithDuration:durationOfTimer name:[self currentAlertName]]];
-    [[self currentAlert] saveToTimerDefaults];
+    _currentAlert = [JGAlert alertStartingNowWithDuration:durationOfTimer name:[_currentAlert name]];
+    [_currentAlert saveToTimerDefaults];
 
     [self pushRunningViewControllerWithCurrentAlert];
 }
@@ -90,7 +90,7 @@
 }
 
 -(void)restoreAlertFromDefaults {
-    [self setCurrentAlert:[[JGTimerDefaults sharedInstance] alert]];
+    _currentAlert = [[JGTimerDefaults sharedInstance] alert];
 }
 
 -(void)continueTimer {
@@ -106,7 +106,7 @@
 
 -(void)updateCurrentAlertNameIndicator {
     UITableViewCell *cell = [currentAlertTableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
-    [[cell detailTextLabel] setText:[currentAlert name]];
+    [[cell detailTextLabel] setText:[_currentAlert name]];
 }
 
 -(void)hideModalAlertSelector {
@@ -123,7 +123,9 @@
 -(void)pushAlertNameViewController {
     JGModalAlertViewController *ringingSettingViewController = [[JGModalAlertViewController alloc] initWithNibName:@"JGRingingSettingViewController" bundle:nil];
     [ringingSettingViewController setDelegate:self];
-    [ringingSettingViewController setCurrentAlertName:[[self currentAlert] name]];
+
+    NSString *currentAlertName_ = [_currentAlert name];
+    [ringingSettingViewController setCurrentAlertName:currentAlertName_];
     [self presentModalViewController:ringingSettingViewController animated:YES];
     [ringingSettingViewController release];
 }
@@ -137,7 +139,7 @@
 #pragma mark Modal Alert View Delegate
 -(void)currentAlertNameDidChangeTo:(NSString *)alertName_ {
     [[JGTimerDefaults sharedInstance] setCurrentAlertName:alertName_];
-    [currentAlert updateNameFromDefaults];
+    [_currentAlert updateNameFromDefaults];
 
     [self updateCurrentAlertNameIndicator];
     [self hideModalAlertSelector];
@@ -199,7 +201,7 @@
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier] autorelease];
     }
     [[cell textLabel] setText:@"Ringing Style"];
-    [[cell detailTextLabel] setText:[[self currentAlert] name]];
+    [[cell detailTextLabel] setText:[_currentAlert name]];
     return cell;
 }
 
@@ -209,7 +211,7 @@
     [managedObjectContext_ release];
     [pickerDurations release];
     [currentAlertName release];
-    [currentAlert release];
+    [_currentAlert release];
     [super dealloc];
 }
 

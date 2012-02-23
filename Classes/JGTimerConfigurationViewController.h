@@ -20,7 +20,7 @@
 
     NSArray  *pickerDurations;
     NSString *currentAlertName;
-    JGAlert *currentAlert;
+    JGAlert *_currentAlert;
 
 @private
     NSManagedObjectContext *managedObjectContext_;
@@ -29,7 +29,7 @@
 @property(nonatomic, retain) NSArray                *pickerDurations;
 @property(nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 @property(nonatomic, retain) NSString               *currentAlertName;
-@property(nonatomic, retain) JGAlert *currentAlert;
+@property(nonatomic, retain) JGAlert                *currentAlert;
 
 
 -(IBAction)startTimer:(id)sender;

@@ -7,6 +7,7 @@
 
 @implementation JGAlertTestCase
 
+#pragma mark Filename
 -(void)testGivenOneWordNameThenFilenameShouldGiveNameWithAIFFExtension {
     JGAlert *alert = [JGAlert alertWithStartTime:nil fireTime:nil name:@"Submarine"];
     NSString *alertFilename = [alert filename];
@@ -17,6 +18,23 @@
     JGAlert *alert = [JGAlert alertWithStartTime:nil fireTime:nil name:@"Submarine Sound"];
     NSString *alertFilename = [alert filename];
     STAssertTrue([alertFilename isEqualToString:@"SubmarineSound.aiff"], @"String %@ should be equal to %@", alertFilename, @"Submarine.aiff");
+}
+
+#pragma mark Default Name
+-(void)testGivenNilNameAtInitNameShouldBeDigitalAlarm1 {
+    JGAlert *alert = [[JGAlert alloc] init];
+    STAssertTrue([[alert name] isEqualToString:@"Digital Alarm 1"], @"String %@ should be equal to %@", [alert name], @"Digital Alarm 1");
+    [alert release];
+}
+
+-(void)testGivenNilNameInConstructorNameShouldBeSetToDigitalAlarm1BecauseThisIsTheDefault {
+    JGAlert *alert = [JGAlert alertWithName:nil];
+    STAssertTrue([[alert name] isEqualToString:@"Digital Alarm 1"], @"String %@ should be equal to %@", [alert name], @"Digital Alarm 1");
+}
+
+-(void)testGivenNameInConstructorNameShouldBeSetToName {
+    JGAlert *alert = [JGAlert alertWithName:@"Submarine"];
+    STAssertTrue([[alert name] isEqualToString:@"Submarine"], @"String %@ should be equal to %@", [alert name], @"Submarine");
 }
 
 @end

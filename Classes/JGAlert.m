@@ -1,5 +1,6 @@
 #import "JGAlert.h"
 #import "JGTimerDefaults.h"
+#define DEFAULT_NAME @"Digital Alarm 1"
 
 @interface JGAlert ()
 
@@ -17,6 +18,14 @@
 @synthesize startTime = _startTime;
 @synthesize fireTime = _fireTime;
 
+-(id)init {
+    self = [super init];
+    if (self) {
+        _name = DEFAULT_NAME;
+    }
+
+    return self;
+}
 
 +(id)alertWithName:(NSString *)name_ {
     return [self alertWithStartTime:nil fireTime:nil name:name_];
@@ -35,7 +44,11 @@
     if (self) {
         _startTime = [startTime_ retain];
         _fireTime = [fireTime_ retain];
-        _name = [name_ retain];
+        if (name_) {
+            _name = [name_ retain];
+        } else {
+            _name = DEFAULT_NAME;
+        }
     }
 
     return self;
@@ -71,6 +84,7 @@
 -(NSDate *)fireTime {
     return _fireTime;
 }
+
 
 
 -(void)saveToTimerDefaults {
