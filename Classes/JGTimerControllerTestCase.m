@@ -7,8 +7,8 @@
 //
 
 #import "JGTimerControllerDelegate.h"
-#import "JGTimerControllerTestCase.h"
 #import "JGTimerController.h"
+#import "JGTimerControllerTestCase.h"
 
 @interface JGTimerControllerTestCase ()
 -(void)pauseForTimeInterval:(NSTimeInterval)timeInterval_;

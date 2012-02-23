@@ -1,5 +1,7 @@
 #import <Foundation/Foundation.h>
 #import "JGAbstractSingletonObject.h"
+
+@class JGAlert;
 extern NSString * const kStartTime    ;
 extern NSString * const kFireTime     ;
 extern NSString * const kCurrentAlert ;
@@ -8,21 +10,23 @@ extern NSString * const kCurrentAlert ;
     NSUserDefaults *userDefaults;
 }
 
--(NSDate *)defaultStartTime;
+-(NSDate *)startTime;
 
 -(void)setStartTime:(NSDate *)startTime_;
 
--(NSDate *)defaultFireTime;
+-(NSDate *)fireTime;
 
 -(void)setFireTime:(NSDate *)fireTime_;
 
--(NSString *)defaultAlertName;
+-(NSString *)alertName;
 
 -(void)setCurrentAlertName:(NSString *)currentAlertName_;
 
 -(void)timerDidStop;
 
 -(BOOL)timerIsRunning;
+
+-(JGAlert *)alert;
 
 
 @end

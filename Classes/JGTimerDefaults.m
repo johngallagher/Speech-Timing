@@ -1,4 +1,5 @@
 #import "JGTimerDefaults.h"
+#import "JGAlert.h"
 
 NSString * const kStartTime    = @"startTime";
 NSString * const kFireTime     = @"fireTime";
@@ -21,7 +22,7 @@ NSString * const kCurrentAlert = @"currentAlertName";
     return self;
 }
 
--(NSDate *)defaultStartTime {
+-(NSDate *)startTime {
     return [userDefaults objectForKey:kStartTime];
 }
 
@@ -29,7 +30,7 @@ NSString * const kCurrentAlert = @"currentAlertName";
     [userDefaults setObject:startTime_ forKey:kStartTime];
 }
 
--(NSDate *)defaultFireTime {
+-(NSDate *)fireTime {
     return [userDefaults objectForKey:kFireTime];
 }
 
@@ -37,7 +38,7 @@ NSString * const kCurrentAlert = @"currentAlertName";
     [userDefaults setObject:fireTime_ forKey:kFireTime];
 }
 
--(NSString *)defaultAlertName {
+-(NSString *)alertName {
     return [userDefaults objectForKey:kCurrentAlert];
 }
 
@@ -49,11 +50,12 @@ NSString * const kCurrentAlert = @"currentAlertName";
     [self _resetDates];
 }
 
+// Timer is running checks default start time and fire time and if they're inconsistent, it resets them both to nil.
 -(BOOL)timerIsRunning {
-    if ([self defaultStartTime] == nil && [self defaultFireTime] == nil) {
+    if ([self startTime] == nil && [self fireTime] == nil) {
         return NO;
     } else {
-        if ([self defaultStartTime] != nil && [self defaultFireTime] != nil) {
+        if ([self startTime] != nil && [self fireTime] != nil) {
             return YES;
         } else {
             [self _resetDates];
@@ -67,5 +69,8 @@ NSString * const kCurrentAlert = @"currentAlertName";
     [self setStartTime:nil];
 }
 
+-(JGAlert *)alert {
+    return [JGAlert alertWithStartTime:[self startTime] fireTime:[self fireTime] name:[self alertName]];
+}
 @end
 

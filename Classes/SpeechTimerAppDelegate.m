@@ -20,7 +20,6 @@
 #pragma mark Application lifecycle
 
 -(void)awakeFromNib {
-
     JGTimerConfigurationViewController *rootViewController = (JGTimerConfigurationViewController *)[navigationController topViewController];
     rootViewController.managedObjectContext = self.managedObjectContext;
     NSLog(@"Started");

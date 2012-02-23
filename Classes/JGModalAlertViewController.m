@@ -132,7 +132,7 @@
 #pragma mark Modal Actions
 
 -(void)setRingTone {
-    [_delegate currentAlertDidChangeTo:[self currentAlertName]];
+    [_delegate currentAlertNameDidChangeTo:[self currentAlertName]];
 }
 
 -(void)cancelModal {

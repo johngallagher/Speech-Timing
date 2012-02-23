@@ -7,17 +7,24 @@
     NSString *_name;
 }
 
-
-// TODO make factory method alertStartingNowWithDuration
-@property(nonatomic, readonly) NSString *name;
-@property(nonatomic, readonly) NSDate *startTime;
-@property(nonatomic, readonly) NSDate *fireTime;
-
++(id)alertStartingNowWithDuration:(NSTimeInterval)duration_ name:(NSString *)name_;
 
 +(id)alertWithStartTime:(NSDate *)startTime_ fireTime:(NSDate *)fireTime_ name:(NSString *)name_;
 
--(id)initWithStartTime:(NSDate *)startTime_ fireTime:(id)fireTime_ name:(id)name_;
-
+-(id)initWithStartTime:(NSDate *)startTime_ fireTime:(NSDate *)fireTime_ name:(NSString *)name_;
 
 -(NSTimeInterval)duration;
+
+
+-(void)updateNameFromDefaults;
+
+
+-(void)saveToTimerDefaults;
+
+-(NSString *)name;
+-(NSDate *)startTime;
+-(NSDate *)fireTime;
+
+-(NSString *)filename;
+
 @end

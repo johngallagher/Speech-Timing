@@ -3,16 +3,13 @@
 #import "JGModalAlertViewController.h"
 #import "JGCardTimesCalculator.h"
 #import "JGTimerDefaults.h"
+#import "JGAlert.h"
 
 @interface JGTimerConfigurationViewController ()
--(NSString *)_currentAlertFilename;
-
--(NSDate *)_fireTimeFromDuration:(NSUInteger)durationOfTimer;
+-(void)pushRunningViewControllerWithCurrentAlert;
 
 -(void)_startTimerWithDuration:(NSUInteger)durationOfTimer;
 
-
--(void)_continueTimerWithStartTime:(NSDate *)date fireTime:(NSDate *)date1;
 
 -(NSUInteger)_timerDurationFromPickerRowSelected:(NSInteger)selectedRow;
 
@@ -29,8 +26,7 @@
 @synthesize pickerDurations;
 @synthesize managedObjectContext = managedObjectContext_;
 @synthesize currentAlertName;
-
-
+@synthesize currentAlert;
 
 #pragma mark Public
 -(IBAction)startTimer:(id)sender {
@@ -41,41 +37,15 @@
 }
 
 #pragma mark Private
--(NSString *)_currentAlertFilename {
-    return [[self currentAlertName] stringByReplacingOccurrencesOfString:@" " withString:@""];
+-(void)pushRunningViewControllerWithCurrentAlert {
+    JGTimerRunningViewController *runningViewController = [JGTimerRunningViewController viewControllerWithAlert:[self currentAlert]];
+    [[self navigationController] pushViewController:runningViewController animated:YES];
 }
-
--(NSDate *)_fireTimeFromDuration:(NSUInteger)durationOfTimer {
-    return [NSDate dateWithTimeIntervalSinceNow:durationOfTimer];
-}
-
-#pragma mark Defaults
--(void)saveStartTimeToDefaults:(NSDate *)date {
-    [[JGTimerDefaults sharedInstance] set_startTime:date];
-}
-
--(void)saveFireTimeToDefaults:(NSDate *)date {
-    [[JGTimerDefaults sharedInstance] set_fireTime:date];
-}
-
--(void)saveCurrentAlertNameToDefaults {
-    [[JGTimerDefaults sharedInstance] setCurrentAlertName:[self currentAlertName]];
-}
-
 -(void)_startTimerWithDuration:(NSUInteger)durationOfTimer {
-    NSDate *startTime = [NSDate date];
-    NSDate *fireTime  = [self _fireTimeFromDuration:durationOfTimer];
+    [self setCurrentAlert:[JGAlert alertStartingNowWithDuration:durationOfTimer name:[self currentAlertName]]];
+    [[self currentAlert] saveToTimerDefaults];
 
-    [self saveStartTimeToDefaults:startTime];
-    [self saveFireTimeToDefaults:fireTime];
-
-    JGTimerRunningViewController *runningViewController = [JGTimerRunningViewController viewControllerWithAlert:startTime];
-    [[self navigationController] pushViewController:runningViewController animated:YES];
-}
-
--(void)_continueTimerWithStartTime:(NSDate *)startTime_ fireTime:(NSDate *)fireTime_ {
-    JGTimerRunningViewController *runningViewController = [JGTimerRunningViewController viewControllerWithAlert:startTime_];
-    [[self navigationController] pushViewController:runningViewController animated:YES];
+    [self pushRunningViewControllerWithCurrentAlert];
 }
 
 
@@ -96,7 +66,50 @@
     [self _startTimerWithDuration:timerDurationFromPickerRowSelected];
 }
 
+#pragma mark -
+#pragma mark Restoring from NSUserDefaults
 
+-(BOOL)timerIsRunning {
+    return [[JGTimerDefaults sharedInstance] timerIsRunning];
+}
+
+-(void)continueTimer {
+    [self setCurrentAlert:[[JGTimerDefaults sharedInstance] alert]];
+    [self pushRunningViewControllerWithCurrentAlert];
+}
+
+-(void)restoreViewFromUserDefaults {
+    if ([self timerIsRunning]) {
+        [self continueTimer];
+    }
+}
+
+
+-(void)updateCurrentAlertNameIndicator {
+    UITableViewCell *cell = [currentAlertTableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+    [[cell detailTextLabel] setText:[currentAlert name]];
+}
+
+-(void)hideModalAlertSelector {
+    [self dismissModalViewControllerAnimated:YES];
+}
+
+-(NSString *)currentAlertName {
+    return currentAlertName;
+}
+
+#pragma mark Modal View Controller Actions
+-(void)currentAlertNameDidChangeTo:(NSString *)alertName_ {
+    [[JGTimerDefaults sharedInstance] setCurrentAlertName:alertName_];
+    [currentAlert updateNameFromDefaults];
+
+    [self updateCurrentAlertNameIndicator];
+    [self hideModalAlertSelector];
+}
+
+-(void)changeAlertDidCancel {
+    [self hideModalAlertSelector];
+}
 
 #pragma mark -
 #pragma mark Duration Picker Data Source and Delegate methods
@@ -169,58 +182,14 @@
     [ringingSettingViewController release];
 }
 
-#pragma mark -
-#pragma mark Restoring from NSUserDefaults
 
--(BOOL)timerIsRunning {
-    return [[JGTimerDefaults sharedInstance] timerIsRunning]; // Timer is running checks default start time and fire time and if they're inconsistent, it resets them both to nil.
-}
 
--(void)updateCurrentAlertNameFromDefaults {
-    NSString *defaultAlertName = [[JGTimerDefaults sharedInstance] defaultAlertName];
-    if (defaultAlertName) {
-        [self setCurrentAlertName:defaultAlertName];
-    } else {
-        [self setCurrentAlertName:@"Digital Alarm 1"];
-    }
-}
-
--(NSDate *)startTimeFromDefaults {
-    return [[JGTimerDefaults sharedInstance] defaultStartTime];
-}
-
--(NSDate *)fireTimeFromDefaults {
-    return [[JGTimerDefaults sharedInstance] defaultFireTime];
-}
-
--(void)continueTimer {
-    NSDate *startTime = [self startTimeFromDefaults];
-    NSDate *fireTime  = [self fireTimeFromDefaults];
-    [self _continueTimerWithStartTime:startTime fireTime:fireTime];
-}
-
--(void)restoreViewFromUserDefaults {
-    [self updateCurrentAlertNameFromDefaults];
-    if ([self timerIsRunning]) {
-        [self continueTimer];
-    }
-}
-#pragma mark -
-#pragma mark View lifecycle
-
--(void)viewDidLoad {
-    [super viewDidLoad];
-
-    [self setPickerDurations:[NSArray arrayWithObjects:@"1            ", @"2            ", @"3            ", @"4            ", @"5            ", @"6            ", @"7            ", @"8            ", @"9            ", @"10            ", @"15            ", @"20            ", @"25            ", @"30            ", nil]];
-    [self restoreViewFromUserDefaults];
-}
-
--(void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-}
-
--(void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
+-(void)dealloc {
+    [managedObjectContext_ release];
+    [pickerDurations release];
+    [currentAlertName release];
+    [currentAlert release];
+    [super dealloc];
 }
 
 #pragma mark -
@@ -236,33 +205,6 @@
     // Relinquish ownership of anything that can be recreated in viewDidLoad or on demand.
     // For example: self.myOutlet = nil;
 }
-
--(void)dealloc {
-    [managedObjectContext_ release];
-    [pickerDurations release];
-    [currentAlertName release];
-    [super dealloc];
-}
-
-#pragma mark -
-#pragma mark Delegate Methods for setting timer alert
-
--(void)currentAlertDidChangeTo:(NSString *)alertName_ {
-    [self setCurrentAlertName:alertName_];
-    [self saveCurrentAlertNameToDefaults];
-    UITableViewCell *cell = [currentAlertTableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
-    [[cell detailTextLabel] setText:[self currentAlertName]];
-    [self dismissModalViewControllerAnimated:YES];
-}
-
--(void)changeAlertDidCancel {
-    [self dismissModalViewControllerAnimated:YES];
-}
-
--(NSString *)currentAlertName {
-    return currentAlertName;
-}
-
 
 @end
 

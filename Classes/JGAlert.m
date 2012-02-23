@@ -1,4 +1,14 @@
 #import "JGAlert.h"
+#import "JGTimerDefaults.h"
+
+@interface JGAlert ()
+
+@property(nonatomic, retain) NSString *name;
+@property(nonatomic, retain) NSDate *fireTime;
+@property(nonatomic, retain) NSDate *startTime;
+
+
+@end
 
 @implementation JGAlert
 
@@ -7,12 +17,15 @@
 @synthesize startTime = _startTime;
 @synthesize fireTime = _fireTime;
 
-
-+(id)alertWithStartTime:(NSDate *)startTime_ fireTime:(NSDate *)fireTime_ name:(NSString *)name_ {
-    return [[[[self class] alloc] initWithStartTime:startTime_ fireTime:fireTime_] autorelease];
++(id)alertStartingNowWithDuration:(NSTimeInterval)duration_ name:(NSString *)name_ {
+    return [self alertWithStartTime:[NSDate date] fireTime:[NSDate dateWithTimeIntervalSinceNow:duration_] name:name_];
 }
 
--(id)initWithStartTime:(NSDate *)startTime_ fireTime:fireTime_ name:name_ {
++(id)alertWithStartTime:(NSDate *)startTime_ fireTime:(NSDate *)fireTime_ name:(NSString *)name_ {
+    return [[[[self class] alloc] initWithStartTime:startTime_ fireTime:fireTime_ name:name_] autorelease];
+}
+
+-(id)initWithStartTime:(NSDate *)startTime_ fireTime:(NSDate *)fireTime_ name:(NSString *)name_ {
     self = [super init];
     if (self) {
         _startTime = [startTime_ retain];
@@ -33,4 +46,37 @@
     [_name release];
     [super dealloc];
 }
+
+-(NSString *)filename {
+    return [[[self name] stringByReplacingOccurrencesOfString:@" " withString:@""] stringByAppendingString:@".aiff"];
+}
+
+-(void)updateNameFromDefaults {
+    NSString *defaultAlertName = [[JGTimerDefaults sharedInstance] alertName];
+    if (defaultAlertName) {
+        [self setName:defaultAlertName];
+    } else {
+        [self setName:@"Digital Alarm 1"];
+    }
+}
+
+-(NSString *)name {
+    return _name;
+}
+
+-(NSDate *)startTime {
+    return _startTime;
+}
+
+-(NSDate *)fireTime {
+    return _fireTime;
+}
+
+
+-(void)saveToTimerDefaults {
+    [[JGTimerDefaults sharedInstance] setStartTime:_startTime];
+    [[JGTimerDefaults sharedInstance] setFireTime:_fireTime];
+    [[JGTimerDefaults sharedInstance] setCurrentAlertName:_name];
+}
+
 @end

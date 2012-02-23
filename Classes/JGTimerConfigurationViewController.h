@@ -12,6 +12,7 @@
 
 @class JGTimerController;
 @class JGCountdownTimer;
+@class JGAlert;
 
 @interface JGTimerConfigurationViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate, JGRingingSettingDelegate> {
     IBOutlet UIPickerView *timerDurationPickerView;
@@ -19,9 +20,7 @@
 
     NSArray  *pickerDurations;
     NSString *currentAlertName;
-
-    //    NSDate *startTime;
-    //    NSDate *fireTime;
+    JGAlert *currentAlert;
 
 @private
     NSManagedObjectContext *managedObjectContext_;
@@ -30,6 +29,7 @@
 @property(nonatomic, retain) NSArray                *pickerDurations;
 @property(nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 @property(nonatomic, retain) NSString               *currentAlertName;
+@property(nonatomic, retain) JGAlert *currentAlert;
 
 
 -(IBAction)startTimer:(id)sender;
