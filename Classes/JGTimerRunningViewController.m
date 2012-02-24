@@ -145,7 +145,9 @@
 
 -(void)showRedCard {
     [[self view] setBackgroundColor:[UIColor redColor]];
-    [self playSound:self];
+    if ([[JGTimerDefaults sharedInstance] currentTimeNearFireTime]) {
+        [self playSound:self];
+    }
 }
 
 -(void)showYellowCard {

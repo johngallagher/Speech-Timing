@@ -8,6 +8,9 @@ NSString * const kCurrentAlert = @"currentAlertName";
 @interface JGTimerDefaults ()
 -(void)_resetDates;
 
+-(double)magnitude:(NSTimeInterval)timeSinceFireTime;
+
+
 @end
 
 
@@ -73,9 +76,18 @@ NSString * const kCurrentAlert = @"currentAlertName";
     return [JGAlert alertWithStartTime:[self startTime] fireTime:[self fireTime] name:[self alertName]];
 }
 
+-(BOOL)currentTimeNearFireTime {
+    NSTimeInterval timeSinceFireTime = [[self fireTime] timeIntervalSinceNow];
+    return [self magnitude:timeSinceFireTime] < 0.1;
+}
+
 -(void)invalidateAlert {
     [self setFireTime:nil];
     [self setStartTime:nil];
+}
+
+-(double)magnitude:(NSTimeInterval)timeSinceFireTime {
+    return sqrt(timeSinceFireTime * timeSinceFireTime);
 }
 
 @end

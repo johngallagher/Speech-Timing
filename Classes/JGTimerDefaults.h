@@ -28,6 +28,8 @@ extern NSString * const kCurrentAlert ;
 
 -(JGAlert *)alert;
 
+-(BOOL)currentTimeNearFireTime;
+
 -(void)invalidateAlert;
 
 
