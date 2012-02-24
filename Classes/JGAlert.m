@@ -55,7 +55,7 @@
 }
 
 -(NSTimeInterval)duration {
-    return [_startTime timeIntervalSinceDate:_fireTime];
+    return [_fireTime timeIntervalSinceDate:_startTime];
 }
 
 -(void)dealloc {

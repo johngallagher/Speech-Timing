@@ -51,7 +51,7 @@
 
 -(void)initViewControllerWithStartTime:(NSDate *)startTime_ fireTime:(NSDate *)fireTime_ alarmFilename:(NSString *)an {
     // TODO Setup pie chart animation with start/end angle and duration based on the start time and fire time - for now just use 60 seconds.
-    JGPieChartAnimationParameters *pieChartAnimation = [JGPieChartAnimationParameters animationFromAngle:-45 toAngle:90 duration:60];
+    JGPieChartAnimationParameters *pieChartAnimation = [JGPieChartAnimationParameters animationFromAngle:-90 toAngle:270 duration:60];
     [(JGTimerRunningView *)[self view] startCountdownAnimationWithParameters:pieChartAnimation];
 
     [self loadAlertSoundWithFilename:an];
