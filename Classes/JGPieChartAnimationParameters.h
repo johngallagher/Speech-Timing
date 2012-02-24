@@ -9,18 +9,17 @@
 
 
 @interface JGPieChartAnimationParameters : NSObject {
-    CGFloat        _startAngle;
-    CGFloat        _endAngle;
+    CGFloat        _fromAngle;
+    CGFloat        _toAngle;
     NSTimeInterval _duration;
 }
 
-@property(nonatomic, readonly) CGFloat startAngle;
-@property(nonatomic, readonly) CGFloat endAngle;
+@property(nonatomic, readonly) CGFloat        fromAngle;
+@property(nonatomic, readonly) CGFloat        toAngle;
 @property(nonatomic, readonly) NSTimeInterval duration;
 
++(id)animationFromAngle:(CGFloat)fromAngle_ toAngle:(CGFloat)toAngle_ duration:(NSTimeInterval)duration_;
 
-+(id)animationWithStartAngle:(CGFloat)startAngle_ endAngle:(CGFloat)endAngle_ duration:(NSTimeInterval)duration_;
-
--(id)initWithStartAngle:(CGFloat)startAngle_ endAngle:(CGFloat)endAngle_ duration:(NSTimeInterval)duration_;
+-(id)initFromAngle:(CGFloat)fromAngle_ toAngle:(CGFloat)toAngle_ duration:(NSTimeInterval)duration_;
 
 @end

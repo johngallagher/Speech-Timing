@@ -13,86 +13,51 @@
 
 @interface JGTimerRunningView ()
 
--(CABasicAnimation *)_animationForKeyPath:(NSString *)keyPath
-                                fromValue:(NSNumber *)fromValue
-                                  toValue:(NSNumber *)toValue;
-
--(void)_animateToAngle:(CGFloat)angle;
-
+-(CABasicAnimation *)_animationForKeyPath:(NSString *)keyPath fromValue:(CGFloat)fromValue toValue:(CGFloat)toValue duration:(NSTimeInterval)duration_;
 
 @end
 
 
 @implementation JGTimerRunningView
 
-@synthesize animationDuration;
-
--(void)setupWithPieChartAnimation:(JGPieChartAnimationParameters *)animParams {
-    pieChartAnimParams = [animParams retain];
-
-    animationDuration = [animParams duration];
-
-//    JGPieChartLayer *layer = [[JGPieChartLayer alloc] initWithPieChartAnimation:animParams andFrame:[self bounds]];
-//    pieChartLayer = [layer retain];
-//    [layer release];
-
+-(CABasicAnimation *)startAngleAnimationFromParameters:(JGPieChartAnimationParameters *)parameters_ {
+    // The start angle is always the same - the pie chart always starts at the 12 o'clock position or -90
+    CABasicAnimation *startAngleAnimation = [self _animationForKeyPath:@"startAngle" fromValue:-90 toValue:-90 duration:[parameters_ duration]];
+    return startAngleAnimation;
 }
-//    [self _animateToAngle:270];
-//    NSNumber *startAngle_ = [pieChartLayer lastValueForKey:@"endAngle"]; // [NSNumber numberWithFloat:-90.0]
 
+-(CABasicAnimation *)endAngleAnimationFromParameters:(JGPieChartAnimationParameters *)parameters_ {
+    CABasicAnimation *endAngleAnimation = [self _animationForKeyPath:@"endAngle" fromValue:[parameters_ fromAngle] toValue:[parameters_ toAngle] duration:[parameters_ duration]];
+    return endAngleAnimation;
+}
 
--(void)startCountdownAnimation {
-
-    JGPieChartAnimationParameters *animationParameters = [[[JGPieChartAnimationParameters alloc] initWithStartAngle:-90 endAngle:0 duration:60] autorelease];
-
-    JGPieChartLayer *layer = [[JGPieChartLayer alloc] initWithPieChartAnimation:animationParameters andFrame:[self bounds]];
+-(void)startCountdownAnimationWithParameters:(JGPieChartAnimationParameters *)parameters_ {
+    JGPieChartLayer *layer = [[JGPieChartLayer alloc] initWithFrame:[self bounds]];
     pieChartLayer = [layer retain];
+    [[self layer] addSublayer:pieChartLayer];
     [layer release];
 
-    [[self layer] addSublayer:pieChartLayer];
-    //    CAMediaTimingFunction *timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
-//
-//    CABasicAnimation *anim = [CABasicAnimation animationWithKeyPath:@"endAngle"];
-//    [anim setFromValue:[NSNumber numberWithFloat:-90]];
-//    [anim setToValue:[NSNumber numberWithFloat:-45]];
-//    [anim setTimingFunction:timingFunction];
-//    [anim setDuration:60];
-//    [pieChartLayer addAnimation:anim forKey:@"animateEndAngle"];
+    CABasicAnimation *endAngleAnimation = [self endAngleAnimationFromParameters:parameters_];
+    CABasicAnimation *startAngleAnimation = [self startAngleAnimationFromParameters:parameters_];
 
-
-
-    //    [CATransaction begin];
-    //    [CATransaction setAnimationDuration:[self animationDuration]];
-    //    [CATransaction setAnimationTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear]];
-    //
-    //    CABasicAnimation *animEndAngle = [self _animationForKeyPath:@"endAngle"
-    //                                                      fromValue:[NSNumber numberWithFloat:-90.0]
-    //                                                        toValue:[NSNumber numberWithFloat:90.0]];
-    //    [pieChartLayer addAnimation:animEndAngle forKey:@"animateEndAngle"];
-    //
-    //    [CATransaction commit];
+    [pieChartLayer addAnimation:startAngleAnimation forKey:@"animateStartAngle"];
+    [pieChartLayer addAnimation:endAngleAnimation forKey:@"animateEndAngle"];
 }
 
--(void)_animateToAngle:(CGFloat)angle {
-}
-
--(CABasicAnimation *)_animationForKeyPath:(NSString *)keyPath
-                                fromValue:(NSNumber *)fromValue
-                                  toValue:(NSNumber *)toValue {
+-(CABasicAnimation *)_animationForKeyPath:(NSString *)keyPath fromValue:(CGFloat)fromValue toValue:(CGFloat)toValue duration:(NSTimeInterval)duration_ {
 
     CAMediaTimingFunction *timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
 
     CABasicAnimation *anim = [CABasicAnimation animationWithKeyPath:keyPath];
-    anim.fromValue      = fromValue;
-    anim.toValue        = toValue;
+    anim.fromValue      = [NSNumber numberWithFloat:fromValue];
+    anim.toValue        = [NSNumber numberWithFloat:toValue];
     anim.timingFunction = timingFunction;
-    NSLog(@"Animating from %f to %f", [[anim fromValue] floatValue], [[anim toValue] floatValue]);
+    [anim setDuration:duration_];
     return anim;
 }
 
 -(void)dealloc {
     [pieChartLayer release];
-    [pieChartAnimParams release];
     [super dealloc];
 }
 @end

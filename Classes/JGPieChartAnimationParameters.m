@@ -10,20 +10,20 @@
 
 @implementation JGPieChartAnimationParameters
 
-@synthesize startAngle = _startAngle;
-@synthesize endAngle = _endAngle;
+@synthesize fromAngle = _fromAngle;
+@synthesize toAngle = _toAngle;
 @synthesize duration = _duration;
 
 
-+(id)animationWithStartAngle:(CGFloat)startAngle_ endAngle:(CGFloat)endAngle_ duration:(NSTimeInterval)duration_ {
-    return [[[[self class] alloc] initWithStartAngle:startAngle_ endAngle:endAngle_ duration:duration_] autorelease];
++(id)animationFromAngle:(CGFloat)fromAngle_ toAngle:(CGFloat)toAngle_ duration:(NSTimeInterval)duration_ {
+    return [[[[self class] alloc] initFromAngle:fromAngle_ toAngle:toAngle_ duration:duration_] autorelease];
 }
 
--(id)initWithStartAngle:(CGFloat)startAngle_ endAngle:(CGFloat)endAngle_ duration:(NSTimeInterval)duration_ {
+-(id)initFromAngle:(CGFloat)fromAngle_ toAngle:(CGFloat)toAngle_ duration:(NSTimeInterval)duration_ {
     self = [super init];
     if (self) {
-        _startAngle = startAngle_;
-        _endAngle   = endAngle_;
+        _fromAngle = fromAngle_;
+        _toAngle = toAngle_;
         _duration   = duration_;
     }
 

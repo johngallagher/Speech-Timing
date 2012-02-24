@@ -13,16 +13,9 @@
 
 @interface JGTimerRunningView : UIView {
     JGPieChartLayer *pieChartLayer;
-    NSTimeInterval animationDuration;
-
-    JGPieChartAnimationParameters *pieChartAnimParams;
 }
 
-@property(nonatomic) NSTimeInterval animationDuration;
-
--(void)setupWithPieChartAnimation:(JGPieChartAnimationParameters *)pieChartAnimation;
-
--(void)startCountdownAnimation;
+-(void)startCountdownAnimationWithParameters:(JGPieChartAnimationParameters *)parameters_;
 
 
 @end

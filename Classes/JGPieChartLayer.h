@@ -15,17 +15,11 @@
 @interface JGPieChartLayer : CALayer {
     CGFloat startAngle;
     CGFloat endAngle;
-
-    JGPieChartAnimationParameters *pieChartAnimation;
 }
 
 @property(nonatomic, assign) CGFloat startAngle;
 @property(nonatomic, assign) CGFloat endAngle;
-@property(nonatomic, retain) JGPieChartAnimationParameters *pieChartAnimation;
 
-
--(id)initWithPieChartAnimation:(JGPieChartAnimationParameters *)aPieChartAnimation andFrame:(CGRect)frame_;
-
--(id)lastValueForKey:(NSString *)key;
+-(id)initWithFrame:(CGRect)frame_;
 
 @end
