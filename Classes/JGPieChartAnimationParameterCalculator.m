@@ -34,9 +34,9 @@
 -(JGPieChartAnimationParameters *)calculateParameters {
     NSDate *startTime = [_alert startTime];
     NSDate *fireTime  = [_alert fireTime];
-    NSTimeInterval fullDuration = [_alert duration];
+    NSTimeInterval duration = [fireTime timeIntervalSinceNow];
 
-    return [JGPieChartAnimationParameters animationFromAngle:-90 toAngle:270 duration:fullDuration];
+    return [JGPieChartAnimationParameters animationFromAngle:-90 toAngle:270 duration:duration];
 }
 
 -(void)dealloc {
