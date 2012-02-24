@@ -31,12 +31,26 @@
     return self;
 }
 
--(JGPieChartAnimationParameters *)calculateParameters {
-    NSDate *startTime = [_alert startTime];
-    NSDate *fireTime  = [_alert fireTime];
-    NSTimeInterval duration = [fireTime timeIntervalSinceNow];
+-(NSTimeInterval)timeElapsed {
+    return [[NSDate date] timeIntervalSinceDate:[_alert startTime]];
+}
 
-    return [JGPieChartAnimationParameters animationFromAngle:-90 toAngle:270 duration:duration];
+-(NSTimeInterval)durationRemaining {
+    return [[_alert fireTime] timeIntervalSinceNow];
+}
+
+-(NSTimeInterval)fractionElapsed {
+    return [self timeElapsed] / [_alert duration];
+}
+
+-(CGFloat)fromAngle {
+    return (CGFloat)(([self fractionElapsed] * 360) - 90);
+}
+
+-(JGPieChartAnimationParameters *)calculateParameters {
+    return [JGPieChartAnimationParameters animationFromAngle:[self fromAngle]
+                                                     toAngle:270
+                                                    duration:[self durationRemaining]];
 }
 
 -(void)dealloc {
