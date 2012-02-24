@@ -32,6 +32,9 @@
 }
 
 -(void)startCountdownAnimationWithParameters:(JGPieChartAnimationParameters *)parameters_ {
+    if (!parameters_)
+        return;
+
     JGPieChartLayer *layer = [[JGPieChartLayer alloc] initWithFrame:[self bounds]];
     pieChartLayer = [layer retain];
     [[self layer] addSublayer:pieChartLayer];

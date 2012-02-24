@@ -39,6 +39,17 @@
 
     [calculator release];
 }
+-(void)testGivenFireTimeInThePastCalculateParameterShouldReturnNilSoNoAnimationAppears {
+    JGAlert                                *alert      = [JGAlert alertWithStartTime:[NSDate dateWithTimeIntervalSinceNow:-15]
+                                                                            fireTime:[NSDate dateWithTimeIntervalSinceNow:-5]
+                                                                                name:@""];
+    JGPieChartAnimationParameterCalculator *calculator = [[JGPieChartAnimationParameterCalculator alloc] initWithAlert:alert];
+    JGPieChartAnimationParameters          *parameters = [calculator calculateParameters];
+
+    STAssertNil(parameters, nil);
+
+    [calculator release];
+}
 
 
 @end
