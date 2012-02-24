@@ -52,6 +52,7 @@
 		52CA8B5C149D089B0030ADC1 /* JGTimerRunningViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52CA8B5A149D089B0030ADC1 /* JGTimerRunningViewController.xib */; };
 		52EB416C14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EB416B14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.m */; };
 		52EB417314B1218D00308C95 /* JGCardTimesCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EB417214B1218D00308C95 /* JGCardTimesCalculator.m */; };
+		52F2087314F7BEE700350D2F /* JGPieChartAnimationParameterCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A954540054249D /* JGPieChartAnimationParameterCalculator.m */; };
 		52F63E5E14B7590E00876FA4 /* JGInsetGradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F63E5914B7590E00876FA4 /* JGInsetGradientButton.m */; };
 		52F63E5F14B7590E00876FA4 /* JGRedInsetGradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F63E5B14B7590E00876FA4 /* JGRedInsetGradientButton.m */; };
 		52F63E6014B7590E00876FA4 /* JGGreenInsetGradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F63E5D14B7590E00876FA4 /* JGGreenInsetGradientButton.m */; };
@@ -65,6 +66,7 @@
 		C01FCF5008A9545400542493 /* JGAbstractSingletonObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A9545400542492 /* JGAbstractSingletonObject.m */; };
 		C01FCF5008A9545400542495 /* JGTimerDefaultsTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A9545400542494 /* JGTimerDefaultsTestCase.m */; };
 		C01FCF5008A954540054249A /* JGPieChartAnimationParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A9545400542499 /* JGPieChartAnimationParameters.m */; };
+		C01FCF5008A95454005424A1 /* JGPieChartAnimationParameterCalculatorTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A95454005424A0 /* JGPieChartAnimationParameterCalculatorTestCase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -179,6 +181,10 @@
 		C01FCF5008A9545400542498 /* JGAlertTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGAlertTestCase.m; sourceTree = "<group>"; };
 		C01FCF5008A9545400542499 /* JGPieChartAnimationParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGPieChartAnimationParameters.m; sourceTree = "<group>"; };
 		C01FCF5008A954540054249B /* JGPieChartAnimationParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGPieChartAnimationParameters.h; sourceTree = "<group>"; };
+		C01FCF5008A954540054249C /* JGPieChartAnimationParameterCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGPieChartAnimationParameterCalculator.h; sourceTree = "<group>"; };
+		C01FCF5008A954540054249D /* JGPieChartAnimationParameterCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGPieChartAnimationParameterCalculator.m; sourceTree = "<group>"; };
+		C01FCF5008A954540054249F /* JGPieChartAnimationParameterCalculatorTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGPieChartAnimationParameterCalculatorTestCase.h; sourceTree = "<group>"; };
+		C01FCF5008A95454005424A0 /* JGPieChartAnimationParameterCalculatorTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGPieChartAnimationParameterCalculatorTestCase.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -337,6 +343,8 @@
 		5242CBEA14B3FC6900C876C7 /* PieChartView */ = {
 			isa = PBXGroup;
 			children = (
+				C01FCF5008A954540054249D /* JGPieChartAnimationParameterCalculator.m */,
+				C01FCF5008A954540054249C /* JGPieChartAnimationParameterCalculator.h */,
 				C01FCF5008A9545400542499 /* JGPieChartAnimationParameters.m */,
 				C01FCF5008A954540054249B /* JGPieChartAnimationParameters.h */,
 				5242CBEB14B3FC8A00C876C7 /* JGTimerRunningView.h */,
@@ -395,6 +403,8 @@
 		528DCF5314F3F96500A94E6D /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				C01FCF5008A95454005424A0 /* JGPieChartAnimationParameterCalculatorTestCase.m */,
+				C01FCF5008A954540054249F /* JGPieChartAnimationParameterCalculatorTestCase.h */,
 				C01FCF5008A9545400542498 /* JGAlertTestCase.m */,
 				C01FCF5008A9545400542497 /* JGAlertTestCase.h */,
 				C01FCF5008A9545400542487 /* JGDurationFromFireDateCalculatorTestCase.m */,
@@ -634,6 +644,7 @@
 				C01FCF5008A954540054248F /* JGTimerDefaults.m in Sources */,
 				C01FCF5008A9545400542493 /* JGAbstractSingletonObject.m in Sources */,
 				C01FCF5008A954540054249A /* JGPieChartAnimationParameters.m in Sources */,
+				52F2087314F7BEE700350D2F /* JGPieChartAnimationParameterCalculator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -650,6 +661,7 @@
 				C01FCF5008A9545400542495 /* JGTimerDefaultsTestCase.m in Sources */,
 				521BCEA514C0445600695F8B /* JGAbstractSingletonObject.m in Sources */,
 				5285769114F53AA400BE4E13 /* JGAlertTestCase.m in Sources */,
+				C01FCF5008A95454005424A1 /* JGPieChartAnimationParameterCalculatorTestCase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
