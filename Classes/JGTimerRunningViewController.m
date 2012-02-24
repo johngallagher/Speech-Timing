@@ -1,11 +1,16 @@
 #import "JGTimerRunningViewController.h"
 #import "JGTimeFormatter.h"
-#import "JGDrawingTestView.h"
+#import "JGTimerRunningView.h"
 #import "JGAlert.h"
 #import "JGTimerDefaults.h"
+#import "JGPieChartAnimationParameters.h"
+#import "JGPieChartAnimationParameterCalculator.h"
 
 @interface JGTimerRunningViewController ()
 -(void)initViewControllerWithStartTime:(NSDate *)startTime_ fireTime:(NSDate *)fireTime_ alarmFilename:(NSString *)an;
+
+-(void)initViewControllerWithAlert:(JGAlert *)alert_;
+
 
 -(void)setTimeRemainingTo:(NSTimeInterval)time_;
 
@@ -16,6 +21,34 @@
 @synthesize countdownTimer;
 @synthesize timerController;
 
+-(void)continueCountdownAnimation {
+    [self startCountdownAnimation];
+}
+
+-(void)startCountdownAnimation {
+    JGPieChartAnimationParameters *pieChartAnimation = [[JGPieChartAnimationParameterCalculator calculatorWithAlert:_alert] calculateParameters];
+    [(JGTimerRunningView *)[self view] startCountdownAnimationWithParameters:pieChartAnimation];
+}
+
+-(void)viewDidAppear:(BOOL)animated {
+}
+
+-(void)invalidateTimers {
+    [[self timerController] stopTimer];
+    [self setTimerController:nil];
+
+    [[self countdownTimer] stopTimer];
+    [self setCountdownTimer:nil];
+}
+
+-(void)viewDidDisappear:(BOOL)animated {
+    [self invalidateTimers];
+}
+
+-(void)suspendCountdownAnimation {
+    [(JGTimerRunningView *)[self view] suspendCountdownAnimation];
+
+}
 
 +(JGTimerRunningViewController *)viewControllerWithFireTime:(NSDate *)fireTime {
     JGTimerRunningViewController *runningViewController = [[[JGTimerRunningViewController alloc] initWithNibName:@"JGTimerRunningViewController" bundle:nil] autorelease];
@@ -34,18 +67,24 @@
     return [self viewControllerWithStartTime:[alert_ startTime] fireTime:[alert_ fireTime] alarmFilename:[alert_ filenameWithoutExtension]];
 }
 
--(void)initViewControllerWithStartTime:(NSDate *)startTime_ fireTime:(NSDate *)fireTime_ alarmFilename:(NSString *)an {
-    // TODO Change duration to fire date
-    NSUInteger durationOfTimer = 60;
-    [(JGDrawingTestView *)[self view] setAnimationDuration:durationOfTimer]; // TODO get us drawing the animation partway through.
-    [self loadAlertSoundWithFilename:an];
 
-    [self setTimerController:[JGTimerController timerStartingAt:startTime_ withFireTime:fireTime_ delegate:self]];
+-(void)initViewControllerWithStartTime:(NSDate *)startTime_ fireTime:(NSDate *)fireTime_ alarmFilename:(NSString *)an {
+    [self initViewControllerWithAlert:[JGAlert alertWithStartTime:startTime_ fireTime:fireTime_ name:an]];
+}
+
+-(void)initViewControllerWithAlert:(JGAlert *)alert_ {
+    _alert = [alert_ retain];
+
+    NSLog(@"init view controller with duration %f", [alert_ duration]);
+    [self startCountdownAnimation];
+
+    [self loadAlertSoundWithFilename:[alert_ name]];
+
+    [self setTimerController:[JGTimerController timerStartingAt:[alert_ startTime] withFireTime:[alert_ fireTime] delegate:self]];
     [[self timerController] startTimer];
 
-    [self setCountdownTimer:[JGCountdownTimer timerStartingAt:startTime_ withFireTime:fireTime_ delegate:self]];
+    [self setCountdownTimer:[JGCountdownTimer timerStartingAt:[alert_ startTime] withFireTime:[alert_ fireTime] delegate:self]];
     [[self countdownTimer] startTimer];
-    NSLog(@"Did init timer");
 }
 
 -(void)loadAlertSoundWithFilename:(NSString *)alertSoundFilename_ {
@@ -56,20 +95,9 @@
     [audioPlayer prepareToPlay];
 }
 
--(void)viewDidAppear:(BOOL)animated {
-    [(JGDrawingTestView *)[self view] animateCountdown];
-}
-
--(void)viewDidDisappear:(BOOL)animated {
-    [[self timerController] stopTimer];
-    [self setTimerController:nil];
-
-    [[self countdownTimer] stopTimer];
-    [self setCountdownTimer:nil];
-    [[JGTimerDefaults sharedInstance] invalidateAlert];
-}
 
 -(IBAction)stopTimer:(id)sender {
+        [[JGTimerDefaults sharedInstance] invalidateAlert];
     [self.navigationController popViewControllerAnimated:YES];
 }
 
@@ -143,6 +171,7 @@
     [timeLabel release];
     [countdownTimer release];
     [timerController release];
+    [_alert release];
     [super dealloc];
 }
 

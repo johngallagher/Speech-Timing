@@ -6,15 +6,14 @@
 //  Copyright 2011 Nomad Planet. All rights reserved.
 //
 
-#import "PieChartLayer.h"
-
+#import "JGPieChartLayer.h"
+#import "JGPieChartAnimationParameters.h"
 
 static inline double radians(double degrees) {
     return degrees * M_PI / 180;
 }
 
-
-@implementation PieChartLayer
+@implementation JGPieChartLayer
 
 @synthesize startAngle;
 @synthesize endAngle;
@@ -22,14 +21,13 @@ static inline double radians(double degrees) {
 #pragma mark -
 #pragma mark CALayer
 
--(id)initWithLayer:(id)layer {
-    if ((self = [super initWithLayer:layer])) {
-        if ([layer isKindOfClass:[PieChartLayer class]]) {
-            PieChartLayer *other = (PieChartLayer *)layer;
-            self.startAngle = other.startAngle;
-            self.endAngle   = other.endAngle;
-        }
+-(id)initWithFrame:(CGRect)frame_ {
+    self = [super init];
+    if (self) {
+        self.needsDisplayOnBoundsChange = YES;
+        self.frame                      = frame_;
     }
+
     return self;
 }
 
@@ -44,7 +42,6 @@ static inline double radians(double degrees) {
 }
 
 -(void)drawInContext:(CGContextRef)ctx {
-
     /* Getting some values */
     CGFloat radius      = (CGFloat)(fmin(self.bounds.size.width, self.bounds.size.height) / 4);
     CGPoint centerPoint = CGPointMake(CGRectGetWidth(self.bounds) / 2, CGRectGetHeight(self.bounds) / 3);
@@ -59,14 +56,6 @@ static inline double radians(double degrees) {
     /* Filling it */
     CGContextSetFillColorWithColor(ctx, [[[[UIColor alloc] initWithRed:0 green:0 blue:0 alpha:0.3] autorelease] CGColor]);
     CGContextFillPath(ctx);
-}
-
-#pragma mark -
-#pragma mark Public API
-
--(id)lastValueForKey:(NSString *)key {
-    PieChartLayer *last = (PieChartLayer *)self.presentationLayer;
-    return [last valueForKey:key];
 }
 
 @end

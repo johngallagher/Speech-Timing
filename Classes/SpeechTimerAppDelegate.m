@@ -8,6 +8,8 @@
 
 #import "SpeechTimerAppDelegate.h"
 #import "JGTimerConfigurationViewController.h"
+#import "JGTimerDefaults.h"
+#import "JGTimerRunningViewController.h"
 
 
 @implementation SpeechTimerAppDelegate
@@ -48,6 +50,10 @@
      */
     [self saveContext];
     NSLog(@"Did enter background");
+    if (![[navigationController topViewController] isKindOfClass:[JGTimerRunningViewController class]])
+        return;
+
+    [(JGTimerRunningViewController *)[navigationController topViewController] suspendCountdownAnimation];
 }
 
 
@@ -55,7 +61,14 @@
     /*
      Called as part of  transition from the background to the inactive state: here you can undo many of the changes made on entering the background.
      */
-    NSLog(@"Did enter foreground");
+    NSLog(@"Will enter foreground");
+    if (![[JGTimerDefaults sharedInstance] timerIsRunning])
+        return;
+
+    if (![[navigationController topViewController] isKindOfClass:[JGTimerRunningViewController class]])
+        return;
+
+    [(JGTimerRunningViewController *)[navigationController topViewController] continueCountdownAnimation];
 }
 
 
