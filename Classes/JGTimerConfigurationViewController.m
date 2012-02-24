@@ -3,6 +3,7 @@
 #import "JGModalAlertViewController.h"
 #import "JGTimerDefaults.h"
 #import "JGAlert.h"
+#import "JGAlertNotificationScheduler.h"
 
 @interface JGTimerConfigurationViewController ()
 -(void)pushRunningViewControllerWithCurrentAlert;
@@ -70,6 +71,7 @@
     [_currentAlert saveToTimerDefaults];
 
     [self pushRunningViewControllerWithCurrentAlert];
+    [JGAlertNotificationScheduler scheduleNotification]; // So that if the app isn't frontmost the user will get a notifcation
 }
 
 

@@ -67,6 +67,7 @@
 		C01FCF5008A9545400542495 /* JGTimerDefaultsTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A9545400542494 /* JGTimerDefaultsTestCase.m */; };
 		C01FCF5008A954540054249A /* JGPieChartAnimationParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A9545400542499 /* JGPieChartAnimationParameters.m */; };
 		C01FCF5008A95454005424A1 /* JGPieChartAnimationParameterCalculatorTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A95454005424A0 /* JGPieChartAnimationParameterCalculatorTestCase.m */; };
+		C01FCF5008A95454005424A3 /* JGAlertNotificationScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A95454005424A2 /* JGAlertNotificationScheduler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -185,6 +186,8 @@
 		C01FCF5008A954540054249D /* JGPieChartAnimationParameterCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGPieChartAnimationParameterCalculator.m; sourceTree = "<group>"; };
 		C01FCF5008A954540054249F /* JGPieChartAnimationParameterCalculatorTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGPieChartAnimationParameterCalculatorTestCase.h; sourceTree = "<group>"; };
 		C01FCF5008A95454005424A0 /* JGPieChartAnimationParameterCalculatorTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGPieChartAnimationParameterCalculatorTestCase.m; sourceTree = "<group>"; };
+		C01FCF5008A95454005424A2 /* JGAlertNotificationScheduler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGAlertNotificationScheduler.m; sourceTree = "<group>"; };
+		C01FCF5008A95454005424A4 /* JGAlertNotificationScheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGAlertNotificationScheduler.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +222,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C01FCF5008A95454005424A4 /* JGAlertNotificationScheduler.h */,
+				C01FCF5008A95454005424A2 /* JGAlertNotificationScheduler.m */,
 				528DCF5414F3FA1700A94E6D /* AbstractSingleton */,
 				528DCF5514F3FA2800A94E6D /* TimerDefaults */,
 				528DCF5614F3FA3700A94E6D /* CardTimes */,
@@ -645,6 +650,7 @@
 				C01FCF5008A9545400542493 /* JGAbstractSingletonObject.m in Sources */,
 				C01FCF5008A954540054249A /* JGPieChartAnimationParameters.m in Sources */,
 				52F2087314F7BEE700350D2F /* JGPieChartAnimationParameterCalculator.m in Sources */,
+				C01FCF5008A95454005424A3 /* JGAlertNotificationScheduler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
