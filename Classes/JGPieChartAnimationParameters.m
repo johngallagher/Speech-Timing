@@ -5,10 +5,10 @@
 //
 
 
-#import "JGPieChartAnimation.h"
+#import "JGPieChartAnimationParameters.h"
 
 
-@implementation JGPieChartAnimation
+@implementation JGPieChartAnimationParameters
 
 @synthesize startAngle = _startAngle;
 @synthesize endAngle = _endAngle;

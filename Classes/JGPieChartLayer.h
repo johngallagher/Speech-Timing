@@ -9,22 +9,22 @@
 #import <Foundation/Foundation.h>
 #import <QuartzCore/QuartzCore.h>
 
-@class JGPieChartAnimation;
+@class JGPieChartAnimationParameters;
 
 
 @interface JGPieChartLayer : CALayer {
     CGFloat startAngle;
     CGFloat endAngle;
 
-    JGPieChartAnimation *pieChartAnimation;
+    JGPieChartAnimationParameters *pieChartAnimation;
 }
 
 @property(nonatomic, assign) CGFloat startAngle;
 @property(nonatomic, assign) CGFloat endAngle;
-@property(nonatomic, retain) JGPieChartAnimation *pieChartAnimation;
+@property(nonatomic, retain) JGPieChartAnimationParameters *pieChartAnimation;
 
 
--(id)initWithPieChartAnimation:(JGPieChartAnimation *)aPieChartAnimation andFrame:(CGRect)frame_;
+-(id)initWithPieChartAnimation:(JGPieChartAnimationParameters *)aPieChartAnimation andFrame:(CGRect)frame_;
 
 -(id)lastValueForKey:(NSString *)key;
 

@@ -64,7 +64,7 @@
 		C01FCF5008A954540054248F /* JGTimerDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A954540054248E /* JGTimerDefaults.m */; };
 		C01FCF5008A9545400542493 /* JGAbstractSingletonObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A9545400542492 /* JGAbstractSingletonObject.m */; };
 		C01FCF5008A9545400542495 /* JGTimerDefaultsTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A9545400542494 /* JGTimerDefaultsTestCase.m */; };
-		C01FCF5008A954540054249A /* JGPieChartAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A9545400542499 /* JGPieChartAnimation.m */; };
+		C01FCF5008A954540054249A /* JGPieChartAnimationParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A9545400542499 /* JGPieChartAnimationParameters.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -177,8 +177,8 @@
 		C01FCF5008A9545400542496 /* JGTimerDefaultsTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JGTimerDefaultsTestCase.h; path = Classes/JGTimerDefaultsTestCase.h; sourceTree = "<group>"; };
 		C01FCF5008A9545400542497 /* JGAlertTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGAlertTestCase.h; sourceTree = "<group>"; };
 		C01FCF5008A9545400542498 /* JGAlertTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGAlertTestCase.m; sourceTree = "<group>"; };
-		C01FCF5008A9545400542499 /* JGPieChartAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGPieChartAnimation.m; sourceTree = "<group>"; };
-		C01FCF5008A954540054249B /* JGPieChartAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGPieChartAnimation.h; sourceTree = "<group>"; };
+		C01FCF5008A9545400542499 /* JGPieChartAnimationParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGPieChartAnimationParameters.m; sourceTree = "<group>"; };
+		C01FCF5008A954540054249B /* JGPieChartAnimationParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGPieChartAnimationParameters.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -337,8 +337,8 @@
 		5242CBEA14B3FC6900C876C7 /* PieChartView */ = {
 			isa = PBXGroup;
 			children = (
-				C01FCF5008A9545400542499 /* JGPieChartAnimation.m */,
-				C01FCF5008A954540054249B /* JGPieChartAnimation.h */,
+				C01FCF5008A9545400542499 /* JGPieChartAnimationParameters.m */,
+				C01FCF5008A954540054249B /* JGPieChartAnimationParameters.h */,
 				5242CBEB14B3FC8A00C876C7 /* JGTimerRunningView.h */,
 				5242CBEC14B3FC8A00C876C7 /* JGTimerRunningView.m */,
 				5242CBED14B3FC8A00C876C7 /* JGPieChartLayer.h */,
@@ -633,7 +633,7 @@
 				C01FCF5008A954540054248C /* JGCardTimes.m in Sources */,
 				C01FCF5008A954540054248F /* JGTimerDefaults.m in Sources */,
 				C01FCF5008A9545400542493 /* JGAbstractSingletonObject.m in Sources */,
-				C01FCF5008A954540054249A /* JGPieChartAnimation.m in Sources */,
+				C01FCF5008A954540054249A /* JGPieChartAnimationParameters.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,16 +9,18 @@
 #import <UIKit/UIKit.h>
 
 @class JGPieChartLayer;
-@class JGPieChartAnimation;
+@class JGPieChartAnimationParameters;
 
 @interface JGTimerRunningView : UIView {
     JGPieChartLayer *pieChartLayer;
     NSTimeInterval animationDuration;
+
+    JGPieChartAnimationParameters *pieChartAnimParams;
 }
 
 @property(nonatomic) NSTimeInterval animationDuration;
 
--(void)setupWithPieChartAnimation:(JGPieChartAnimation *)pieChartAnimation;
+-(void)setupWithPieChartAnimation:(JGPieChartAnimationParameters *)pieChartAnimation;
 
 -(void)startCountdownAnimation;
 

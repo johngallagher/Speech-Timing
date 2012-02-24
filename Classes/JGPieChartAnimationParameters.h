@@ -8,7 +8,7 @@
 #import <Foundation/Foundation.h>
 
 
-@interface JGPieChartAnimation : NSObject {
+@interface JGPieChartAnimationParameters : NSObject {
     CGFloat        _startAngle;
     CGFloat        _endAngle;
     NSTimeInterval _duration;

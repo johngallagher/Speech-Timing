@@ -7,7 +7,7 @@
 //
 
 #import "JGPieChartLayer.h"
-#import "JGPieChartAnimation.h"
+#import "JGPieChartAnimationParameters.h"
 
 
 static inline double radians(double degrees) {
@@ -26,7 +26,7 @@ static inline double radians(double degrees) {
 #pragma mark CALayer
 
 
--(id)initWithPieChartAnimation:(JGPieChartAnimation *)aPieChartAnimation andFrame:(CGRect)frame_ {
+-(id)initWithPieChartAnimation:(JGPieChartAnimationParameters *)aPieChartAnimation andFrame:(CGRect)frame_ {
     self = [super init];
     if (self) {
         pieChartAnimation = [aPieChartAnimation retain];
@@ -34,8 +34,8 @@ static inline double radians(double degrees) {
         self.frame                      = frame_;
         startAngle = [aPieChartAnimation startAngle];
         endAngle = [aPieChartAnimation endAngle];
-        [self setValue:[NSNumber numberWithFloat:[aPieChartAnimation startAngle]] forKey:@"startAngle"];
-        [self setValue:[NSNumber numberWithFloat:[aPieChartAnimation endAngle]] forKey:@"endAngle"];
+//        [self setValue:[NSNumber numberWithFloat:[aPieChartAnimation startAngle]] forKey:@"startAngle"];
+//        [self setValue:[NSNumber numberWithFloat:[aPieChartAnimation endAngle]] forKey:@"endAngle"];
     }
 
     return self;
@@ -78,6 +78,7 @@ static inline double radians(double degrees) {
     /* Filling it */
     CGContextSetFillColorWithColor(ctx, [[[[UIColor alloc] initWithRed:0 green:0 blue:0 alpha:0.3] autorelease] CGColor]);
     CGContextFillPath(ctx);
+    NSLog(@"Drew the pie chart layer");
 }
 
 #pragma mark -
