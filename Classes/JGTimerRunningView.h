@@ -17,6 +17,8 @@
 
 -(void)startCountdownAnimationWithParameters:(JGPieChartAnimationParameters *)parameters_;
 
+-(void)suspendCountdownAnimation;
+
 
 @end
 

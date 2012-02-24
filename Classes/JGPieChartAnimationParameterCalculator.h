@@ -7,6 +7,8 @@
     JGAlert *_alert;
 }
 
++(id)calculatorWithAlert:(JGAlert *)alert_;
+
 -(JGPieChartAnimationParameterCalculator *)initWithAlert:(JGAlert *)alert1;
 
 -(JGPieChartAnimationParameters *)calculateParameters;

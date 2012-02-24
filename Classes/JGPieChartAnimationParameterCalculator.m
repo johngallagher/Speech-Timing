@@ -47,7 +47,18 @@
     return (CGFloat)(([self fractionElapsed] * 360) - 90);
 }
 
+-(BOOL)fireTimeIsInThePast {
+    return [[_alert fireTime] timeIntervalSinceNow] < 0;
+}
+
+-(BOOL)startTimeIsInTheFuture {
+    return [[_alert startTime] timeIntervalSinceNow] > 0;
+}
+
 -(JGPieChartAnimationParameters *)calculateParameters {
+    if ([self fireTimeIsInThePast] || [self startTimeIsInTheFuture])
+        return nil;
+
     return [JGPieChartAnimationParameters animationFromAngle:[self fromAngle]
                                                      toAngle:270
                                                     duration:[self durationRemaining]];

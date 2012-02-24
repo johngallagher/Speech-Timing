@@ -4,9 +4,13 @@
 #import "JGAlert.h"
 #import "JGTimerDefaults.h"
 #import "JGPieChartAnimationParameters.h"
+#import "JGPieChartAnimationParameterCalculator.h"
 
 @interface JGTimerRunningViewController ()
 -(void)initViewControllerWithStartTime:(NSDate *)startTime_ fireTime:(NSDate *)fireTime_ alarmFilename:(NSString *)an;
+
+-(void)initViewControllerWithAlert:(JGAlert *)alert_;
+
 
 -(void)setTimeRemainingTo:(NSTimeInterval)time_;
 
@@ -17,20 +21,34 @@
 @synthesize countdownTimer;
 @synthesize timerController;
 
-#pragma mark View Appear/Disappear
--(void)viewDidAppear:(BOOL)animated {
-//    [(JGTimerRunningView *)[self view] startCountdownAnimation];
+-(void)continueCountdownAnimation {
+    [self startCountdownAnimation];
 }
 
--(void)viewDidDisappear:(BOOL)animated {
+-(void)startCountdownAnimation {
+    JGPieChartAnimationParameters *pieChartAnimation = [[JGPieChartAnimationParameterCalculator calculatorWithAlert:_alert] calculateParameters];
+    [(JGTimerRunningView *)[self view] startCountdownAnimationWithParameters:pieChartAnimation];
+}
+
+-(void)viewDidAppear:(BOOL)animated {
+}
+
+-(void)invalidateTimers {
     [[self timerController] stopTimer];
     [self setTimerController:nil];
 
     [[self countdownTimer] stopTimer];
     [self setCountdownTimer:nil];
-    [[JGTimerDefaults sharedInstance] invalidateAlert];
 }
 
+-(void)viewDidDisappear:(BOOL)animated {
+    [self invalidateTimers];
+}
+
+-(void)suspendCountdownAnimation {
+    [(JGTimerRunningView *)[self view] suspendCountdownAnimation];
+
+}
 
 +(JGTimerRunningViewController *)viewControllerWithFireTime:(NSDate *)fireTime {
     JGTimerRunningViewController *runningViewController = [[[JGTimerRunningViewController alloc] initWithNibName:@"JGTimerRunningViewController" bundle:nil] autorelease];
@@ -49,19 +67,24 @@
     return [self viewControllerWithStartTime:[alert_ startTime] fireTime:[alert_ fireTime] alarmFilename:[alert_ filenameWithoutExtension]];
 }
 
+
 -(void)initViewControllerWithStartTime:(NSDate *)startTime_ fireTime:(NSDate *)fireTime_ alarmFilename:(NSString *)an {
-    // TODO Setup pie chart animation with start/end angle and duration based on the start time and fire time - for now just use 60 seconds.
-    JGPieChartAnimationParameters *pieChartAnimation = [JGPieChartAnimationParameters animationFromAngle:-90 toAngle:270 duration:60];
-    [(JGTimerRunningView *)[self view] startCountdownAnimationWithParameters:pieChartAnimation];
+    [self initViewControllerWithAlert:[JGAlert alertWithStartTime:startTime_ fireTime:fireTime_ name:an]];
+}
 
-    [self loadAlertSoundWithFilename:an];
+-(void)initViewControllerWithAlert:(JGAlert *)alert_ {
+    _alert = [alert_ retain];
 
-    [self setTimerController:[JGTimerController timerStartingAt:startTime_ withFireTime:fireTime_ delegate:self]];
+    NSLog(@"init view controller with duration %f", [alert_ duration]);
+    [self startCountdownAnimation];
+
+    [self loadAlertSoundWithFilename:[alert_ name]];
+
+    [self setTimerController:[JGTimerController timerStartingAt:[alert_ startTime] withFireTime:[alert_ fireTime] delegate:self]];
     [[self timerController] startTimer];
 
-    [self setCountdownTimer:[JGCountdownTimer timerStartingAt:startTime_ withFireTime:fireTime_ delegate:self]];
+    [self setCountdownTimer:[JGCountdownTimer timerStartingAt:[alert_ startTime] withFireTime:[alert_ fireTime] delegate:self]];
     [[self countdownTimer] startTimer];
-    NSLog(@"Did init timer");
 }
 
 -(void)loadAlertSoundWithFilename:(NSString *)alertSoundFilename_ {
@@ -74,6 +97,7 @@
 
 
 -(IBAction)stopTimer:(id)sender {
+        [[JGTimerDefaults sharedInstance] invalidateAlert];
     [self.navigationController popViewControllerAnimated:YES];
 }
 
@@ -147,6 +171,7 @@
     [timeLabel release];
     [countdownTimer release];
     [timerController release];
+    [_alert release];
     [super dealloc];
 }
 

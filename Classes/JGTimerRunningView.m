@@ -47,6 +47,14 @@
     [pieChartLayer addAnimation:endAngleAnimation forKey:@"animateEndAngle"];
 }
 
+-(void)removePieChartLayerFromSuperlayer {
+    [pieChartLayer removeFromSuperlayer];
+}
+
+-(void)suspendCountdownAnimation {
+    [self removePieChartLayerFromSuperlayer];
+}
+
 -(CABasicAnimation *)_animationForKeyPath:(NSString *)keyPath fromValue:(CGFloat)fromValue toValue:(CGFloat)toValue duration:(NSTimeInterval)duration_ {
 
     CAMediaTimingFunction *timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];

@@ -13,11 +13,19 @@
     AVAudioPlayer     *audioPlayer;
     JGTimerController *timerController;
     JGCountdownTimer  *countdownTimer;
+    JGAlert *_alert;
 }
 
 @property(nonatomic, retain) JGCountdownTimer  *countdownTimer;
 @property(nonatomic, retain) JGTimerController *timerController;
 
+
+-(void)continueCountdownAnimation;
+
+-(void)startCountdownAnimation;
+
+
+-(void)suspendCountdownAnimation;
 
 +(JGTimerRunningViewController *)viewControllerWithFireTime:(NSDate *)fireTime;
 

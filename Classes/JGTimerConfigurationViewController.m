@@ -1,7 +1,6 @@
 #import "JGTimerConfigurationViewController.h"
 #import "JGTimerRunningViewController.h"
 #import "JGModalAlertViewController.h"
-#import "JGCardTimesCalculator.h"
 #import "JGTimerDefaults.h"
 #import "JGAlert.h"
 
@@ -43,13 +42,13 @@
     [self setPickerDurations:[NSArray arrayWithObjects:@"1            ", @"2            ", @"3            ", @"4            ", @"5            ", @"6            ", @"7            ", @"8            ", @"9            ", @"10            ", @"15            ", @"20            ", @"25            ", @"30            ", nil]];
 }
 
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self restoreAlertFromDefaults];
+}
+
 -(void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    
-    [self restoreAlertFromDefaults];
-    if ([self timerIsRunning]) {
-        [self continueTimer];
-    }
 }
 
 #pragma mark Public
@@ -206,7 +205,6 @@
     [[cell detailTextLabel] setText:[_currentAlert name]];
     return cell;
 }
-
 
 
 -(void)dealloc {

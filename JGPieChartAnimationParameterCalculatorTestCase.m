@@ -51,6 +51,18 @@
     [calculator release];
 }
 
+-(void)testGivenStartTimeInTheFutureCalculateParameterShouldReturnNilSoNoAnimationAppearsAsItsInvalid {
+    JGAlert                                *alert      = [JGAlert alertWithStartTime:[NSDate dateWithTimeIntervalSinceNow:5]
+                                                                            fireTime:[NSDate dateWithTimeIntervalSinceNow:15]
+                                                                                name:@""];
+    JGPieChartAnimationParameterCalculator *calculator = [[JGPieChartAnimationParameterCalculator alloc] initWithAlert:alert];
+    JGPieChartAnimationParameters          *parameters = [calculator calculateParameters];
+
+    STAssertNil(parameters, nil);
+
+    [calculator release];
+}
+
 
 @end
 
