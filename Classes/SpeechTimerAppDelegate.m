@@ -27,11 +27,9 @@
 
 
 -(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
     // Set the navigation controller as the window's root view controller and display.
     self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
-
     return YES;
 }
 
@@ -44,17 +42,18 @@
 }
 
 
+-(void)suspendCountdownAnimation {
+    if ([[navigationController topViewController] isKindOfClass:[JGTimerRunningViewController class]])
+        [(JGTimerRunningViewController *)[navigationController topViewController] suspendCountdownAnimation];
+}
+
 -(void)applicationDidEnterBackground:(UIApplication *)application {
     /*
      Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
      If your application supports background execution, called instead of applicationWillTerminate: when the user quits.
      */
     [self saveContext];
-    NSLog(@"Did enter background");
-    if (![[navigationController topViewController] isKindOfClass:[JGTimerRunningViewController class]])
-        return;
-
-    [(JGTimerRunningViewController *)[navigationController topViewController] suspendCountdownAnimation];
+    [self suspendCountdownAnimation];
 }
 
 
@@ -62,23 +61,23 @@
     /*
      Called as part of  transition from the background to the inactive state: here you can undo many of the changes made on entering the background.
      */
-    NSLog(@"Will enter foreground");
+}
+
+-(void)restoreTimerRunningView {
+    BOOL timerRunningViewIsShown = [[navigationController topViewController] isKindOfClass:[JGTimerRunningViewController class]];
+    if (timerRunningViewIsShown) {
+        [(JGTimerRunningViewController *)[navigationController topViewController] continueCountdownAnimation];
+    } else {
+        [(JGTimerConfigurationViewController *)[navigationController topViewController] pushRunningViewControllerWithCurrentAlert];
+    }
 }
 
 -(void)applicationDidBecomeActive:(UIApplication *)application {
     /*
      Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
      */
-    NSLog(@"Did become active");
-    if (![[JGTimerDefaults sharedInstance] timerIsRunning])
-        return;
-
-    BOOL timerRunningViewIsShown = [[navigationController topViewController] isKindOfClass:[JGTimerRunningViewController class]];
-    if (timerRunningViewIsShown) {
-        [(JGTimerRunningViewController *)[navigationController topViewController] continueCountdownAnimation];        
-    } else {
-        [(JGTimerConfigurationViewController *)[navigationController topViewController] pushRunningViewControllerWithCurrentAlert];
-    }
+    if ![[JGTimerDefaults sharedInstance] timerIsRunning])
+        [self restoreTimerRunningView];
 }
 
 
@@ -87,12 +86,10 @@
  */
 -(void)applicationWillTerminate:(UIApplication *)application {
     [self saveContext];
-    NSLog(@"Did terminate");
 }
 
 
 -(void)saveContext {
-
     NSError                *error                = nil;
     NSManagedObjectContext *managedObjectContext = self.managedObjectContext;
     if (managedObjectContext != nil) {
