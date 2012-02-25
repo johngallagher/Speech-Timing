@@ -3,6 +3,7 @@
 #import "JGModalAlertViewController.h"
 #import "JGTimerDefaults.h"
 #import "JGAlert.h"
+#import "JGAlertNotificationScheduler.h"
 
 @interface JGTimerConfigurationViewController ()
 -(void)pushRunningViewControllerWithCurrentAlert;
@@ -70,6 +71,7 @@
     [_currentAlert saveToTimerDefaults];
 
     [self pushRunningViewControllerWithCurrentAlert];
+    [JGAlertNotificationScheduler scheduleNotification]; // So that if the app isn't frontmost the user will get a notifcation
 }
 
 
@@ -201,7 +203,8 @@
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier] autorelease];
     }
-    [[cell textLabel] setText:@"Ringing Style"];
+    [tableView setBackgroundColor:[UIColor clearColor]];
+    [[cell textLabel] setText:@"Alarm"];
     [[cell detailTextLabel] setText:[_currentAlert name]];
     return cell;
 }

@@ -36,6 +36,7 @@
     [super viewDidLoad];
 
     [self loadDefaultAlerts];
+    [[self navigationItem] setTitle:@"Alarm"];
     [self setRightBarButtonToBeDone];
     [self setLeftBarButtonToCancel];
 }

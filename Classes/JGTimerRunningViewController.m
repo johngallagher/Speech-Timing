@@ -5,6 +5,7 @@
 #import "JGTimerDefaults.h"
 #import "JGPieChartAnimationParameters.h"
 #import "JGPieChartAnimationParameterCalculator.h"
+#import "JGAlertNotificationScheduler.h"
 
 @interface JGTimerRunningViewController ()
 -(void)initViewControllerWithStartTime:(NSDate *)startTime_ fireTime:(NSDate *)fireTime_ alarmFilename:(NSString *)an;
@@ -97,7 +98,8 @@
 
 
 -(IBAction)stopTimer:(id)sender {
-        [[JGTimerDefaults sharedInstance] invalidateAlert];
+    [JGAlertNotificationScheduler removeAllNotifications];
+    [[JGTimerDefaults sharedInstance] invalidateAlert];
     [self.navigationController popViewControllerAnimated:YES];
 }
 
