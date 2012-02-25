@@ -76,7 +76,6 @@
 -(void)initViewControllerWithAlert:(JGAlert *)alert_ {
     _alert = [alert_ retain];
 
-    NSLog(@"init view controller with duration %f", [alert_ duration]);
     [self startCountdownAnimation];
 
     [self loadAlertSoundWithFilename:[alert_ name]];
