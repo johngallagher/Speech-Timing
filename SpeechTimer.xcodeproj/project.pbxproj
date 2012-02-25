@@ -50,6 +50,8 @@
 		52BBC18914B3861900CFE655 /* TimerGradient.png in Resources */ = {isa = PBXBuildFile; fileRef = 52BBC18814B3861900CFE655 /* TimerGradient.png */; };
 		52BBC18E14B3876700CFE655 /* TimerGradient2.png in Resources */ = {isa = PBXBuildFile; fileRef = 52BBC18D14B3876700CFE655 /* TimerGradient2.png */; };
 		52CA8B5C149D089B0030ADC1 /* JGTimerRunningViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52CA8B5A149D089B0030ADC1 /* JGTimerRunningViewController.xib */; };
+		52DCCC9614F96E8E0092DA06 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 52DCCC9414F96E8E0092DA06 /* Default.png */; };
+		52DCCC9714F96E8E0092DA06 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52DCCC9514F96E8E0092DA06 /* Default@2x.png */; };
 		52EB416C14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EB416B14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.m */; };
 		52EB417314B1218D00308C95 /* JGCardTimesCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EB417214B1218D00308C95 /* JGCardTimesCalculator.m */; };
 		52F2087314F7BEE700350D2F /* JGPieChartAnimationParameterCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A954540054249D /* JGPieChartAnimationParameterCalculator.m */; };
@@ -146,6 +148,8 @@
 		52BBC18814B3861900CFE655 /* TimerGradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TimerGradient.png; sourceTree = "<group>"; };
 		52BBC18D14B3876700CFE655 /* TimerGradient2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TimerGradient2.png; sourceTree = "<group>"; };
 		52CA8B5A149D089B0030ADC1 /* JGTimerRunningViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = JGTimerRunningViewController.xib; path = Classes/JGTimerRunningViewController.xib; sourceTree = "<group>"; };
+		52DCCC9414F96E8E0092DA06 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		52DCCC9514F96E8E0092DA06 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		52EB416A14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JGTimerDurationCalculatorTestCase.h; path = Classes/JGTimerDurationCalculatorTestCase.h; sourceTree = "<group>"; };
 		52EB416B14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JGTimerDurationCalculatorTestCase.m; path = Classes/JGTimerDurationCalculatorTestCase.m; sourceTree = "<group>"; };
 		52EB417114B1218D00308C95 /* JGCardTimesCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGCardTimesCalculator.h; sourceTree = "<group>"; };
@@ -255,6 +259,8 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				52DCCC9414F96E8E0092DA06 /* Default.png */,
+				52DCCC9514F96E8E0092DA06 /* Default@2x.png */,
 				524C1D2F14F64C32004D2EEA /* libOCMock.a */,
 				5243241914C06FCC00AFDE61 /* Library */,
 				080E96DDFE201D6D7F000001 /* Classes */,
@@ -594,6 +600,8 @@
 				520F73EE14BA46F1003FEC46 /* Bell.aif in Resources */,
 				520F73EF14BA46F1003FEC46 /* Alarm.aif in Resources */,
 				520F73F014BA46F1003FEC46 /* Submarine.aif in Resources */,
+				52DCCC9614F96E8E0092DA06 /* Default.png in Resources */,
+				52DCCC9714F96E8E0092DA06 /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
