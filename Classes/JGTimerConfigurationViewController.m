@@ -6,7 +6,6 @@
 #import "JGAlertNotificationScheduler.h"
 
 @interface JGTimerConfigurationViewController ()
--(void)pushRunningViewControllerWithCurrentAlert;
 
 -(void)_startTimerWithDuration:(NSUInteger)durationOfTimer;
 

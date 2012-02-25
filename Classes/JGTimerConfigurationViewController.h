@@ -34,6 +34,8 @@
 
 -(IBAction)startTimer:(id)sender;
 
+-(void)pushRunningViewControllerWithCurrentAlert;
+
 
 @end
 

@@ -54,7 +54,7 @@
     if (![[navigationController topViewController] isKindOfClass:[JGTimerRunningViewController class]])
         return;
 
-    [(JGTimerRunningViewController *)[navigationController topViewController] suspendCountdownAnimation];
+//    [(JGTimerRunningViewController *)[navigationController topViewController] suspendCountdownAnimation];
 }
 
 
@@ -63,21 +63,21 @@
      Called as part of  transition from the background to the inactive state: here you can undo many of the changes made on entering the background.
      */
     NSLog(@"Will enter foreground");
-    if (![[JGTimerDefaults sharedInstance] timerIsRunning])
-        return;
-
-    if (![[navigationController topViewController] isKindOfClass:[JGTimerRunningViewController class]])
-        return;
-
-    [(JGTimerRunningViewController *)[navigationController topViewController] continueCountdownAnimation];
 }
-
 
 -(void)applicationDidBecomeActive:(UIApplication *)application {
     /*
      Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
      */
     NSLog(@"Did become active");
+    if (![[JGTimerDefaults sharedInstance] timerIsRunning])
+        return;
+    
+    if ([[navigationController topViewController] isKindOfClass:[JGTimerRunningViewController class]]) {
+        [(JGTimerRunningViewController *)[navigationController topViewController] continueCountdownAnimation];        
+    } else {
+        [(JGTimerConfigurationViewController *)[navigationController topViewController] pushRunningViewControllerWithCurrentAlert];
+    }
 }
 
 

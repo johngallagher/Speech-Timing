@@ -64,10 +64,17 @@
          timestampString = "351823954.707622"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
+<<<<<<< Updated upstream
+         startingLineNumber = "122"
+         endingLineNumber = "122"
+         landmarkName = "@implementation JGTimerConfigurationViewController"
+         landmarkType = "3">
+=======
          startingLineNumber = "55"
          endingLineNumber = "55"
          landmarkName = "-suspendCountdownAnimation"
          landmarkType = "5">
+>>>>>>> Stashed changes
       </FileBreakpoint>
    </FileBreakpoints>
 </Bucket>
