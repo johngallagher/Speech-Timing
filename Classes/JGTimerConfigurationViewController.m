@@ -203,7 +203,8 @@
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier] autorelease];
     }
-    [[cell textLabel] setText:@"Ringing Style"];
+    [tableView setBackgroundColor:[UIColor clearColor]];
+    [[cell textLabel] setText:@"Alarm"];
     [[cell detailTextLabel] setText:[_currentAlert name]];
     return cell;
 }
