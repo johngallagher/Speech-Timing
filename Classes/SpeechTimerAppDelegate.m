@@ -54,7 +54,7 @@
     if (![[navigationController topViewController] isKindOfClass:[JGTimerRunningViewController class]])
         return;
 
-//    [(JGTimerRunningViewController *)[navigationController topViewController] suspendCountdownAnimation];
+    [(JGTimerRunningViewController *)[navigationController topViewController] suspendCountdownAnimation];
 }
 
 
@@ -72,8 +72,9 @@
     NSLog(@"Did become active");
     if (![[JGTimerDefaults sharedInstance] timerIsRunning])
         return;
-    
-    if ([[navigationController topViewController] isKindOfClass:[JGTimerRunningViewController class]]) {
+
+    BOOL timerRunningViewIsShown = [[navigationController topViewController] isKindOfClass:[JGTimerRunningViewController class]];
+    if (timerRunningViewIsShown) {
         [(JGTimerRunningViewController *)[navigationController topViewController] continueCountdownAnimation];        
     } else {
         [(JGTimerConfigurationViewController *)[navigationController topViewController] pushRunningViewControllerWithCurrentAlert];

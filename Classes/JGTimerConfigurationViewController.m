@@ -40,11 +40,11 @@
 -(void)viewDidLoad {
     [super viewDidLoad];
     [self setPickerDurations:[NSArray arrayWithObjects:@"1            ", @"2            ", @"3            ", @"4            ", @"5            ", @"6            ", @"7            ", @"8            ", @"9            ", @"10            ", @"15            ", @"20            ", @"25            ", @"30            ", nil]];
+    [self restoreAlertFromDefaults];
 }
 
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    [self restoreAlertFromDefaults];
 }
 
 -(void)viewDidAppear:(BOOL)animated {
