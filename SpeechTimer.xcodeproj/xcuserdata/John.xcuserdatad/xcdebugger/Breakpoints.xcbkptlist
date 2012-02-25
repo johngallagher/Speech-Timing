@@ -46,27 +46,27 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          isPathRelative = "1"
-         filePath = "Classes/SpeechTimerAppDelegate.m"
-         timestampString = "351689943.31018"
+         filePath = "Classes/JGTimerConfigurationViewController.m"
+         timestampString = "351824874.567051"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "23"
-         endingLineNumber = "23"
-         landmarkName = "-awakeFromNib"
-         landmarkType = "5">
+         startingLineNumber = "121"
+         endingLineNumber = "121"
+         landmarkName = "@implementation JGTimerConfigurationViewController"
+         landmarkType = "3">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "Yes"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          isPathRelative = "1"
-         filePath = "Classes/JGTimerConfigurationViewController.m"
-         timestampString = "351690263.40378"
+         filePath = "Classes/JGTimerRunningView.m"
+         timestampString = "351823954.707622"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "122"
-         endingLineNumber = "122"
-         landmarkName = "-pickerView:numberOfRowsInComponent:"
+         startingLineNumber = "55"
+         endingLineNumber = "55"
+         landmarkName = "-suspendCountdownAnimation"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>
