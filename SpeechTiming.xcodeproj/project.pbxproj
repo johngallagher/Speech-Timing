@@ -52,6 +52,9 @@
 		52CA8B5C149D089B0030ADC1 /* JGTimerRunningViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52CA8B5A149D089B0030ADC1 /* JGTimerRunningViewController.xib */; };
 		52DCCC9614F96E8E0092DA06 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 52DCCC9414F96E8E0092DA06 /* Default.png */; };
 		52DCCC9714F96E8E0092DA06 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52DCCC9514F96E8E0092DA06 /* Default@2x.png */; };
+		52DCCC9B14F9700F0092DA06 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 52DCCC9814F9700F0092DA06 /* Icon.png */; };
+		52DCCC9C14F9700F0092DA06 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52DCCC9914F9700F0092DA06 /* Icon@2x.png */; };
+		52DCCC9D14F9700F0092DA06 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 52DCCC9A14F9700F0092DA06 /* iTunesArtwork */; };
 		52EB416C14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EB416B14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.m */; };
 		52EB417314B1218D00308C95 /* JGCardTimesCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EB417214B1218D00308C95 /* JGCardTimesCalculator.m */; };
 		52F2087314F7BEE700350D2F /* JGPieChartAnimationParameterCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A954540054249D /* JGPieChartAnimationParameterCalculator.m */; };
@@ -99,13 +102,13 @@
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* SpeechTimerAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeechTimerAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* SpeechTimerAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeechTimerAppDelegate.m; sourceTree = "<group>"; };
-		1D6058910D05DD3D006BFB54 /* SpeechTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeechTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* SpeechTiming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeechTiming.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		28860B760F44E54D00985440 /* SpeechTimer.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = SpeechTimer.xcdatamodel; sourceTree = "<group>"; };
 		28860BE40F44EE6400985440 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2899E55F0DE3E45000AC0155 /* JGTimerConfigurationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JGTimerConfigurationViewController.xib; sourceTree = "<group>"; };
-		28A0AAE50D9B0CCF005BE974 /* SpeechTimer_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeechTimer_Prefix.pch; sourceTree = "<group>"; };
+		28A0AAE50D9B0CCF005BE974 /* SpeechTiming_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeechTiming_Prefix.pch; sourceTree = "<group>"; };
 		28AD735F0D9D9599002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		28C286DF0D94DF7D0034E888 /* JGTimerConfigurationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGTimerConfigurationViewController.h; sourceTree = "<group>"; };
 		28C286E00D94DF7D0034E888 /* JGTimerConfigurationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGTimerConfigurationViewController.m; sourceTree = "<group>"; };
@@ -126,8 +129,8 @@
 		5251B9A9149E59B400AFC0B6 /* JGTimerControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGTimerControllerDelegate.h; sourceTree = "<group>"; };
 		52591F33149E453E00DEA711 /* JGTimerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGTimerController.h; sourceTree = "<group>"; };
 		52591F34149E453E00DEA711 /* JGTimerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGTimerController.m; sourceTree = "<group>"; };
-		52591F3B149E466B00DEA711 /* SpeechTimerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeechTimerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		52591F3C149E466B00DEA711 /* SpeechTimerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpeechTimerTests-Info.plist"; sourceTree = "<group>"; };
+		52591F3B149E466B00DEA711 /* SpeechTimingTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeechTimingTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52591F3C149E466B00DEA711 /* SpeechTimingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpeechTimingTests-Info.plist"; sourceTree = "<group>"; };
 		52591F40149E469000DEA711 /* JGTimerControllerTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JGTimerControllerTestCase.h; path = Classes/JGTimerControllerTestCase.h; sourceTree = "<group>"; };
 		52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JGTimerControllerTestCase.m; path = Classes/JGTimerControllerTestCase.m; sourceTree = "<group>"; };
 		5285769A14F555EC00BE4E13 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -150,6 +153,9 @@
 		52CA8B5A149D089B0030ADC1 /* JGTimerRunningViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = JGTimerRunningViewController.xib; path = Classes/JGTimerRunningViewController.xib; sourceTree = "<group>"; };
 		52DCCC9414F96E8E0092DA06 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		52DCCC9514F96E8E0092DA06 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		52DCCC9814F9700F0092DA06 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		52DCCC9914F9700F0092DA06 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		52DCCC9A14F9700F0092DA06 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
 		52EB416A14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JGTimerDurationCalculatorTestCase.h; path = Classes/JGTimerDurationCalculatorTestCase.h; sourceTree = "<group>"; };
 		52EB416B14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JGTimerDurationCalculatorTestCase.m; path = Classes/JGTimerDurationCalculatorTestCase.m; sourceTree = "<group>"; };
 		52EB417114B1218D00308C95 /* JGCardTimesCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGCardTimesCalculator.h; sourceTree = "<group>"; };
@@ -163,7 +169,7 @@
 		52F63EA414B7689A00876FA4 /* JGModalAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGModalAlertViewController.h; sourceTree = "<group>"; };
 		52F63EA514B7689A00876FA4 /* JGModalAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGModalAlertViewController.m; sourceTree = "<group>"; };
 		52F63EA614B7689A00876FA4 /* JGRingingSettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = JGRingingSettingViewController.xib; path = Classes/JGRingingSettingViewController.xib; sourceTree = "<group>"; };
-		8D1107310486CEB800E47090 /* SpeechTimer-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SpeechTimer-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* SpeechTiming-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SpeechTiming-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		C01FCF5008A954540054247C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		C01FCF5008A954540054247F /* JGTimerRunningViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGTimerRunningViewController.h; sourceTree = "<group>"; };
 		C01FCF5008A9545400542480 /* JGTimerRunningViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGTimerRunningViewController.m; sourceTree = "<group>"; };
@@ -250,8 +256,8 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* SpeechTimer.app */,
-				52591F3B149E466B00DEA711 /* SpeechTimerTests.octest */,
+				1D6058910D05DD3D006BFB54 /* SpeechTiming.app */,
+				52591F3B149E466B00DEA711 /* SpeechTimingTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -259,6 +265,9 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				52DCCC9814F9700F0092DA06 /* Icon.png */,
+				52DCCC9914F9700F0092DA06 /* Icon@2x.png */,
+				52DCCC9A14F9700F0092DA06 /* iTunesArtwork */,
 				52DCCC9414F96E8E0092DA06 /* Default.png */,
 				52DCCC9514F96E8E0092DA06 /* Default@2x.png */,
 				524C1D2F14F64C32004D2EEA /* libOCMock.a */,
@@ -269,7 +278,7 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
-				52591F3C149E466B00DEA711 /* SpeechTimerTests-Info.plist */,
+				52591F3C149E466B00DEA711 /* SpeechTimingTests-Info.plist */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -277,7 +286,7 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				28A0AAE50D9B0CCF005BE974 /* SpeechTimer_Prefix.pch */,
+				28A0AAE50D9B0CCF005BE974 /* SpeechTiming_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
 			name = "Other Sources";
@@ -289,7 +298,7 @@
 				520F73DE14BA46E4003FEC46 /* Audio */,
 				5242CBF614B3FD1F00C876C7 /* Images */,
 				5242CBF714B3FD2500C876C7 /* Nibs */,
-				8D1107310486CEB800E47090 /* SpeechTimer-Info.plist */,
+				8D1107310486CEB800E47090 /* SpeechTiming-Info.plist */,
 				28D3F201112F7DC200FD0661 /* SpeechTimer.xcdatamodeld */,
 			);
 			name = Resources;
@@ -513,9 +522,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1D6058900D05DD3D006BFB54 /* SpeechTimer */ = {
+		1D6058900D05DD3D006BFB54 /* SpeechTiming */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "SpeechTimer" */;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "SpeechTiming" */;
 			buildPhases = (
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
@@ -525,14 +534,14 @@
 			);
 			dependencies = (
 			);
-			name = SpeechTimer;
+			name = SpeechTiming;
 			productName = MeetingTimer;
-			productReference = 1D6058910D05DD3D006BFB54 /* SpeechTimer.app */;
+			productReference = 1D6058910D05DD3D006BFB54 /* SpeechTiming.app */;
 			productType = "com.apple.product-type.application";
 		};
-		52591F3A149E466B00DEA711 /* SpeechTimerTests */ = {
+		52591F3A149E466B00DEA711 /* SpeechTimingTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 52591F3F149E466B00DEA711 /* Build configuration list for PBXNativeTarget "SpeechTimerTests" */;
+			buildConfigurationList = 52591F3F149E466B00DEA711 /* Build configuration list for PBXNativeTarget "SpeechTimingTests" */;
 			buildPhases = (
 				52591F36149E466B00DEA711 /* Resources */,
 				52591F37149E466B00DEA711 /* Sources */,
@@ -545,9 +554,9 @@
 			dependencies = (
 				5228AEB414AE3F1A00C5F9A9 /* PBXTargetDependency */,
 			);
-			name = SpeechTimerTests;
+			name = SpeechTimingTests;
 			productName = MeetingTimerTests;
-			productReference = 52591F3B149E466B00DEA711 /* SpeechTimerTests.octest */;
+			productReference = 52591F3B149E466B00DEA711 /* SpeechTimingTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -558,7 +567,7 @@
 			attributes = {
 				LastUpgradeCheck = 0420;
 			};
-			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "SpeechTimer" */;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "SpeechTiming" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
@@ -573,8 +582,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1D6058900D05DD3D006BFB54 /* SpeechTimer */,
-				52591F3A149E466B00DEA711 /* SpeechTimerTests */,
+				1D6058900D05DD3D006BFB54 /* SpeechTiming */,
+				52591F3A149E466B00DEA711 /* SpeechTimingTests */,
 			);
 		};
 /* End PBXProject section */
@@ -602,6 +611,9 @@
 				520F73F014BA46F1003FEC46 /* Submarine.aif in Resources */,
 				52DCCC9614F96E8E0092DA06 /* Default.png in Resources */,
 				52DCCC9714F96E8E0092DA06 /* Default@2x.png in Resources */,
+				52DCCC9B14F9700F0092DA06 /* Icon.png in Resources */,
+				52DCCC9C14F9700F0092DA06 /* Icon@2x.png in Resources */,
+				52DCCC9D14F9700F0092DA06 /* iTunesArtwork in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -684,7 +696,7 @@
 /* Begin PBXTargetDependency section */
 		5228AEB414AE3F1A00C5F9A9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1D6058900D05DD3D006BFB54 /* SpeechTimer */;
+			target = 1D6058900D05DD3D006BFB54 /* SpeechTiming */;
 			targetProxy = 5228AEB314AE3F1A00C5F9A9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -698,11 +710,11 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = SpeechTimer_Prefix.pch;
+				GCC_PREFIX_HEADER = SpeechTiming_Prefix.pch;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INFOPLIST_FILE = "SpeechTimer-Info.plist";
+				INFOPLIST_FILE = "SpeechTiming-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
-				PRODUCT_NAME = SpeechTimer;
+				PRODUCT_NAME = SpeechTiming;
 				TEST_AFTER_BUILD = YES;
 			};
 			name = Debug;
@@ -711,12 +723,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: John Gallagher (GZKK3ZNNM6)";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = SpeechTimer_Prefix.pch;
-				INFOPLIST_FILE = "SpeechTimer-Info.plist";
+				GCC_PREFIX_HEADER = SpeechTiming_Prefix.pch;
+				INFOPLIST_FILE = "SpeechTiming-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
-				PRODUCT_NAME = SpeechTimer;
+				PRODUCT_NAME = SpeechTiming;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F0E09840-7EDD-4A50-856C-37454455EB71";
 				TEST_AFTER_BUILD = YES;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -737,10 +753,10 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREFIX_HEADER = "";
 				HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)/Library/Headers\"";
-				INFOPLIST_FILE = "SpeechTimerTests-Info.plist";
+				INFOPLIST_FILE = "SpeechTimingTests-Info.plist";
 				LIBRARY_SEARCH_PATHS = "\"$(PROJECT_DIR)/Library\"";
 				OTHER_LDFLAGS = "-all_load";
-				PRODUCT_NAME = SpeechTimerTests;
+				PRODUCT_NAME = SpeechTimingTests;
 				TEST_AFTER_BUILD = NO;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
@@ -758,10 +774,10 @@
 				);
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)/Library/Headers\"";
-				INFOPLIST_FILE = "SpeechTimerTests-Info.plist";
+				INFOPLIST_FILE = "SpeechTimingTests-Info.plist";
 				LIBRARY_SEARCH_PATHS = "\"$(PROJECT_DIR)/Library\"";
 				OTHER_LDFLAGS = "-all_load";
-				PRODUCT_NAME = SpeechTimerTests;
+				PRODUCT_NAME = SpeechTimingTests;
 				TEST_AFTER_BUILD = NO;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
@@ -775,6 +791,7 @@
 					armv6,
 					"$(ARCHS_STANDARD_32_BIT)",
 				);
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -793,6 +810,7 @@
 					armv6,
 					"$(ARCHS_STANDARD_32_BIT)",
 				);
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -808,7 +826,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "SpeechTimer" */ = {
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "SpeechTiming" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
@@ -817,7 +835,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		52591F3F149E466B00DEA711 /* Build configuration list for PBXNativeTarget "SpeechTimerTests" */ = {
+		52591F3F149E466B00DEA711 /* Build configuration list for PBXNativeTarget "SpeechTimingTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				52591F3D149E466B00DEA711 /* Debug */,
@@ -826,7 +844,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "SpeechTimer" */ = {
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "SpeechTiming" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
