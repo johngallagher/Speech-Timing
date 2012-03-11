@@ -4,7 +4,7 @@
 
 @implementation JGAlertTestCase
 
-#pragma mark Filename
+#pragma mark FilenameWithoutExtension
 -(void)testGivenOneWordNameThenFilenameShouldGiveNameWithAIFFExtension {
     JGAlert  *alert         = [JGAlert alertWithStartTime:nil fireTime:nil name:@"Submarine"];
     NSString *alertFilename = [alert filenameWithoutExtension];
@@ -39,5 +39,6 @@
     JGAlert *alert = [JGAlert alertWithStartTime:[NSDate date] fireTime:[NSDate dateWithTimeIntervalSinceNow:10] name:@""];
     STAssertEqualsWithAccuracy([alert duration], (NSTimeInterval)10, 0.01, nil);
 }
+
 @end
 

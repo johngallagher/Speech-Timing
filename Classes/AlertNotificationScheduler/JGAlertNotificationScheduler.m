@@ -5,6 +5,7 @@
 //
 
 
+#import <UIKit/UIKit.h>
 #import "JGAlertNotificationScheduler.h"
 #import "JGAlert.h"
 #import "JGTimerDefaults.h"
@@ -30,17 +31,14 @@
     UILocalNotification *localNotification = [[UILocalNotification alloc] init];
     if (localNotification == nil)
         return;
-    
+
     localNotification.fireDate = [alert_ fireTime];
     localNotification.timeZone = [NSTimeZone defaultTimeZone];
- 
     localNotification.alertBody = [NSString stringWithFormat:@"Time Up!"];
-//    localNotification.alertAction = @""
- 
     localNotification.soundName = UILocalNotificationDefaultSoundName;
-//    localNotification.applicationIconBadgeNumber = 1;
- 
+
     [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
     [localNotification release];
 }
+
 @end

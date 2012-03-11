@@ -25,9 +25,8 @@
 		520F73F014BA46F1003FEC46 /* Submarine.aif in Resources */ = {isa = PBXBuildFile; fileRef = 520F73EA14BA46F1003FEC46 /* Submarine.aif */; };
 		521BCEA514C0445600695F8B /* JGAbstractSingletonObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A9545400542492 /* JGAbstractSingletonObject.m */; };
 		5242CBEF14B3FC8A00C876C7 /* JGTimerRunningView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5242CBEC14B3FC8A00C876C7 /* JGTimerRunningView.m */; };
-		5242CBF014B3FC8A00C876C7 /* JGPieChartLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5242CBEE14B3FC8A00C876C7 /* JGPieChartLayer.m */; };
+		5242CBF014B3FC8A00C876C7 /* JGPieChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5242CBEE14B3FC8A00C876C7 /* JGPieChartView.m */; };
 		5242CBF514B3FD0000C876C7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5242CBF414B3FD0000C876C7 /* QuartzCore.framework */; };
-		5243241A14C06FCC00AFDE61 /* Library in Resources */ = {isa = PBXBuildFile; fileRef = 5243241914C06FCC00AFDE61 /* Library */; };
 		524C1D3014F64C32004D2EEA /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 524C1D2F14F64C32004D2EEA /* libOCMock.a */; };
 		52591F35149E453E00DEA711 /* JGTimerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52591F34149E453E00DEA711 /* JGTimerController.m */; };
 		52591F43149E469C00DEA711 /* JGTimerControllerTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 52591F41149E469000DEA711 /* JGTimerControllerTestCase.m */; };
@@ -62,7 +61,7 @@
 		52F63E5F14B7590E00876FA4 /* JGRedInsetGradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F63E5B14B7590E00876FA4 /* JGRedInsetGradientButton.m */; };
 		52F63E6014B7590E00876FA4 /* JGGreenInsetGradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F63E5D14B7590E00876FA4 /* JGGreenInsetGradientButton.m */; };
 		52F63EA714B7689A00876FA4 /* JGModalAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F63EA514B7689A00876FA4 /* JGModalAlertViewController.m */; };
-		52F63EA814B7689A00876FA4 /* JGRingingSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52F63EA614B7689A00876FA4 /* JGRingingSettingViewController.xib */; };
+		52F63EA814B7689A00876FA4 /* JGModalAlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52F63EA614B7689A00876FA4 /* JGModalAlertViewController.xib */; };
 		C01FCF5008A954540054247D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C01FCF5008A954540054247C /* AudioToolbox.framework */; };
 		C01FCF5008A9545400542481 /* JGTimerRunningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A9545400542480 /* JGTimerRunningViewController.m */; };
 		C01FCF5008A9545400542489 /* JGAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A9545400542488 /* JGAlert.m */; };
@@ -121,10 +120,9 @@
 		520F73EA14BA46F1003FEC46 /* Submarine.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = Submarine.aif; sourceTree = "<group>"; };
 		5242CBEB14B3FC8A00C876C7 /* JGTimerRunningView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGTimerRunningView.h; sourceTree = "<group>"; };
 		5242CBEC14B3FC8A00C876C7 /* JGTimerRunningView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGTimerRunningView.m; sourceTree = "<group>"; };
-		5242CBED14B3FC8A00C876C7 /* JGPieChartLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGPieChartLayer.h; sourceTree = "<group>"; };
-		5242CBEE14B3FC8A00C876C7 /* JGPieChartLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGPieChartLayer.m; sourceTree = "<group>"; };
+		5242CBED14B3FC8A00C876C7 /* JGPieChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGPieChartView.h; sourceTree = "<group>"; };
+		5242CBEE14B3FC8A00C876C7 /* JGPieChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGPieChartView.m; sourceTree = "<group>"; };
 		5242CBF414B3FD0000C876C7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		5243241914C06FCC00AFDE61 /* Library */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Library; sourceTree = "<group>"; };
 		524C1D2F14F64C32004D2EEA /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = Library/libOCMock.a; sourceTree = "<group>"; };
 		5251B9A9149E59B400AFC0B6 /* JGTimerControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGTimerControllerDelegate.h; sourceTree = "<group>"; };
 		52591F33149E453E00DEA711 /* JGTimerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGTimerController.h; sourceTree = "<group>"; };
@@ -168,7 +166,7 @@
 		52F63E5D14B7590E00876FA4 /* JGGreenInsetGradientButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGGreenInsetGradientButton.m; sourceTree = "<group>"; };
 		52F63EA414B7689A00876FA4 /* JGModalAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGModalAlertViewController.h; sourceTree = "<group>"; };
 		52F63EA514B7689A00876FA4 /* JGModalAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGModalAlertViewController.m; sourceTree = "<group>"; };
-		52F63EA614B7689A00876FA4 /* JGRingingSettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = JGRingingSettingViewController.xib; path = Classes/JGRingingSettingViewController.xib; sourceTree = "<group>"; };
+		52F63EA614B7689A00876FA4 /* JGModalAlertViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = JGModalAlertViewController.xib; path = Classes/JGModalAlertViewController.xib; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* SpeechTiming-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SpeechTiming-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		C01FCF5008A954540054247C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		C01FCF5008A954540054247F /* JGTimerRunningViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGTimerRunningViewController.h; sourceTree = "<group>"; };
@@ -232,14 +230,12 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				C01FCF5008A95454005424A4 /* JGAlertNotificationScheduler.h */,
-				C01FCF5008A95454005424A2 /* JGAlertNotificationScheduler.m */,
 				528DCF5414F3FA1700A94E6D /* AbstractSingleton */,
 				528DCF5514F3FA2800A94E6D /* TimerDefaults */,
 				528DCF5614F3FA3700A94E6D /* CardTimes */,
 				528DCF5714F3FA4A00A94E6D /* Alert */,
-				528DCF5814F3FA5000A94E6D /* DuratinFromFireTimeCalculator */,
-				C01FCF5008A9545400542482 /* JGRingingSettingDelegate.h */,
+				528DCF5814F3FA5000A94E6D /* DurationFromFireTimeCalculator */,
+				52F9FFD4150D4726008B8278 /* RingingSettingDelegate */,
 				52F63E5714B7590400876FA4 /* Buttons */,
 				5242CBEA14B3FC6900C876C7 /* PieChartView */,
 				52BBBE3514B2EC3200CFE655 /* AppDelegate */,
@@ -248,7 +244,8 @@
 				5242CBE814B3FC2900C876C7 /* CountdownTimer */,
 				5251B9AB149E59BD00AFC0B6 /* TimerController */,
 				5242CBE714B3FC1E00C876C7 /* TimeFormatter */,
-				52D6932D14B87B8E00F09035 /* RingerView */,
+				52D6932D14B87B8E00F09035 /* ModalAlertView */,
+				C01FCF5008A95454005424A5 /* AlertNotificationScheduler */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -271,9 +268,8 @@
 				52DCCC9414F96E8E0092DA06 /* Default.png */,
 				52DCCC9514F96E8E0092DA06 /* Default@2x.png */,
 				524C1D2F14F64C32004D2EEA /* libOCMock.a */,
-				5243241914C06FCC00AFDE61 /* Library */,
 				080E96DDFE201D6D7F000001 /* Classes */,
-				528DCF5314F3F96500A94E6D /* Tests */,
+				528DCF5314F3F96500A94E6D /* SpeechTimingTests */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
@@ -369,8 +365,8 @@
 				C01FCF5008A954540054249B /* JGPieChartAnimationParameters.h */,
 				5242CBEB14B3FC8A00C876C7 /* JGTimerRunningView.h */,
 				5242CBEC14B3FC8A00C876C7 /* JGTimerRunningView.m */,
-				5242CBED14B3FC8A00C876C7 /* JGPieChartLayer.h */,
-				5242CBEE14B3FC8A00C876C7 /* JGPieChartLayer.m */,
+				5242CBED14B3FC8A00C876C7 /* JGPieChartView.h */,
+				5242CBEE14B3FC8A00C876C7 /* JGPieChartView.m */,
 			);
 			name = PieChartView;
 			sourceTree = "<group>";
@@ -391,7 +387,7 @@
 		5242CBF714B3FD2500C876C7 /* Nibs */ = {
 			isa = PBXGroup;
 			children = (
-				52F63EA614B7689A00876FA4 /* JGRingingSettingViewController.xib */,
+				52F63EA614B7689A00876FA4 /* JGModalAlertViewController.xib */,
 				2899E55F0DE3E45000AC0155 /* JGTimerConfigurationViewController.xib */,
 				52CA8B5A149D089B0030ADC1 /* JGTimerRunningViewController.xib */,
 				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
@@ -420,7 +416,7 @@
 			name = ViewControllers;
 			sourceTree = "<group>";
 		};
-		528DCF5314F3F96500A94E6D /* Tests */ = {
+		528DCF5314F3F96500A94E6D /* SpeechTimingTests */ = {
 			isa = PBXGroup;
 			children = (
 				C01FCF5008A95454005424A0 /* JGPieChartAnimationParameterCalculatorTestCase.m */,
@@ -440,7 +436,7 @@
 				52EB416A14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.h */,
 				52EB416B14B1200D00308C95 /* JGTimerDurationCalculatorTestCase.m */,
 			);
-			name = Tests;
+			name = SpeechTimingTests;
 			sourceTree = "<group>";
 		};
 		528DCF5414F3FA1700A94E6D /* AbstractSingleton */ = {
@@ -479,13 +475,13 @@
 			name = Alert;
 			sourceTree = "<group>";
 		};
-		528DCF5814F3FA5000A94E6D /* DuratinFromFireTimeCalculator */ = {
+		528DCF5814F3FA5000A94E6D /* DurationFromFireTimeCalculator */ = {
 			isa = PBXGroup;
 			children = (
 				C01FCF5008A9545400542485 /* JGDurationFromFireDateCalculator.h */,
 				C01FCF5008A9545400542483 /* JGDurationFromFireDateCalculator.m */,
 			);
-			name = DuratinFromFireTimeCalculator;
+			name = DurationFromFireTimeCalculator;
 			sourceTree = "<group>";
 		};
 		52BBBE3514B2EC3200CFE655 /* AppDelegate */ = {
@@ -497,13 +493,13 @@
 			name = AppDelegate;
 			sourceTree = "<group>";
 		};
-		52D6932D14B87B8E00F09035 /* RingerView */ = {
+		52D6932D14B87B8E00F09035 /* ModalAlertView */ = {
 			isa = PBXGroup;
 			children = (
 				52F63EA414B7689A00876FA4 /* JGModalAlertViewController.h */,
 				52F63EA514B7689A00876FA4 /* JGModalAlertViewController.m */,
 			);
-			name = RingerView;
+			name = ModalAlertView;
 			sourceTree = "<group>";
 		};
 		52F63E5714B7590400876FA4 /* Buttons */ = {
@@ -517,6 +513,23 @@
 				52F63E5D14B7590E00876FA4 /* JGGreenInsetGradientButton.m */,
 			);
 			name = Buttons;
+			sourceTree = "<group>";
+		};
+		52F9FFD4150D4726008B8278 /* RingingSettingDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				C01FCF5008A9545400542482 /* JGRingingSettingDelegate.h */,
+			);
+			name = RingingSettingDelegate;
+			sourceTree = "<group>";
+		};
+		C01FCF5008A95454005424A5 /* AlertNotificationScheduler */ = {
+			isa = PBXGroup;
+			children = (
+				C01FCF5008A95454005424A2 /* JGAlertNotificationScheduler.m */,
+				C01FCF5008A95454005424A4 /* JGAlertNotificationScheduler.h */,
+			);
+			path = AlertNotificationScheduler;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -602,7 +615,7 @@
 				52BBC17714B37CBE00CFE655 /* RedButton.png in Resources */,
 				52BBC18914B3861900CFE655 /* TimerGradient.png in Resources */,
 				52BBC18E14B3876700CFE655 /* TimerGradient2.png in Resources */,
-				52F63EA814B7689A00876FA4 /* JGRingingSettingViewController.xib in Resources */,
+				52F63EA814B7689A00876FA4 /* JGModalAlertViewController.xib in Resources */,
 				520F73EB14BA46F1003FEC46 /* DigitalAlarm1.aif in Resources */,
 				520F73EC14BA46F1003FEC46 /* DigitalAlarm2.aif in Resources */,
 				520F73ED14BA46F1003FEC46 /* TwoToneBell.aif in Resources */,
@@ -621,7 +634,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5243241A14C06FCC00AFDE61 /* Library in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -657,7 +669,7 @@
 				52BBC08914B34FC900CFE655 /* JGCountdownTimer.m in Sources */,
 				52BBC0E014B358EF00CFE655 /* JGTimeFormatter.m in Sources */,
 				5242CBEF14B3FC8A00C876C7 /* JGTimerRunningView.m in Sources */,
-				5242CBF014B3FC8A00C876C7 /* JGPieChartLayer.m in Sources */,
+				5242CBF014B3FC8A00C876C7 /* JGPieChartView.m in Sources */,
 				52F63E5E14B7590E00876FA4 /* JGInsetGradientButton.m in Sources */,
 				52F63E5F14B7590E00876FA4 /* JGRedInsetGradientButton.m in Sources */,
 				52F63E6014B7590E00876FA4 /* JGGreenInsetGradientButton.m in Sources */,

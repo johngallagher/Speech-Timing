@@ -115,7 +115,7 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">navigationController</string>
+						<string key="label">_navigationController</string>
 						<reference key="source" ref="664661524"/>
 						<reference key="destination" ref="701001926"/>
 					</object>
