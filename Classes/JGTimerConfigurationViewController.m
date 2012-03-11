@@ -22,16 +22,13 @@
 
 -(void)restoreAlertFromDefaults;
 
--(void)continueTimer;
-
 
 @end
 
 @implementation JGTimerConfigurationViewController
 
-@synthesize pickerDurations;
 @synthesize managedObjectContext = managedObjectContext_;
-@synthesize currentAlertName;
+@synthesize currentAlertName = _currentAlertName;
 @synthesize currentAlert = _currentAlert;
 
 #pragma mark View lifecycle
@@ -39,7 +36,7 @@
 -(void)viewDidLoad {
     [super viewDidLoad];
     // Hack to work around not being able to justify numbers to the left within the spinner
-    [self setPickerDurations:[NSArray arrayWithObjects:@"1            ", @"2            ", @"3            ", @"4            ", @"5            ", @"6            ", @"7            ", @"8            ", @"9            ", @"10            ", @"15            ", @"20            ", @"25            ", @"30            ", nil]];
+    _pickerDurations = [[NSArray arrayWithObjects:@"1            ", @"2            ", @"3            ", @"4            ", @"5            ", @"6            ", @"7            ", @"8            ", @"9            ", @"10            ", @"15            ", @"20            ", @"25            ", @"30            ", nil] retain];
     [self restoreAlertFromDefaults];
 }
 
@@ -67,7 +64,7 @@
 
 
 -(NSUInteger)timerDurationFromPickerRowSelected:(NSInteger)selectedRow {
-    return (NSUInteger)[[pickerDurations objectAtIndex:(NSUInteger)selectedRow] intValue] * 60;
+    return (NSUInteger)[[_pickerDurations objectAtIndex:(NSUInteger)selectedRow] intValue] * 60;
 }
 
 -(NSInteger)selectedDurationPickerRow {
@@ -94,10 +91,6 @@
     _currentAlert = [[[JGTimerDefaults sharedInstance] alert] retain];
 }
 
--(void)continueTimer {
-    [self pushRunningViewControllerWithCurrentAlert];
-}
-
 -(void)updateCurrentAlertNameIndicator {
     UITableViewCell *cell = [currentAlertTableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
     [[cell detailTextLabel] setText:[_currentAlert name]];
@@ -107,15 +100,10 @@
     [self dismissModalViewControllerAnimated:YES];
 }
 
--(NSString *)currentAlertName {
-    return currentAlertName;
-}
-
-// TODO: Change JGRingingSettingDelegate and current alert name and alert modal to all be consistent naming
 #pragma mark -
 #pragma mark Modal Alert View Controller
 -(void)pushAlertNameViewController {
-    JGModalAlertViewController *modalAlertViewController = [[JGModalAlertViewController alloc] initWithNibName:@"JGRingingSettingViewController" bundle:nil];
+    JGModalAlertViewController *modalAlertViewController = [[JGModalAlertViewController alloc] initWithNibName:@"JGModalAlertViewController" bundle:nil];
     [modalAlertViewController setDelegate:self];
 
     NSString *currentAlertName_ = [_currentAlert name];
@@ -167,7 +155,7 @@
     }
 
     if (row >= 0)
-        [pickerLabel setText:[[self pickerDurations] objectAtIndex:(NSUInteger)row]];
+        [pickerLabel setText:[_pickerDurations objectAtIndex:(NSUInteger)row]];
 
     return pickerLabel;
 }
@@ -203,8 +191,8 @@
 
 -(void)dealloc {
     [managedObjectContext_ release];
-    [pickerDurations release];
-    [currentAlertName release];
+    [_pickerDurations release];
+    [_currentAlertName release];
     [_currentAlert release];
     [super dealloc];
 }

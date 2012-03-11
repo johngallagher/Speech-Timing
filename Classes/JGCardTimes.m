@@ -42,7 +42,6 @@
     return [NSString stringWithFormat:@"\nG %@\nY %@\nR %@\n", [self greenCardTime], [self yellowCardTime], [self redCardTime]];
 }
 
-
 -(void)dealloc {
     [greenCardTime release];
     [yellowCardTime release];

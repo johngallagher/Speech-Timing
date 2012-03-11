@@ -9,8 +9,6 @@
 #import "JGDurationFromFireDateCalculatorTestCase.h"
 #import "JGDurationFromFireDateCalculator.h"
 
-#import <UIKit/UIKit.h>
-
 @implementation JGDurationFromFireTimeCalculatorTestCase
 
 -(void)testGivenFireTimeOfNowDurationShouldBeZero {

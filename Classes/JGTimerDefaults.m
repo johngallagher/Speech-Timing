@@ -1,9 +1,9 @@
 #import "JGTimerDefaults.h"
 #import "JGAlert.h"
 
-NSString * const kStartTime    = @"startTime";
-NSString * const kFireTime     = @"fireTime";
-NSString * const kCurrentAlert = @"currentAlertName";
+NSString *const kStartTime    = @"startTime";
+NSString *const kFireTime     = @"fireTime";
+NSString *const kCurrentAlert = @"currentAlertName";
 
 @interface JGTimerDefaults ()
 -(void)resetDates;

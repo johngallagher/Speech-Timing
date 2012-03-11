@@ -29,7 +29,7 @@
     [super setUp];
     [self setMockDelegate:[OCMockObject mockForProtocol:@protocol(JGTimerControllerDelegate)]];
 }
-// TODO make all durations time intervals. And rename as such so startTimerWithDuration:(nstimeinterval)duration_
+
 -(void)startTimerWithTimeInterval:(NSTimeInterval)timeInterval_ {
     timer = [JGTimerController timerStartingNowWithTimeInterval:timeInterval_ delegate:mockDelegate];
     [timer startTimer];

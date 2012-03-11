@@ -7,4 +7,5 @@
 
     return (NSUInteger)round([date_ timeIntervalSinceDate:[NSDate date]]);
 }
+
 @end

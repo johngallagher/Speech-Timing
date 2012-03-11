@@ -9,11 +9,9 @@
 @property(nonatomic, retain) NSDate   *fireTime;
 @property(nonatomic, retain) NSDate   *startTime;
 
-
 @end
 
 @implementation JGAlert
-
 
 @synthesize name = _name;
 @synthesize startTime = _startTime;
@@ -85,7 +83,6 @@
 -(NSDate *)fireTime {
     return _fireTime;
 }
-
 
 -(void)saveToTimerDefaults {
     [[JGTimerDefaults sharedInstance] setStartTime:_startTime];

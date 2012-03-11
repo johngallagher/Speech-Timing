@@ -2,8 +2,8 @@
 
 
 @interface JGAlert : NSObject {
-    NSDate *_fireTime;
-    NSDate *_startTime;
+    NSDate   *_fireTime;
+    NSDate   *_startTime;
     NSString *_name;
 }
 
@@ -17,14 +17,14 @@
 
 -(NSTimeInterval)duration;
 
-
 -(void)updateNameFromDefaults;
-
 
 -(void)saveToTimerDefaults;
 
 -(NSString *)name;
+
 -(NSDate *)startTime;
+
 -(NSDate *)fireTime;
 
 -(NSString *)filenameWithoutExtension;

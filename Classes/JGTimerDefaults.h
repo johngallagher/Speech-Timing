@@ -2,9 +2,9 @@
 #import "JGAbstractSingletonObject.h"
 
 @class JGAlert;
-extern NSString * const kStartTime    ;
-extern NSString * const kFireTime     ;
-extern NSString * const kCurrentAlert ;
+extern NSString *const kStartTime;
+extern NSString *const kFireTime;
+extern NSString *const kCurrentAlert;
 
 @interface JGTimerDefaults : JGAbstractSingletonObject {
     NSUserDefaults *userDefaults;

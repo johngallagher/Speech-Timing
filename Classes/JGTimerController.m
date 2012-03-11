@@ -54,7 +54,6 @@
     greenCardTime  = [calculator greenCardTime];
     yellowCardTime = [calculator yellowCardTime];
     redCardTime    = [calculator redCardTime];
-    // TODO add method to the protocol - vibrate - at the time limit. If we're past the time limit don't vibrate.
     [calculator release];
 }
 

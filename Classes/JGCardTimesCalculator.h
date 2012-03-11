@@ -4,13 +4,11 @@
 
 
 @interface JGCardTimesCalculator : NSObject {
-    NSTimeInterval greenCardTimeInterval;
-    NSTimeInterval yellowCardTimeInterval;
-    NSTimeInterval redCardTimeInterval;
-    NSDate *startTime;
+    NSTimeInterval _greenCardTimeInterval;
+    NSTimeInterval _yellowCardTimeInterval;
+    NSTimeInterval _redCardTimeInterval;
+    NSDate *_startTime;
 }
-
-@property(nonatomic, retain) NSDate *startTime;
 
 +(JGCardTimesCalculator *)calculatorWithStartTime:(NSDate *)startTime_ andFireTime:(NSDate *)fireTime_;
 
@@ -23,4 +21,5 @@
 -(NSDate *)redCardTime;
 
 -(JGCardTimes *)cardTimings;
+
 @end

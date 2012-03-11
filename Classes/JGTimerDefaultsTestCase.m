@@ -14,7 +14,7 @@
     [timerDefaults setValue:mockUserDefaults forKey:@"userDefaults"];
 
     STAssertFalse([timerDefaults timerIsRunning], nil);
-    
+
     [mockUserDefaults verify];
 }
 
@@ -23,6 +23,7 @@
     [[JGTimerDefaults sharedInstance] setFireTime:[NSDate date]];
     STAssertTrue([[JGTimerDefaults sharedInstance] currentTimeNearFireTime], nil);
 }
+
 -(void)testGivenFireTimeIsOneSecondBeforeNowShouldReturnNo {
     [[JGTimerDefaults sharedInstance] setFireTime:[NSDate dateWithTimeIntervalSinceNow:1]];
     STAssertFalse([[JGTimerDefaults sharedInstance] currentTimeNearFireTime], nil);

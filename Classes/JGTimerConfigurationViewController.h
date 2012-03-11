@@ -18,15 +18,14 @@
     IBOutlet UIPickerView *timerDurationPickerView;
     IBOutlet UITableView *currentAlertTableView;
 
-    NSArray  *pickerDurations;
-    NSString *currentAlertName;
-    JGAlert *_currentAlert;
+    NSArray  *_pickerDurations;
+    NSString *_currentAlertName;
+    JGAlert  *_currentAlert;
 
 @private
     NSManagedObjectContext *managedObjectContext_;
 }
 
-@property(nonatomic, retain) NSArray                *pickerDurations;
 @property(nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 @property(nonatomic, retain) NSString               *currentAlertName;
 @property(nonatomic, retain) JGAlert                *currentAlert;

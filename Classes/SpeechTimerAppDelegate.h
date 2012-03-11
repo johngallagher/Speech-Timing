@@ -2,14 +2,11 @@
 #import <CoreData/CoreData.h>
 
 @interface SpeechTimerAppDelegate : NSObject <UIApplicationDelegate> {
-
-    UIWindow               *window;
-    UINavigationController *navigationController;
-
-@private
-    NSManagedObjectContext       *managedObjectContext_;
-    NSManagedObjectModel         *managedObjectModel_;
-    NSPersistentStoreCoordinator *persistentStoreCoordinator_;
+    UIWindow               *_window;
+    UINavigationController *_navigationController;
+    NSManagedObjectContext       *_managedObjectContext;
+    NSManagedObjectModel         *_managedObjectModel;
+    NSPersistentStoreCoordinator *_persistentStoreCoordinator;
 }
 
 @property(nonatomic, retain) IBOutlet UIWindow               *window;

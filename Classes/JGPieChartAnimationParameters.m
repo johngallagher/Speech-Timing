@@ -23,8 +23,8 @@
     self = [super init];
     if (self) {
         _fromAngle = fromAngle_;
-        _toAngle = toAngle_;
-        _duration   = duration_;
+        _toAngle   = toAngle_;
+        _duration  = duration_;
     }
 
     return self;

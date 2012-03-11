@@ -22,20 +22,20 @@
 
 @implementation SpeechTimerAppDelegate
 
-@synthesize window;
-@synthesize navigationController;
+@synthesize window = _window;
+@synthesize navigationController = _navigationController;
 
 #pragma mark -
 #pragma mark Application lifecycle
 
 -(void)awakeFromNib {
-    JGTimerConfigurationViewController *rootViewController = (JGTimerConfigurationViewController *)[navigationController topViewController];
+    JGTimerConfigurationViewController *rootViewController = (JGTimerConfigurationViewController *)[_navigationController topViewController];
     rootViewController.managedObjectContext = self.managedObjectContext;
 }
 
 -(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    self.window.rootViewController = self.navigationController;
-    [self.window makeKeyAndVisible];
+    [_window setRootViewController:_navigationController];
+    [_window makeKeyAndVisible];
     return YES;
 }
 
@@ -47,10 +47,9 @@
     [self suspendTimerRunningView];
 }
 
-
 -(void)suspendTimerRunningView {
-    if ([[navigationController topViewController] isKindOfClass:[JGTimerRunningViewController class]])
-        [(JGTimerRunningViewController *)[navigationController topViewController] suspendCountdownAnimation];
+    if ([[_navigationController topViewController] isKindOfClass:[JGTimerRunningViewController class]])
+        [(JGTimerRunningViewController *)[_navigationController topViewController] suspendCountdownAnimation];
 }
 
 -(void)applicationDidEnterBackground:(UIApplication *)application {
@@ -61,18 +60,17 @@
     if (![[JGTimerDefaults sharedInstance] timerIsRunning])
         return;
 
-    BOOL timerRunningViewIsShown = [[navigationController topViewController] isKindOfClass:[JGTimerRunningViewController class]];
+    BOOL timerRunningViewIsShown = [[_navigationController topViewController] isKindOfClass:[JGTimerRunningViewController class]];
     if (timerRunningViewIsShown) {
-        [(JGTimerRunningViewController *)[navigationController topViewController] continueCountdownAnimation];
+        [(JGTimerRunningViewController *)[_navigationController topViewController] continueCountdownAnimation];
     } else {
-        [(JGTimerConfigurationViewController *)[navigationController topViewController] pushRunningViewControllerWithCurrentAlert];
+        [(JGTimerConfigurationViewController *)[_navigationController topViewController] pushRunningViewControllerWithCurrentAlert];
     }
 }
 
 -(void)applicationWillTerminate:(UIApplication *)application {
     [self saveContext];
 }
-
 
 -(void)saveContext {
     NSError                *error                = nil;
@@ -90,7 +88,6 @@
     }
 }
 
-
 #pragma mark -
 #pragma mark Core Data stack
 
@@ -100,16 +97,16 @@
  */
 -(NSManagedObjectContext *)managedObjectContext {
 
-    if (managedObjectContext_ != nil) {
-        return managedObjectContext_;
+    if (_managedObjectContext != nil) {
+        return _managedObjectContext;
     }
 
     NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
     if (coordinator != nil) {
-        managedObjectContext_ = [[NSManagedObjectContext alloc] init];
-        [managedObjectContext_ setPersistentStoreCoordinator:coordinator];
+        _managedObjectContext = [[NSManagedObjectContext alloc] init];
+        [_managedObjectContext setPersistentStoreCoordinator:coordinator];
     }
-    return managedObjectContext_;
+    return _managedObjectContext;
 }
 
 
@@ -118,13 +115,13 @@
  If the model doesn't already exist, it is created from the application's model.
  */
 -(NSManagedObjectModel *)managedObjectModel {
-    if (managedObjectModel_ != nil) {
-        return managedObjectModel_;
+    if (_managedObjectModel != nil) {
+        return _managedObjectModel;
     }
     NSString *modelPath = [[NSBundle mainBundle] pathForResource:@"SpeechTimer" ofType:@"momd"];
     NSURL    *modelURL  = [NSURL fileURLWithPath:modelPath];
-    managedObjectModel_ = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
-    return managedObjectModel_;
+    _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
+    return _managedObjectModel;
 }
 
 
@@ -134,15 +131,15 @@
  */
 -(NSPersistentStoreCoordinator *)persistentStoreCoordinator {
 
-    if (persistentStoreCoordinator_ != nil) {
-        return persistentStoreCoordinator_;
+    if (_persistentStoreCoordinator != nil) {
+        return _persistentStoreCoordinator;
     }
 
     NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"SpeechTimer.sqlite"];
 
     NSError *error = nil;
-    persistentStoreCoordinator_ = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
-    if (![persistentStoreCoordinator_ addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error]) {
+    _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
+    if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error]) {
         /*
          Replace this implementation with code to handle the error appropriately.
          
@@ -170,7 +167,7 @@
         abort();
     }
 
-    return persistentStoreCoordinator_;
+    return _persistentStoreCoordinator;
 }
 
 
@@ -185,15 +182,14 @@
 }
 
 -(void)dealloc {
-    [managedObjectContext_ release];
-    [managedObjectModel_ release];
-    [persistentStoreCoordinator_ release];
+    [_managedObjectContext release];
+    [_managedObjectModel release];
+    [_persistentStoreCoordinator release];
 
-    [navigationController release];
-    [window release];
+    [_navigationController release];
+    [_window release];
     [super dealloc];
 }
-
 
 @end
 

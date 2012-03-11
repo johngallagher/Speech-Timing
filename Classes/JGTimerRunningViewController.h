@@ -13,7 +13,7 @@
     AVAudioPlayer     *audioPlayer;
     JGTimerController *timerController;
     JGCountdownTimer  *countdownTimer;
-    JGAlert *_alert;
+    JGAlert           *_alert;
 }
 
 @property(nonatomic, retain) JGCountdownTimer  *countdownTimer;
