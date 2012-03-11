@@ -12,7 +12,7 @@
 @class JGPieChartAnimationParameters;
 
 
-@interface JGPieChartLayer : CALayer {
+@interface JGPieChartView : CALayer {
     CGFloat startAngle;
     CGFloat endAngle;
 }

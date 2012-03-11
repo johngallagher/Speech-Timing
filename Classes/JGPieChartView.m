@@ -6,14 +6,13 @@
 //  Copyright 2011 Nomad Planet. All rights reserved.
 //
 
-#import "JGPieChartLayer.h"
-#import "JGPieChartAnimationParameters.h"
+#import "JGPieChartView.h"
 
 static inline double radians(double degrees) {
     return degrees * M_PI / 180;
 }
 
-@implementation JGPieChartLayer
+@implementation JGPieChartView
 
 @synthesize startAngle;
 @synthesize endAngle;

@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@class JGPieChartLayer;
+@class JGPieChartView;
 @class JGPieChartAnimationParameters;
 
 @interface JGTimerRunningView : UIView {
-    JGPieChartLayer *pieChartLayer;
+    JGPieChartView *pieChartLayer;
 }
 
 -(void)startCountdownAnimationWithParameters:(JGPieChartAnimationParameters *)parameters_;

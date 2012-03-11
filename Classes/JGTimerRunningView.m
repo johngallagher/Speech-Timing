@@ -8,7 +8,7 @@
 
 #import "JGTimerRunningView.h"
 #import <QuartzCore/QuartzCore.h>
-#import "JGPieChartLayer.h"
+#import "JGPieChartView.h"
 #import "JGPieChartAnimationParameters.h"
 
 @interface JGTimerRunningView ()
@@ -35,12 +35,12 @@
     if (!parameters_)
         return;
 
-    JGPieChartLayer *layer = [[JGPieChartLayer alloc] initWithFrame:[self bounds]];
+    JGPieChartView *layer = [[JGPieChartView alloc] initWithFrame:[self bounds]];
     pieChartLayer = [layer retain];
     [[self layer] addSublayer:pieChartLayer];
     [layer release];
 
-    CABasicAnimation *endAngleAnimation = [self endAngleAnimationFromParameters:parameters_];
+    CABasicAnimation *endAngleAnimation   = [self endAngleAnimationFromParameters:parameters_];
     CABasicAnimation *startAngleAnimation = [self startAngleAnimationFromParameters:parameters_];
 
     [pieChartLayer addAnimation:startAngleAnimation forKey:@"animateStartAngle"];
@@ -56,15 +56,14 @@
 }
 
 -(CABasicAnimation *)animationForKeyPath:(NSString *)keyPath fromValue:(CGFloat)fromValue toValue:(CGFloat)toValue duration:(NSTimeInterval)duration_ {
-
     CAMediaTimingFunction *timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
 
-    CABasicAnimation *anim = [CABasicAnimation animationWithKeyPath:keyPath];
-    anim.fromValue      = [NSNumber numberWithFloat:fromValue];
-    anim.toValue        = [NSNumber numberWithFloat:toValue];
-    anim.timingFunction = timingFunction;
-    [anim setDuration:duration_];
-    return anim;
+    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:keyPath];
+    animation.fromValue      = [NSNumber numberWithFloat:fromValue];
+    animation.toValue        = [NSNumber numberWithFloat:toValue];
+    animation.timingFunction = timingFunction;
+    [animation setDuration:duration_];
+    return animation;
 }
 
 -(void)dealloc {
