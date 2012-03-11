@@ -244,7 +244,6 @@
 				5242CBE814B3FC2900C876C7 /* CountdownTimer */,
 				5251B9AB149E59BD00AFC0B6 /* TimerController */,
 				5242CBE714B3FC1E00C876C7 /* TimeFormatter */,
-				52D6932D14B87B8E00F09035 /* ModalAlertView */,
 				C01FCF5008A95454005424A5 /* AlertNotificationScheduler */,
 			);
 			path = Classes;
@@ -408,6 +407,8 @@
 		5251B9F8149E5D4300AFC0B6 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				52F63EA414B7689A00876FA4 /* JGModalAlertViewController.h */,
+				52F63EA514B7689A00876FA4 /* JGModalAlertViewController.m */,
 				C01FCF5008A9545400542480 /* JGTimerRunningViewController.m */,
 				C01FCF5008A954540054247F /* JGTimerRunningViewController.h */,
 				28C286DF0D94DF7D0034E888 /* JGTimerConfigurationViewController.h */,
@@ -491,15 +492,6 @@
 				1D3623250D0F684500981E51 /* SpeechTimerAppDelegate.m */,
 			);
 			name = AppDelegate;
-			sourceTree = "<group>";
-		};
-		52D6932D14B87B8E00F09035 /* ModalAlertView */ = {
-			isa = PBXGroup;
-			children = (
-				52F63EA414B7689A00876FA4 /* JGModalAlertViewController.h */,
-				52F63EA514B7689A00876FA4 /* JGModalAlertViewController.m */,
-			);
-			name = ModalAlertView;
 			sourceTree = "<group>";
 		};
 		52F63E5714B7590400876FA4 /* Buttons */ = {
