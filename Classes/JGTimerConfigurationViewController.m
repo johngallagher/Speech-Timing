@@ -7,21 +7,20 @@
 
 @interface JGTimerConfigurationViewController ()
 
--(void)_startTimerWithDuration:(NSUInteger)durationOfTimer;
+-(void)startTimerWithDuration:(NSUInteger)durationOfTimer;
 
 
--(NSUInteger)_timerDurationFromPickerRowSelected:(NSInteger)selectedRow;
+-(NSUInteger)timerDurationFromPickerRowSelected:(NSInteger)selectedRow;
 
--(NSInteger)_selectedDurationPickerRow;
+-(NSInteger)selectedDurationPickerRow;
 
--(BOOL)_noDurationPickerRowSelected;
+-(BOOL)noDurationPickerRowSelected;
 
--(void)_startTimer;
+-(void)startTimer;
 
 -(BOOL)timerIsRunning;
 
 -(void)restoreAlertFromDefaults;
-
 
 -(void)continueTimer;
 
@@ -39,24 +38,17 @@
 
 -(void)viewDidLoad {
     [super viewDidLoad];
+    // Hack to work around not being able to justify numbers to the left within the spinner
     [self setPickerDurations:[NSArray arrayWithObjects:@"1            ", @"2            ", @"3            ", @"4            ", @"5            ", @"6            ", @"7            ", @"8            ", @"9            ", @"10            ", @"15            ", @"20            ", @"25            ", @"30            ", nil]];
     [self restoreAlertFromDefaults];
 }
 
--(void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-}
-
--(void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-}
-
 #pragma mark Public
 -(IBAction)startTimer:(id)sender {
-    if ([self _noDurationPickerRowSelected])
+    if ([self noDurationPickerRowSelected])
         return;
 
-    [self _startTimer];
+    [self startTimer];
 }
 
 #pragma mark Private
@@ -65,7 +57,7 @@
     [[self navigationController] pushViewController:runningViewController animated:YES];
 }
 
--(void)_startTimerWithDuration:(NSUInteger)durationOfTimer {
+-(void)startTimerWithDuration:(NSUInteger)durationOfTimer {
     _currentAlert = [[JGAlert alertStartingNowWithDuration:durationOfTimer name:[_currentAlert name]] retain];
     [_currentAlert saveToTimerDefaults];
 
@@ -74,21 +66,21 @@
 }
 
 
--(NSUInteger)_timerDurationFromPickerRowSelected:(NSInteger)selectedRow {
+-(NSUInteger)timerDurationFromPickerRowSelected:(NSInteger)selectedRow {
     return (NSUInteger)[[pickerDurations objectAtIndex:(NSUInteger)selectedRow] intValue] * 60;
 }
 
--(NSInteger)_selectedDurationPickerRow {
+-(NSInteger)selectedDurationPickerRow {
     return [timerDurationPickerView selectedRowInComponent:0];
 }
 
--(BOOL)_noDurationPickerRowSelected {
-    return [self _selectedDurationPickerRow] < 0;
+-(BOOL)noDurationPickerRowSelected {
+    return [self selectedDurationPickerRow] < 0;
 }
 
--(void)_startTimer {
-    NSUInteger timerDurationFromPickerRowSelected = [self _timerDurationFromPickerRowSelected:[self _selectedDurationPickerRow]];
-    [self _startTimerWithDuration:timerDurationFromPickerRowSelected];
+-(void)startTimer {
+    NSUInteger timerDurationFromPickerRowSelected = [self timerDurationFromPickerRowSelected:[self selectedDurationPickerRow]];
+    [self startTimerWithDuration:timerDurationFromPickerRowSelected];
 }
 
 #pragma mark -
@@ -123,13 +115,13 @@
 #pragma mark -
 #pragma mark Modal Alert View Controller
 -(void)pushAlertNameViewController {
-    JGModalAlertViewController *ringingSettingViewController = [[JGModalAlertViewController alloc] initWithNibName:@"JGRingingSettingViewController" bundle:nil];
-    [ringingSettingViewController setDelegate:self];
+    JGModalAlertViewController *modalAlertViewController = [[JGModalAlertViewController alloc] initWithNibName:@"JGRingingSettingViewController" bundle:nil];
+    [modalAlertViewController setDelegate:self];
 
     NSString *currentAlertName_ = [_currentAlert name];
-    [ringingSettingViewController setCurrentAlertName:currentAlertName_];
-    [self presentModalViewController:ringingSettingViewController animated:YES];
-    [ringingSettingViewController release];
+    [modalAlertViewController setCurrentAlertName:currentAlertName_];
+    [self presentModalViewController:modalAlertViewController animated:YES];
+    [modalAlertViewController release];
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -215,20 +207,6 @@
     [currentAlertName release];
     [_currentAlert release];
     [super dealloc];
-}
-
-#pragma mark -
-#pragma mark Memory management
-
--(void)didReceiveMemoryWarning {
-    // Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-    // Relinquish ownership any cached data, images, etc that aren't in use.
-}
-
--(void)viewDidUnload {
-    // Relinquish ownership of anything that can be recreated in viewDidLoad or on demand.
-    // For example: self.myOutlet = nil;
 }
 
 @end

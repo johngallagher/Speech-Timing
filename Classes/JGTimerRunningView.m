@@ -13,7 +13,7 @@
 
 @interface JGTimerRunningView ()
 
--(CABasicAnimation *)_animationForKeyPath:(NSString *)keyPath fromValue:(CGFloat)fromValue toValue:(CGFloat)toValue duration:(NSTimeInterval)duration_;
+-(CABasicAnimation *)animationForKeyPath:(NSString *)keyPath fromValue:(CGFloat)fromValue toValue:(CGFloat)toValue duration:(NSTimeInterval)duration_;
 
 @end
 
@@ -22,12 +22,12 @@
 
 -(CABasicAnimation *)startAngleAnimationFromParameters:(JGPieChartAnimationParameters *)parameters_ {
     // The start angle is always the same - the pie chart always starts at the 12 o'clock position or -90
-    CABasicAnimation *startAngleAnimation = [self _animationForKeyPath:@"startAngle" fromValue:-90 toValue:-90 duration:[parameters_ duration]];
+    CABasicAnimation *startAngleAnimation = [self animationForKeyPath:@"startAngle" fromValue:-90 toValue:-90 duration:[parameters_ duration]];
     return startAngleAnimation;
 }
 
 -(CABasicAnimation *)endAngleAnimationFromParameters:(JGPieChartAnimationParameters *)parameters_ {
-    CABasicAnimation *endAngleAnimation = [self _animationForKeyPath:@"endAngle" fromValue:[parameters_ fromAngle] toValue:[parameters_ toAngle] duration:[parameters_ duration]];
+    CABasicAnimation *endAngleAnimation = [self animationForKeyPath:@"endAngle" fromValue:[parameters_ fromAngle] toValue:[parameters_ toAngle] duration:[parameters_ duration]];
     return endAngleAnimation;
 }
 
@@ -55,7 +55,7 @@
     [self removePieChartLayerFromSuperlayer];
 }
 
--(CABasicAnimation *)_animationForKeyPath:(NSString *)keyPath fromValue:(CGFloat)fromValue toValue:(CGFloat)toValue duration:(NSTimeInterval)duration_ {
+-(CABasicAnimation *)animationForKeyPath:(NSString *)keyPath fromValue:(CGFloat)fromValue toValue:(CGFloat)toValue duration:(NSTimeInterval)duration_ {
 
     CAMediaTimingFunction *timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
 
@@ -71,5 +71,6 @@
     [pieChartLayer release];
     [super dealloc];
 }
+
 @end
 

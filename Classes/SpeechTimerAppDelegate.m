@@ -33,7 +33,6 @@
     rootViewController.managedObjectContext = self.managedObjectContext;
 }
 
-
 -(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
@@ -55,18 +54,7 @@
 }
 
 -(void)applicationDidEnterBackground:(UIApplication *)application {
-    /*
-     Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-     If your application supports background execution, called instead of applicationWillTerminate: when the user quits.
-     */
     [self saveContext];
-}
-
-
--(void)applicationWillEnterForeground:(UIApplication *)application {
-    /*
-     Called as part of  transition from the background to the inactive state: here you can undo many of the changes made on entering the background.
-     */
 }
 
 -(void)restoreTimerRunningView {
@@ -81,11 +69,6 @@
     }
 }
 
-
-
-/**
- applicationWillTerminate: saves changes in the application's managed object context before the application terminates.
- */
 -(void)applicationWillTerminate:(UIApplication *)application {
     [self saveContext];
 }
@@ -201,19 +184,7 @@
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
 
-
-#pragma mark -
-#pragma mark Memory management
-
--(void)applicationDidReceiveMemoryWarning:(UIApplication *)application {
-    /*
-     Free up as much memory as possible by purging cached data objects that can be recreated (or reloaded from disk) later.
-     */
-}
-
-
 -(void)dealloc {
-
     [managedObjectContext_ release];
     [managedObjectModel_ release];
     [persistentStoreCoordinator_ release];

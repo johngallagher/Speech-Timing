@@ -741,7 +741,7 @@
 		52591F3D149E466B00DEA711 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(CONFIGURATION_BUILD_DIR)/SpeechTimer.app/SpeechTimer";
+				BUNDLE_LOADER = "$(CONFIGURATION_BUILD_DIR)/SpeechTiming.app/SpeechTiming";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",

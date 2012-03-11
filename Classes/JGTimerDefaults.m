@@ -6,7 +6,7 @@ NSString * const kFireTime     = @"fireTime";
 NSString * const kCurrentAlert = @"currentAlertName";
 
 @interface JGTimerDefaults ()
--(void)_resetDates;
+-(void)resetDates;
 
 -(double)magnitude:(NSTimeInterval)timeSinceFireTime;
 
@@ -50,7 +50,7 @@ NSString * const kCurrentAlert = @"currentAlertName";
 }
 
 -(void)timerDidStop {
-    [self _resetDates];
+    [self resetDates];
 }
 
 // Timer is running checks default start time and fire time and if they're inconsistent, it resets them both to nil.
@@ -61,13 +61,13 @@ NSString * const kCurrentAlert = @"currentAlertName";
         if ([self startTime] != nil && [self fireTime] != nil) {
             return YES;
         } else {
-            [self _resetDates];
+            [self resetDates];
             return NO;
         }
     }
 }
 
--(void)_resetDates {
+-(void)resetDates {
     [self setFireTime:nil];
     [self setStartTime:nil];
 }

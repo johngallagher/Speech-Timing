@@ -11,7 +11,7 @@
 
 -(void)initWithStartTime:(NSDate *)startTime_ fireTime:(NSDate *)fireTime_;
 
--(void)_showCard:(NSString *)cardName;
+-(void)showCard:(NSString *)cardName;
 
 
 @end
@@ -88,17 +88,17 @@
 
 -(void)showCurrentCard {
     if ([self betweenGreenAndYellowCards]) {
-        [self _showCard:@"Green"];
+        [self showCard:@"Green"];
         return;
     }
 
     if ([self betweenYellowAndRedCards]) {
-        [self _showCard:@"Yellow"];
+        [self showCard:@"Yellow"];
         return;
     }
 
     if ([self afterRedCard]) {
-        [self _showCard:@"Red"];
+        [self showCard:@"Red"];
     }
 }
 
@@ -147,7 +147,7 @@
     [self addRedCardTimer];
 }
 
--(void)_showCard:(NSString *)cardName {
+-(void)showCard:(NSString *)cardName {
     if (timerRunning) {
         [_delegate performSelector:NSSelectorFromString([NSString stringWithFormat:@"show%@Card", cardName])];
     }
@@ -155,7 +155,7 @@
 
 -(void)showCard:(NSString *)cardName andInvalidateTimer:(NSTimer *)timer_ {
     [timer_ invalidate];
-    [self _showCard:cardName];
+    [self showCard:cardName];
 }
 
 

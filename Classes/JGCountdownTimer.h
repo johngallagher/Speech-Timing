@@ -2,9 +2,9 @@
 #import "JGCountdownTimerDelegate.h"
 
 @interface JGCountdownTimer : NSObject {
-    NSTimer *countdownTimer;
+    NSTimer *_countdownTimer;
     id <NSObject, JGCountdownTimerDelegate> _delegate;
-    NSDate *timerEndDate;
+    NSDate *_timerEndDate;
 }
 
 @property(nonatomic, retain) NSDate *timerEndDate;
